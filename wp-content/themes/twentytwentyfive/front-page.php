@@ -45,9 +45,28 @@ function bloom_featured_products_html() {
                     </svg>
                 </button>
                 <div class="row featured-product-slider">
-                <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+                <?php while ( $query->have_posts() ) : $query->the_post(); global $product; ?>
                     <div class="col-12">
-                        <?php echo do_shortcode( '[bloom_product id="' . get_the_ID() . '"]' ); ?>
+                        <div class="product-card">
+                            <figure>
+                                <a href="<?php the_permalink(); ?>">
+                                    <?php echo $product->get_image(); ?>
+                                </a>
+                                <ul class="unstyled action-list">
+                                    <li><a href="javascript:;" class="icon wishlist-icon"><i class="fa-light fa-heart"></i></a></li>
+                                    <li><a href="<?php the_permalink(); ?>" class="icon"><i class="fa-light fa-eye"></i></a></li>
+                                </ul>
+                            </figure>
+                            <div class="text-block">
+                                <a href="<?php the_permalink(); ?>" class="h4 mb-16"><?php the_title(); ?></a>
+                                <div class="price mb-32">
+                                    <?php echo $product->get_price_html(); ?>
+                                </div>
+                                <div class="action-block">
+                                    <?php woocommerce_template_loop_add_to_cart(); ?>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 <?php endwhile; ?>
                 </div>
