@@ -29,7 +29,10 @@ ob_start();
                                     <a href="<?php echo esc_url( get_permalink( $product->get_id() ) ); ?>" class="h4 mb-16"><?php echo esc_html( $product->get_name() ); ?></a>
                                     <p class="mb-24"><?php echo esc_html( wp_trim_words( $product->get_description(), 20 ) ); ?></p>
                                     <div class="price mb-32">
-                                        <?php echo $product->get_price_html(); ?>
+                                        <?php  ?>
+                                    </div>
+                                    <div class="price mb-32">
+                                        <h3>$ <?= $product->get_price(); ?></h3>
                                     </div>
                                     <div class="action-block">
                                         <div class="quantity-wrap">
