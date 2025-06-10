@@ -115,6 +115,17 @@
         var qtyVal = parseInt(qtyInput.val());
         qtyInput.val(parseInt(qtyVal + 1));
       });
+      $(".product-card .cart-btn").on("click", function (e) {
+        e.preventDefault();
+        var qty = $(this).closest(".product-card").find("input.number").val() || 1;
+        var url = $(this).attr("href");
+        if (url.indexOf("?") === -1) {
+          url += "?quantity=" + qty;
+        } else {
+          url += "&quantity=" + qty;
+        }
+        window.location.href = url;
+      });
     },
     // =======================
     //  UI Header
@@ -518,7 +529,7 @@
       $(document).ready(function ($) {
         var $body = $("body");
 
-        $(".cart-button, .close-button, #sidebar-cart-curtain").click(function (e) {
+        $(".main-menu__right .cart-button, .close-button, #sidebar-cart-curtain").click(function (e) {
           e.preventDefault();
           $body.toggleClass("show-sidebar-cart");
           $body.toggleClass("locked");
