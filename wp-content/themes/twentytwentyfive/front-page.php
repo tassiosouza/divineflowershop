@@ -59,11 +59,28 @@ function bloom_featured_products_html() {
                             </figure>
                             <div class="text-block">
                                 <a href="<?php the_permalink(); ?>" class="h4 mb-16"><?php the_title(); ?></a>
+                                <p class="mb-24"><?php echo wp_kses_post( $product->get_short_description() ); ?></p>
                                 <div class="price mb-32">
-                                    <?php echo $product->get_price_html(); ?>
+                                    <?php if ( $product->is_on_sale() ) : ?>
+                                        <del class="h6 dark-gray"><?php echo wc_price( $product->get_regular_price() ); ?></del>
+                                        <h3><?php echo wc_price( $product->get_sale_price() ); ?></h3>
+                                    <?php else : ?>
+                                        <h3><?php echo wc_price( $product->get_price() ); ?></h3>
+                                    <?php endif; ?>
                                 </div>
                                 <div class="action-block">
-                                    <?php woocommerce_template_loop_add_to_cart(); ?>
+                                    <div class="quantity-wrap">
+                                        <div class="decrement"><i class="fa-solid fa-dash"></i></div>
+                                        <input type="text" name="quantity" value="1" maxlength="1" size="1" class="number">
+                                        <div class="increment"><i class="fa-solid fa-plus-large"></i></div>
+                                    </div>
+                                    <a href="<?php echo esc_url( $product->add_to_cart_url() ); ?>"
+                                       data-quantity="1"
+                                       class="cart-btn cart-button ajax_add_to_cart add_to_cart_button"
+                                       data-product_id="<?php echo $product->get_id(); ?>"
+                                       rel="nofollow">
+                                        <img src="<?php echo esc_url( $theme_uri . '/bloom/assets/media/icons/cart.svg' ); ?>" alt="">
+                                    </a>
                                 </div>
                             </div>
                         </div>
