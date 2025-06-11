@@ -1,10 +1,29 @@
 <?php
 function twentytwenty_child_enqueue_styles() {
     wp_enqueue_style( 'twentytwenty-style', get_template_directory_uri() . '/style.css' );
-    wp_enqueue_style( 'bloom-style', get_theme_root_uri() . '/bloom-theme/assets/css/app.css', array(), null );
+    $bloom_base = get_stylesheet_directory_uri() . '/bloom/assets/css/';
+    wp_enqueue_style( 'bloom-fontawesome', $bloom_base . 'vendor/fontawsome.css', array(), null );
+    wp_enqueue_style( 'bloom-bootstrap', $bloom_base . 'vendor/bootstrap.min.css', array(), null );
+    wp_enqueue_style( 'bloom-magnific', $bloom_base . 'vendor/jquery.magnific-popup.css', array(), null );
+    wp_enqueue_style( 'bloom-animate', $bloom_base . 'vendor/animate.min.css', array(), null );
+    wp_enqueue_style( 'bloom-slick', $bloom_base . 'vendor/slick.css', array(), null );
+    wp_enqueue_style( 'bloom-style', $bloom_base . 'app.css', array( 'bloom-fontawesome', 'bloom-bootstrap', 'bloom-magnific', 'bloom-animate', 'bloom-slick' ), null );
     wp_enqueue_style( 'twentytwenty-child-style', get_stylesheet_uri(), array( 'twentytwenty-style', 'bloom-style' ), wp_get_theme()->get('Version') );
 }
 add_action( 'wp_enqueue_scripts', 'twentytwenty_child_enqueue_styles' );
+
+function twentytwenty_child_enqueue_scripts() {
+    $base = get_stylesheet_directory_uri() . '/bloom/assets/js/';
+    wp_enqueue_script( 'bloom-bootstrap', $base . 'vendor/bootstrap.min.js', array( 'jquery' ), null, true );
+    wp_enqueue_script( 'bloom-appear', $base . 'vendor/jquery-appear.js', array( 'jquery' ), null, true );
+    wp_enqueue_script( 'bloom-nice-select', $base . 'vendor/jquery.nice-select.min.js', array( 'jquery' ), null, true );
+    wp_enqueue_script( 'bloom-slick', $base . 'vendor/slick.min.js', array( 'jquery' ), null, true );
+    wp_enqueue_script( 'bloom-wow', $base . 'vendor/wow.js', array( 'jquery' ), null, true );
+    wp_enqueue_script( 'bloom-range', $base . 'vendor/ion.rangeSlider.js', array( 'jquery' ), null, true );
+    wp_enqueue_script( 'bloom-magnific', $base . 'vendor/jquery.magnific-popup.min.js', array( 'jquery' ), null, true );
+    wp_enqueue_script( 'bloom-app', $base . 'app.js', array( 'jquery', 'bloom-slick' ), null, true );
+}
+add_action( 'wp_enqueue_scripts', 'twentytwenty_child_enqueue_scripts' );
 
 /**
  * Disable WooCommerce block templates for the single product page.
