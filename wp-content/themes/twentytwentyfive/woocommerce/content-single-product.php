@@ -1,20 +1,20 @@
 <?php
 /**
- * Custom single product template styled like product-detail.html
+ * Custom product content styled like Bloom product-detail.html
  */
 
 defined( 'ABSPATH' ) || exit;
 
-get_header( 'shop' );
+global $product;
 
-do_action( 'woocommerce_before_main_content' );
+do_action( 'woocommerce_before_single_product' );
 
-if ( have_posts() ) :
-    while ( have_posts() ) :
-        the_post();
-        global $product;
+if ( post_password_required() ) {
+    echo get_the_password_form();
+    return;
+}
 ?>
-<section class="py-80">
+<section id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?> class="py-80">
     <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-xxl-8 col-xl-10 col-lg-11">
@@ -83,7 +83,7 @@ if ( have_posts() ) :
                                     </div>
                                     <?php if ( $product->is_on_sale() ) :
                                         $regular = (float) $product->get_regular_price();
-                                        $sale = (float) $product->get_sale_price();
+                                        $sale    = (float) $product->get_sale_price();
                                         if ( $regular > 0 ) {
                                             $discount = round( ( ( $regular - $sale ) / $regular ) * 100 );
                                             ?>
@@ -123,9 +123,4 @@ if ( have_posts() ) :
         </div>
     </div>
 </section>
-<?php
-    endwhile;
-endif;
-
-do_action( 'woocommerce_after_main_content' );
-get_footer( 'shop' );
+<?php do_action( 'woocommerce_after_single_product' ); ?>
