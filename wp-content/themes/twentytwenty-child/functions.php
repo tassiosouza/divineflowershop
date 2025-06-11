@@ -6,6 +6,19 @@ function twentytwenty_child_enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'twentytwenty_child_enqueue_styles' );
 
+function twentytwenty_child_enqueue_scripts() {
+    $base = get_theme_root_uri() . '/bloom-theme/assets/js/';
+    wp_enqueue_script( 'bloom-bootstrap', $base . 'vendor/bootstrap.min.js', array( 'jquery' ), null, true );
+    wp_enqueue_script( 'bloom-appear', $base . 'vendor/jquery-appear.js', array( 'jquery' ), null, true );
+    wp_enqueue_script( 'bloom-nice-select', $base . 'vendor/jquery.nice-select.min.js', array( 'jquery' ), null, true );
+    wp_enqueue_script( 'bloom-slick', $base . 'vendor/slick.min.js', array( 'jquery' ), null, true );
+    wp_enqueue_script( 'bloom-wow', $base . 'vendor/wow.js', array( 'jquery' ), null, true );
+    wp_enqueue_script( 'bloom-range', $base . 'vendor/ion.rangeSlider.js', array( 'jquery' ), null, true );
+    wp_enqueue_script( 'bloom-magnific', $base . 'vendor/jquery.magnific-popup.min.js', array( 'jquery' ), null, true );
+    wp_enqueue_script( 'bloom-app', $base . 'app.js', array( 'jquery', 'bloom-slick' ), null, true );
+}
+add_action( 'wp_enqueue_scripts', 'twentytwenty_child_enqueue_scripts' );
+
 /**
  * Disable WooCommerce block templates for the single product page.
  *
