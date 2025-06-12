@@ -51,4 +51,35 @@ function twentytwenty_child_disable_single_product_block_template( $has_template
     return $has_template;
 }
 add_filter( 'woocommerce_has_block_template', 'twentytwenty_child_disable_single_product_block_template', 10, 2 );
+
+function bloom_enqueue_product_styles_scripts() {
+    if (is_product()) {
+        // CSS
+        wp_enqueue_style('bloom-bootstrap', get_stylesheet_directory_uri() . '/bloom-assets/css/bootstrap.min.css');
+        wp_enqueue_style('bloom-fontawesome', get_stylesheet_directory_uri() . '/bloom-assets/css/fontawsome.css');
+        wp_enqueue_style('bloom-slick', get_stylesheet_directory_uri() . '/bloom-assets/css/slick.css');
+        wp_enqueue_style('bloom-animate', get_stylesheet_directory_uri() . '/bloom-assets/css/animate.min.css');
+        wp_enqueue_style('bloom-popup', get_stylesheet_directory_uri() . '/bloom-assets/css/jquery.magnific-popup.css');
+        wp_enqueue_style('bloom-range', get_stylesheet_directory_uri() . '/bloom-assets/css/ion.rangeSlider.css');
+        wp_enqueue_style('bloom-app', get_stylesheet_directory_uri() . '/bloom-assets/css/app.css');
+
+        // JS (jQuery incluso automaticamente no WP)
+        wp_enqueue_script('bloom-bootstrap', get_stylesheet_directory_uri() . '/bloom-assets/js/bootstrap.min.js', ['jquery'], null, true);
+        wp_enqueue_script('bloom-appear', get_stylesheet_directory_uri() . '/bloom-assets/js/jquery-appear.js', ['jquery'], null, true);
+        wp_enqueue_script('bloom-nice-select', get_stylesheet_directory_uri() . '/bloom-assets/js/jquery.nice-select.min.js', ['jquery'], null, true);
+        wp_enqueue_script('bloom-slick', get_stylesheet_directory_uri() . '/bloom-assets/js/slick.min.js', ['jquery'], null, true);
+        wp_enqueue_script('bloom-wow', get_stylesheet_directory_uri() . '/bloom-assets/js/wow.js', ['jquery'], null, true);
+        wp_enqueue_script('bloom-range', get_stylesheet_directory_uri() . '/bloom-assets/js/ion.rangeSlider.js', ['jquery'], null, true);
+
+        wp_dequeue_style('woocommerce-layout');
+        wp_dequeue_style('storefront-style');
+        wp_dequeue_style('twentytwenty-style');
+        wp_dequeue_style('twenty-twenty');
+        wp_dequeue_style('wp-block-library'); // Gutenberg base
+        wp_dequeue_style('woocommerce-general'); // WooCommerce default
+    }
+}
+add_action('wp_enqueue_scripts', 'bloom_enqueue_product_styles_scripts');
+
 ?>
+
