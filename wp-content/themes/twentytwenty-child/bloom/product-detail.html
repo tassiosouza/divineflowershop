@@ -179,10 +179,7 @@
                                                     <path d="M0.857543 12.1506C1.14152 12.4346 1.60203 12.4347 1.88605 12.1506L8.64436 5.39213L15.403 12.1506C15.687 12.4346 16.1475 12.4347 16.4315 12.1506C16.7155 11.8666 16.7155 11.4061 16.4315 11.1221L9.15859 3.84935C9.0222 3.71296 8.83723 3.63635 8.64436 3.63635C8.45148 3.63635 8.26647 3.71301 8.13013 3.84939L0.857592 11.1221C0.573519 11.4061 0.573519 11.8666 0.857543 12.1506Z"/>
                                                 </svg>
                                             </button> 
-                                            <div class="preview-slider-nav mt-3">
-                                                <div class="detail-img-block">
-                                                    <img alt=""  src="assets/media/products/product-image-slider-1.png">
-                                                </div>
+                                            <div class="preview-slider-nav mt-3">{{GALLERY}}</div>
                                                 <div class="detail-img-block">
                                                     <img alt=""  src="assets/media/products/product-image-slider-2.png">
                                                 </div>
@@ -214,7 +211,7 @@
                                         <div class="preview">
                                             <div class="preview-slider">
                                                 <div class="detail-img-block">
-                                                    <img alt=""  src="assets/media/products/pd-1.png">
+                                                    <img alt=""  src="assets/media/products/{{MAIN_IMAGE}}">
                                                 </div>
                                                 <div class="detail-img-block">
                                                     <img alt=""  src="assets/media/products/pd-2.png">
@@ -226,7 +223,7 @@
                                                     <img alt=""  src="assets/media/products/pd-4.png">
                                                 </div>
                                                 <div class="detail-img-block">
-                                                    <img alt=""  src="assets/media/products/pd-1.png">
+                                                    <img alt=""  src="assets/media/products/{{MAIN_IMAGE}}">
                                                 </div>
                                                 <div class="detail-img-block">
                                                     <img alt=""  src="assets/media/products/pd-2.png">
@@ -245,26 +242,22 @@
                                 <div class="col-md-6">
                                     <div class="product-detail-content">
                                         <div class="d-flex align-items-center column-gap-2 row-gap-3 mb-16">
-                                            <h4>Jasmine Junction</h4>
-                                            <p class="green-tag">In Stock</p>
+                                            <h4>{{PRODUCT_NAME}}</h4>
+                                            <p class="{{STOCK_CLASS}}">{{STOCK_TEXT}}</p>
                                         </div>
                                         <ul class="unstyled mb-24 pro-rel">
                                             <li class="d-flex align-items-center">
                                                 <span class="rating-stars me-1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
-                                                <span class="text-decoration-underline">2 Reviews</span>
+                                                <span class="text-decoration-underline">{{REVIEWS}} Reviews</span>
                                             </li>
                                             <li>
-                                                <span class="bold-text accent-dark me-1">SKU:</span><span>3,24,672</span>
+                                                <span class="bold-text accent-dark me-1">SKU:</span><span>{{SKU}}</span>
                                             </li>
                                         </ul>
                                         <div class="d-flex align-items-center column-gap-2 row-gap-3 mb-24">
-                                            <div class="price">
-                                                <del class="h6 dark-gray">$50.00</del>
-                                                <h3>$40.00</h3>
-                                            </div>
-                                            <p class="red-tag">10% off</p>
+                                            {{PRICE_BLOCK}}
                                         </div>
-                                        <p class="mb-24">Lorem ipsum dolor sit amet consectetur. Mauris volutpat sollicitudin nunc nisl. Ac euismod lorem odio consequat.</p>
+                                        <p class="mb-24">{{DESCRIPTION}}</p>
                                         <hr class="dash-line mb-16">
                                         <div class="action-block mb-16">
                                             <div class="quantity-wrap">
@@ -285,7 +278,7 @@
                                         </div>
                                         <hr class="dash-line mb-24">
                                         <div class="mb-16">
-                                            <span class="bold-text accent-dark me-1">SKU:</span><span>Flower</span>
+                                            <span class="bold-text accent-dark me-1">SKU:</span><span>{{SKU}}</span>
                                         </div>
                                         <div class="tags mb-24">
                                             <span class="bold-text accent-dark me-1">Tag:</span><span class="me-1">Birthday Bouquets, </span><span class="me-1 active">Flower,</span><span>Rose</span>
@@ -772,10 +765,7 @@
                                                     </svg>
                                                 </button> 
                                                 <div class="wrap-modal-slider">
-                                                    <div class="preview-slider-nav mt-3">
-                                                        <div class="detail-img-block">
-                                                            <img alt=""  src="assets/media/products/product-image-slider-1.png">
-                                                        </div>
+                                            <div class="preview-slider-nav mt-3">{{GALLERY}}</div>
                                                         <div class="detail-img-block">
                                                             <img alt=""  src="assets/media/products/product-image-slider-2.png">
                                                         </div>
@@ -809,7 +799,7 @@
                                                 <div class="wrap-modal-slider">
                                                     <div class="preview-slider">
                                                         <div class="detail-img-block">
-                                                            <img alt=""  src="./assets/media/products/pd-1.png">
+                                                            <img alt=""  src="./assets/media/products/{{MAIN_IMAGE}}">
                                                         </div>
                                                         <div class="detail-img-block">
                                                             <img alt=""  src="./assets/media/products/pd-2.png">
@@ -821,7 +811,7 @@
                                                             <img alt=""  src="./assets/media/products/pd-4.png">
                                                         </div>
                                                         <div class="detail-img-block">
-                                                            <img alt=""  src="./assets/media/products/pd-1.png">
+                                                            <img alt=""  src="./assets/media/products/{{MAIN_IMAGE}}">
                                                         </div>
                                                         <div class="detail-img-block">
                                                             <img alt=""  src="./assets/media/products/pd-2.png">
@@ -841,26 +831,22 @@
                                     <div class="col-md-6">
                                         <div class="product-detail-content">
                                             <div class="d-flex align-items-center column-gap-2 row-gap-3 mb-16">
-                                                <h4>Jasmine Junction</h4>
-                                                <p class="green-tag">In Stock</p>
+                                                <h4>{{PRODUCT_NAME}}</h4>
+                                                <p class="{{STOCK_CLASS}}">{{STOCK_TEXT}}</p>
                                             </div>
                                             <ul class="unstyled mb-24 pro-rel">
                                                 <li class="d-flex align-items-center">
                                                     <span class="rating-stars me-1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
-                                                    <span class="text-decoration-underline">2 Reviews</span>
+                                                    <span class="text-decoration-underline">{{REVIEWS}} Reviews</span>
                                                 </li>
                                                 <li>
-                                                    <span class="bold-text accent-dark me-1">SKU:</span><span>3,24,672</span>
+                                                    <span class="bold-text accent-dark me-1">SKU:</span><span>{{SKU}}</span>
                                                 </li>
                                             </ul>
-                                            <div class="d-flex align-items-center column-gap-2 row-gap-3 mb-24">
-                                                <div class="price">
-                                                    <del class="h6 dark-gray">$50.00</del>
-                                                    <h3>$40.00</h3>
-                                                </div>
-                                                <p class="red-tag">10% off</p>
-                                            </div>
-                                            <p class="mb-24">Lorem ipsum dolor sit amet consectetur. Mauris volutpat sollicitudin nunc nisl. Ac euismod lorem odio consequat.</p>
+                                              <div class="d-flex align-items-center column-gap-2 row-gap-3 mb-24">
+                                                  {{PRICE_BLOCK}}
+                                              </div>
+                                            <p class="mb-24">{{DESCRIPTION}}</p>
                                             <hr class="dash-line mb-16">
                                             <div class="action-block mb-16">
                                                 <div class="quantity-wrap">
@@ -881,7 +867,7 @@
                                             </div>
                                             <hr class="dash-line mb-24">
                                             <div class="mb-16">
-                                                <span class="bold-text accent-dark me-1">SKU:</span><span>Flower</span>
+                                                <span class="bold-text accent-dark me-1">SKU:</span><span>{{SKU}}</span>
                                             </div>
                                             <div class="tags mb-24">
                                                 <span class="bold-text accent-dark me-1">Tag:</span><span class="me-1">Birthday Bouquets, </span><span class="me-1 active">Flower,</span><span>Rose</span>
