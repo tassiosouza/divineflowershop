@@ -4,15 +4,16 @@
  */
 $theme_dir = get_stylesheet_directory();
 $theme_uri = get_stylesheet_directory_uri();
-$html = file_get_contents($theme_dir . '/bloom/product-detail.html');
+// Carrega o HTML base do tema Bloom
+$html = file_get_contents( $theme_dir . '/bloom/product-detail.html' );
 
 // Prefix paths
-$html = str_replace('href="assets/', 'href="' . $theme_uri . '/bloom/assets/', $html);
-$html = str_replace('src="assets/', 'src="' . $theme_uri . '/bloom/assets/', $html);
-$html = str_replace("url('assets/", "url('" . $theme_uri . '/bloom/assets/', $html);
-$html = str_replace('url("assets/', 'url("' . $theme_uri . '/bloom/assets/', $html);
+$html = str_replace( 'href="assets/', 'href="' . $theme_uri . '/bloom/assets/', $html );
+$html = str_replace( 'src="assets/', 'src="' . $theme_uri . '/bloom/assets/', $html );
+$html = str_replace( "url('assets/", "url('" . $theme_uri . '/bloom/assets/', $html );
+$html = str_replace( 'url("assets/', 'url("' . $theme_uri . '/bloom/assets/', $html );
 
-// Get current WooCommerce product
+// Obtém o produto atual do WooCommerce
 global $product;
 
 if ( ! $product ) {
@@ -20,23 +21,50 @@ if ( ! $product ) {
     return;
 }
 
-ob_start();
-?>
+// Dados principais do produto
+$name        = $product->get_name();
+$description = wp_strip_all_tags( $product->get_short_description() ?: $product->get_description() );
+$regular     = (float) $product->get_regular_price();
+$sale        = (float) $product->get_sale_price();
+$price       = $product->get_price();
+$sku         = $product->get_sku() ?: 'N/A';
+$reviews     = (int) $product->get_review_count();
+$stock_text  = $product->is_in_stock() ? 'In Stock' : 'Out of Stock';
+$stock_class = $product->is_in_stock() ? 'green-tag' : 'red-tag';
 
-<!-- Custom HTML replacing Bloom placeholders -->
+// Monta bloco de preço
+if ( $sale && $regular && $sale < $regular ) {
+    $discount    = intval( ( $regular - $sale ) / $regular * 100 );
+    $price_block = '<div class="price"><del class="h6 dark-gray">' . wc_price( $regular ) . '</del><h3>' . wc_price( $sale ) . '</h3></div><p class="red-tag">' . $discount . '% off</p>';
+} else {
+    $price_block = '<div class="price"><h3>' . wc_price( $price ) . '</h3></div>';
+}
 
-<h1><?= esc_html( $product->get_name() ); ?></h1>
-<p><?= wp_kses_post( $product->get_description() ); ?></p>
-<p><?= $product->is_in_stock() ? 'In stock' : 'Out of stock'; ?></p>
-<p><?= wc_price( $product->get_price() ); ?></p>
-<img src="<?= esc_url( wp_get_attachment_url( $product->get_image_id() ) ); ?>" alt="">
+// Imagens
+$main_image  = wp_get_attachment_url( $product->get_image_id() );
+$gallery_ids = $product->get_gallery_image_ids();
+$thumbs      = '';
+foreach ( $gallery_ids as $id ) {
+    $src    = wp_get_attachment_url( $id );
+    $thumbs .= '<div class="detail-img-block"><img alt="" src="' . esc_url( $src ) . '"></div>';
+}
+if ( empty( $thumbs ) && $main_image ) {
+    $thumbs = '<div class="detail-img-block"><img alt="" src="' . esc_url( $main_image ) . '"></div>';
+}
 
-<!-- Adicione aqui botões ou estrutura de add-to-cart, se quiser -->
+// Realiza substituições no HTML base usando placeholders
+$replacements = [
+    '{{PRODUCT_NAME}}' => esc_html( $name ),
+    '{{STOCK_TEXT}}'   => esc_html( $stock_text ),
+    '{{STOCK_CLASS}}'  => esc_attr( $stock_class ),
+    '{{REVIEWS}}'      => (string) $reviews,
+    '{{SKU}}'          => esc_html( $sku ),
+    '{{PRICE_BLOCK}}'  => $price_block,
+    '{{DESCRIPTION}}'  => esc_html( $description ),
+    '{{MAIN_IMAGE}}'   => esc_url( $main_image ),
+    '{{GALLERY}}'      => $thumbs,
+];
 
-<?php
-$product_html = ob_get_clean();
-
-// Substituir marcador em `product-detail.html`
-$html = preg_replace('/<!-- PRODUCT_CONTENT_START -->.*<!-- PRODUCT_CONTENT_END -->/s', '<!-- PRODUCT_CONTENT_START -->' . $product_html . '<!-- PRODUCT_CONTENT_END -->', $html);
+$html = str_replace( array_keys( $replacements ), array_values( $replacements ), $html );
 
 echo $html;
