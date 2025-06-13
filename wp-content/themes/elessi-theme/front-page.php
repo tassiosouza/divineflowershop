@@ -14,15 +14,15 @@
     <title>Bloom - HTML Template</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="bloom/assets/media/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/favicon.png">
 
     <!-- All CSS files -->
-    <link rel="stylesheet" href="bloom/assets/css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="bloom/assets/css/vendor/fontawsome.css">
-    <link rel="stylesheet" href="bloom/assets/css/vendor/slick.css">
-    <link rel="stylesheet" href="bloom/assets/css/vendor/animate.min.css">
-    <link rel="stylesheet" href="bloom/assets/css/vendor/jquery.magnific-popup.css">
-    <link rel="stylesheet" href="bloom/assets/css/app.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/bloom/assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/bloom/assets/css/vendor/fontawsome.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/bloom/assets/css/vendor/slick.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/bloom/assets/css/vendor/animate.min.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/bloom/assets/css/vendor/jquery.magnific-popup.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/bloom/assets/css/app.css">
 
 </head>
 
@@ -74,87 +74,8 @@
         </div>
     </div>
     <!-- Preloader-->
-
+    <?php get_header(); ?>
     <main class="x-hidden">
-        <!-- Header Area Start -->
-        <header >
-            <nav class="main-menu">
-                <div class="container-fluid">
-                    <div class="main-menu__block">
-                        <div class="main-menu__left">
-                            <div class="main-menu__logo">
-                                <a href="index.html" class="logo">
-                                    <img src="bloom/assets/media/logo.png" alt="Bloom">
-                                </a>
-                            </div>
-                            <div class="main-menu__nav">
-                                <ul class="main-menu__list">
-                                    <li><a href="index.html" class="active">Home</a></li>
-                                    <li class="dropdown">
-                                        <a href="javascript:void(0);">Shop</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="shop-grid.html">Shop Grid</a></li>
-                                            <li><a href="shop-grid-sidebar.html">Shop Grid (Sidebar)</a></li>
-                                            <li><a href="shop-list.html">Shop List</a></li>
-                                            <li><a href="product-detail.html">Product Detail</a></li>
-                                            <li><a href="cart.html">Cart</a></li>
-                                            <li><a href="checkout.html">Checkout</a></li>
-                                            <li><a href="wishlist.html">Wishlist</a></li>
-                                            <li><a href="track-order.html">Track Order</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="about.html">About us</a></li>
-                                    <li class="dropdown">
-                                        <a href="javascript:void(0);">Blogs</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="blogs.html">Blogs</a></li>
-                                            <li><a href="blogs-sidebar.html">Blog (Sidebar)</a></li>
-                                            <li><a href="blog-detail.html">Blog Detail</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown">
-                                        <a href="javascript:void(0);">Pages</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="login.html">Login</a></li>
-                                            <li><a href="signup.html">Signup</a></li>
-                                            <li><a href="404.html">404 Page</a></li>
-                                            <li><a href="coming-soon.html">Coming Soon</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="contact.html">Contact us</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="main-menu__right">
-                            <a class="icon-btn d-xl-flex d-none" href="login.html">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                    <path d="M10 0C7.09223 0 4.72656 2.36566 4.72656 5.27344C4.72656 8.18121 7.09223 10.5469 10 10.5469C12.9078 10.5469 15.2734 8.18121 15.2734 5.27344C15.2734 2.36566 12.9078 0 10 0ZM10 9.375C7.7384 9.375 5.89844 7.53504 5.89844 5.27344C5.89844 3.01184 7.7384 1.17188 10 1.17188C12.2616 1.17188 14.1016 3.01184 14.1016 5.27344C14.1016 7.53504 12.2616 9.375 10 9.375Z"/>
-                                    <path d="M16.5612 13.992C15.1174 12.5261 13.2035 11.7188 11.1719 11.7188H8.82812C6.79656 11.7188 4.88258 12.5261 3.43883 13.992C2.00215 15.4507 1.21094 17.3763 1.21094 19.4141C1.21094 19.7377 1.47328 20 1.79688 20H18.2031C18.5267 20 18.7891 19.7377 18.7891 19.4141C18.7891 17.3763 17.9979 15.4507 16.5612 13.992ZM2.40859 18.8281C2.70215 15.5045 5.46918 12.8906 8.82812 12.8906H11.1719C14.5308 12.8906 17.2979 15.5045 17.5914 18.8281H2.40859Z"/>
-                                </svg>
-                            </a>
-                            <a class="icon-btn  cart-button d-xl-flex d-none" href="javascript:;">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                    <path d="M6.44378 12.9298H6.4447L6.44699 12.9297H17.0703C17.3318 12.9297 17.5618 12.7562 17.6337 12.5047L19.9774 4.30161C20.0279 4.12476 19.9925 3.93463 19.8819 3.78784C19.7711 3.64105 19.5979 3.55469 19.4141 3.55469H5.09247L4.67361 1.66977C4.61395 1.40168 4.37622 1.21094 4.10156 1.21094H0.585937C0.262298 1.21094 0 1.47324 0 1.79688C0 2.12052 0.262298 2.38282 0.585937 2.38282H3.63159C3.70575 2.71683 5.63598 11.403 5.74707 11.9028C5.12436 12.1735 4.6875 12.7943 4.6875 13.5156C4.6875 14.4849 5.47607 15.2734 6.44531 15.2734H17.0703C17.3939 15.2734 17.6562 15.0111 17.6562 14.6875C17.6562 14.3639 17.3939 14.1016 17.0703 14.1016H6.44531C6.12228 14.1016 5.85937 13.8387 5.85937 13.5156C5.85937 13.1931 6.12136 12.9306 6.44378 12.9298ZM18.6372 4.72656L16.6283 11.7578H6.91528L5.35278 4.72656H18.6372Z"/>
-                                    <path d="M5.85937 17.0312C5.85937 18.0005 6.64794 18.7891 7.61718 18.7891C8.58642 18.7891 9.37499 18.0005 9.37499 17.0312C9.37499 16.062 8.58642 15.2734 7.61718 15.2734C6.64794 15.2734 5.85937 16.062 5.85937 17.0312ZM7.61718 16.4453C7.94021 16.4453 8.20312 16.7082 8.20312 17.0312C8.20312 17.3543 7.94021 17.6172 7.61718 17.6172C7.29415 17.6172 7.03125 17.3543 7.03125 17.0312C7.03125 16.7082 7.29415 16.4453 7.61718 16.4453Z"/>
-                                    <path d="M14.1406 17.0312C14.1406 18.0005 14.9292 18.7891 15.8984 18.7891C16.8677 18.7891 17.6562 18.0005 17.6562 17.0312C17.6562 16.062 16.8677 15.2734 15.8984 15.2734C14.9292 15.2734 14.1406 16.062 14.1406 17.0312ZM15.8984 16.4453C16.2215 16.4453 16.4844 16.7082 16.4844 17.0312C16.4844 17.3543 16.2215 17.6172 15.8984 17.6172C15.5754 17.6172 15.3125 17.3543 15.3125 17.0312C15.3125 16.7082 15.5754 16.4453 15.8984 16.4453Z"/>
-                                </svg>
-                            </a>
-                            <a href="contact.html" class="cus-btn d-xl-flex d-none">
-                                Contact Us
-                                <svg viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.8759 7.98103C19.532 7.98103 19.2058 8.05711 18.9122 8.19234C18.6769 7.16583 17.7568 6.3975 16.6599 6.3975C16.3085 6.3975 15.9753 6.47667 15.6767 6.61762C15.4132 5.63128 14.5123 4.90252 13.4439 4.90252C13.123 4.90252 12.8171 4.96842 12.5391 5.0872V2.31113C12.5391 1.03673 11.5024 0 10.228 0C8.95358 0 7.9168 1.03673 7.9168 2.31113V13.3079L6.72515 11.5389L6.70649 11.5157C5.81427 10.4066 4.24457 10.1601 3.0554 10.9425C2.43355 11.3516 2.01229 11.9791 1.86913 12.7095C1.72686 13.4354 1.87738 14.171 2.29293 14.7823L6.54585 21.4861L6.56001 21.5076C7.63194 23.0682 9.40227 24 11.2956 24H16.0677C19.4419 24 22.187 21.2549 22.187 17.8807V10.2921C22.187 9.01777 21.1503 7.98103 19.8759 7.98103ZM20.7808 17.8807C20.7808 20.4795 18.6665 22.5938 16.0677 22.5938H11.2956C9.8698 22.5938 8.53644 21.8941 7.72626 20.7216L3.47394 14.0188L3.45979 13.9974C3.25405 13.6978 3.17929 13.3365 3.24913 12.9799C3.31902 12.6234 3.52471 12.317 3.82827 12.1173C4.40132 11.7403 5.15544 11.8527 5.59377 12.3765L9.32305 17.9123V2.31113C9.32305 1.81214 9.72899 1.40625 10.228 1.40625C10.727 1.40625 11.1328 1.81214 11.1328 2.31113V10.6528H12.5391V7.21369C12.5391 6.7147 12.945 6.30881 13.444 6.30881C13.943 6.30881 14.3488 6.7147 14.3488 7.21369V10.6528H15.7551V8.70862C15.7551 8.20964 16.161 7.80375 16.66 7.80375C17.159 7.80375 17.5648 8.20964 17.5648 8.70862V10.6528H18.9711V10.2922C18.9711 9.79317 19.377 9.38728 19.876 9.38728C20.375 9.38728 20.7808 9.79317 20.7808 10.2922V17.8807H20.7808Z" />
-                                </svg>
-                                <span></span>
-                            </a>
-                            <a href="#" class="main-menu__toggler mobile-nav__toggler">
-                                <i class="fa fa-bars"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <!-- Header Area end -->
 
         <!-- Hero Section Start -->
         <section class="hero-banner">
@@ -163,8 +84,8 @@
                     <div class="row align-items-end justify-content-center">
                         <div class="col-xl-5">
                             <div class="text-block">
-                                <img src="bloom/assets/media/banner/image-vector-1.png" alt="" class="banner-vector vector-1 wow zoomIn" data-wow-delay="1.85s">
-                                <img src="bloom/assets/media/banner/flower-vector.png" alt="" class="banner-vector vector-2 wow zoomIn" data-wow-delay="1.8s">
+                                <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/banner/image-vector-1.png" alt="" class="banner-vector vector-1 wow zoomIn" data-wow-delay="1.85s">
+                                <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/banner/flower-vector.png" alt="" class="banner-vector vector-2 wow zoomIn" data-wow-delay="1.8s">
                                 <h1 class="title wow fadeInUp" data-wow-delay="1.95s">Bring the Outdoors In <br> with our <span class="font-sec-2 color-primary"> Beautiful </span> <span class="font-sec-2 color-primary"> Flowers</span><br> and Plant</h1>
                                 <p class="wow fadeInUp" data-wow-delay="1.75s">Lorem ipsum dolor sit amet consectetur. Mauris amet ultrices aliquet arcu. Libero aliquam est nullam sit. Congue mauris in convallis ut.</p>
                                 <div class="btn-block">
@@ -183,18 +104,18 @@
                                         <span></span>
                                     </a>
                                 </div>
-                                <img src="bloom/assets/media/banner/flower-vector.png" alt="" class="banner-vector vector-3 wow zoomIn" data-wow-delay="1.9s">
-                                <img src="bloom/assets/media/banner/image-vector-3.png" alt="" class="banner-vector vector-4 wow zoomIn" data-wow-delay="1.95s">
+                                <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/banner/flower-vector.png" alt="" class="banner-vector vector-3 wow zoomIn" data-wow-delay="1.9s">
+                                <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/banner/image-vector-3.png" alt="" class="banner-vector vector-4 wow zoomIn" data-wow-delay="1.95s">
                             </div>
                         </div>
                         <div class="col-xl-7 col-lg-8 col-sm-10 col-11">
                             <div class="img-block">
-                                <img src="bloom/assets/media/banner/hero-image.png" alt="" class="wow fadeInUp" data-wow-delay="1.25s">
+                                <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/banner/hero-image.png" alt="" class="wow fadeInUp" data-wow-delay="1.25s">
                             </div>
                         </div>
                     </div>
                 </div>
-                <img src="bloom/assets/media/banner/image-vector-2.png" alt="" class="banner-vector vector-5 wow zoomIn" data-wow-delay="1.25s">
+                <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/banner/image-vector-2.png" alt="" class="banner-vector vector-5 wow zoomIn" data-wow-delay="1.25s">
             </div>
         </section>
         <!-- Hero Section End --> 
@@ -211,7 +132,7 @@
                                         <a href="shop-grid.html" class="h5 mb-24">Rose Varieties</a><br>
                                         <a href="shop-grid.html" class="link-btn">Shop Now</a>
                                     </div>
-                                    <img src="bloom/assets/media/categories/category-01.png" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/categories/category-01.png" alt="">
                                 </div>
                             </div>
                             <div class="col-lg-3 col-sm-6">
@@ -220,7 +141,7 @@
                                         <a href="shop-grid.html" class="h5 mb-24">Rose Varieties</a><br>
                                         <a href="shop-grid.html" class="link-btn">Shop Now</a>
                                     </div>
-                                    <img src="bloom/assets/media/categories/category-02.png" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/categories/category-02.png" alt="">
                                 </div>
                             </div>
                             <div class="col-lg-3 col-sm-6">
@@ -229,7 +150,7 @@
                                         <a href="shop-grid.html" class="h5 mb-24">Rose Varieties</a><br>
                                         <a href="shop-grid.html" class="link-btn">Shop Now</a>
                                     </div>
-                                    <img src="bloom/assets/media/categories/category-03.png" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/categories/category-03.png" alt="">
                                 </div>
                             </div>
                             <div class="col-lg-3 col-sm-6">
@@ -238,7 +159,7 @@
                                         <a href="shop-grid.html" class="h5 mb-24">Lily Collection</a><br>
                                         <a href="shop-grid.html" class="link-btn">Shop Now</a>
                                     </div>
-                                    <img src="bloom/assets/media/categories/category-04.png" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/categories/category-04.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -272,8 +193,8 @@
                                 </div>
                                 <div class="col-xl-5 col-lg-5 col-md-6 col-sm-7 col-10">
                                     <div class="img-block mx-auto">
-                                        <img src="bloom/assets/media/about/about-1.png" alt="">
-                                        <img src="bloom/assets/media/about/about-1-object.png" alt="" class="img-object wow zoomIn" data-wow-delay="0.5s">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/about/about-1.png" alt="">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/about/about-1-object.png" alt="" class="img-object wow zoomIn" data-wow-delay="0.5s">
                                         <div class="about-tag">
                                             <h3>25 Years <br>Experience</h3>
                                         </div>
@@ -281,7 +202,7 @@
                                 </div>
                             </div>
                             <div class="vector-mockup">
-                                <img src="bloom/assets/media/bg/about-bg-vector.png" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/bg/about-bg-vector.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -321,7 +242,7 @@
                         <div class="col-12">
                             <div class="product-card">
                                 <figure>
-                                    <img src="bloom/assets/media/products/p-1.png" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/products/p-1.png" alt="">
                                     <ul class="unstyled action-list">
                                         <li><a href="javascript:;" class="icon wishlist-icon"><i class="fa-light fa-heart"></i></a></li>
                                         <li><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#productQuickView" class="icon"><i class="fa-light fa-eye"></i></a></li>
@@ -340,7 +261,7 @@
                                             <input type="text" name="quantity" value="1" maxlength="1" size="1" class="number">
                                             <div class="increment"><i class="fa-solid fa-plus-large"></i></div>
                                         </div>
-                                        <a href="javascript:;" class="cart-btn cart-button"><img src="bloom/assets/media/icons/cart.svg" alt=""></a>
+                                        <a href="javascript:;" class="cart-btn cart-button"><img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/icons/cart.svg" alt=""></a>
                                     </div>
                                 </div>
                             </div>
@@ -348,7 +269,7 @@
                         <div class="col-12">
                             <div class="product-card">
                                 <figure>
-                                    <img src="bloom/assets/media/products/p-2.png" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/products/p-2.png" alt="">
                                     <ul class="unstyled action-list">
                                         <li><a href="javascript:;" class="icon wishlist-icon"><i class="fa-light fa-heart"></i></a></li>
                                         <li><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#productQuickView" class="icon"><i class="fa-light fa-eye"></i></a></li>
@@ -366,7 +287,7 @@
                                             <input type="text" name="quantity" value="1" maxlength="1" size="1" class="number">
                                             <div class="increment"><i class="fa-solid fa-plus-large"></i></div>
                                         </div>
-                                        <a href="javascript:;" class="cart-btn cart-button"><img src="bloom/assets/media/icons/cart.svg" alt=""></a>
+                                        <a href="javascript:;" class="cart-btn cart-button"><img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/icons/cart.svg" alt=""></a>
                                     </div>
                                 </div>
                             </div>
@@ -374,7 +295,7 @@
                         <div class="col-12">
                             <div class="product-card">
                                 <figure>
-                                    <img src="bloom/assets/media/products/p-3.png" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/products/p-3.png" alt="">
                                     <ul class="unstyled action-list">
                                         <li><a href="javascript:;" class="icon wishlist-icon"><i class="fa-light fa-heart"></i></a></li>
                                         <li><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#productQuickView" class="icon"><i class="fa-light fa-eye"></i></a></li>
@@ -392,7 +313,7 @@
                                             <input type="text" name="quantity" value="1" maxlength="1" size="1" class="number">
                                             <div class="increment"><i class="fa-solid fa-plus-large"></i></div>
                                         </div>
-                                        <a href="javascript:;" class="cart-btn cart-button"><img src="bloom/assets/media/icons/cart.svg" alt=""></a>
+                                        <a href="javascript:;" class="cart-btn cart-button"><img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/icons/cart.svg" alt=""></a>
                                     </div>
                                 </div>
                             </div>
@@ -400,7 +321,7 @@
                         <div class="col-12">
                             <div class="product-card">
                                 <figure>
-                                    <img src="bloom/assets/media/products/p-4.png" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/products/p-4.png" alt="">
                                     <ul class="unstyled action-list">
                                         <li><a href="javascript:;" class="icon wishlist-icon"><i class="fa-light fa-heart"></i></a></li>
                                         <li><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#productQuickView" class="icon"><i class="fa-light fa-eye"></i></a></li>
@@ -418,7 +339,7 @@
                                             <input type="text" name="quantity" value="1" maxlength="1" size="1" class="number">
                                             <div class="increment"><i class="fa-solid fa-plus-large"></i></div>
                                         </div>
-                                        <a href="javascript:;" class="cart-btn cart-button"><img src="bloom/assets/media/icons/cart.svg" alt=""></a>
+                                        <a href="javascript:;" class="cart-btn cart-button"><img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/icons/cart.svg" alt=""></a>
                                     </div>
                                 </div>
                             </div>
@@ -426,7 +347,7 @@
                         <div class="col-12">
                             <div class="product-card">
                                 <figure>
-                                    <img src="bloom/assets/media/products/p-5.png" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/products/p-5.png" alt="">
                                     <ul class="unstyled action-list">
                                         <li><a href="javascript:;" class="icon wishlist-icon"><i class="fa-light fa-heart"></i></a></li>
                                         <li><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#productQuickView" class="icon"><i class="fa-light fa-eye"></i></a></li>
@@ -444,7 +365,7 @@
                                             <input type="text" name="quantity" value="1" maxlength="1" size="1" class="number">
                                             <div class="increment"><i class="fa-solid fa-plus-large"></i></div>
                                         </div>
-                                        <a href="javascript:;" class="cart-btn cart-button"><img src="bloom/assets/media/icons/cart.svg" alt=""></a>
+                                        <a href="javascript:;" class="cart-btn cart-button"><img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/icons/cart.svg" alt=""></a>
                                     </div>
                                 </div>
                             </div>
@@ -452,7 +373,7 @@
                         <div class="col-12">
                             <div class="product-card">
                                 <figure>
-                                    <img src="bloom/assets/media/products/p-6.png" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/products/p-6.png" alt="">
                                     <ul class="unstyled action-list">
                                         <li><a href="javascript:;" class="icon wishlist-icon"><i class="fa-light fa-heart"></i></a></li>
                                         <li><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#productQuickView" class="icon"><i class="fa-light fa-eye"></i></a></li>
@@ -470,7 +391,7 @@
                                             <input type="text" name="quantity" value="1" maxlength="1" size="1" class="number">
                                             <div class="increment"><i class="fa-solid fa-plus-large"></i></div>
                                         </div>
-                                        <a href="javascript:;" class="cart-btn cart-button"><img src="bloom/assets/media/icons/cart.svg" alt=""></a>
+                                        <a href="javascript:;" class="cart-btn cart-button"><img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/icons/cart.svg" alt=""></a>
                                     </div>
                                 </div>
                             </div>
@@ -571,13 +492,13 @@
                 <div class="banner wow fadeInUp" data-wow-delay="0.4s">
                     <div class="content">
                         <div class="bg-shape-vector">
-                            <img src="bloom/assets/media/bg/banner-bg-vector.png" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/bg/banner-bg-vector.png" alt="">
                         </div>
                         <div class="row justify-content-end">
                             <div class="col-lg-6 col-6 order-lg-2">
                                 <div class="text-end img-block">
-                                    <img src="bloom/assets/media/bg/banner-img-xl.png" alt="" class="d-lg-block d-none ms-auto">
-                                    <img src="bloom/assets/media/bg/banner-img.png" alt="" class="d-lg-none">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/bg/banner-img-xl.png" alt="" class="d-lg-block d-none ms-auto">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/bg/banner-img.png" alt="" class="d-lg-none">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-12 order-lg-1">
@@ -625,7 +546,7 @@
                                 <div class="col-6">
                                     <div class="testimonial-card">
                                         <div class="img-block">
-                                            <img src="bloom/assets/media/testimonials/t-1.png" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/testimonials/t-1.png" alt="">
                                             <div class="quote-icon">
                                                 <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 22" fill="none">
                                                     <path d="M22.4552 0.33317C23.6786 0.33317 24.7491 0.562561 25.6666 1.02134C26.5842 1.5311 27.3234 2.19378 27.8841 3.00939C28.3938 3.825 28.8016 4.79354 29.1075 5.91501C29.4134 7.03648 29.5663 8.20892 29.5663 9.43233C29.5663 11.9301 28.9291 14.275 27.6547 16.467C26.3293 18.6589 24.2903 20.3921 21.5376 21.6665L20.8494 20.2902C22.2768 19.6275 23.5512 18.6589 24.6726 17.3845C25.7431 16.1611 26.3803 14.8612 26.5842 13.4849C26.8901 12.4144 26.9155 11.3694 26.6607 10.3499C25.5392 11.5733 24.0354 12.185 22.1493 12.185C20.4161 12.185 18.9888 11.6498 17.8674 10.5793C16.7459 9.55977 16.1852 8.13245 16.1852 6.29733C16.1852 4.51318 16.7714 3.06037 17.9438 1.93891C19.1163 0.868416 20.62 0.33317 22.4552 0.33317ZM6.70368 0.33317C7.9271 0.33317 8.99759 0.562561 9.91515 1.02134C10.8327 1.5311 11.5719 2.19378 12.1326 3.00939C12.6424 3.825 13.0502 4.79354 13.356 5.91501C13.6619 7.03648 13.8148 8.20892 13.8148 9.43233C13.8148 11.9301 13.1776 14.275 11.9032 16.467C10.5778 18.6589 8.53881 20.3921 5.78612 21.6665L5.09795 20.2902C6.52527 19.6275 7.79966 18.6589 8.92113 17.3845C9.99162 16.1611 10.6288 14.8612 10.8327 13.4849C11.1386 12.4144 11.1641 11.3694 10.9092 10.3499C9.78771 11.5733 8.28393 12.185 6.39783 12.185C4.66466 12.185 3.23734 11.6498 2.11587 10.5793C0.994406 9.55977 0.433672 8.13245 0.433672 6.29733C0.433672 4.51318 1.01989 3.06037 2.19234 1.93891C3.36478 0.868416 4.86856 0.33317 6.70368 0.33317Z" fill="#BE70A7"/>
@@ -647,7 +568,7 @@
                                 <div class="col-6">
                                     <div class="testimonial-card">
                                         <div class="img-block">
-                                            <img src="bloom/assets/media/testimonials/t-2.png" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/testimonials/t-2.png" alt="">
                                             <div class="quote-icon">
                                                 <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 22" fill="none">
                                                     <path d="M22.4552 0.33317C23.6786 0.33317 24.7491 0.562561 25.6666 1.02134C26.5842 1.5311 27.3234 2.19378 27.8841 3.00939C28.3938 3.825 28.8016 4.79354 29.1075 5.91501C29.4134 7.03648 29.5663 8.20892 29.5663 9.43233C29.5663 11.9301 28.9291 14.275 27.6547 16.467C26.3293 18.6589 24.2903 20.3921 21.5376 21.6665L20.8494 20.2902C22.2768 19.6275 23.5512 18.6589 24.6726 17.3845C25.7431 16.1611 26.3803 14.8612 26.5842 13.4849C26.8901 12.4144 26.9155 11.3694 26.6607 10.3499C25.5392 11.5733 24.0354 12.185 22.1493 12.185C20.4161 12.185 18.9888 11.6498 17.8674 10.5793C16.7459 9.55977 16.1852 8.13245 16.1852 6.29733C16.1852 4.51318 16.7714 3.06037 17.9438 1.93891C19.1163 0.868416 20.62 0.33317 22.4552 0.33317ZM6.70368 0.33317C7.9271 0.33317 8.99759 0.562561 9.91515 1.02134C10.8327 1.5311 11.5719 2.19378 12.1326 3.00939C12.6424 3.825 13.0502 4.79354 13.356 5.91501C13.6619 7.03648 13.8148 8.20892 13.8148 9.43233C13.8148 11.9301 13.1776 14.275 11.9032 16.467C10.5778 18.6589 8.53881 20.3921 5.78612 21.6665L5.09795 20.2902C6.52527 19.6275 7.79966 18.6589 8.92113 17.3845C9.99162 16.1611 10.6288 14.8612 10.8327 13.4849C11.1386 12.4144 11.1641 11.3694 10.9092 10.3499C9.78771 11.5733 8.28393 12.185 6.39783 12.185C4.66466 12.185 3.23734 11.6498 2.11587 10.5793C0.994406 9.55977 0.433672 8.13245 0.433672 6.29733C0.433672 4.51318 1.01989 3.06037 2.19234 1.93891C3.36478 0.868416 4.86856 0.33317 6.70368 0.33317Z" fill="#BE70A7"/>
@@ -669,7 +590,7 @@
                                 <div class="col-6">
                                     <div class="testimonial-card">
                                         <div class="img-block">
-                                            <img src="bloom/assets/media/testimonials/t-1.png" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/testimonials/t-1.png" alt="">
                                             <div class="quote-icon">
                                                 <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 22" fill="none">
                                                     <path d="M22.4552 0.33317C23.6786 0.33317 24.7491 0.562561 25.6666 1.02134C26.5842 1.5311 27.3234 2.19378 27.8841 3.00939C28.3938 3.825 28.8016 4.79354 29.1075 5.91501C29.4134 7.03648 29.5663 8.20892 29.5663 9.43233C29.5663 11.9301 28.9291 14.275 27.6547 16.467C26.3293 18.6589 24.2903 20.3921 21.5376 21.6665L20.8494 20.2902C22.2768 19.6275 23.5512 18.6589 24.6726 17.3845C25.7431 16.1611 26.3803 14.8612 26.5842 13.4849C26.8901 12.4144 26.9155 11.3694 26.6607 10.3499C25.5392 11.5733 24.0354 12.185 22.1493 12.185C20.4161 12.185 18.9888 11.6498 17.8674 10.5793C16.7459 9.55977 16.1852 8.13245 16.1852 6.29733C16.1852 4.51318 16.7714 3.06037 17.9438 1.93891C19.1163 0.868416 20.62 0.33317 22.4552 0.33317ZM6.70368 0.33317C7.9271 0.33317 8.99759 0.562561 9.91515 1.02134C10.8327 1.5311 11.5719 2.19378 12.1326 3.00939C12.6424 3.825 13.0502 4.79354 13.356 5.91501C13.6619 7.03648 13.8148 8.20892 13.8148 9.43233C13.8148 11.9301 13.1776 14.275 11.9032 16.467C10.5778 18.6589 8.53881 20.3921 5.78612 21.6665L5.09795 20.2902C6.52527 19.6275 7.79966 18.6589 8.92113 17.3845C9.99162 16.1611 10.6288 14.8612 10.8327 13.4849C11.1386 12.4144 11.1641 11.3694 10.9092 10.3499C9.78771 11.5733 8.28393 12.185 6.39783 12.185C4.66466 12.185 3.23734 11.6498 2.11587 10.5793C0.994406 9.55977 0.433672 8.13245 0.433672 6.29733C0.433672 4.51318 1.01989 3.06037 2.19234 1.93891C3.36478 0.868416 4.86856 0.33317 6.70368 0.33317Z" fill="#BE70A7"/>
@@ -691,7 +612,7 @@
                                 <div class="col-6">
                                     <div class="testimonial-card">
                                         <div class="img-block">
-                                            <img src="bloom/assets/media/testimonials/t-2.png" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/testimonials/t-2.png" alt="">
                                             <div class="quote-icon">
                                                 <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 22" fill="none">
                                                     <path d="M22.4552 0.33317C23.6786 0.33317 24.7491 0.562561 25.6666 1.02134C26.5842 1.5311 27.3234 2.19378 27.8841 3.00939C28.3938 3.825 28.8016 4.79354 29.1075 5.91501C29.4134 7.03648 29.5663 8.20892 29.5663 9.43233C29.5663 11.9301 28.9291 14.275 27.6547 16.467C26.3293 18.6589 24.2903 20.3921 21.5376 21.6665L20.8494 20.2902C22.2768 19.6275 23.5512 18.6589 24.6726 17.3845C25.7431 16.1611 26.3803 14.8612 26.5842 13.4849C26.8901 12.4144 26.9155 11.3694 26.6607 10.3499C25.5392 11.5733 24.0354 12.185 22.1493 12.185C20.4161 12.185 18.9888 11.6498 17.8674 10.5793C16.7459 9.55977 16.1852 8.13245 16.1852 6.29733C16.1852 4.51318 16.7714 3.06037 17.9438 1.93891C19.1163 0.868416 20.62 0.33317 22.4552 0.33317ZM6.70368 0.33317C7.9271 0.33317 8.99759 0.562561 9.91515 1.02134C10.8327 1.5311 11.5719 2.19378 12.1326 3.00939C12.6424 3.825 13.0502 4.79354 13.356 5.91501C13.6619 7.03648 13.8148 8.20892 13.8148 9.43233C13.8148 11.9301 13.1776 14.275 11.9032 16.467C10.5778 18.6589 8.53881 20.3921 5.78612 21.6665L5.09795 20.2902C6.52527 19.6275 7.79966 18.6589 8.92113 17.3845C9.99162 16.1611 10.6288 14.8612 10.8327 13.4849C11.1386 12.4144 11.1641 11.3694 10.9092 10.3499C9.78771 11.5733 8.28393 12.185 6.39783 12.185C4.66466 12.185 3.23734 11.6498 2.11587 10.5793C0.994406 9.55977 0.433672 8.13245 0.433672 6.29733C0.433672 4.51318 1.01989 3.06037 2.19234 1.93891C3.36478 0.868416 4.86856 0.33317 6.70368 0.33317Z" fill="#BE70A7"/>
@@ -761,12 +682,12 @@
                         <div class="col-lg-4">
                             <div class="blog-card">
                                 <figure>
-                                    <img src="bloom/assets/media/blogs/b-1.png" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/blogs/b-1.png" alt="">
                                 </figure>
                                 <div class="text-block">
                                     <div class="top-row mb-24">
                                         <div class="author">
-                                            <img src="bloom/assets/media/users/ua-1.png" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/users/ua-1.png" alt="">
                                             <span class="bold-text color-primary">By: Williams</span>
                                         </div>
                                         <span class="date">14 April, 2024</span>
@@ -786,12 +707,12 @@
                         <div class="col-lg-4">
                             <div class="blog-card">
                                 <figure>
-                                    <img src="bloom/assets/media/blogs/b-2.png" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/blogs/b-2.png" alt="">
                                 </figure>
                                 <div class="text-block">
                                     <div class="top-row mb-24">
                                         <div class="author">
-                                            <img src="bloom/assets/media/users/ua-2.png" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/users/ua-2.png" alt="">
                                             <span class="bold-text color-primary">By: Williams</span>
                                         </div>
                                         <span class="date">14 April, 2024</span>
@@ -811,12 +732,12 @@
                         <div class="col-lg-4">
                             <div class="blog-card">
                                 <figure>
-                                    <img src="bloom/assets/media/blogs/b-3.png" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/blogs/b-3.png" alt="">
                                 </figure>
                                 <div class="text-block">
                                     <div class="top-row mb-24">
                                         <div class="author">
-                                            <img src="bloom/assets/media/users/ua-3.png" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/users/ua-3.png" alt="">
                                             <span class="bold-text color-primary">By: Williams</span>
                                         </div>
                                         <span class="date">14 April, 2024</span>
@@ -836,12 +757,12 @@
                         <div class="col-lg-4">
                             <div class="blog-card">
                                 <figure>
-                                    <img src="bloom/assets/media/blogs/b-1.png" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/blogs/b-1.png" alt="">
                                 </figure>
                                 <div class="text-block">
                                     <div class="top-row mb-24">
                                         <div class="author">
-                                            <img src="bloom/assets/media/users/ua-1.png" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/users/ua-1.png" alt="">
                                             <span class="bold-text color-primary">By: Williams</span>
                                         </div>
                                         <span class="date">14 April, 2024</span>
@@ -861,12 +782,12 @@
                         <div class="col-lg-4">
                             <div class="blog-card">
                                 <figure>
-                                    <img src="bloom/assets/media/blogs/b-2.png" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/blogs/b-2.png" alt="">
                                 </figure>
                                 <div class="text-block">
                                     <div class="top-row mb-24">
                                         <div class="author">
-                                            <img src="bloom/assets/media/users/ua-2.png" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/users/ua-2.png" alt="">
                                             <span class="bold-text color-primary">By: Williams</span>
                                         </div>
                                         <span class="date">14 April, 2024</span>
@@ -886,12 +807,12 @@
                         <div class="col-lg-4">
                             <div class="blog-card">
                                 <figure>
-                                    <img src="bloom/assets/media/blogs/b-3.png" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/blogs/b-3.png" alt="">
                                 </figure>
                                 <div class="text-block">
                                     <div class="top-row mb-24">
                                         <div class="author">
-                                            <img src="bloom/assets/media/users/ua-3.png" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/users/ua-3.png" alt="">
                                             <span class="bold-text color-primary">By: Williams</span>
                                         </div>
                                         <span class="date">14 April, 2024</span>
@@ -975,7 +896,7 @@
                     <div class="row row-gap-4  mb-32">
                         <div class="col-lg-3 col-md-6 col-sm-6 order-lg-1">
                             <div class="footer-widget">
-                                <a href="index.html" class="mb-16"><img src="bloom/assets/media/logo.png" alt=""></a>
+                                <a href="index.html" class="mb-16"><img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/logo.png" alt=""></a>
                                 <p class="mb-24">Lorem ipsum dolor sit amet consectetur. Mauris amet ultrices aliquet arcu libero aliquam est nullam sit. psum dolor sit amet consectetur. Mauris amet ultrices aliquet arcu libero aliquam...</p>
                                 <div class="time">
                                     <div class="icon"><i class="fa-light fa-clock"></i></div>
@@ -1047,7 +968,7 @@
                                 <p class="accent-dark text-sm-start text-center">@2025 All Rights Copyright Bloom. Design & Developed By UIPARADOX</p>
                             </div>
                             <div class="col-sm-3 text-sm-end text-center">
-                                <img src="bloom/assets/media/icons/payments.png" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/icons/payments.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -1067,7 +988,7 @@
         <div class="mobile-nav__content">
             <span class="mobile-nav__close mobile-nav__toggler"></span>
             <div class="logo-box">
-                <a href="index.html" aria-label="logo image"><img src="bloom/assets/media/logo.png" alt=""></a>
+                <a href="index.html" aria-label="logo image"><img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/logo.png" alt=""></a>
             </div>
             <div class="mobile-nav__container"></div>
             <ul class="mobile-nav__contact list-unstyled">
@@ -1108,28 +1029,28 @@
                                                 <div class="wrap-modal-slider">
                                                     <div class="preview-slider-nav mt-3">
                                                         <div class="detail-img-block">
-                                                            <img alt=""  src="bloom/assets/media/products/product-image-slider-1.png">
+                                                            <img alt=""  src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/products/product-image-slider-1.png">
                                                         </div>
                                                         <div class="detail-img-block">
-                                                            <img alt=""  src="bloom/assets/media/products/product-image-slider-2.png">
+                                                            <img alt=""  src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/products/product-image-slider-2.png">
                                                         </div>
                                                         <div class="detail-img-block">
-                                                            <img alt=""  src="bloom/assets/media/products/product-image-slider-3.png">
+                                                            <img alt=""  src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/products/product-image-slider-3.png">
                                                         </div>
                                                         <div class="detail-img-block">
-                                                            <img alt=""  src="bloom/assets/media/products/product-image-slider-4.png">
+                                                            <img alt=""  src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/products/product-image-slider-4.png">
                                                         </div>
                                                         <div class="detail-img-block">
-                                                            <img alt=""  src="bloom/assets/media/products/product-image-slider-1.png">
+                                                            <img alt=""  src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/products/product-image-slider-1.png">
                                                         </div>
                                                         <div class="detail-img-block">
-                                                            <img alt=""  src="bloom/assets/media/products/product-image-slider-2.png">
+                                                            <img alt=""  src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/products/product-image-slider-2.png">
                                                         </div>
                                                         <div class="detail-img-block">
-                                                            <img alt=""  src="bloom/assets/media/products/product-image-slider-3.png">
+                                                            <img alt=""  src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/products/product-image-slider-3.png">
                                                         </div>
                                                         <div class="detail-img-block">
-                                                            <img alt=""  src="bloom/assets/media/products/product-image-slider-4.png">
+                                                            <img alt=""  src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/products/product-image-slider-4.png">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1143,28 +1064,28 @@
                                                 <div class="wrap-modal-slider">
                                                     <div class="preview-slider">
                                                         <div class="detail-img-block">
-                                                            <img alt=""  src="./bloom/assets/media/products/pd-1.png">
+                                                            <img alt=""  src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/products/pd-1.png">
                                                         </div>
                                                         <div class="detail-img-block">
-                                                            <img alt=""  src="./bloom/assets/media/products/pd-2.png">
+                                                            <img alt=""  src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/products/pd-2.png">
                                                         </div>
                                                         <div class="detail-img-block">
-                                                            <img alt=""  src="./bloom/assets/media/products/pd-3.png">
+                                                            <img alt=""  src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/products/pd-3.png">
                                                         </div>
                                                         <div class="detail-img-block">
-                                                            <img alt=""  src="./bloom/assets/media/products/pd-4.png">
+                                                            <img alt=""  src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/products/pd-4.png">
                                                         </div>
                                                         <div class="detail-img-block">
-                                                            <img alt=""  src="./bloom/assets/media/products/pd-1.png">
+                                                            <img alt=""  src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/products/pd-1.png">
                                                         </div>
                                                         <div class="detail-img-block">
-                                                            <img alt=""  src="./bloom/assets/media/products/pd-2.png">
+                                                            <img alt=""  src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/products/pd-2.png">
                                                         </div>
                                                         <div class="detail-img-block">
-                                                            <img alt=""  src="./bloom/assets/media/products/pd-3.png">
+                                                            <img alt=""  src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/products/pd-3.png">
                                                         </div>
                                                         <div class="detail-img-block">
-                                                            <img alt=""  src="./bloom/assets/media/products/pd-4.png">
+                                                            <img alt=""  src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/products/pd-4.png">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1257,7 +1178,7 @@
                     <li class="product-item d-flex align-items-start justify-content-between mb-24">
                         <div class="product-block">
                             <a href="product-detail.html" class="img-block">
-                                <img src="bloom/assets/media/products/m-cart-1.png" alt="Product Photo">
+                                <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/products/m-cart-1.png" alt="Product Photo">
                             </a>
                             <div class="product-text">
                                 <a href="product-detail.html" class="h6 mb-16">Jasmine Junction</a>
@@ -1277,7 +1198,7 @@
                     <li class="product-item d-flex align-items-start justify-content-between mb-24">
                         <div class="product-block">
                             <a href="product-detail.html" class="img-block">
-                                <img src="bloom/assets/media/products/m-cart-2.png" alt="Product Photo">
+                                <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/products/m-cart-2.png" alt="Product Photo">
                             </a>
                             <div class="product-text">
                                 <a href="product-detail.html" class="h6 mb-16">Jasmine Junction</a>
@@ -1321,14 +1242,15 @@
     </a>
     <!-- back-to-top-end -->
     <!-- Jquery Js -->
-    <script src="bloom/assets/js/vendor/jquery-3.6.3.min.js"></script>
-    <script src="bloom/assets/js/vendor/bootstrap.min.js"></script>
-    <script src="bloom/assets/js/vendor/jquery-appear.js"></script>
-    <script src="bloom/assets/js/vendor/jquery.magnific-popup.min.js"></script>
-    <script src="bloom/assets/js/vendor/jquery.nice-select.min.js"></script>
-    <script src="bloom/assets/js/vendor/wow.js"></script>
-    <script src="bloom/assets/js/vendor/slick.min.js"></script>
-    <script src="bloom/assets/js/app.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/bloom/assets/js/vendor/jquery-3.6.3.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/bloom/assets/js/vendor/bootstrap.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/bloom/assets/js/vendor/jquery-appear.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/bloom/assets/js/vendor/jquery.magnific-popup.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/bloom/assets/js/vendor/jquery.nice-select.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/bloom/assets/js/vendor/wow.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/bloom/assets/js/vendor/slick.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/bloom/assets/js/app.js"></script>
 </body>
 
 </html>
+<?php get_footer(); ?>

@@ -1,0 +1,264 @@
+#preloader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background: $accent-lightest;
+  z-index: 9999999;
+  $count: 10;
+  $time: 2; //in seconds
+  $size: 100;
+  
+  .holder {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: $accent-lightest;
+    min-height: 400px;
+  }
+  
+  .preloader {
+    /* size */
+    width: $size + px;
+    height: $size + px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    animation: rotatePreloader $time + s infinite ease-in;
+  }
+  .preloader:before,
+  .preloader:after {
+    position: absolute;
+    content: "";
+    width: 30%;
+    height: 30%;
+    background-color: $accent-dark;
+    z-index: 20;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 50%;
+  }
+  .preloader:after {
+    width: 40%;
+    height: 40%;
+    background-color: $accent;
+    z-index: 19;
+  }
+  @keyframes rotatePreloader {
+    0% {
+      transform: translateX(-50%) translateY(-50%) rotateZ(0deg);
+    }
+    100% {
+      transform: translateX(-50%) translateY(-50%) rotateZ(-360deg);
+    }
+  }
+  .preloader div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+  .preloader div:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    width: 15%;
+    height: 40%;
+    background-color: #ff69b4;
+    transform: translateX(-50%);
+    border-radius: 50%;
+  }
+  
+  @for $i from 1 through $count {
+    .preloader div:nth-child(#{$i}) {
+      transform: rotateZ(((360 / $count) * ($i - 1)) + deg);
+      animation: rotateCircle + $i $time + s infinite linear;
+      z-index: $count - $i;
+    }
+    @keyframes rotateCircle#{$i} {
+      #{percentage(((50 / $count) * ($i - 1)) / 100)} {
+        opacity: 0;
+      }
+      #{percentage((((50 / $count) + 0.0001) * ($i - 1)) / 100)} {
+        opacity: 1;
+        transform: rotateZ((0 - ((360 / $count) * ($i - 2))) + deg);
+      }
+      #{percentage((((50 / $count) * ($i - 0)) + 2) / 100)} {
+        transform: rotateZ((0 - ((360 / $count) * ($i - 1))) + deg);
+      }
+      #{percentage(((50 + ((50 / $count) * ($i - 0))) + 2) / 100)} {
+        transform: rotateZ((0 - ((360 / $count) * ($i - 1))) + deg);
+      }
+      100% {
+        transform: rotateZ((0 - ((360 / $count) * ($count - 1))) + deg);
+        opacity: 1;
+      }
+    }
+  }
+  
+  /*flower1*/
+  .preloader.flower1 {
+    left: 25%;
+    animation-duration: $time + s;
+  }
+  .preloader.flower1:before {
+    width: 20%;
+    height: 20%;
+  }
+  .preloader.flower1:after {
+    width: 25%;
+    height: 25%;
+  }
+  .preloader.flower1 div:before {
+    background-color: $accent;
+    width: 12%;
+    height: 60%;
+  }
+  
+  /*flower2*/
+  $count: 5;
+  $time: 1.5; //in seconds
+  $size: 80;
+  
+  @for $i from 1 through $count {
+    .preloader.flower2 div:nth-child(#{$i}) {
+      transform: rotateZ(((360 / $count) * ($i - 1)) + deg);
+      animation: rotateCircleTwo + $i $time + s infinite linear;
+      z-index: $count - $i;
+    }
+    @keyframes rotateCircleTwo#{$i} {
+      #{percentage(((50 / $count) * ($i - 1)) / 100)} {
+        opacity: 0;
+      }
+      #{percentage((((50 / $count) + 0.0001) * ($i - 1)) / 100)} {
+        opacity: 1;
+        transform: rotateZ((0 - ((360 / $count) * ($i - 2))) + deg);
+      }
+      #{percentage((((50 / $count) * ($i - 0)) + 2) / 100)} {
+        transform: rotateZ((0 - ((360 / $count) * ($i - 1))) + deg);
+      }
+      #{percentage(((50 + ((50 / $count) * ($i - 0))) + 2) / 100)} {
+        transform: rotateZ((0 - ((360 / $count) * ($i - 1))) + deg);
+      }
+      100% {
+        transform: rotateZ((0 - ((360 / $count) * ($count - 1))) + deg);
+        opacity: 1;
+      }
+    }
+  }
+  
+  .preloader.flower2 {
+    left: 75%;
+    animation-duration: $time + s;
+  }
+  .preloader.flower2 div:before {
+    width: 40%;
+  }
+  
+  /*flower3*/
+  $count: 7;
+  $time: 2.5; //in seconds
+  $size: 80;
+  
+  @for $i from 1 through $count {
+    .preloader.flower3 div:nth-child(#{$i}) {
+      transform: rotateZ(((360 / $count) * ($i - 1)) + deg);
+      animation: rotateCircleThree + $i $time + s infinite linear;
+      z-index: $count - $i;
+    }
+    @keyframes rotateCircleThree#{$i} {
+      #{percentage(((50 / $count) * ($i - 1)) / 100)} {
+        opacity: 0;
+      }
+      #{percentage((((50 / $count) + 0.0001) * ($i - 1)) / 100)} {
+        opacity: 1;
+        transform: rotateZ((0 - ((360 / $count) * ($i - 2))) + deg);
+      }
+      #{percentage((((50 / $count) * ($i - 0)) + 2) / 100)} {
+        transform: rotateZ((0 - ((360 / $count) * ($i - 1))) + deg);
+      }
+      #{percentage(((50 + ((50 / $count) * ($i - 0))) + 2) / 100)} {
+        transform: rotateZ((0 - ((360 / $count) * ($i - 1))) + deg);
+      }
+      100% {
+        transform: rotateZ((0 - ((360 / $count) * ($count - 1))) + deg);
+        opacity: 1;
+      }
+    }
+  }
+  
+  .preloader.flower3 {
+    top: 25%;
+    animation-duration: $time + s;
+  }
+  .preloader.flower3:before {
+    width: 50%;
+    height: 50%;
+  }
+  .preloader.flower3:after {
+    width: 60%;
+    height: 60%;
+  }
+  .preloader.flower3 div:before {
+    width: 30%;
+    height: 30%;
+  }
+  
+  /*flower4*/
+  $count: 10;
+  $time: 1.6; //in seconds
+  $size: 120;
+  
+  @for $i from 1 through $count {
+    .preloader.flower4 div:nth-child(#{$i}) {
+      transform: rotateZ(((360 / $count) * ($i - 1)) + deg);
+      animation: rotateCircleFour + $i $time + s infinite linear;
+      z-index: $count - $i;
+    }
+    @keyframes rotateCircleFour#{$i} {
+      #{percentage(((50 / $count) * ($i - 1)) / 100)} {
+        opacity: 0;
+      }
+      #{percentage((((50 / $count) + 0.0001) * ($i - 1)) / 100)} {
+        opacity: 1;
+        transform: rotateZ((0 - ((360 / $count) * ($i - 2))) + deg);
+      }
+      #{percentage((((50 / $count) * ($i - 0)) + 2) / 100)} {
+        transform: rotateZ((0 - ((360 / $count) * ($i - 1))) + deg);
+      }
+      #{percentage(((50 + ((50 / $count) * ($i - 0))) + 2) / 100)} {
+        transform: rotateZ((0 - ((360 / $count) * ($i - 1))) + deg);
+      }
+      100% {
+        transform: rotateZ((0 - ((360 / $count) * ($count - 1))) + deg);
+        opacity: 1;
+      }
+    }
+  }
+  
+  .preloader.flower4 {
+    width: $size + px;
+    height: $size + px;
+    top: 75%;
+    animation-duration: $time + s;
+  }
+  .preloader.flower4 div:before {
+    background-color: $accent;
+  }
+  .preloader.flower4:before {
+    background-color: $accent-dark;
+  }
+  .preloader.flower4:after {
+    background-color: $accent-border;
+  }
+}
+
