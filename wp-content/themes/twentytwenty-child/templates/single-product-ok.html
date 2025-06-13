@@ -1,0 +1,37 @@
+<!-- wp:template-part {"slug":"header"} /-->
+
+<!-- wp:group {"tagName":"main","layout":{"inherit":true,"type":"constrained"}} -->
+<main class="wp-block-group">
+    <!-- wp:woocommerce/breadcrumbs /-->
+    <!-- wp:woocommerce/store-notices /-->
+    <section class="py-80">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-xxl-8 col-xl-10 col-lg-11">
+                    <div class="product-detail pb-80">
+                        <div class="row row-gap-4">
+                            <div class="col-md-6">
+                                <!-- wp:woocommerce/product-image-gallery /-->
+                            </div>
+                            <div class="col-md-6">
+                                <div class="product-detail-content">
+                                    <!-- wp:post-title {"level":1,"__woocommerceNamespace":"woocommerce/product-query/product-title"} /-->
+                                    <!-- wp:woocommerce/product-rating {"isDescendentOfSingleProductTemplate":true} /-->
+                                    <!-- wp:woocommerce/product-price {"isDescendentOfSingleProductTemplate":true,"fontSize":"large"} /-->
+                                    <!-- wp:post-excerpt {"__woocommerceNamespace":"woocommerce/product-query/product-summary","excerptLength":100} /-->
+                                    <!-- wp:woocommerce/add-to-cart-form /-->
+                                    <!-- wp:woocommerce/product-meta {"layout":{"type":"flex","flexWrap":"nowrap"}} /-->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- wp:woocommerce/product-details {"className":"is-style-minimal"} /-->
+                        <!-- wp:pattern {"slug":"woocommerce-blocks/related-products"} /-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer"} /-->
