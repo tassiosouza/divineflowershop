@@ -115,9 +115,10 @@
         var qtyVal = parseInt(qtyInput.val());
         qtyInput.val(parseInt(qtyVal + 1));
       });
-      $(".product-card .cart-btn").on("click", function (e) {
+      $(".product-card .cart-btn, .product-detail-content .cart-btn").on("click", function (e) {
         e.preventDefault();
-        var qty = $(this).closest(".product-card").find("input.number").val() || 1;
+        var container = $(this).closest(".product-card, .product-detail-content");
+        var qty = container.find("input.number").val() || 1;
         var url = $(this).attr("href");
         if (url.indexOf("?") === -1) {
           url += "?quantity=" + qty;
