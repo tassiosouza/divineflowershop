@@ -28,7 +28,7 @@ $regular     = (float) $product->get_regular_price();
 $sale        = (float) $product->get_sale_price();
 $price       = $product->get_price();
 $sku         = $product->get_sku() ?: 'N/A';
-$reviews     = (int) $product->get_review_count();
+$tags        = wp_get_post_terms( $product->get_id(), 'product_tag', [ 'fields' => 'names' ] );
 $stock_text  = $product->is_in_stock() ? 'In Stock' : 'Out of Stock';
 $stock_class = $product->is_in_stock() ? 'green-tag' : 'red-tag';
 
@@ -52,17 +52,31 @@ if ( empty( $thumbs ) && $main_image ) {
     $thumbs = '<div class="detail-img-block"><img alt="" src="' . esc_url( $main_image ) . '"></div>';
 }
 
+// Monta lista de tags
+$tags_html = '';
+foreach ( $tags as $index => $tag_name ) {
+    $tags_html .= '<span class="me-1">' . esc_html( $tag_name );
+    if ( $index < count( $tags ) - 1 ) {
+        $tags_html .= ', </span>';
+    } else {
+        $tags_html .= '</span>';
+    }
+}
+
+$add_to_cart_url = wc_get_cart_url() . '?add-to-cart=' . $product->get_id();
+
 // Realiza substituições no HTML base usando placeholders
 $replacements = [
     '{{PRODUCT_NAME}}' => esc_html( $name ),
     '{{STOCK_TEXT}}'   => esc_html( $stock_text ),
     '{{STOCK_CLASS}}'  => esc_attr( $stock_class ),
-    '{{REVIEWS}}'      => (string) $reviews,
     '{{SKU}}'          => esc_html( $sku ),
     '{{PRICE_BLOCK}}'  => $price_block,
     '{{DESCRIPTION}}'  => esc_html( $description ),
     '{{MAIN_IMAGE}}'   => esc_url( $main_image ),
     '{{GALLERY}}'      => $thumbs,
+    '{{TAGS}}'         => $tags_html,
+    '{{ADD_TO_CART_URL}}' => esc_url( $add_to_cart_url ),
 ];
 
 $html = str_replace( array_keys( $replacements ), array_values( $replacements ), $html );
