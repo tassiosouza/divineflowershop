@@ -239,163 +239,45 @@
                     </button>
                     <!-- PRODUCT_SLIDER_START -->
                     <div class="row featured-product-slider">
+                        <?php
+                        $args = array(
+                            'post_type'      => 'product',
+                            'posts_per_page' => 6,
+                            'tax_query'      => array(
+                                array(
+                                    'taxonomy' => 'product_cat',
+                                    'field'    => 'slug',
+                                    'terms'    => 'featured',
+                                ),
+                            ),
+                        );
+                        $featured_products = new WP_Query($args);
+                        if ($featured_products->have_posts()) :
+                            while ($featured_products->have_posts()) :
+                                $featured_products->the_post();
+                                global $product;
+                        ?>
                         <div class="col-12">
                             <div class="product-card">
                                 <figure>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/products/p-1.png" alt="">
-                                    <ul class="unstyled action-list">
-                                        <li><a href="javascript:;" class="icon wishlist-icon"><i class="fa-light fa-heart"></i></a></li>
-                                        <li><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#productQuickView" class="icon"><i class="fa-light fa-eye"></i></a></li>
-                                    </ul>
+                                    <a href="<?php the_permalink(); ?>">
+                                        <?php echo $product->get_image(); ?>
+                                    </a>
                                 </figure>
                                 <div class="text-block">
-                                    <a href="product-detail.html" class="h4 mb-16">Lily Lane</a>
-                                    <p class="mb-24">Lorem ipsum dolor sit amet consectetur. Mauris amet ultrices aliquet arcu libero aliquam est nullam sit.</p>
+                                    <a href="<?php the_permalink(); ?>" class="h4 mb-16"><?php the_title(); ?></a>
+                                    <p class="mb-24"><?php echo wp_trim_words(strip_tags($product->get_short_description()), 20); ?></p>
                                     <div class="price mb-32">
-                                        <del class="h6 dark-gray">$50.00</del>
-                                        <h3>$40.00</h3>
-                                    </div>
-                                    <div class="action-block">
-                                        <div class="quantity-wrap">
-                                            <div class="decrement"><i class="fa-solid fa-dash"></i></div>
-                                            <input type="text" name="quantity" value="1" maxlength="1" size="1" class="number">
-                                            <div class="increment"><i class="fa-solid fa-plus-large"></i></div>
-                                        </div>
-                                        <a href="javascript:;" class="cart-btn cart-button"><img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/icons/cart.svg" alt=""></a>
+                                        <?php echo $product->get_price_html(); ?>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12">
-                            <div class="product-card">
-                                <figure>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/products/p-2.png" alt="">
-                                    <ul class="unstyled action-list">
-                                        <li><a href="javascript:;" class="icon wishlist-icon"><i class="fa-light fa-heart"></i></a></li>
-                                        <li><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#productQuickView" class="icon"><i class="fa-light fa-eye"></i></a></li>
-                                    </ul>
-                                </figure>
-                                <div class="text-block">
-                                    <a href="product-detail.html" class="h4 mb-16">Daisy Dreams</a>
-                                    <p class="mb-24">Lorem ipsum dolor sit amet consectetur. Mauris amet ultrices aliquet arcu libero aliquam est nullam sit.</p>
-                                    <div class="price mb-32">
-                                        <h3>$30.00</h3>
-                                    </div>
-                                    <div class="action-block">
-                                        <div class="quantity-wrap">
-                                            <div class="decrement"><i class="fa-solid fa-dash"></i></div>
-                                            <input type="text" name="quantity" value="1" maxlength="1" size="1" class="number">
-                                            <div class="increment"><i class="fa-solid fa-plus-large"></i></div>
-                                        </div>
-                                        <a href="javascript:;" class="cart-btn cart-button"><img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/icons/cart.svg" alt=""></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="product-card">
-                                <figure>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/products/p-3.png" alt="">
-                                    <ul class="unstyled action-list">
-                                        <li><a href="javascript:;" class="icon wishlist-icon"><i class="fa-light fa-heart"></i></a></li>
-                                        <li><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#productQuickView" class="icon"><i class="fa-light fa-eye"></i></a></li>
-                                    </ul>
-                                </figure>
-                                <div class="text-block">
-                                    <a href="product-detail.html" class="h4 mb-16">Rose Varieties</a>
-                                    <p class="mb-24">Lorem ipsum dolor sit amet consectetur. Mauris amet ultrices aliquet arcu libero aliquam est nullam sit.</p>
-                                    <div class="price mb-32">
-                                        <h3>$25.00</h3>
-                                    </div>
-                                    <div class="action-block">
-                                        <div class="quantity-wrap">
-                                            <div class="decrement"><i class="fa-solid fa-dash"></i></div>
-                                            <input type="text" name="quantity" value="1" maxlength="1" size="1" class="number">
-                                            <div class="increment"><i class="fa-solid fa-plus-large"></i></div>
-                                        </div>
-                                        <a href="javascript:;" class="cart-btn cart-button"><img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/icons/cart.svg" alt=""></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="product-card">
-                                <figure>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/products/p-4.png" alt="">
-                                    <ul class="unstyled action-list">
-                                        <li><a href="javascript:;" class="icon wishlist-icon"><i class="fa-light fa-heart"></i></a></li>
-                                        <li><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#productQuickView" class="icon"><i class="fa-light fa-eye"></i></a></li>
-                                    </ul>
-                                </figure>
-                                <div class="text-block">
-                                    <a href="product-detail.html" class="h4 mb-16">Rose Bloom</a>
-                                    <p class="mb-24">Lorem ipsum dolor sit amet consectetur. Mauris amet ultrices aliquet arcu libero aliquam est nullam sit.</p>
-                                    <div class="price mb-32">
-                                        <h3>$49.00</h3>
-                                    </div>
-                                    <div class="action-block">
-                                        <div class="quantity-wrap">
-                                            <div class="decrement"><i class="fa-solid fa-dash"></i></div>
-                                            <input type="text" name="quantity" value="1" maxlength="1" size="1" class="number">
-                                            <div class="increment"><i class="fa-solid fa-plus-large"></i></div>
-                                        </div>
-                                        <a href="javascript:;" class="cart-btn cart-button"><img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/icons/cart.svg" alt=""></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="product-card">
-                                <figure>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/products/p-5.png" alt="">
-                                    <ul class="unstyled action-list">
-                                        <li><a href="javascript:;" class="icon wishlist-icon"><i class="fa-light fa-heart"></i></a></li>
-                                        <li><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#productQuickView" class="icon"><i class="fa-light fa-eye"></i></a></li>
-                                    </ul>
-                                </figure>
-                                <div class="text-block">
-                                    <a href="product-detail.html" class="h4 mb-16">Lavender Daisy</a>
-                                    <p class="mb-24">Lorem ipsum dolor sit amet consectetur. Mauris amet ultrices aliquet arcu libero aliquam est nullam sit.</p>
-                                    <div class="price mb-32">
-                                        <h3>$55.00</h3>
-                                    </div>
-                                    <div class="action-block">
-                                        <div class="quantity-wrap">
-                                            <div class="decrement"><i class="fa-solid fa-dash"></i></div>
-                                            <input type="text" name="quantity" value="1" maxlength="1" size="1" class="number">
-                                            <div class="increment"><i class="fa-solid fa-plus-large"></i></div>
-                                        </div>
-                                        <a href="javascript:;" class="cart-btn cart-button"><img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/icons/cart.svg" alt=""></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="product-card">
-                                <figure>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/products/p-6.png" alt="">
-                                    <ul class="unstyled action-list">
-                                        <li><a href="javascript:;" class="icon wishlist-icon"><i class="fa-light fa-heart"></i></a></li>
-                                        <li><a href="javascript:;" data-bs-toggle="modal" data-bs-target="#productQuickView" class="icon"><i class="fa-light fa-eye"></i></a></li>
-                                    </ul>
-                                </figure>
-                                <div class="text-block">
-                                    <a href="product-detail.html" class="h4 mb-16">Magnolia Rose</a>
-                                    <p class="mb-24">Lorem ipsum dolor sit amet consectetur. Mauris amet ultrices aliquet arcu libero aliquam est nullam sit.</p>
-                                    <div class="price mb-32">
-                                        <h3>$70.00</h3>
-                                    </div>
-                                    <div class="action-block">
-                                        <div class="quantity-wrap">
-                                            <div class="decrement"><i class="fa-solid fa-dash"></i></div>
-                                            <input type="text" name="quantity" value="1" maxlength="1" size="1" class="number">
-                                            <div class="increment"><i class="fa-solid fa-plus-large"></i></div>
-                                        </div>
-                                        <a href="javascript:;" class="cart-btn cart-button"><img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/icons/cart.svg" alt=""></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <?php
+                            endwhile;
+                            wp_reset_postdata();
+                        endif;
+                        ?>
                     </div>
                     <!-- PRODUCT_SLIDER_END -->
                 </div>
