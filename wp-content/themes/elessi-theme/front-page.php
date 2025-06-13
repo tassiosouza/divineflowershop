@@ -1,3 +1,7 @@
+<?php
+/* Template Name: Custom Front Page */
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
