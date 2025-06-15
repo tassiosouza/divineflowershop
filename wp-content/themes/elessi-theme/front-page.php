@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Bloom - Flower Shop HTML Template">
 
-    <title>Bloom - HTML Template</title>
+    <title>Divine Flower Shop</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/favicon.png">
@@ -193,7 +193,7 @@
                                 </div>
                                 <div class="col-xl-5 col-lg-5 col-md-6 col-sm-7 col-10">
                                     <div class="img-block mx-auto">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/about/about-1.png" alt="">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/divine-shop.png" alt="">
                                         <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/about/about-1-object.png" alt="" class="img-object wow zoomIn" data-wow-delay="0.5s">
                                         <div class="about-tag">
                                             <h3>25 Years <br>Experience</h3>
@@ -778,7 +778,7 @@
                     <div class="row row-gap-4  mb-32">
                         <div class="col-lg-3 col-md-6 col-sm-6 order-lg-1">
                             <div class="footer-widget">
-                                <a href="index.html" class="mb-16"><img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/logo.png" alt=""></a>
+                                <a href="index.html" class="mb-16"><img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/divine-logo.avif" alt=""></a>
                                 <p class="mb-24">Lorem ipsum dolor sit amet consectetur. Mauris amet ultrices aliquet arcu libero aliquam est nullam sit. psum dolor sit amet consectetur. Mauris amet ultrices aliquet arcu libero aliquam...</p>
                                 <div class="time">
                                     <div class="icon"><i class="fa-light fa-clock"></i></div>
@@ -847,7 +847,7 @@
                     <div class="footer-bottom">
                         <div class="row row-gap-4">
                             <div class="col-sm-9">
-                                <p class="accent-dark text-sm-start text-center">@2025 All Rights Copyright Bloom. Design & Developed By UIPARADOX</p>
+                                <p class="accent-dark text-sm-start text-center">@2025 All Rights Copyright Divine Flower Shop. Design & Developed By Codengate Inc</p>
                             </div>
                             <div class="col-sm-3 text-sm-end text-center">
                                 <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/icons/payments.png" alt="">
@@ -1135,4 +1135,4 @@
 </body>
 
 </html>
-<?php get_footer(); ?>
+ <?php get_footer(); ?>
