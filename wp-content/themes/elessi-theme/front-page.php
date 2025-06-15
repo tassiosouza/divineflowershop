@@ -87,7 +87,7 @@
                                 <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/banner/image-vector-1.png" alt="" class="banner-vector vector-1 wow zoomIn" data-wow-delay="1.85s">
                                 <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/banner/flower-vector.png" alt="" class="banner-vector vector-2 wow zoomIn" data-wow-delay="1.8s">
                                 <h1 class="title wow fadeInUp" data-wow-delay="1.95s">Bring the Outdoors In <br> with our <span class="font-sec-2 color-primary"> Beautiful </span> <span class="font-sec-2 color-primary"> Flowers</span><br> and Plant</h1>
-                                <p class="wow fadeInUp" data-wow-delay="1.75s">Lorem ipsum dolor sit amet consectetur. Mauris amet ultrices aliquet arcu. Libero aliquam est nullam sit. Congue mauris in convallis ut.</p>
+                                <p class="wow fadeInUp" data-wow-delay="1.75s">Browse our curated collection of vibrant bouquets and lush plants, perfect for every celebration.</p>
                                 <div class="btn-block">
                                     <a href="shop-grid.html" class="cus-btn wow fadeInUp" data-wow-delay="1s">
                                         Shop Now
@@ -180,7 +180,7 @@
                                     <div class="row">
                                         <div class="col-xxl-10 col-xl-11">
                                             <h2 class="mb-16 title">Bloom Chronicles,<br> Crafting Beauty, <span class="font-sec-2 color-primary">One Flower</span> <br>at a Time</h2>
-                                            <p class="mb-16">Lorem ipsum dolor sit amet consectetur. Posuere odio a interdum morbi velit elit id ac et. Congue elit risus senectus arcu tortor maecenas commodo magna. Sed lobortis egestas fringilla elementum vulputate pellentesque velit. Lectus adipiscing faucibus semper quis gravida ut odio faucibus. Orci sit aliquam vestibulum varius ultricies sed. Ligula amet amet in curabitur sed nunc imperdiet sit venenatis. Habitasse aenean auctor sed odio et. Sed iaculis pulvinar morbi in commodo malesuada sed.<span class="br"></span>Sed quisque ipsum risus senectus quis curabitur quis. Lorem auctor cras elit quis rhoncus pretium arcu eget malesuada. Facilisi gravida maecenas aliquam eget nunc porttitor. In et ac magna cursus quisque. Aliquam laoreet ut quis velit. Euismod duis sem integer dolor facilisis ut. Tortor aenean aliquet quis aliquam diam vel. Ullamcorper risus semper hendrerit amet velit mauris donec. Sed sollicitudin at lacus donec velit. Ornare dignissim purus tincidunt dictum odio ac ut ut.</p>
+                                            <p class="mb-16">At Divine Flower Shop we hand-select blooms from trusted growers to craft arrangements filled with color and fragrance. Whether you need a heartfelt gift or flowers to brighten your space, our designers are ready to help.<span class="br"></span>Visit us to explore seasonal favorites and discover tips on caring for your fresh flowers.</p>
                                             <a href="about.html" class="cus-btn">
                                                  Read More
                                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 25" fill="none">
@@ -442,7 +442,7 @@
                                                 <span class="h6">Customer</span>
                                             </div>
                                             <p>
-                                                “Lorem ipsum dolor sit amet consectetur. Volutpat egestas non posuere faucibus. Diam consequat eros convallis enim consequat arcu vitae. Est porta netus sit tellus non eget purus.”
+                                                “The bouquet arrived fresh and full of color. My house smells amazing!”
                                             </p>
                                         </div>
                                     </div>
@@ -464,7 +464,7 @@
                                                 <span class="h6">Customer</span>
                                             </div>
                                             <p>
-                                                “Lorem ipsum dolor sit amet consectetur. Volutpat egestas non posuere faucibus. Diam consequat eros convallis enim consequat arcu vitae. Est porta netus sit tellus non eget purus.”
+                                                “Absolutely stunning arrangements and friendly service.”
                                             </p>
                                         </div>
                                     </div>
@@ -486,7 +486,7 @@
                                                 <span class="h6">Customer</span>
                                             </div>
                                             <p>
-                                                “Lorem ipsum dolor sit amet consectetur. Volutpat egestas non posuere faucibus. Diam consequat eros convallis enim consequat arcu vitae. Est porta netus sit tellus non eget purus.”
+                                                “Divine Flower Shop made our wedding unforgettable with gorgeous blooms.”
                                             </p>
                                         </div>
                                     </div>
@@ -508,7 +508,7 @@
                                                 <span class="h6">Customer</span>
                                             </div>
                                             <p>
-                                                “Lorem ipsum dolor sit amet consectetur. Volutpat egestas non posuere faucibus. Diam consequat eros convallis enim consequat arcu vitae. Est porta netus sit tellus non eget purus.”
+                                                “Their weekly floral subscriptions keep my office lively and cheerful.”
                                             </p>
                                         </div>
                                     </div>
@@ -575,7 +575,7 @@
                                         <span class="date">14 April, 2024</span>
                                     </div>
                                     <a href="blog-detail.html" class="title h4 mb-16">A Beginner's Guide to Flower Arranging: Tips and Tricks</a>
-                                    <p class="mb-24">Lorem ipsum dolor sit amet consectetur. Mauris amet ultrices aliquet arcu libero aliquam est nullam sit.</p>
+                                    <p class="mb-24">Learn simple techniques to create stunning bouquets at home.</p>
                                     <a href="blog-detail.html" class="cus-btn">
                                         Read More
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
@@ -600,7 +600,7 @@
                                         <span class="date">14 April, 2024</span>
                                     </div>
                                     <a href="blog-detail.html" class="title h4 mb-16">Exploring the Symbolism of Different Flowers</a>
-                                    <p class="mb-24">Lorem ipsum dolor sit amet consectetur. Mauris amet ultrices aliquet arcu libero aliquam est nullam sit.</p>
+                                    <p class="mb-24">Discover what each bloom means so you can pick the perfect message.</p>
                                     <a href="blog-detail.html" class="cus-btn">
                                         Read More
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
@@ -625,7 +625,7 @@
                                         <span class="date">14 April, 2024</span>
                                     </div>
                                     <a href="blog-detail.html" class="title h4 mb-16">DIY Flower Crafts: Creative Projects for Flower Enthusiasts</a>
-                                    <p class="mb-24">Lorem ipsum dolor sit amet consectetur. Mauris amet ultrices aliquet arcu libero aliquam est nullam sit.</p>
+                                    <p class="mb-24">Try these fun craft ideas to make the most of your favorite flowers.</p>
                                     <a href="blog-detail.html" class="cus-btn">
                                         Read More
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
@@ -650,7 +650,7 @@
                                         <span class="date">14 April, 2024</span>
                                     </div>
                                     <a href="blog-detail.html" class="title h4 mb-16">A Beginner's Guide to Flower Arranging: Tips and Tricks</a>
-                                    <p class="mb-24">Lorem ipsum dolor sit amet consectetur. Mauris amet ultrices aliquet arcu libero aliquam est nullam sit.</p>
+                                    <p class="mb-24">Learn simple techniques to create stunning bouquets at home.</p>
                                     <a href="blog-detail.html" class="cus-btn">
                                         Read More
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
@@ -675,7 +675,7 @@
                                         <span class="date">14 April, 2024</span>
                                     </div>
                                     <a href="blog-detail.html" class="title h4 mb-16">Exploring the Symbolism of Different Flowers</a>
-                                    <p class="mb-24">Lorem ipsum dolor sit amet consectetur. Mauris amet ultrices aliquet arcu libero aliquam est nullam sit.</p>
+                                    <p class="mb-24">Discover what each bloom means so you can pick the perfect message.</p>
                                     <a href="blog-detail.html" class="cus-btn">
                                         Read More
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
@@ -700,7 +700,7 @@
                                         <span class="date">14 April, 2024</span>
                                     </div>
                                     <a href="blog-detail.html" class="title h4 mb-16">DIY Flower Crafts: Creative Projects for Flower Enthusiasts</a>
-                                    <p class="mb-24">Lorem ipsum dolor sit amet consectetur. Mauris amet ultrices aliquet arcu libero aliquam est nullam sit.</p>
+                                    <p class="mb-24">Try these fun craft ideas to make the most of your favorite flowers.</p>
                                     <a href="blog-detail.html" class="cus-btn">
                                         Read More
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
@@ -743,7 +743,7 @@
                                         <!-- Section Title Start -->
                                         <div class="newsletter-title">
                                             <h3 class="mb-16">Subscribe to our newsletter</h3>
-                                            <p>Lorem ipsum dolor sit amet consectetur. Mauris amet<br> ultrices aliquet arcu libero.</p>
+                                            <p>Sign up for updates on new arrangements, specials, and floral inspiration.</p>
                                         </div>
                                         <!-- Section Title End -->
                                     </div>
@@ -779,7 +779,7 @@
                         <div class="col-lg-3 col-md-6 col-sm-6 order-lg-1">
                             <div class="footer-widget">
                                 <a href="index.html" class="mb-16"><img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/divine-logo.avif" alt=""></a>
-                                <p class="mb-24">Lorem ipsum dolor sit amet consectetur. Mauris amet ultrices aliquet arcu libero aliquam est nullam sit. psum dolor sit amet consectetur. Mauris amet ultrices aliquet arcu libero aliquam...</p>
+                                <p class="mb-24">Our boutique offers hand-picked flowers arranged with care. Stop by to see what's blooming!</p>
                                 <div class="time">
                                     <div class="icon"><i class="fa-light fa-clock"></i></div>
                                     <p>
@@ -997,7 +997,7 @@
                                                 </div>
                                                 <p class="red-tag">10% off</p>
                                             </div>
-                                            <p class="mb-24">Lorem ipsum dolor sit amet consectetur. Mauris volutpat sollicitudin nunc nisl. Ac euismod lorem odio consequat.</p>
+                                            <p class="mb-24">Fresh roses arranged in a charming bouquet, perfect for gifts or home decor.</p>
                                             <hr class="dash-line mb-16">
                                             <div class="action-block mb-16">
                                                 <div class="quantity-wrap">
