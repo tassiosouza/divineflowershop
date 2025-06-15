@@ -89,7 +89,7 @@
                                 <h1 class="title wow fadeInUp" data-wow-delay="1.95s">Bring the Outdoors In <br> with our <span class="font-sec-2 color-primary"> Beautiful </span> <span class="font-sec-2 color-primary"> Flowers</span><br> and Plant</h1>
                                 <p class="wow fadeInUp" data-wow-delay="1.75s">Browse our curated collection of vibrant bouquets and lush plants, perfect for every celebration.</p>
                                 <div class="btn-block">
-                                    <a href="shop-grid.html" class="cus-btn wow fadeInUp" data-wow-delay="1s">
+                                    <a href="/shop" class="cus-btn wow fadeInUp" data-wow-delay="1s">
                                         Shop Now
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
                                             <path d="M20.734 14.4783C18.1512 20.8861 11.9637 17.0096 11.9637 17.0096C10.0652 20.8439 6.92931 23.3096 3.31056 23.3236C2.55587 23.3236 2.53243 22.1799 3.31056 22.1799C6.32931 22.1658 8.95899 20.1783 10.6793 17.0189C8.75274 17.7642 5.11993 18.3267 3.10431 13.1658C8.21368 11.0611 10.5621 13.6908 11.4621 15.2986C11.9262 14.1549 12.259 12.9127 12.4746 11.5627C12.4746 11.5627 5.92618 12.5892 5.46681 6.96425C11.0496 4.71893 12.6199 10.5596 12.6199 10.5596C12.6949 9.77675 12.7746 8.09393 12.7746 8.05643C12.7746 8.05643 7.79181 4.60175 10.9887 0.312683C16.8293 2.32831 13.8668 7.92518 13.8668 7.92518C13.8902 8.00018 13.8902 9.04081 13.8668 9.49081C13.8668 9.49081 15.9856 5.31893 20.2606 6.7955C20.0637 13.0767 13.609 11.783 13.609 11.783C13.4027 13.0674 13.084 14.2861 12.6715 15.4158C12.6715 15.4158 16.5621 11.1127 20.734 14.4783Z"/>
@@ -129,8 +129,8 @@
                             <div class="col-lg-3 col-sm-6">
                                 <div class="category-card bg-gradient-1">
                                     <div class="category-title">
-                                        <a href="shop-grid.html" class="h5 mb-24">Rose Varieties</a><br>
-                                        <a href="shop-grid.html" class="link-btn">Shop Now</a>
+                                        <a href="/shop" class="h5 mb-24">Rose Varieties</a><br>
+                                        <a href="/shop" class="link-btn">Shop Now</a>
                                     </div>
                                     <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/categories/category-01.png" alt="">
                                 </div>
@@ -138,8 +138,8 @@
                             <div class="col-lg-3 col-sm-6">
                                 <div class="category-card bg-gradient-2">
                                     <div class="category-title">
-                                        <a href="shop-grid.html" class="h5 mb-24">Rose Varieties</a><br>
-                                        <a href="shop-grid.html" class="link-btn">Shop Now</a>
+                                        <a href="/shop" class="h5 mb-24">Rose Varieties</a><br>
+                                        <a href="/shop" class="link-btn">Shop Now</a>
                                     </div>
                                     <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/categories/category-02.png" alt="">
                                 </div>
@@ -147,8 +147,8 @@
                             <div class="col-lg-3 col-sm-6">
                                 <div class="category-card bg-gradient-3">
                                     <div class="category-title">
-                                        <a href="shop-grid.html" class="h5 mb-24">Rose Varieties</a><br>
-                                        <a href="shop-grid.html" class="link-btn">Shop Now</a>
+                                        <a href="/shop" class="h5 mb-24">Rose Varieties</a><br>
+                                        <a href="/shop" class="link-btn">Shop Now</a>
                                     </div>
                                     <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/categories/category-03.png" alt="">
                                 </div>
@@ -156,8 +156,8 @@
                             <div class="col-lg-3 col-sm-6">
                                 <div class="category-card bg-gradient-2">
                                     <div class="category-title">
-                                        <a href="shop-grid.html" class="h5 mb-24">Lily Collection</a><br>
-                                        <a href="shop-grid.html" class="link-btn">Shop Now</a>
+                                        <a href="/shop" class="h5 mb-24">Lily Collection</a><br>
+                                        <a href="/shop" class="link-btn">Shop Now</a>
                                     </div>
                                     <img src="<?php echo get_template_directory_uri(); ?>/bloom/assets/media/categories/category-04.png" alt="">
                                 </div>
@@ -218,7 +218,7 @@
                     <div class="heading">
                         <h2>Featured <span>Flowers</span></h2>
                     </div>
-                    <a href="shop-grid.html" class="cus-btn">
+                    <a href="/shop" class="cus-btn">
                         View All
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                             <path d="M20.734 14.9784C18.1512 21.3862 11.9637 17.5096 11.9637 17.5096C10.0652 21.344 6.92931 23.8096 3.31056 23.8237C2.55587 23.8237 2.53243 22.6799 3.31056 22.6799C6.32931 22.6659 8.95899 20.6784 10.6793 17.519C8.75274 18.2643 5.11993 18.8268 3.10431 13.6659C8.21368 11.5612 10.5621 14.1909 11.4621 15.7987C11.9262 14.6549 12.259 13.4127 12.4746 12.0627C12.4746 12.0627 5.92618 13.0893 5.46681 7.46431C11.0496 5.21899 12.6199 11.0596 12.6199 11.0596C12.6949 10.2768 12.7746 8.59399 12.7746 8.55649C12.7746 8.55649 7.79181 5.10181 10.9887 0.812744C16.8293 2.82837 13.8668 8.42524 13.8668 8.42524C13.8902 8.50024 13.8902 9.54087 13.8668 9.99087C13.8668 9.99087 15.9856 5.81899 20.2606 7.29556C20.0637 13.5768 13.609 12.2831 13.609 12.2831C13.4027 13.5674 13.084 14.7862 12.6715 15.9159C12.6715 15.9159 16.5621 11.6127 20.734 14.9784Z"/>
@@ -389,7 +389,7 @@
                                     <span class="title-1">SUMMER</span>
                                     <span class="title-2 mb-12">Sale</span>
                                     <h1 class="mb-32">UP TO 50% OFF</h1>
-                                    <a href="shop-grid.html" class="cus-btn mx-auto">
+                                    <a href="/shop" class="cus-btn mx-auto">
                                         Shop Now
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
                                             <path d="M20.734 14.4783C18.1512 20.8861 11.9637 17.0096 11.9637 17.0096C10.0652 20.8439 6.92931 23.3096 3.31056 23.3236C2.55587 23.3236 2.53243 22.1799 3.31056 22.1799C6.32931 22.1658 8.95899 20.1783 10.6793 17.0189C8.75274 17.7642 5.11993 18.3267 3.10431 13.1658C8.21368 11.0611 10.5621 13.6908 11.4621 15.2986C11.9262 14.1549 12.259 12.9127 12.4746 11.5627C12.4746 11.5627 5.92618 12.5892 5.46681 6.96425C11.0496 4.71893 12.6199 10.5596 12.6199 10.5596C12.6949 9.77675 12.7746 8.09393 12.7746 8.05643C12.7746 8.05643 7.79181 4.60175 10.9887 0.312683C16.8293 2.32831 13.8668 7.92518 13.8668 7.92518C13.8902 8.00018 13.8902 9.04081 13.8668 9.49081C13.8668 9.49081 15.9856 5.31893 20.2606 6.7955C20.0637 13.0767 13.609 11.783 13.609 11.783C13.4027 13.0674 13.084 14.2861 12.6715 15.4158C12.6715 15.4158 16.5621 11.1127 20.734 14.4783Z"/>
@@ -810,7 +810,7 @@
                                 <h4 class="mb-32">Shop</h4>
                                 <ul class="unstyled links-list">
                                     <li><a href="about.html">About Us</a></li>
-                                    <li><a href="shop-grid.html">Product Items</a></li>
+                                    <li><a href="/shop">Product Items</a></li>
                                     <li><a href="contact.html">Contact us</a></li>
                                     <li><a href="checkout.html">Checkout</a></li>
                                     <li><a href="wishlist.html">Wishlist</a></li>
@@ -822,7 +822,7 @@
                                 <h4 class="mb-32">Useful Links</h4>
                                 <ul class="unstyled links-list">
                                     <li><a href="about.html">About Us</a></li>
-                                    <li><a href="shop-grid.html">Product Items</a></li>
+                                    <li><a href="/shop">Product Items</a></li>
                                     <li><a href="contact.html">Contact us</a></li>
                                     <li><a href="checkout.html">Checkout</a></li>
                                     <li><a href="wishlist.html">Wishlist</a></li>
@@ -834,7 +834,7 @@
                                 <h4 class="mb-32">Information</h4>
                                 <ul class="unstyled links-list">
                                     <li><a href="about.html">About Us</a></li>
-                                    <li><a href="shop-grid.html">Product Items</a></li>
+                                    <li><a href="/shop">Product Items</a></li>
                                     <li><a href="contact.html">Contact us</a></li>
                                     <li><a href="checkout.html">Checkout</a></li>
                                     <li><a href="wishlist.html">Wishlist</a></li>
