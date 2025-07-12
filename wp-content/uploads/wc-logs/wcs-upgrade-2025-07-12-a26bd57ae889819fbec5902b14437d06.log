@@ -1,0 +1,37 @@
+2025-07-12T03:35:35+00:00 NOTICE 3.1.0 - No subscription webhooks found using API version 3. No updates needed. CONTEXT: {"_legacy":true}
+2025-07-12T03:35:35+00:00 NOTICE 8.3.0 - Updating subscription email settings. CONTEXT: {"_legacy":true}
+2025-07-12T03:35:35+00:00 NOTICE Subscription email settings not found: woocommerce_cancelled_subscription_settings. CONTEXT: {"_legacy":true}
+2025-07-12T03:35:35+00:00 NOTICE Subscription email settings not found: woocommerce_customer_completed_renewal_order_settings. CONTEXT: {"_legacy":true}
+2025-07-12T03:35:35+00:00 NOTICE Subscription email settings not found: woocommerce_customer_completed_switch_order_settings. CONTEXT: {"_legacy":true}
+2025-07-12T03:35:35+00:00 NOTICE Subscription email settings not found: woocommerce-subscriptions_customer_notification_auto_renewal_settings. CONTEXT: {"_legacy":true}
+2025-07-12T03:35:35+00:00 NOTICE Subscription email settings not found: woocommerce-subscriptions_customer_notification_auto_trial_expiry_settings. CONTEXT: {"_legacy":true}
+2025-07-12T03:35:35+00:00 NOTICE Subscription email settings not found: woocommerce-subscriptions_customer_notification_manual_renewal_settings. CONTEXT: {"_legacy":true}
+2025-07-12T03:35:35+00:00 NOTICE Subscription email settings not found: woocommerce-subscriptions_customer_notification_manual_trial_expiry_settings. CONTEXT: {"_legacy":true}
+2025-07-12T03:35:35+00:00 NOTICE Subscription email settings not found: woocommerce-subscriptions_customer_notification_auto_trial_expiry_settings. CONTEXT: {"_legacy":true}
+2025-07-12T03:35:35+00:00 NOTICE Subscription email settings not found: woocommerce_customer_on_hold_renewal_order_settings. CONTEXT: {"_legacy":true}
+2025-07-12T03:35:35+00:00 NOTICE Subscription email settings not found: woocommerce_customer_renewal_invoice_settings. CONTEXT: {"_legacy":true}
+2025-07-12T03:35:35+00:00 NOTICE Subscription email settings not found: woocommerce_expired_subscription_settings. CONTEXT: {"_legacy":true}
+2025-07-12T03:35:35+00:00 NOTICE Subscription email settings not found: woocommerce_new_renewal_order_settings. CONTEXT: {"_legacy":true}
+2025-07-12T03:35:35+00:00 NOTICE Subscription email settings not found: woocommerce_new_switch_order_settings. CONTEXT: {"_legacy":true}
+2025-07-12T03:35:35+00:00 NOTICE Subscription email settings not found: woocommerce_customer_processing_renewal_order_settings. CONTEXT: {"_legacy":true}
+2025-07-12T03:35:35+00:00 NOTICE Subscription email settings not found: woocommerce_suspended_subscription_settings. CONTEXT: {"_legacy":true}
+2025-07-12T03:35:35+00:00 NOTICE WooCommerce Subscriptions completed its upgrade to 7.7.0 from 0 while WooCommerce WC_VERSION 9.9.3 and database version 9.9.3 was active. CONTEXT: {"_legacy":true}
+2025-07-12T03:35:35+00:00 NOTICE Environment info: CONTEXT: {"_legacy":true}
+2025-07-12T03:35:35+00:00 NOTICE     WordPress Version : 6.8.1 CONTEXT: {"_legacy":true}
+2025-07-12T03:35:35+00:00 NOTICE Active Plugins: CONTEXT: {"_legacy":true}
+2025-07-12T03:35:35+00:00 NOTICE     Buy Once or Subscribe for WooCommerce Subscriptions by eCommerce Tools – 5.1.1 CONTEXT: {"_legacy":true}
+2025-07-12T03:35:35+00:00 NOTICE     Clover Payments for WooCommerce by Clover eCommerce – 2.1.0 CONTEXT: {"_legacy":true}
+2025-07-12T03:35:35+00:00 NOTICE     Contact Form 7 by Takayuki Miyoshi – 6.6.4 CONTEXT: {"_legacy":true}
+2025-07-12T03:35:35+00:00 NOTICE     Crisp by Crisp – 0.48 CONTEXT: {"_legacy":true}
+2025-07-12T03:35:35+00:00 NOTICE     Elementor by Elementor.com – 3.29.2 CONTEXT: {"_legacy":true}
+2025-07-12T03:35:35+00:00 NOTICE     Google for WooCommerce by WooCommerce – 2.9.13 CONTEXT: {"_legacy":true}
+2025-07-12T03:35:35+00:00 NOTICE     Ultimate Addons for Elementor Lite by Brainstorm Force – 2.4.0 CONTEXT: {"_legacy":true}
+2025-07-12T03:35:35+00:00 NOTICE     Smash Balloon Instagram Feed by Smash Balloon – 6.9.1 CONTEXT: {"_legacy":true}
+2025-07-12T03:35:35+00:00 NOTICE     Elessi Core by NasaTheme Team – 6.4.2 CONTEXT: {"_legacy":true}
+2025-07-12T03:35:35+00:00 NOTICE     Regenerate Thumbnails by Alex Mills (Viper007Bond) – 3.1.6 CONTEXT: {"_legacy":true}
+2025-07-12T03:35:35+00:00 NOTICE     Slider Revolution by ThemePunch – 6.7.34 CONTEXT: {"_legacy":true}
+2025-07-12T03:35:35+00:00 NOTICE     Smart Image Resize for WooCommerce by Nabil Lemsieh – 1.13.0 CONTEXT: {"_legacy":true}
+2025-07-12T03:35:35+00:00 NOTICE     WooCommerce Subscriptions by WooCommerce – 7.7.0 CONTEXT: {"_legacy":true}
+2025-07-12T03:35:35+00:00 NOTICE     WooCommerce by Automattic – 9.9.3 CONTEXT: {"_legacy":true}
+2025-07-12T03:35:35+00:00 NOTICE     WP Pusher by WP Pusher – 3.0.13 CONTEXT: {"_legacy":true}
+2025-07-12T03:35:35+00:00 NOTICE     YITH WooCommerce Compare by YITH – 3.1.0 CONTEXT: {"_legacy":true}
