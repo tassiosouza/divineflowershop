@@ -247,7 +247,7 @@ if (isset($plan_options) && is_array($plan_options) && count($plan_options) > 0)
         
         // Update discount percentage in title
         var titleText = subscribeDiscountElement.innerHTML;
-        titleText = titleText.replace(/Subscribe &amp; Save up to \d+%/, 'Subscribe &amp; Save up to ' + newSubscribeDiscount + '%');
+        titleText = titleText.replace(/Subscribe &amp; Save up to 30%/, 'Subscribe &amp; Save up to 30%');
         subscribeDiscountElement.innerHTML = titleText;
     }
     
