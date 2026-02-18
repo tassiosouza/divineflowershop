@@ -209,6 +209,13 @@ if ( isset( $plan_options ) && is_array( $plan_options ) && count( $plan_options
 	</div>
 </div>
 <style>
+/* Force subscription box onto its own row; quantity + button stay below */
+.bos4w-display-wrap.bos4w-custom-subscribe-wrap {
+	width: 100%;
+	flex-basis: 100%;
+	display: block;
+	margin-bottom: 1em;
+}
 .bos4w-custom-subscribe-wrap .bos4w-custom-plan-buttons {
 	display: flex;
 	gap: 0;
@@ -217,11 +224,16 @@ if ( isset( $plan_options ) && is_array( $plan_options ) && count( $plan_options
 	overflow: hidden;
 	box-shadow: 0 2px 8px rgba(0,0,0,.06);
 	max-width: 500px;
+	align-items: stretch;
 }
 .bos4w-custom-subscribe-wrap .bos4w-custom-btn {
 	flex: 1;
-	padding: 1.2em 0.5em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
 	text-align: center;
+	padding: 0.4em 0.6em 0.45em;
 	cursor: pointer;
 	font-weight: 500;
 	border: 2px solid #918978;
@@ -231,6 +243,7 @@ if ( isset( $plan_options ) && is_array( $plan_options ) && count( $plan_options
 	background: #fff;
 	color: #918978;
 	user-select: none;
+	min-width: 0;
 }
 .bos4w-custom-subscribe-wrap .bos4w-custom-btn-onetime {
 	border-right: none;
@@ -246,14 +259,70 @@ if ( isset( $plan_options ) && is_array( $plan_options ) && count( $plan_options
 	color: #fff;
 	border-color: #918978;
 }
+/* Fixed-height label area so both prices align on the same baseline */
 .bos4w-custom-subscribe-wrap .bos4w-btn-title {
-	font-size: 1.1em;
-	margin-bottom: 0.2em;
-	white-space: nowrap;
+	font-size: 0.95em;
+	line-height: 1.3;
+	height: 2.6em;
+	max-height: 2.6em;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
 }
 .bos4w-custom-subscribe-wrap .bos4w-btn-price {
-	font-size: 1.25em;
+	font-size: 22px;
 	font-weight: bold;
+	margin: 0;
+	padding: 0.15em 0 0;
+	line-height: 1.2;
+	flex-shrink: 0;
+	height: 1.35em;
+	min-height: 1.35em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+/* Remove any extra spacing from price content (especially subscribe side) */
+.bos4w-custom-subscribe-wrap .bos4w-btn-price .woocommerce-Price-amount,
+.bos4w-custom-subscribe-wrap .bos4w-btn-price .amount,
+.bos4w-custom-subscribe-wrap .bos4w-btn-price bdi {
+	margin: 0 !important;
+	padding: 0 !important;
+	line-height: inherit !important;
+	display: inline !important;
+}
+.bos4w-custom-subscribe-wrap .bos4w-custom-btn-subscribe .bos4w-btn-price {
+	padding-bottom: 0 !important;
+	margin-bottom: 0 !important;
+}
+/* Definitive: same pixel size for BOTH prices (beats theme/WC) */
+body .bos4w-custom-subscribe-wrap .bos4w-custom-btn-onetime .bos4w-btn-price,
+body .bos4w-custom-subscribe-wrap .bos4w-custom-btn-onetime .bos4w-btn-price .woocommerce-Price-amount,
+body .bos4w-custom-subscribe-wrap .bos4w-custom-btn-onetime .bos4w-btn-price .amount,
+body .bos4w-custom-subscribe-wrap .bos4w-custom-btn-onetime .bos4w-btn-price bdi,
+body .bos4w-custom-subscribe-wrap .bos4w-custom-btn-subscribe .bos4w-btn-price,
+body .bos4w-custom-subscribe-wrap .bos4w-custom-btn-subscribe .bos4w-btn-price .woocommerce-Price-amount,
+body .bos4w-custom-subscribe-wrap .bos4w-custom-btn-subscribe .bos4w-btn-price .amount,
+body .bos4w-custom-subscribe-wrap .bos4w-custom-btn-subscribe .bos4w-btn-price bdi {
+	font-size: 22px !important;
+	font-weight: bold !important;
+}
+.bos4w-custom-subscribe-wrap .bos4w-custom-btn:has(input[type="radio"]:checked) .bos4w-btn-price,
+.bos4w-custom-subscribe-wrap .bos4w-custom-btn:has(input[type="radio"]:checked) .bos4w-btn-price .woocommerce-Price-amount,
+.bos4w-custom-subscribe-wrap .bos4w-custom-btn:has(input[type="radio"]:checked) .bos4w-btn-price .amount,
+.bos4w-custom-subscribe-wrap .bos4w-custom-btn:has(input[type="radio"]:checked) .bos4w-btn-price bdi {
+	color: #fff !important;
+}
+.bos4w-custom-subscribe-wrap .bos4w-custom-btn:not(:has(input[type="radio"]:checked)) .bos4w-btn-price,
+.bos4w-custom-subscribe-wrap .bos4w-custom-btn:not(:has(input[type="radio"]:checked)) .bos4w-btn-price .woocommerce-Price-amount,
+.bos4w-custom-subscribe-wrap .bos4w-custom-btn:not(:has(input[type="radio"]:checked)) .bos4w-btn-price .amount,
+.bos4w-custom-subscribe-wrap .bos4w-custom-btn:not(:has(input[type="radio"]:checked)) .bos4w-btn-price bdi {
+	color: #918978 !important;
 }
 .bos4w-custom-subscribe-wrap .bos4w-delivery-label {
 	font-weight: bold;
@@ -294,6 +363,41 @@ if ( isset( $plan_options ) && is_array( $plan_options ) && count( $plan_options
 		});
 		updateDeliveryVisibility();
 		updateButtonSelection();
+
+		// Same font-size for both prices (definitive; overrides theme/WC after inject)
+		var BOS4W_PRICE_FONT_SIZE = '22px';
+		function bos4wApplyPriceSize() {
+			var wrap = document.querySelector('.bos4w-custom-subscribe-wrap');
+			if (!wrap) return;
+			var one = wrap.querySelector('.bos4w-custom-btn-onetime .bos4w-btn-price');
+			var sub = wrap.querySelector('.bos4w-custom-btn-subscribe .bos4w-btn-price');
+			if (one) one.style.setProperty('font-size', BOS4W_PRICE_FONT_SIZE, 'important');
+			if (sub) sub.style.setProperty('font-size', BOS4W_PRICE_FONT_SIZE, 'important');
+			[one, sub].forEach(function(el) {
+				if (!el) return;
+				el.querySelectorAll('.woocommerce-Price-amount, .amount, bdi').forEach(function(node) {
+					node.style.setProperty('font-size', BOS4W_PRICE_FONT_SIZE, 'important');
+				});
+			});
+		}
+		// Update One-time / Subscribe button prices when package (variation) changes
+		if (typeof jQuery !== 'undefined' && jQuery('.variations_form').length) {
+			var wrap = document.querySelector('.bos4w-custom-subscribe-wrap');
+			var oneTimePriceEl = wrap ? wrap.querySelector('.bos4w-custom-btn-onetime .bos4w-btn-price') : null;
+			var subscribePriceEl = wrap ? wrap.querySelector('.bos4w-custom-btn-subscribe .bos4w-btn-price') : null;
+			jQuery('.single_variation_wrap').on('show_variation', function(event, variation) {
+				if (!oneTimePriceEl || !subscribePriceEl) return;
+				if (variation.price_html) {
+					oneTimePriceEl.innerHTML = variation.price_html;
+				}
+				if (variation.bos4w_discounted_price && variation.bos4w_discounted_price.length > 0) {
+					var firstPlan = variation.bos4w_discounted_price[0];
+					subscribePriceEl.innerHTML = firstPlan.discounted_price || '';
+				}
+				bos4wApplyPriceSize();
+			});
+		}
+		bos4wApplyPriceSize();
 	});
 })();
 </script>
