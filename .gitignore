@@ -1,0 +1,17 @@
+# Config with credentials – do not commit (each env has its own; CI/CD won’t deploy these)
+wp-config.php
+wp-config.local.php
+
+# Env / secrets (if you use .env for DB keys, etc.)
+.env
+.env.*
+
+# Local MariaDB data (when using project-local MySQL)
+.mysql-data/
+
+# WordPress uploads and plugin caches (generated on each env; don’t deploy)
+wp-content/uploads/
+
+# WordPress debug log (local only)
+wp-content/debug.log
+*.log
