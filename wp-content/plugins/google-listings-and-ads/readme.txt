@@ -1,11 +1,11 @@
 === Google for WooCommerce ===
 Contributors: automattic, google, woocommerce
 Tags: woocommerce, google, product feed, ads, listings
-Requires at least: 6.1
-Tested up to: 6.8
+Requires at least: 6.6
+Tested up to: 6.9
 Requires PHP: 7.4
 Requires PHP Architecture: 64 Bits
-Stable tag: 2.9.13
+Stable tag: 3.5.2
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -51,8 +51,8 @@ Once you’re running Google Ads campaigns, the Google tag feature in the extens
 
 = Minimum Requirements =
 
-* WordPress 6.1 or greater
-* WooCommerce 7.9 or greater
+* WordPress 6.6 or greater
+* WooCommerce 9.7 or greater
 * PHP version 7.4 or greater
 * PHP Architecture 64 bits
 * MySQL version 5.6 or greater
@@ -140,21 +140,32 @@ To allow your products to appear in all relevant locations, make sure you’ve c
 
 == Changelog ==
 
-= 2.9.13 - 2025-04-29 =
-* Update - Revert the changes related to the Grant API Pull Access in Onboarding feature made in version 2.9.12.
+= 3.5.2 - 2026-01-29 =
+* Add - Sorting functionality in `AllProgramsTableCard` to allow users to reorder columns by key attributes.
+* Fix - Resolve an issue where website claim conflicts were not detected correctly during Google Merchant Center account setup in the onboarding flow.
+* Update - Add `timeZone` and `languageCode` fields to create-merchant request for Merchant API compatibility.
+* Update - Allow legacy conversion events to be disabled via a filter.
 
-= 2.9.12 - 2025-04-22 =
-* Add - During onboarding, it requires granting access to Google's WordPress.com application to synchronize product data with Google.
-* Add - Event tracking of how users process the WPCOM app authorization for the API Pull feature.
-* Fix - The interlink between Google Merchant Center and Google Ads accounts may not be completed.
-* Tweak - Enable API Pull authorization to be granted before connecting to Google Merchant Center.
-* Tweak - Move the API Pull statuses from Google Merchant Center account card to Google account card for the Settings page.
-* Update - Remove the button that disables the API Pull from the Settings page.
+= 3.5.1 - 2025-12-10 =
+* Add - EU political content confirmation checkbox for EU-based advertisers.
+* Fix - Button misaligned after navigating between tabs.
+* Fix - Correct the product edit URL to properly handle product variations in the Price Benchmark modal.
+* Fix - Fill missing intervals in products chart.
+* Fix - Prevent “Free Listings” from being automatically added after unselecting all campaigns in the comparison filter.
+* Fix - Setup enhanced conversion data when gtag is added by the Google Analytics extension.
+* Tweak - Make it possible to complete the onboarding flow using a site URL with paths.
+* Tweak - WC 10.4 compatibility.
+* Tweak - WP 6.9 compatibility.
+* Update - Modify `wc/gla/tours` API endpoint to retrieve all tours at once.
 
-= 2.9.11 - 2025-04-15 =
-* Fix - Ads merchant linking failure display issue & improve retry mechanism.
-* Fix - Compatibility issue with WordPress 6.8 and WooCommerce 9.8, which may cause all pages not to display properly.
-* Tweak - WC 9.8 compatibility.
-* Tweak - WP 6.8 compatibility.
+= 3.5.0 - 2025-11-04 =
+* Add - Additional options to the skip paid ads survey.
+* Add - Recommendation for improving conversions by raising budgets.
+* Fix - Alignment issue on Reports page.
+* Fix - Error when syncing bundled products.
+* Fix - MC connection stuck in loading state when connection is interrupted.
+* Fix - Prevent floating point precision errors when converting to micro units by rounding before casting to integer.
+* Fix - Remove ads account status check from `ads/recommendations` endpoint.
+* Tweak - WC 10.3 compatibility.
 
 [See changelog for all versions](https://raw.githubusercontent.com/woocommerce/google-listings-and-ads/trunk/changelog.txt).

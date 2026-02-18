@@ -1,0 +1,85 @@
+<wpml-config>
+  <admin-texts>
+    <key name="add_captcha_enable_check"/>
+    <key name="add_captcha_secret_key_field"/>
+    <key name="add_captcha_site_key_field"/>
+    <key name="add_captcha_size_radio"/>
+    <key name="add_p_method_captcha_field_title"/>
+    <key name="add_p_order_captcha_field_title"/>
+    <key name="captcha_country_select_opt"/>
+    <key name="captcha_custom_score_opt"/>
+    <key name="captcha_general_title_option"/>
+    <key name="captcha_ip_range_opt"/>
+    <key name="captcha_product_review_user_role">
+      <key name="0"/>
+      <key name="1"/>
+    </key>
+    <key name="captcha_type_option"/>
+    <key name="captcha_user_role_enalbe">
+      <key name="0"/>
+      <key name="1"/>
+      <key name="2"/>
+    </key>
+    <key name="check_out_page_captcha_themes"/>
+    <key name="guest_checkout_add_captcha_enable_check"/>
+    <key name="guest_checkout_add_captcha_field_title"/>
+    <key name="guest_checkout_add_captcha_size_radio"/>
+    <key name="ka_grc_captcha_checkout_position"/>
+    <key name="ka_grc_captcha_no_conflict"/>
+    <key name="ka_grc_captcha_source_option"/>
+    <key name="ka_grc_sc_captcha_user_role_enable"/>
+    <key name="ka_grc_shortcode_captcha_check"/>
+    <key name="ka_grc_shortcode_captcha_size_radio"/>
+    <key name="ka_grc_shortcode_captcha_theme_fields"/>
+    <key name="ka_grc_shortcode_captcha_title"/>
+    <key name="login_add_captcha_authentication_key_fields"/>
+    <key name="login_add_captcha_enable_check"/>
+    <key name="login_add_captcha_size_radio"/>
+    <key name="lpass_add_captcha_field_title"/>
+    <key name="p_method_add_captcha_enable_check"/>
+    <key name="p_method_add_captcha_size_radio"/>
+    <key name="p_method_add_captcha_user_role">
+      <key name="0"/>
+      <key name="1"/>
+      <key name="2"/>
+    </key>
+    <key name="p_method_captcha_themes"/>
+    <key name="p_order_add_captcha_size_radio"/>
+    <key name="p_order_authentication_key_radio"/>
+    <key name="pay_order_add_captcha_enable_check"/>
+    <key name="pay_order_add_captcha_user_role">
+      <key name="0"/>
+      <key name="1"/>
+    </key>
+    <key name="product_review_add_captcha_enable_check"/>
+    <key name="product_review_add_captcha_field_title"/>
+    <key name="product_review_add_captcha_size_radio"/>
+    <key name="product_review_page_captcha_themes"/>
+    <key name="woo_login_add_captcha_field_title"/>
+    <key name="woo_lpass_add_captcha_authentication_key_fields"/>
+    <key name="woo_lpass_add_captcha_enable_check"/>
+    <key name="woo_lpass_add_captcha_size_radio"/>
+    <key name="woo_regs_add_captcha_authentication_key_fields"/>
+    <key name="woo_regs_enable_captcha"/>
+    <key name="wp_comment_add_captcha_size_radio"/>
+    <key name="wp_comment_captcha_check"/>
+    <key name="wp_comment_captcha_theme_fields"/>
+    <key name="wp_comment_captcha_title"/>
+    <key name="wp_comment_captcha_user_role">
+      <key name="0"/>
+      <key name="1"/>
+    </key>
+    <key name="wp_login_captcha_check"/>
+    <key name="wp_login_captcha_size_radio"/>
+    <key name="wp_login_captcha_theme_fields"/>
+    <key name="wp_login_captcha_title"/>
+    <key name="wp_lpass_add_captcha_authentication_key_fields"/>
+    <key name="wp_lpass_add_captcha_field_title"/>
+    <key name="wp_lpass_add_captcha_size_radio"/>
+    <key name="wp_lpass_page_enable_check"/>
+    <key name="wp_regs_add_captcha_size_radio"/>
+    <key name="wp_regs_captcha_check"/>
+    <key name="wp_regs_captcha_theme_fields"/>
+    <key name="wp_regs_captcha_title"/>
+  </admin-texts>
+</wpml-config>

@@ -1,0 +1,37 @@
+name: Run PHPStan on pull requests
+on: pull_request
+jobs:
+  phpstan:
+    runs-on: ubuntu-latest
+    env:
+        COMPOSER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      # Assign SSH key for private repos on github.
+      - name: Assign SSH Key
+        uses: webfactory/ssh-agent@v0.4.1
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      # Checkout git.
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0 # fetch all history.
+
+      - name: Configure Git
+        run: git config --global user.email "iconibot@jckemp.com" && git config --global user.name "Iconibot"
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'
+          coverage: none
+          tools: composer
+
+      - name: Composer Install
+        run: composer install --no-progress --no-interaction --ignore-platform-reqs # Install from composer.json, not dev files.
+
+      - name: Run PHPStan
+        run: ./vendor/bin/phpstan analyse --memory-limit=2048M
+      

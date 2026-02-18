@@ -260,9 +260,7 @@ function wp_admin_bar_sidebar_toggle( $wp_admin_bar ) {
  * @param WP_Admin_Bar $wp_admin_bar The WP_Admin_Bar instance.
  */
 function wp_admin_bar_my_account_item( $wp_admin_bar ) {
-	$user_id      = get_current_user_id();
-	$current_user = wp_get_current_user();
-
+	$user_id = get_current_user_id();
 	if ( ! $user_id ) {
 		return;
 	}
@@ -275,11 +273,10 @@ function wp_admin_bar_my_account_item( $wp_admin_bar ) {
 		$profile_url = false;
 	}
 
-	$avatar = get_avatar( $user_id, 26 );
 	/* translators: %s: Current user's display name. */
-	$howdy = sprintf( __( 'Howdy, %s' ), '<span class="display-name">' . $current_user->display_name . '</span>' );
-	$class = empty( $avatar ) ? '' : 'with-avatar';
+	$howdy = sprintf( __( 'Howdy, %s' ), '<span class="display-name">' . wp_get_current_user()->display_name . '</span>' );
 
+	$avatar = get_avatar( $user_id, 26 );
 	$wp_admin_bar->add_node(
 		array(
 			'id'     => 'my-account',
@@ -287,9 +284,8 @@ function wp_admin_bar_my_account_item( $wp_admin_bar ) {
 			'title'  => $howdy . $avatar,
 			'href'   => $profile_url,
 			'meta'   => array(
-				'class'      => $class,
-				/* translators: %s: Current user's display name. */
-				'menu_title' => sprintf( __( 'Howdy, %s' ), $current_user->display_name ),
+				'class'      => empty( $avatar ) ? '' : 'with-avatar',
+				'menu_title' => wp_strip_all_tags( $howdy ),
 				'tabindex'   => ( false !== $profile_url ) ? '' : 0,
 			),
 		)
@@ -377,7 +373,7 @@ function wp_admin_bar_site_menu( $wp_admin_bar ) {
 	$blogname = get_bloginfo( 'name' );
 
 	if ( ! $blogname ) {
-		$blogname = preg_replace( '#^(https?://)?(www.)?#', '', get_home_url() );
+		$blogname = preg_replace( '#^(https?://)?(www\.)?#', '', get_home_url() );
 	}
 
 	if ( is_network_admin() ) {
@@ -698,7 +694,7 @@ function wp_admin_bar_my_sites_menu( $wp_admin_bar ) {
 		$blogname = $blog->blogname;
 
 		if ( ! $blogname ) {
-			$blogname = preg_replace( '#^(https?://)?(www.)?#', '', get_home_url() );
+			$blogname = preg_replace( '#^(https?://)?(www\.)?#', '', get_home_url() );
 		}
 
 		$menu_id = 'blog-' . $blog->userblog_id;
@@ -1307,7 +1303,7 @@ function wp_enqueue_admin_bar_bump_styles() {
 	remove_action( 'wp_head', $header_callback );
 
 	$css = '
-		@media screen { html { margin-top: 0px !important; } }
+		@media screen { html { margin-top: 32px !important; } }
 		@media screen and ( max-width: 782px ) { html { margin-top: 46px !important; } }
 	';
 	wp_add_inline_style( 'admin-bar', $css );

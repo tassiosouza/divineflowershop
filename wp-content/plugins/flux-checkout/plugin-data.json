@@ -1,0 +1,14 @@
+{
+  "version": "2.25.0",
+  "wp": "6.9",
+  "woo": "10.4.3",
+  "wp_requires": "4.9",
+  "woo_requires": "3.4.2",
+  "last_updated": "27 Jan 2026",
+  "php_requires": "5.3",
+  "released": "7 Nov 2018",
+  "marketplace": {
+    "vendor_url": "https://woocommerce.com/vendor/iconic/",
+    "plugin_url": "https://woocommerce.com/vendor/iconic/"
+  }
+}

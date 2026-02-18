@@ -60,6 +60,12 @@ if ( ! class_exists( 'BOS4W_Admin' ) ) {
 		 * @return void
 		 */
 		public function bos4w_add_subscription_fields_to_variations( $loop, $variation_data, $variation ) {
+			global $post;
+
+			if ( WC_Subscriptions_Product::is_subscription( $post->ID ) ) {
+				return;
+			}
+
 			$variation_id = $variation->ID;
 			$use_fixed = get_post_meta( $variation_id, 'bos4w_use_variation_fixed_price_' . $variation_id, true );
 			$title     = get_post_meta( $variation_id, '_bos4w_subscription_title', true );
@@ -444,15 +450,19 @@ if ( ! class_exists( 'BOS4W_Admin' ) ) {
 					)
 				);
 
-				woocommerce_wp_checkbox(
-					array(
-						'id'          => '_bos4w_use_fixed_price',
-						'label'       => __( 'Use value discount', 'bos4w' ),
-						'description' => __( 'When checked, you will be able to enter a fixed value discount for each subscription plan.', 'bos4w' ),
-						'desc_tip'    => true,
-						'value'       => $use_fixed_price ? 'yes' : 'no',
-					)
-				);
+				$product_type = $product_object->get_type();
+
+				if ( 'bundle' !== $product_type && 'composite' !== $product_type ) {
+					woocommerce_wp_checkbox(
+						array(
+							'id'          => '_bos4w_use_fixed_price',
+							'label'       => __( 'Use value discount', 'bos4w' ),
+							'description' => __( 'When checked, you will be able to enter a fixed value discount for each subscription plan.', 'bos4w' ),
+							'desc_tip'    => true,
+							'value'       => $use_fixed_price ? 'yes' : 'no',
+						)
+					);
+				}
 				?>
 				<hr/>
 
@@ -951,12 +961,7 @@ if ( ! class_exists( 'BOS4W_Admin' ) ) {
 			if ( 'global_subscription' == $current_section ) {
 				$this->bos4w_global_data_panel();
 			} else {
-				if ( defined( 'BOS_IS_PLUGIN' ) ) {
-					?>
-					<h2><?php echo esc_html__( 'Get started', 'bos4w' ); ?></h2>
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/mHekpxxsLFs" title="YouTube video player" frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				<?php } ?>
+				?>
 				<?php $this->bos4w_general_settings(); ?>
 				<?php
 				if ( ! defined( 'BOS_IS_PLUGIN' ) ) {
@@ -1108,6 +1113,18 @@ if ( ! class_exists( 'BOS4W_Admin' ) ) {
 					'desc_tip'    => true,
 				),
 
+				array(
+					'title'   => __( 'Default purchase option', 'bos4w' ),
+					'id'      => 'bos4w_default_purchase_option',
+					'type'    => 'select',
+					'desc_tip' => __( 'Please choose the OpenAI model that is going to be used for the store assistant.', 'bos4w' ),
+					'default' => '0',
+					'options' => array(
+						'0' => __( 'One-time purchase', 'bos4w' ),
+						'1' => __( 'Subscription', 'bos4w' ),
+					),
+				),
+
 				'section_end' => array(
 					'type' => 'sectionend',
 					'id'   => 'settings_tabs_bos4w_settings_tab_section_end',
@@ -1162,7 +1179,7 @@ if ( ! class_exists( 'BOS4W_Admin' ) ) {
 								<div class="subscription-category">
 									<div class="subscription-details">
 										<p class="form-field _subscription_details_<?php echo esc_attr( $s ); ?>">
-											<label for="_subscription_details_<?php echo esc_attr( $s ); ?>"><?php echo esc_html__( 'Cateogy', 'bos4w' ); ?></label>
+											<label for="_subscription_details_<?php echo esc_attr( $s ); ?>"><?php echo esc_html__( 'Category', 'bos4w' ); ?></label>
 										<div class="wrap">
 											<select class="wc-category-search" multiple="multiple" style="width: 50%;" id="sspw_select_promoted_products" name="bos4w_saved_subs[<?php echo esc_attr( $s ); ?>][product_cat][]" data-placeholder="<?php esc_attr_e( 'Search for a Category&hellip;', 'woocommerce-social-proof-fomo' ); ?>" data-action="woocommerce_json_search_products_and_variations">
 												<?php

@@ -209,7 +209,7 @@ class SyncerHooks implements Service, Registerable {
 			$product_id = $product->get_id();
 
 			// Avoid to handle variations directly. We handle them from the parent.
-			if ( $this->notifications_service->is_ready() && $notify ) {
+			if ( $this->notifications_service->is_ready( NotificationsService::DATATYPE_PRODUCT ) && $notify ) {
 				$this->handle_update_product_notification( $product );
 			}
 
@@ -222,6 +222,11 @@ class SyncerHooks implements Service, Registerable {
 			if ( $product instanceof WC_Product_Variable ) {
 				// This is only for MC Push mechanism. We don't handle notifications here.
 				$this->handle_update_products( $product->get_available_variations( 'objects' ), false );
+				continue;
+			}
+
+			// Only proceed with product syncing if PUSH is enabled for this data type
+			if ( ! $this->merchant_center->is_enabled_for_datatype( NotificationsService::DATATYPE_PRODUCT ) ) {
 				continue;
 			}
 
@@ -294,6 +299,11 @@ class SyncerHooks implements Service, Registerable {
 	 * @param int $product_id
 	 */
 	protected function handle_delete_product( int $product_id ) {
+		// Only proceed with product deletion if PUSH is enabled for this data type
+		if ( ! $this->merchant_center->is_enabled_for_datatype( NotificationsService::DATATYPE_PRODUCT ) ) {
+			return;
+		}
+
 		if ( isset( $this->delete_requests_map[ $product_id ] ) ) {
 			$product_id_map = BatchProductIDRequestEntry::convert_to_id_map( $this->delete_requests_map[ $product_id ] )->get();
 			if ( ! empty( $product_id_map ) && ! $this->is_already_scheduled_to_delete( $product_id ) ) {
@@ -344,12 +354,17 @@ class SyncerHooks implements Service, Registerable {
 	 * @param int $product_id
 	 */
 	protected function handle_pre_delete_product( int $product_id ) {
-		if ( $this->notifications_service->is_ready() ) {
+		if ( $this->notifications_service->is_ready( NotificationsService::DATATYPE_PRODUCT ) ) {
 			/**
 			 * For deletions, we do send directly the notification instead of scheduling it.
 			 * This is because we want to avoid that the product is not in the database anymore when the scheduled action runs.
 			 */
 			$this->maybe_send_delete_notification( $product_id );
+		}
+
+		// Only proceed with product syncing if PUSH is enabled for this data type
+		if ( ! $this->merchant_center->is_enabled_for_datatype( NotificationsService::DATATYPE_PRODUCT ) ) {
+			return;
 		}
 
 		$product = $this->wc->maybe_get_product( $product_id );

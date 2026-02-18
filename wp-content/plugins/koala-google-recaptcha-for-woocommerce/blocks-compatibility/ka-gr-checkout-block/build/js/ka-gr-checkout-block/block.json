@@ -1,0 +1,29 @@
+{
+  "apiVersion": 2,
+  "name": "ka-gr-checkout-block/ka_gr_checkout_block",
+  "version": "1.0.0",
+  "category": "woocommerce",
+  "supports": {
+    "html": false,
+    "align": false,
+    "multiple": false,
+    "reusable": false
+  },
+  "parent": [
+    "woocommerce/checkout-order-summary-block"
+  ],
+  "attributes": {
+    "lock": {
+      "type": "object",
+      "default": {
+        "remove": true,
+        "move": true
+      }
+    },
+    "text": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "textdomain": "ka_upload_files"
+}

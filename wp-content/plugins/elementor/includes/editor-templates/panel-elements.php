@@ -55,7 +55,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <script type="text/template" id="tmpl-elementor-panel-elements-category">
 	<button class="elementor-panel-heading elementor-panel-category-title">
 		<span class="elementor-panel-heading-toggle">
-			<i class="eicon" aria-hidden="true"></i>
+			<i class="eicon-caret-right" aria-hidden="true"></i>
 		</span>
 		<span class="elementor-panel-heading-title">{{{ title }}}</span>
 		<?php do_action( 'elementor/editor/templates/panel/category' ); ?>
@@ -77,11 +77,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 </script>
 
 <script type="text/template" id="tmpl-elementor-element-library-element">
+	<# const v4Categories = ['v4-elements', 'atomic-form']; #>
 	<button class="elementor-element">
-		<# if ( false === obj.editable ) { #>
+	<# if ( obj.integration ) { #>
+			<i class="eicon-plug"></i>
+		<# } else if ( false === obj.editable ) { #>
 			<i class="eicon-lock"></i>
 		<# } #>
-		<# if ( obj.categories.includes( 'v4-elements' ) ) { #>
+		<# if ( obj.categories.some( category => v4Categories.includes( category ) ) ) { #>
 			<i class="eicon-atomic"></i>
 		<# } #>
 		<div class="icon">

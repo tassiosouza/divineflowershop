@@ -1,5 +1,25 @@
 *** Buy Once or Subscribe for WooCommerce Subscriptions ***
 
+2025-11-11 - version 5.2.1
+* Fix - products page loading slowly
+* Fix - fix PHP warning
+* Fix - fix adding the same product to an existing subscription as duplicate
+
+2025-10-30 - version 5.2.0
+* New - Add product to existing subscription from the product page.
+* Update - Prevent BOS products from being deleted if they are present on active subscriptions
+* Fix - Price not correct when using role-based pricing
+* Fix - Fix WPML compatibility
+* Update - Subscription plans sections removed from Variable Subscription variations
+* Update - Update misspelled label
+* Update - Add setting for default option
+* Update: Remove the value discount checkbox for bundle and composite products.
+* Fix - Fix PHP error
+* Fix - Fix PHP warning
+* Update - Remove intro video
+* Update - Update BOS template
+* Fix - Add fix for decimal separator settings
+
 2025-04-30 - version 5.1.1
 * New - Set default value for Allow plan selection in cart setting
 

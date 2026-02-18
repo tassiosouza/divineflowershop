@@ -1,0 +1,37 @@
+<svg width="166" height="106" viewBox="0 0 166 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_295_4622)">
+<rect x="3" y="3" width="160" height="100" rx="3" fill="white"/>
+<rect x="19" y="29" width="52" height="3" rx="1.5" fill="#D1D2D3"/>
+<rect x="19" y="36" width="16" height="2" rx="1" fill="#D1D2D3"/>
+<rect x="19" y="46" width="24" height="2" rx="1" fill="#D1D2D3"/>
+<rect x="19" y="52" width="24" height="2" rx="1" fill="#D1D2D3"/>
+<rect x="19" y="67" width="16" height="10" rx="2" fill="#D1D2D3"/>
+<rect x="55" y="67" width="24" height="10" rx="2" fill="#D1D2D3"/>
+<rect x="91" y="18" width="1" height="70" fill="#D1D2D3"/>
+<rect x="124" y="32" width="16" height="2" rx="1" fill="#D1D2D3"/>
+<rect x="124" y="38" width="23" height="2" rx="1" fill="#D1D2D3"/>
+<rect x="104" y="52" width="43" height="1" rx="0.5" fill="#D1D2D3"/>
+<rect x="104" y="24" width="43" height="1" rx="0.5" fill="#D1D2D3"/>
+<path d="M117.6 31H106.4C105.627 31 105 31.6268 105 32.4V43.6C105 44.3732 105.627 45 106.4 45H117.6C118.373 45 119 44.3732 119 43.6V32.4C119 31.6268 118.373 31 117.6 31Z" stroke="#D1D2D3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M116.962 41.457L114.462 36.2065C114.435 36.1496 114.395 36.1009 114.345 36.0649C114.295 36.029 114.237 36.007 114.176 36.001C114.116 35.9964 114.055 36.0078 114 36.0339C113.944 36.0601 113.896 36.1003 113.859 36.151L110.915 40.2718L109.417 38.3847C109.381 38.3392 109.335 38.3033 109.283 38.28C109.231 38.2567 109.175 38.2466 109.119 38.2506C109.062 38.2547 109.008 38.2726 108.959 38.3031C108.911 38.3336 108.87 38.3757 108.84 38.4259L107.054 41.4262C107.02 41.483 107.002 41.5482 107 41.6151C106.998 41.682 107.014 41.7482 107.045 41.8068C107.076 41.8653 107.121 41.9141 107.176 41.9481C107.231 41.9821 107.293 42 107.357 42H116.643C116.704 42 116.764 41.9836 116.817 41.9525C116.87 41.9213 116.915 41.8764 116.947 41.822C116.979 41.7676 116.997 41.7055 117 41.6416C117.002 41.5777 116.989 41.5141 116.962 41.457Z" fill="#D1D2D3"/>
+<path d="M110 36.6364C110.552 36.6364 111 36.1886 111 35.6364C111 35.0841 110.552 34.6364 110 34.6364C109.448 34.6364 109 35.0841 109 35.6364C109 36.1886 109.448 36.6364 110 36.6364Z" fill="#D1D2D3"/>
+<rect x="104" y="69" width="43" height="1" rx="0.5" fill="#D1D2D3"/>
+<rect x="104" y="84" width="16" height="3" rx="1.5" fill="#D1D2D3"/>
+<rect x="139" y="84" width="8" height="3" rx="1.5" fill="#D1D2D3"/>
+<rect x="104" y="58" width="43" height="6" rx="2" fill="#D1D2D3"/>
+<rect x="104" y="75" width="43" height="3" rx="1.5" fill="#16110E"/>
+<rect x="104" y="18" width="8" height="3" rx="1.5" fill="#D1D2D3"/>
+</g>
+<defs>
+<filter id="filter0_d_295_4622" x="0" y="0" width="166" height="106" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="1.5"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_295_4622"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_295_4622" result="shape"/>
+</filter>
+</defs>
+</svg>

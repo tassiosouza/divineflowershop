@@ -13,3 +13,37 @@ function theme_enqueue_styles() {
 /**
  * Your code goes below
  */
+
+/**
+ * Reorder product variations by price (Standard, Deluxe, Premium)
+ */
+function reorder_variations_by_price($variations, $product) {
+    if (!$product || !$product->is_type('variable')) {
+        return $variations;
+    }
+    
+    // Sort variations by price
+    usort($variations, function($a, $b) {
+        return $a['display_price'] <=> $b['display_price'];
+    });
+    
+    return $variations;
+}
+add_filter('woocommerce_available_variations', 'reorder_variations_by_price', 10, 2);
+
+/**
+ * Also reorder variations in the admin and frontend display
+ */
+function reorder_variations_display($variations, $product) {
+    if (!$product || !$product->is_type('variable')) {
+        return $variations;
+    }
+    
+    // Sort variations by price
+    usort($variations, function($a, $b) {
+        return $a['display_price'] <=> $b['display_price'];
+    });
+    
+    return $variations;
+}
+add_filter('woocommerce_product_get_children', 'reorder_variations_display', 10, 2);

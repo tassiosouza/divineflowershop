@@ -1,0 +1,27 @@
+{
+  "apiVersion": 2,
+  "name": "iconic-wds/iconic-wds-subscriptions",
+  "version": "1.0.0",
+  "title": "Delivery Slots Subscription",
+  "category": "woocommerce",
+  "description": "Add a block to display delivery slots for subscription.",
+  "supports": {
+    "html": false,
+    "align": false,
+    "multiple": false,
+    "reusable": false
+  },
+  "parent": [
+    "woocommerce/checkout-shipping-methods-block"
+  ],
+  "attributes": {
+    "lock": {
+      "type": "object",
+      "default": {
+        "remove": true,
+        "move": true
+      }
+    }
+  },
+  "textdomain": "jckwds"
+}

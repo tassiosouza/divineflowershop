@@ -1,0 +1,1468 @@
+# Copyright (C) 2026 flux-checkout
+# This file is distributed under the same license as the flux-checkout package.
+msgid ""
+msgstr ""
+"Project-Id-Version: flux-checkout\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-01-27 09:06+0000\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: inc/class-assets.php:140
+msgid "Please fix all errors and try again."
+msgstr ""
+
+#: inc/class-assets.php:141
+msgid "Please search for an address and try again."
+msgstr ""
+
+#: inc/class-assets.php:142
+msgid "Login"
+msgstr ""
+
+#: inc/class-assets.php:143
+msgid "Pay"
+msgstr ""
+
+#: inc/class-assets.php:144
+msgid "Coupon has been removed."
+msgstr ""
+
+#: inc/class-assets.php:145
+msgid "An account is already registered with this email address. Would you like to log in?"
+msgstr ""
+
+#: inc/class-assets.php:146
+msgid "Login successful"
+msgstr ""
+
+#: inc/class-assets.php:147
+msgid "An error occurred"
+msgstr ""
+
+#: inc/class-assets.php:148, inc/class-cross-sell.php:199
+msgid "+ Add"
+msgstr ""
+
+#: inc/class-assets.php:149
+msgid "Enter a location"
+msgstr ""
+
+#: inc/class-assets.php:151
+msgid "Please enter a valid phone number."
+msgstr ""
+
+#: inc/class-assets.php:560
+msgid "Please select Product(s)."
+msgstr ""
+
+#: inc/class-assets.php:561
+msgid "Please select Product Category."
+msgstr ""
+
+#: inc/class-assets.php:562, inc/class-assets.php:563
+msgid "Please enter a value."
+msgstr ""
+
+#: inc/class-assets.php:566
+msgctxt "checkout element"
+msgid "User Role"
+msgstr ""
+
+#: inc/class-assets.php:567
+msgctxt "checkout element"
+msgid "Product(s)"
+msgstr ""
+
+#: inc/class-assets.php:568
+msgctxt "checkout element"
+msgid "Product Category(s)"
+msgstr ""
+
+#: inc/class-assets.php:569
+msgctxt "checkout element"
+msgid "Cart Total"
+msgstr ""
+
+#: inc/class-assets.php:570
+msgctxt "checkout element"
+msgid "is"
+msgstr ""
+
+#: inc/class-assets.php:571
+msgctxt "checkout element"
+msgid "is not"
+msgstr ""
+
+#: inc/class-assets.php:572
+msgctxt "checkout element"
+msgid "is less than"
+msgstr ""
+
+#: inc/class-assets.php:573
+msgctxt "checkout element"
+msgid "is less than or equal to"
+msgstr ""
+
+#: inc/class-assets.php:574
+msgctxt "checkout element"
+msgid "is more than"
+msgstr ""
+
+#: inc/class-assets.php:575
+msgctxt "checkout element"
+msgid "is more than or equal to"
+msgstr ""
+
+#: inc/class-assets.php:576
+msgctxt "checkout element"
+msgid "and"
+msgstr ""
+
+#: inc/class-assets.php:577
+msgctxt "checkout element"
+msgid "in cart:"
+msgstr ""
+
+#: inc/class-assets.php:578
+msgctxt "checkout element"
+msgid "not in cart:"
+msgstr ""
+
+#: inc/class-checkout-elements.php:125
+msgid "Duplicate this item"
+msgstr ""
+
+#: inc/class-checkout-elements.php:125
+msgid "Duplicate"
+msgstr ""
+
+#: inc/class-checkout-elements.php:136
+msgid "Invalid nonce!"
+msgstr ""
+
+#: inc/class-checkout-elements.php:147
+msgid "No post to duplicate has been supplied!"
+msgstr ""
+
+#: inc/class-checkout-elements.php:161
+msgid "Something went wrong."
+msgstr ""
+
+#: inc/class-checkout-elements.php:490
+msgid "Flux Checkout Elements"
+msgstr ""
+
+#: inc/class-checkout-elements.php:588
+msgid "Elements"
+msgstr ""
+
+#: inc/class-checkout-elements.php:590, inc/class-checkout-elements.php:591
+msgid "Add new Element"
+msgstr ""
+
+#: inc/class-checkout-elements.php:622
+msgid "Checkout Header"
+msgstr ""
+
+#: inc/class-checkout-elements.php:626
+msgid "Checkout Footer"
+msgstr ""
+
+#: inc/class-checkout-elements.php:630
+msgid "Before Flux Header"
+msgstr ""
+
+#: inc/class-checkout-elements.php:634
+msgid "After Flux Header"
+msgstr ""
+
+#: inc/class-checkout-elements.php:638
+msgid "Before All Fields"
+msgstr ""
+
+#: inc/class-checkout-elements.php:642
+msgid "After All Fields"
+msgstr ""
+
+#: inc/class-checkout-elements.php:648, inc/class-checkout-elements.php:658, inc/class-checkout-elements.php:676
+msgid "Before Fields"
+msgstr ""
+
+#: inc/class-checkout-elements.php:652, inc/class-checkout-elements.php:670
+msgid "After Fields"
+msgstr ""
+
+#: inc/class-checkout-elements.php:662
+msgid "Before Order Notes"
+msgstr ""
+
+#: inc/class-checkout-elements.php:666
+msgid "After Order Notes"
+msgstr ""
+
+#: inc/class-checkout-elements.php:680
+msgid "Before Payment"
+msgstr ""
+
+#: inc/class-checkout-elements.php:684
+msgid "Before Submit button"
+msgstr ""
+
+#: inc/class-checkout-elements.php:688
+msgid "After Submit button"
+msgstr ""
+
+#: inc/class-checkout-elements.php:694
+msgid "Before Cart Contents"
+msgstr ""
+
+#: inc/class-checkout-elements.php:698
+msgid "Before Coupon"
+msgstr ""
+
+#: inc/class-checkout-elements.php:702
+msgid "After Coupon"
+msgstr ""
+
+#: inc/class-checkout-elements.php:706
+msgid "Before total"
+msgstr ""
+
+#: inc/class-checkout-elements.php:710
+msgid "After total"
+msgstr ""
+
+#: inc/class-checkout-elements.php:789, inc/class-checkout-elements.php:762
+msgid "Before Thank you section"
+msgstr ""
+
+#: inc/class-checkout-elements.php:793
+msgid "Before Order details"
+msgstr ""
+
+#: inc/class-checkout-elements.php:797
+msgid "After Order details"
+msgstr ""
+
+#: inc/class-checkout-elements.php:801
+msgid "After Customer address"
+msgstr ""
+
+#: inc/class-checkout-elements.php:766
+msgid "Before Map"
+msgstr ""
+
+#: inc/class-checkout-elements.php:770, inc/admin/settings.php:491
+msgid "Before Customer details"
+msgstr ""
+
+#: inc/class-checkout-elements.php:774
+msgid "Before Downloads"
+msgstr ""
+
+#: inc/class-checkout-elements.php:778
+msgid "Before product details"
+msgstr ""
+
+#: inc/class-checkout-elements.php:782
+msgid "After product details"
+msgstr ""
+
+#: inc/class-checkout-patterns.php:39
+msgid "Flux Checkout"
+msgstr ""
+
+#: inc/class-checkout-patterns.php:48
+msgid "Flux Element - Trust badge 1"
+msgstr ""
+
+#: inc/class-checkout-patterns.php:68
+msgid "Flux Element - Trust badge 2"
+msgstr ""
+
+#: inc/class-checkout-patterns.php:88
+msgid "Flux Element - Sale Banner"
+msgstr ""
+
+#: inc/class-checkout-patterns.php:108
+msgid "Flux Element - Testimonial"
+msgstr ""
+
+#: inc/class-checkout-patterns.php:138
+msgid "Flux Element - Feature Points"
+msgstr ""
+
+#: inc/class-checkout-patterns.php:190
+msgid "Flux Element - Frequently Asked Questions"
+msgstr ""
+
+#: inc/class-checkout-patterns.php:246
+msgid "Flux Element - Sale banner"
+msgstr ""
+
+#: inc/class-checkout-patterns.php:262
+msgid "Flux Element - Accepted credit cards"
+msgstr ""
+
+#: inc/class-compat-bacs.php:79
+msgid "Payment Instructions"
+msgstr ""
+
+#: inc/class-compat-bacs.php:125
+msgid "Bank Details"
+msgstr ""
+
+#: inc/class-compat-bacs.php:132
+msgid "Bank Account"
+msgstr ""
+
+#: inc/class-compat-checkout-block.php:84
+msgid "Flux Checkout will replace the output of this Checkout block when viewed on the site."
+msgstr ""
+
+#: inc/class-compat-checkout-block.php:109
+msgid "This field has no effect when Checkout Blocks are in use. To change the status of the phone field, please update the settings of the Address block found inside the Checkout block on your Checkout page."
+msgstr ""
+
+#: inc/class-compat-force-sells.php:56
+msgid "Quantity"
+msgstr ""
+
+#: inc/class-compat-germanized.php:56
+msgid "Review Order"
+msgstr ""
+
+#: inc/class-compat-stellarpay.php:60
+msgid "Add StellarPay (optional)"
+msgstr ""
+
+#: inc/class-compat-stellarpay.php:61
+msgid "Streamline your payments with StellarPay."
+msgstr ""
+
+#: inc/class-compat-stellarpay.php:62
+msgid "Learn More"
+msgstr ""
+
+#: inc/class-compat-stellarpay.php:66, inc/class-compat-stellarpay.php:121
+msgid "Install StellarPay"
+msgstr ""
+
+#: inc/class-compat-stellarpay.php:87
+msgid "Stripe Payments"
+msgstr ""
+
+#. translators: %s: Documentation link.
+#: inc/class-compat-stellarpay.php:90, inc/class-compat-stellarpay.php:107
+msgid "Stripe integration via StellarPay.<br><a href=\"%s\" target=\"_blank\">View documentation</a>"
+msgstr ""
+
+#: inc/class-compat-stellarpay.php:98
+msgid "Payment Gateway"
+msgstr ""
+
+#: inc/class-compat-stellarpay.php:105
+msgid "StellarPay Stripe"
+msgstr ""
+
+#: inc/class-compat-stellarpay.php:124
+msgid "Manage Settings"
+msgstr ""
+
+#: inc/class-compat-stellarpay.php:125
+msgid "Activate StellarPay"
+msgstr ""
+
+#: inc/class-compat-stellarpay.php:152
+msgid "Get Free Plugin"
+msgstr ""
+
+#. translators: placeholder is a date.
+#: inc/class-compat-woocommerce-subscriptions.php:103
+msgid "First renewal"
+msgstr ""
+
+#: inc/class-core-install-plugin.php:92, inc/class-core-install-plugin.php:339
+msgid "There was an error installing the plugin. Please try again or install manually."
+msgstr ""
+
+#: inc/class-core-install-plugin.php:100
+msgid "There was an error activating the plugin. Please try again or activate manually."
+msgstr ""
+
+#: inc/class-core-install-plugin.php:242
+msgid "Install"
+msgstr ""
+
+#: inc/class-core-install-plugin.php:245
+msgid "Activate"
+msgstr ""
+
+#: inc/class-core-install-plugin.php:246
+msgid "Manage"
+msgstr ""
+
+#: inc/class-core-install-plugin.php:267, templates/admin/checkout-elements/checkout-elements-metabox.php:34
+msgid "Enabled"
+msgstr ""
+
+#: inc/class-core-install-plugin.php:375
+msgid "No plugin specified"
+msgstr ""
+
+#: inc/class-core-install-plugin.php:379
+msgid "You do not have permission to install plugins"
+msgstr ""
+
+#: inc/class-core-install-plugin.php:390
+msgid "Plugin installed successfully"
+msgstr ""
+
+#: inc/class-core-license-uplink.php:143
+msgid "Changelog"
+msgstr ""
+
+#: inc/class-core-onboard.php:60, inc/class-core-onboard.php:69
+msgid "Get Started"
+msgstr ""
+
+#: inc/class-core-onboard.php:75
+msgid "Steps"
+msgstr ""
+
+#: inc/class-core-onboard.php:539
+msgid "Are you sure?"
+msgstr ""
+
+#: inc/class-core-onboard.php:540
+msgid "Are you sure you want to dismiss the Get Started tab? You won't be able to access it again."
+msgstr ""
+
+#: inc/class-core-onboard.php:542
+msgid "Yes"
+msgstr ""
+
+#: inc/class-core-onboard.php:543
+msgid "Cancel"
+msgstr ""
+
+#: inc/class-core-onboard.php:628
+msgid "Priority Support"
+msgstr ""
+
+#: inc/class-core-onboard.php:629
+msgid "Help is at hand if you face any issues."
+msgstr ""
+
+#: inc/class-core-onboard.php:633
+msgid "Get Help"
+msgstr ""
+
+#: inc/class-core-settings.php:349
+msgid "Getting Started"
+msgstr ""
+
+#: inc/class-core-settings.php:397
+msgid "Dashboard"
+msgstr ""
+
+#: inc/class-core-settings.php:404
+msgid "License &amp; Account Settings"
+msgstr ""
+
+#: inc/class-core-settings.php:410
+msgid "License Key"
+msgstr ""
+
+#: inc/class-core-settings.php:411
+msgid "Activate your license to get the latest updates and support."
+msgstr ""
+
+#: inc/class-core-settings.php:417
+msgid "Your Account"
+msgstr ""
+
+#: inc/class-core-settings.php:418
+msgid "Manage all of your Iconic plugins, supscriptions, renewals, and more."
+msgstr ""
+
+#: inc/class-core-settings.php:429, inc/class-core-settings.php:435
+msgid "Support"
+msgstr ""
+
+#: inc/class-core-settings.php:436
+msgid "Get premium support with a valid license."
+msgstr ""
+
+#: inc/class-core-settings.php:442
+msgid "Documentation"
+msgstr ""
+
+#: inc/class-core-settings.php:443
+msgid "Read the plugin documentation."
+msgstr ""
+
+#: inc/class-core-settings.php:780
+msgid "Works well with..."
+msgstr ""
+
+#: inc/class-core-settings.php:809
+msgid "Buy Plugin"
+msgstr ""
+
+#: inc/class-core-settings.php:812
+msgid "30 Day Money-Back Guarantee"
+msgstr ""
+
+#: inc/class-core-settings.php:850
+msgid "Submit Ticket"
+msgstr ""
+
+#: inc/class-core-settings.php:864
+msgid "Read Documentation"
+msgstr ""
+
+#: inc/class-core-settings.php:879
+msgid "Manage Your Account"
+msgstr ""
+
+#: inc/class-core-settings.php:915
+msgid "View settings"
+msgstr ""
+
+#: inc/class-core-settings.php:915
+msgid "Settings"
+msgstr ""
+
+#. translators: The plugin name.
+#: inc/class-core-telemetry.php:162
+msgid "Opt in to help us enhance %s"
+msgstr ""
+
+#. translators: The user name and the plugin name.
+#: inc/class-core-telemetry.php:168
+msgid ""
+"Hi, %1$s! We'd love your help to improve %2$s. \n"
+"				By opting in, you'll share usage data from %2$s and future Iconic products with our team, allowing us to refine your experience. \n"
+"				As a bonus, we'll send you occasional product updates. \n"
+"				If you decide to skip this, no worries – %2$s will continue to work seamlessly for you."
+msgstr ""
+
+#: inc/class-core-telemetry.php:208
+msgid "I'm just deactivating temporarily."
+msgstr ""
+
+#: inc/class-core-telemetry.php:261
+msgid "Opt In"
+msgstr ""
+
+#. translators: The telemetry terms URL.
+#: inc/class-core-telemetry.php:263
+msgid "Help us improve this plugin by sharing <a href=\"%s\" target=\"_blank\">non-sensitive</a> data with us."
+msgstr ""
+
+#: inc/class-core-telemetry.php:295
+msgid "Sorry, you can't do that."
+msgstr ""
+
+#: inc/class-core.php:343
+msgid "House Number/Name"
+msgstr ""
+
+#: inc/class-core.php:413, inc/class-core.php:417, inc/class-core.php:585
+msgid "Apartment, suite, unit etc."
+msgstr ""
+
+#: inc/class-core.php:666
+msgid "This field is required"
+msgstr ""
+
+#: inc/class-core.php:667
+msgid "Please enter a valid phone number"
+msgstr ""
+
+#. translators: %s: field name
+#: inc/class-core.php:800
+msgid "%s is a required field."
+msgstr ""
+
+#. translators: ISO 3166-1 alpha-2 country code
+#: inc/class-core.php:820
+msgid "'%s' is not a valid country code."
+msgstr ""
+
+#. translators: %1$s: field name, %2$s finder.eircode.ie URL
+#: inc/class-core.php:828
+msgid "%1$s is not valid. You can look up the correct Eircode <a target=\"_blank\" href=\"%2$s\">here</a>."
+msgstr ""
+
+#. translators: %s: field name
+#: inc/class-core.php:833
+msgid "%s is not a valid postcode / ZIP."
+msgstr ""
+
+#. translators: Phone.
+#: inc/class-core.php:841
+msgid "%s is not a valid phone number."
+msgstr ""
+
+#. translators: Email.
+#: inc/class-core.php:846
+msgid "%s is not a valid email address."
+msgstr ""
+
+#: inc/class-core.php:859
+msgid "An account is already registered with this email address. <a href=\"#\" data-login>Would you like to log in</a>?"
+msgstr ""
+
+#: inc/class-cross-sell.php:124
+msgid "You may also like"
+msgstr ""
+
+#: inc/class-cross-sell.php:405
+msgid "Note: the default WooCommerce cross-sells will also be visible at the checkout, based on your current Flux Checkout settings."
+msgstr ""
+
+#. translators: Amount.
+#: inc/class-helpers.php:534
+msgid "Pay for order"
+msgstr ""
+
+#: inc/class-sidebar.php:335, inc/class-sidebar.php:336
+msgid "Remove this item"
+msgstr ""
+
+#. translators: %s Product title.
+#: inc/class-sidebar.php:418
+msgid "You can only have 1 %s in your cart."
+msgstr ""
+
+#. translators: 1: product name 2: quantity in stock
+#: inc/class-sidebar.php:433
+msgid "Sorry, we do not have enough \"%1$s\" in stock to fulfill your order (%2$s available). We apologize for any inconvenience caused."
+msgstr ""
+
+#: inc/class-steps.php:211
+msgid "Continue to"
+msgstr ""
+
+#: inc/class-steps.php:203
+msgid "Continue"
+msgstr ""
+
+#: inc/class-steps.php:251
+msgid "Details"
+msgstr ""
+
+#: inc/class-steps.php:257, inc/class-steps.php:771, inc/class-steps.php:811, inc/class-thankyou.php:279
+msgid "Address"
+msgstr ""
+
+#: inc/class-steps.php:263, inc/class-steps.php:599, inc/class-thankyou.php:314
+msgid "Payment"
+msgstr ""
+
+#: inc/class-steps.php:299
+msgid "Customer Details"
+msgstr ""
+
+#: inc/class-steps.php:324
+msgid "Billing Address"
+msgstr ""
+
+#: inc/class-steps.php:331
+msgid "Shipping Address"
+msgstr ""
+
+#: inc/class-steps.php:329
+msgid "Billing &amp; Shipping Address"
+msgstr ""
+
+#: inc/class-steps.php:388
+msgid "Order notes?"
+msgstr ""
+
+#: inc/class-steps.php:440
+msgid "Ship to a different address?"
+msgstr ""
+
+#: inc/class-steps.php:451, inc/class-steps.php:532
+msgid "Look up address"
+msgstr ""
+
+#: inc/class-steps.php:503
+msgid "Use same address for billing?"
+msgstr ""
+
+#: inc/class-steps.php:525
+msgid "Billing address"
+msgstr ""
+
+#: inc/class-steps.php:584
+msgctxt "Modern theme: payment heading"
+msgid "Payment"
+msgstr ""
+
+#: inc/class-steps.php:641
+msgid "Returning Customer?"
+msgstr ""
+
+#: inc/class-steps.php:655
+msgid "Already have an account?"
+msgstr ""
+
+#: inc/class-steps.php:656
+msgid "Log in"
+msgstr ""
+
+#: inc/class-steps.php:689
+msgid "Create an account?"
+msgstr ""
+
+#: inc/class-steps.php:719
+msgid "Create an account by entering the information below. If you are a returning customer please login at the top of the page."
+msgstr ""
+
+#: inc/class-steps.php:716
+msgid "Create an account by entering the information below. If you are a returning customer please login."
+msgstr ""
+
+#: inc/class-steps.php:714
+msgid "Create an account by entering the information below. If you are a returning customer please %1$slogin on your account page%2$s."
+msgstr ""
+
+#: inc/class-steps.php:758, inc/class-thankyou.php:268
+msgid "Contact"
+msgstr ""
+
+#: inc/class-steps.php:764, inc/class-steps.php:777
+msgid "Edit"
+msgstr ""
+
+#: inc/class-steps.php:799, inc/class-steps.php:840
+msgid "Start typing your address to search."
+msgstr ""
+
+#: inc/class-steps.php:802, inc/class-steps.php:843
+msgid "Info"
+msgstr ""
+
+#: inc/class-steps.php:805, inc/class-steps.php:846
+msgid "Start with your house/apartment number then your street address."
+msgstr ""
+
+#: inc/class-steps.php:815
+msgid "Please enter your address"
+msgstr ""
+
+#: inc/class-steps.php:819, inc/class-steps.php:857
+msgid "Enter Address Manually"
+msgstr ""
+
+#: inc/class-steps.php:883
+msgid "Enter Coupon"
+msgstr ""
+
+#: inc/class-steps.php:940
+msgid "Back"
+msgstr ""
+
+#: inc/class-steps.php:930
+msgid "Back to %s"
+msgstr ""
+
+#: inc/class-steps.php:975, inc/class-thankyou.php:302
+msgid "Shipping"
+msgstr ""
+
+#. translators: Order ID.
+#: inc/class-thankyou.php:100
+msgid "Order #%d"
+msgstr ""
+
+#. translators: First name.
+#: inc/class-thankyou.php:106
+msgid "Thank you, %s!"
+msgstr ""
+
+#: inc/class-thankyou.php:277
+msgid "Billing"
+msgstr ""
+
+#: inc/class-thankyou.php:367
+msgid "Your Order"
+msgstr ""
+
+#: inc/class-thankyou.php:535
+msgid "Need Help?"
+msgstr ""
+
+#: inc/class-thankyou.php:535
+msgid "Contact Us"
+msgstr ""
+
+#: inc/class-thankyou.php:540
+msgid "Continue Shopping"
+msgstr ""
+
+#. translators: URL to the preview page.
+#: inc/class-thankyou.php:580
+msgid "<a href='%s' target='_blank'>Click here</a> to preview the Thank You page."
+msgstr ""
+
+#: templates/template-classic.php:51
+msgid "Back to cart"
+msgstr ""
+
+#: templates/template-classic.php:49
+msgid "Back to shop"
+msgstr ""
+
+#: templates/template-classic.php:47
+msgid "Back to account"
+msgstr ""
+
+#: templates/template-classic.php:62, woocommerce/modern/checkout/form-checkout.php:55
+msgid "Show order summary"
+msgstr ""
+
+#: templates/template-classic.php:63, woocommerce/modern/checkout/form-checkout.php:56
+msgid "Hide order summary"
+msgstr ""
+
+#: inc/admin/settings.php:29
+msgid "Styles"
+msgstr ""
+
+#: inc/admin/settings.php:34
+msgid "Checkout Page"
+msgstr ""
+
+#: inc/admin/settings.php:39, inc/admin/settings.php:206
+msgid "Theme"
+msgstr ""
+
+#: inc/admin/settings.php:44
+msgid "Thank You Page"
+msgstr ""
+
+#: inc/admin/settings.php:49, inc/admin/settings.php:521
+msgid "Integrations"
+msgstr ""
+
+#: inc/admin/settings.php:55
+msgid "Show Company Field"
+msgstr ""
+
+#: inc/admin/settings.php:56
+msgid "Enable the Company field within the Billing Details step."
+msgstr ""
+
+#: inc/admin/settings.php:62
+msgid "Use Address Autocomplete"
+msgstr ""
+
+#: inc/admin/settings.php:63
+msgid "Enable Address Autocomplete to automatically fill out address details. Requires a valid <a href=\"#tab-integrations|integrations_integrations_google_api_key\" class=\"wsf-internal-link\">Google API key</a>."
+msgstr ""
+
+#: inc/admin/settings.php:69
+msgid "Separate Street Number Field"
+msgstr ""
+
+#: inc/admin/settings.php:70
+msgid "Separate House Number/Name field from Street Address field."
+msgstr ""
+
+#: inc/admin/settings.php:76
+msgid "Show \"Back to Shop\" button."
+msgstr ""
+
+#: inc/admin/settings.php:77
+msgid "Add a button to go back to the cart page."
+msgstr ""
+
+#: inc/admin/settings.php:83
+msgid "Skip Cart Page"
+msgstr ""
+
+#: inc/admin/settings.php:84
+msgid "When enabled, skips the cart page and directly redirects users to the checkout page, reducing a step in the purchase process.<br/><br/><b>Note:</b> Doesn't work for the classic theme if sidebar is disabled."
+msgstr ""
+
+#: inc/admin/settings.php:90
+msgid "Optimize for Digital Products"
+msgstr ""
+
+#: inc/admin/settings.php:91
+msgid "Reduce checkout fields when only digital products are in the cart."
+msgstr ""
+
+#: inc/admin/settings.php:97
+msgid "Make Cart Items images clickable"
+msgstr ""
+
+#: inc/admin/settings.php:98
+msgid "Allows the images on the Order review cart to be clicked on and linked to the product page."
+msgstr ""
+
+#: inc/admin/settings.php:104
+msgid "Show Cross-sell products on the Checkout page"
+msgstr ""
+
+#. translators: %s is the URL to the Checkout Elements page.
+#: inc/admin/settings.php:106
+msgid "Show customers additional items they might like while they're finalizing their purchase.<br><br>You can set cross-sell products on the edit product page in the Product Data section (Linked Products tab > Cross-sells field).<br><br> Use the Flux Cross-sell Products block in <a href=\"%s\">Checkout Elements</a> for more control over position."
+msgstr ""
+
+#: inc/admin/settings.php:112
+msgid "Auto Apply Coupon"
+msgstr ""
+
+#: inc/admin/settings.php:113
+msgid "Enter a coupon that will be automatically applied at checkout."
+msgstr ""
+
+#: inc/admin/settings.php:119
+msgid "Hide Coupon Field"
+msgstr ""
+
+#: inc/admin/settings.php:120
+msgid "When enabled, the coupon field will not be displayed to users and they will not be able to enter a coupon code. However, you can automatically apply a coupon using the \"coupon\" URL parameter. Example: site.com/checkout?coupon=10PCTOFF"
+msgstr ""
+
+#: inc/admin/settings.php:126
+msgid "Enable Phone number Country Code Selector"
+msgstr ""
+
+#: inc/admin/settings.php:127
+msgid "Enable country code selector for the phone number field."
+msgstr ""
+
+#: inc/admin/settings.php:136
+msgid "Custom Header & Footer"
+msgstr ""
+
+#: inc/admin/settings.php:137
+msgid "Enable custom headers & footers created with page builders such as Elementor, Divi, Breakdance, Bricks and Beaver Builder."
+msgstr ""
+
+#: inc/admin/settings.php:147
+msgid "General Settings"
+msgstr ""
+
+#: inc/admin/settings.php:156
+msgid "User Settings"
+msgstr ""
+
+#: inc/admin/settings.php:162
+msgid "Assign Guest Orders"
+msgstr ""
+
+#: inc/admin/settings.php:163
+msgid "Flux Checkout will automatically link guest orders to existing customer accounts if the email address provided in the order matches an existing account."
+msgstr ""
+
+#: inc/admin/settings.php:169
+msgid "Existing User"
+msgstr ""
+
+#: inc/admin/settings.php:170
+msgid "How to handle the familiar user emails on the checkout page."
+msgstr ""
+
+#: inc/admin/settings.php:173
+msgid "Don't offer to login"
+msgstr ""
+
+#: inc/admin/settings.php:174
+msgid "Show an inline message"
+msgstr ""
+
+#: inc/admin/settings.php:175
+msgid "Show a popup and an inline message"
+msgstr ""
+
+#: inc/admin/settings.php:185
+msgid "Mobile Settings"
+msgstr ""
+
+#: inc/admin/settings.php:191
+msgid "Coupon Field position on mobile"
+msgstr ""
+
+#: inc/admin/settings.php:192
+msgid "Define the position of the Coupon field for mobile devices."
+msgstr ""
+
+#: inc/admin/settings.php:195
+msgid "On Payment Step"
+msgstr ""
+
+#: inc/admin/settings.php:196
+msgid "Within Order Summary"
+msgstr ""
+
+#: inc/admin/settings.php:212
+msgid "Choose Theme"
+msgstr ""
+
+#: inc/admin/settings.php:213
+msgid "Choose the theme you want Flux to use."
+msgstr ""
+
+#: inc/admin/settings.php:230
+msgid "Show Order Review"
+msgstr ""
+
+#: inc/admin/settings.php:231
+msgid "Enable a persistent order review at checkout. This replaces the cart page."
+msgstr ""
+
+#: inc/admin/settings.php:239
+msgid "Web Safe Fonts"
+msgstr ""
+
+#: inc/admin/settings.php:241
+msgid "Google WebFonts"
+msgstr ""
+
+#: inc/admin/settings.php:243
+msgid "Pixels"
+msgstr ""
+
+#: inc/admin/settings.php:245
+msgid "Emphemeral Units"
+msgstr ""
+
+#: inc/admin/settings.php:252
+msgid "Header Styles"
+msgstr ""
+
+#: inc/admin/settings.php:258
+msgid "Header Type"
+msgstr ""
+
+#: inc/admin/settings.php:259
+msgid "Select whether to use an image or text for the branding."
+msgstr ""
+
+#: inc/admin/settings.php:262
+msgid "Text"
+msgstr ""
+
+#: inc/admin/settings.php:263
+msgid "Image"
+msgstr ""
+
+#: inc/admin/settings.php:270
+msgid "Header Image"
+msgstr ""
+
+#: inc/admin/settings.php:271
+msgid "Select your logo (Recommended size: 200 x 40px)."
+msgstr ""
+
+#: inc/admin/settings.php:277
+msgid "Image Width"
+msgstr ""
+
+#: inc/admin/settings.php:278
+msgid "Please enter the width of your logo in px."
+msgstr ""
+
+#: inc/admin/settings.php:284
+msgid "Header Text"
+msgstr ""
+
+#: inc/admin/settings.php:286
+msgid "Checkout"
+msgstr ""
+
+#: inc/admin/settings.php:291
+msgid "Header Font Family"
+msgstr ""
+
+#: inc/admin/settings.php:295, inc/admin/settings.php:314
+msgid "inherit"
+msgstr ""
+
+#: inc/admin/settings.php:303
+msgid "Header Font Colour"
+msgstr ""
+
+#: inc/admin/settings.php:310
+msgid "Header Font Size"
+msgstr ""
+
+#: inc/admin/settings.php:322
+msgid "Header Background"
+msgstr ""
+
+#: inc/admin/settings.php:323
+msgid "Select whether to use a gradient for the header banner."
+msgstr ""
+
+#: inc/admin/settings.php:327
+msgid "Use Primary Color"
+msgstr ""
+
+#: inc/admin/settings.php:328
+msgid "Use Custom Color"
+msgstr ""
+
+#: inc/admin/settings.php:329
+msgid "Use Gradient"
+msgstr ""
+
+#: inc/admin/settings.php:335
+msgid "Gradient Background"
+msgstr ""
+
+#: inc/admin/settings.php:336
+msgid "The background gradient to use. Preview all gradients at <a target=\"_blank\" href=\"http://uigradients.com/\"> http://uigradients.com/</a>."
+msgstr ""
+
+#: inc/admin/settings.php:343
+msgid "Custom Header Color"
+msgstr ""
+
+#: inc/admin/settings.php:350
+msgid "\"Back to Cart\" Link Color"
+msgstr ""
+
+#: inc/admin/settings.php:363
+msgid "Checkout Styles"
+msgstr ""
+
+#: inc/admin/settings.php:369
+msgid "Color Theme"
+msgstr ""
+
+#: inc/admin/settings.php:370
+msgid "Select whether to use a custom colors."
+msgstr ""
+
+#: inc/admin/settings.php:374
+msgid "Select from Design palette"
+msgstr ""
+
+#: inc/admin/settings.php:375
+msgid "Choose custom colors"
+msgstr ""
+
+#: inc/admin/settings.php:381
+msgid "Primary Color"
+msgstr ""
+
+#: inc/admin/settings.php:382, inc/admin/settings.php:402
+msgid "The Primary Color will be used for the progress bar, form fields, switches, checkboxes and radio buttons."
+msgstr ""
+
+#: inc/admin/settings.php:391
+msgid "Accent Color"
+msgstr ""
+
+#: inc/admin/settings.php:392, inc/admin/settings.php:410
+msgid "The Accent Color will be used for buttons and links."
+msgstr ""
+
+#: inc/admin/settings.php:401
+msgid "Custom Primary Color"
+msgstr ""
+
+#: inc/admin/settings.php:409
+msgid "Custom Accent Color"
+msgstr ""
+
+#: inc/admin/settings.php:417
+msgid "Placeholders"
+msgstr ""
+
+#: inc/admin/settings.php:418
+msgid "Used for placeholders and form labels"
+msgstr ""
+
+#: inc/admin/settings.php:424
+msgid "Link colour"
+msgstr ""
+
+#: inc/admin/settings.php:425
+msgid "Used for links."
+msgstr ""
+
+#: inc/admin/settings.php:431
+msgid "Primary button colour"
+msgstr ""
+
+#: inc/admin/settings.php:432
+msgid "Used for the primary buttons."
+msgstr ""
+
+#: inc/admin/settings.php:438
+msgid "Secondary button colour"
+msgstr ""
+
+#: inc/admin/settings.php:439
+msgid "Used for the secondary buttons."
+msgstr ""
+
+#: inc/admin/settings.php:445
+msgid "Custom CSS"
+msgstr ""
+
+#: inc/admin/settings.php:446
+msgid "Put your custom CSS rules here."
+msgstr ""
+
+#: inc/admin/settings.php:456
+msgid "Thank You Page Settings"
+msgstr ""
+
+#: inc/admin/settings.php:462
+msgid "Enable Flux Thank You Page"
+msgstr ""
+
+#: inc/admin/settings.php:463
+msgid "Enable the Flux custom Thank You page. This will override the default WooCommerce Thank You page."
+msgstr ""
+
+#: inc/admin/settings.php:469
+msgid "Show Map"
+msgstr ""
+
+#: inc/admin/settings.php:470
+msgid "Enable a map showing the customer's shipping location. <br><br>Requires a valid <a href=\"#tab-integrations|integrations_integrations_google_api_key\" class=\"wsf-internal-link\">Google API key</a>. "
+msgstr ""
+
+#: inc/admin/settings.php:476
+msgid "Thank You Page Content"
+msgstr ""
+
+#. translators: %s: Checkout Elements link.
+#: inc/admin/settings.php:478
+msgid "Display a custom message/content on the Thank You page.<br><br><strong>Tip:</strong> You can use the WordPress block editor to design and place custom elements anywhere on the Thank You page using <a href=\"%s\">Checkout Elements</a>."
+msgstr ""
+
+#: inc/admin/settings.php:485
+msgid "Content placement"
+msgstr ""
+
+#: inc/admin/settings.php:486
+msgid "Where to display the custom message/content."
+msgstr ""
+
+#: inc/admin/settings.php:490
+msgid "After order status"
+msgstr ""
+
+#: inc/admin/settings.php:492
+msgid "After Customer details"
+msgstr ""
+
+#: inc/admin/settings.php:493
+msgid "Before Product details"
+msgstr ""
+
+#: inc/admin/settings.php:494
+msgid "After Product details"
+msgstr ""
+
+#: inc/admin/settings.php:499
+msgid "Contact Page"
+msgstr ""
+
+#: inc/admin/settings.php:500
+msgid "Select a contact page to be linked on the Thank You page. Leave empty to hide the contact link."
+msgstr ""
+
+#: inc/admin/settings.php:508
+msgid "-Select Page-"
+msgstr ""
+
+#: inc/admin/settings.php:527
+msgid "Google API Key"
+msgstr ""
+
+#: inc/admin/settings.php:528
+msgid "Your API key to enable Address Autocomplete. <a href=\"https://iconicwp.com/docs/flux-checkout-for-woocommerce/how-to-get-your-google-api-key-for-address-autocomplete/\" target=\"_blank\">View documentation</a>."
+msgstr ""
+
+#: templates/partials/cross-sell-variable-product.php:52
+msgid "Sorry, this variation is unavailable. Please choose a different combination."
+msgstr ""
+
+#: templates/admin/checkout-elements/checkout-elements-metabox.php:13
+msgid "Position"
+msgstr ""
+
+#: templates/admin/checkout-elements/checkout-elements-metabox.php:15
+msgid "Specify the position on the checkout page where this element will be placed."
+msgstr ""
+
+#: templates/admin/checkout-elements/checkout-elements-metabox.php:25
+msgid "Enable Conditional Display"
+msgstr ""
+
+#: templates/admin/checkout-elements/checkout-elements-metabox.php:27
+msgid "Conditionally show/hide this element. Element always shows if left unchecked."
+msgstr ""
+
+#: templates/admin/checkout-elements/checkout-elements-metabox.php:35
+msgid "Disabled"
+msgstr ""
+
+#: templates/admin/checkout-elements/checkout-elements-metabox.php:42
+msgid "Conditional Display Rules"
+msgstr ""
+
+#: templates/admin/checkout-elements/checkout-elements-metabox.php:44
+msgid "Add a set of rules to determine when this Element should show."
+msgstr ""
+
+#: templates/admin/checkout-elements/checkout-elements-metabox.php:50
+msgid "Show"
+msgstr ""
+
+#: templates/admin/checkout-elements/checkout-elements-metabox.php:51
+msgid "Hide"
+msgstr ""
+
+#: templates/admin/checkout-elements/checkout-elements-metabox.php:52
+msgid "this Checkout Element when any of the following rules match:"
+msgstr ""
+
+#: templates/admin/checkout-elements/checkout-elements-metabox.php:62
+msgid "No rules applied."
+msgstr ""
+
+#: templates/admin/checkout-elements/checkout-elements-metabox.php:63
+msgid "This Element will appear unconditionally without rules."
+msgstr ""
+
+#: templates/admin/checkout-elements/checkout-elements-metabox.php:64
+msgid "This Element will hide unconditionally without rules."
+msgstr ""
+
+#: templates/admin/checkout-elements/checkout-elements-metabox.php:69
+msgid "Add New Rule"
+msgstr ""
+
+#: templates/admin/checkout-elements/checkout-elements-metabox.php:72
+msgid "Add Your First Rule"
+msgstr ""
+
+#: templates/admin/checkout-elements/rule.php:9
+msgid "Edit Rule"
+msgstr ""
+
+#: templates/admin/checkout-elements/rule.php:18
+msgid "User Role"
+msgstr ""
+
+#: templates/admin/checkout-elements/rule.php:19
+msgid "Product"
+msgstr ""
+
+#: templates/admin/checkout-elements/rule.php:20
+msgid "Product Category"
+msgstr ""
+
+#: templates/admin/checkout-elements/rule.php:21, templates/admin/checkout-elements/rule.php:69
+msgid "Cart total"
+msgstr ""
+
+#: templates/admin/checkout-elements/rule.php:27
+msgid "is in cart"
+msgstr ""
+
+#: templates/admin/checkout-elements/rule.php:28
+msgid "is not in cart"
+msgstr ""
+
+#: templates/admin/checkout-elements/rule.php:31
+msgid "is"
+msgstr ""
+
+#: templates/admin/checkout-elements/rule.php:32
+msgid "is not"
+msgstr ""
+
+#: templates/admin/checkout-elements/rule.php:34
+msgid "is less than"
+msgstr ""
+
+#: templates/admin/checkout-elements/rule.php:35
+msgid "is less than or equal to"
+msgstr ""
+
+#: templates/admin/checkout-elements/rule.php:36
+msgid "is more than"
+msgstr ""
+
+#: templates/admin/checkout-elements/rule.php:37
+msgid "is more than or equal to"
+msgstr ""
+
+#: templates/admin/checkout-elements/rule.php:52, templates/admin/checkout-elements/rule.php:65
+msgid "Type to search..."
+msgstr ""
+
+#: templates/admin/checkout-elements/rule.php:76
+msgid "Guest"
+msgstr ""
+
+#: templates/admin/checkout-elements/rule.php:84, templates/admin/checkout-elements/rule.php:93
+msgid "Delete"
+msgstr ""
+
+#: templates/admin/checkout-elements/rule.php:85
+msgid "Add New Condition"
+msgstr ""
+
+#: templates/admin/checkout-elements/rule.php:92
+msgid "Done"
+msgstr ""
+
+#: woocommerce/classic/checkout/form-checkout.php:40, woocommerce/modern/checkout/form-checkout.php:43
+msgid "You must be logged in to checkout."
+msgstr ""
+
+#: woocommerce/classic/checkout/form-login.php:47, woocommerce/modern/checkout/form-login.php:40
+msgid "Customer Login"
+msgstr ""
+
+#: woocommerce/classic/checkout/form-login.php:92
+msgid "Cancel Login"
+msgstr ""
+
+#: woocommerce/common/checkout/empty-cart.php:16
+msgid "Your cart is empty, taking you back to the shop..."
+msgstr ""
+
+#: woocommerce/common/checkout/empty-cart.php:19
+msgid "Return to shop"
+msgstr ""
+
+#: woocommerce/common/checkout/form-pay.php:41
+msgid "Pay for Order"
+msgstr ""
+
+#: woocommerce/common/checkout/form-pay.php:75
+msgid "Back to Account"
+msgstr ""
+
+#: woocommerce/modern/checkout/form-coupon.php:29
+msgid "Coupon code"
+msgstr ""
+
+#: woocommerce/modern/checkout/form-coupon.php:34
+msgid "Apply"
+msgstr ""

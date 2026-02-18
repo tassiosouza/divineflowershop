@@ -1,0 +1,1003 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Flux Checkout\n"
+"POT-Creation-Date: 2019-06-23 14:36+0100\n"
+"PO-Revision-Date: 2023-08-28 06:54+0000\n"
+"Last-Translator: \n"
+"Language-Team: French (France)\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: flux-checkout.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: woocommerce/flux/form-address.php\n"
+"X-Poedit-SearchPath-1: woocommerce/flux/form-details.php\n"
+"X-Poedit-SearchPath-2: woocommerce/checkout/form-billing.php\n"
+"X-Poedit-SearchPath-3: woocommerce/checkout/form-coupon.php\n"
+"X-Poedit-SearchPath-4: woocommerce/checkout/review-order.php\n"
+"X-Poedit-SearchPath-5: woocommerce/global/form-login.php\n"
+"X-Poedit-SearchPath-6: woocommerce/checkout/form-checkout.php\n"
+"X-Poedit-SearchPath-7: flux-checkout.php\n"
+"X-Poedit-SearchPath-8: flux-template.php\n"
+"X-Poedit-SearchPath-9: assets/checkout.js\n"
+"X-Poedit-SearchPath-10: inc/admin.php\n"
+"X-Poedit-SearchPath-11: titan-framework/lib/class-option-save.php\n"
+"X-Poedit-SearchPath-12: titan-framework/lib/class-option-font.php\n"
+"X-Poedit-SearchPath-13: titan-framework/lib/class-admin-page.php\n"
+
+#: inc/admin/settings.php:309
+msgid "\"Back to Cart\" Link Color"
+msgstr ""
+
+#. translators: %1$s: field name, %2$s finder.eircode.ie URL
+#: inc/class-core.php:773
+msgid ""
+"%1$s is not valid. You can look up the correct Eircode <a target=\"_blank\" "
+"href=\"%2$s\">here</a>."
+msgstr ""
+
+#. translators: %s: field name
+#: inc/class-core.php:745
+msgid "%s is a required field."
+msgstr ""
+
+#. translators: Email.
+#: inc/class-core.php:791
+msgid "%s is not a valid email address."
+msgstr ""
+
+#. translators: Phone.
+#: inc/class-core.php:786
+msgid "%s is not a valid phone number."
+msgstr ""
+
+#. translators: %s: field name
+#: inc/class-core.php:778
+msgid "%s is not a valid postcode / ZIP."
+msgstr ""
+
+#. translators: ISO 3166-1 alpha-2 country code
+#: inc/class-core.php:765
+msgid "'%s' is not a valid country code."
+msgstr ""
+
+#: inc/admin/settings.php:466
+msgid "-Select Page-"
+msgstr ""
+
+#: inc/class-core-settings.php:780
+msgid "30 Day Money-Back Guarantee"
+msgstr ""
+
+#. translators: URL to the preview page.
+#: inc/class-thankyou.php:571
+msgid ""
+"<a href='%s' target='_blank'>Click here</a> to preview the Thank You page."
+msgstr ""
+
+#: inc/admin/settings.php:350
+msgid "Accent Color"
+msgstr ""
+
+#: inc/class-core-settings.php:383
+msgid "Activate your license to get the latest updates and support."
+msgstr ""
+
+#: inc/admin/settings.php:84
+msgid "Add a button to go back to the cart page."
+msgstr ""
+
+#: inc/class-steps.php:237, inc/class-steps.php:662, inc/class-steps.php:702,
+#: inc/class-steps.php:744, inc/class-thankyou.php:278
+msgid "Address"
+msgstr "Adresse"
+
+#: inc/admin/settings.php:450
+msgid "After Customer details"
+msgstr ""
+
+#: inc/admin/settings.php:448
+msgid "After order status"
+msgstr ""
+
+#: inc/admin/settings.php:452
+msgid "After Product details"
+msgstr ""
+
+#: inc/admin/settings.php:105
+msgid ""
+"Allows the images on the Order review cart to be clicked on and linked to "
+"the product page."
+msgstr ""
+
+#: inc/class-steps.php:549
+msgid "Already have an account?"
+msgstr "Vous avez déjà un compte ?"
+
+#: inc/class-core.php:804
+msgid ""
+"An account is already registered with this email address. <a href=\"#\" data-"
+"login>Would you like to log in</a>?"
+msgstr ""
+"Un compte avec votre adresse e-mail existe déjà. <a href=«#» data-login>"
+"Voulez-vous vous connecter</a> ?"
+
+#: inc/class-assets.php:134
+msgid ""
+"An account is already registered with this email address. Would you like to "
+"log in?"
+msgstr ""
+"Un compte avec votre adresse e-mail existe déjà. Voudriez-vous vous "
+"connecter ?"
+
+#: inc/class-assets.php:136
+msgid "An error occurred"
+msgstr "Une erreur est survenue"
+
+#: inc/class-core.php:375, inc/class-core.php:379, inc/class-core.php:535
+msgid "Apartment, suite, unit etc."
+msgstr "Appartement, lieu-dit etc."
+
+#: woocommerce/modern/checkout/form-coupon.php:34
+msgid "Apply"
+msgstr "Appliquer"
+
+#: inc/class-core-onboard.php:522
+msgid ""
+"Are you sure you want to dismiss the Get Started tab? You won't be able to "
+"access it again."
+msgstr ""
+
+#: inc/class-core-onboard.php:521
+msgid "Are you sure?"
+msgstr ""
+
+#: inc/admin/settings.php:142
+msgid "Assign Guest Orders"
+msgstr ""
+
+#: inc/admin/settings.php:111
+msgid "Auto Apply Coupon"
+msgstr ""
+
+#: inc/class-steps.php:819
+msgid "Back"
+msgstr "Retour"
+
+#: inc/class-steps.php:809
+msgid "Back to %s"
+msgstr "Retour au %s"
+
+#: woocommerce/common/checkout/form-pay.php:75
+msgid "Back to Account"
+msgstr "Retour au compte"
+
+#: templates/template-classic.php:47
+msgid "Back to account"
+msgstr "Retour au compte"
+
+#: templates/template-classic.php:51
+msgid "Back to cart"
+msgstr "Retour au panier"
+
+#: templates/template-classic.php:49
+msgid "Back to shop"
+msgstr "Retour à la boutique"
+
+#: inc/admin/settings.php:449
+msgid "Before Customer details"
+msgstr ""
+
+#: inc/admin/settings.php:451
+msgid "Before Product details"
+msgstr ""
+
+#: inc/class-thankyou.php:276
+msgid "Billing"
+msgstr "Facturation"
+
+#: inc/class-steps.php:308
+msgid "Billing &amp; Shipping Address"
+msgstr "Adresse de facturation et d’expédition"
+
+#: inc/class-steps.php:304
+msgid "Billing Address"
+msgstr "Adresse de facturation"
+
+#: inc/class-core-settings.php:777
+msgid "Buy Plugin"
+msgstr ""
+
+#: inc/class-core-onboard.php:525
+msgid "Cancel"
+msgstr "Annuler"
+
+#: woocommerce/classic/checkout/form-login.php:92
+msgid "Cancel Login"
+msgstr "Annuler la connexion"
+
+#: inc/class-core-license-uplink.php:140
+msgid "Changelog"
+msgstr ""
+
+#: inc/admin/settings.php:245
+msgid "Checkout"
+msgstr "Votre Commande"
+
+#: inc/admin/settings.php:34
+msgid "Checkout Page"
+msgstr ""
+
+#: inc/admin/settings.php:322
+#, fuzzy
+#| msgid "Checkout Style"
+msgid "Checkout Styles"
+msgstr "Style de page de paiement"
+
+#: inc/admin/settings.php:334
+msgid "Choose custom colors"
+msgstr ""
+
+#: inc/admin/settings.php:172
+msgid "Choose the theme you want Flux to use."
+msgstr ""
+
+#: inc/admin/settings.php:171
+msgid "Choose Theme"
+msgstr ""
+
+#: inc/admin/settings.php:328
+msgid "Color Theme"
+msgstr ""
+
+#: inc/class-steps.php:649, inc/class-thankyou.php:267
+msgid "Contact"
+msgstr ""
+
+#: inc/admin/settings.php:457
+msgid "Contact Page"
+msgstr ""
+
+#: inc/class-thankyou.php:526
+msgid "Contact Us"
+msgstr ""
+
+#: inc/admin/settings.php:443
+msgid "Content placement"
+msgstr ""
+
+#: inc/class-steps.php:196
+msgid "Continue"
+msgstr "Continuer"
+
+#: inc/class-thankyou.php:531
+msgid "Continue Shopping"
+msgstr "Continuer les achats"
+
+#: inc/class-steps.php:204
+msgid "Continue to"
+msgstr "Continuer vers l’étape"
+
+#: woocommerce/modern/checkout/form-coupon.php:29
+msgid "Coupon code"
+msgstr "Code promo"
+
+#: inc/class-assets.php:133
+msgid "Coupon has been removed."
+msgstr "Le coupon a été retiré."
+
+#: inc/class-steps.php:608
+msgid ""
+"Create an account by entering the information below. If you are a returning "
+"customer please %1$slogin on your account page%2$s."
+msgstr ""
+"Créer un compte en renseignant vos informations ci-dessous. Si vous avez "
+"déjà un compte, veuillez vous %1$sconnecter à votre compte%2$s."
+
+#: inc/class-steps.php:613
+msgid ""
+"Create an account by entering the information below. If you are a returning "
+"customer please login at the top of the page."
+msgstr "Créez un compte en entrant vos informations ci-dessous."
+
+#: inc/class-steps.php:610
+msgid ""
+"Create an account by entering the information below. If you are a returning "
+"customer please login."
+msgstr ""
+"Créer un compte en renseignant vos information ci-dessous. Si vous avez déjà "
+"un compte, veuillez vous connecter."
+
+#: inc/class-steps.php:583
+msgid "Create an account?"
+msgstr "Créer un compte?"
+
+#: inc/admin/settings.php:368
+msgid "Custom Accent Color"
+msgstr ""
+
+#: inc/admin/settings.php:404
+msgid "Custom CSS"
+msgstr ""
+
+#: inc/admin/settings.php:302
+msgid "Custom Header Color"
+msgstr ""
+
+#: inc/admin/settings.php:360
+msgid "Custom Primary Color"
+msgstr ""
+
+#: inc/class-steps.php:279
+msgid "Customer Details"
+msgstr "Détails Client"
+
+#: woocommerce/classic/checkout/form-login.php:47,
+#: woocommerce/modern/checkout/form-login.php:40
+msgid "Customer Login"
+msgstr "Se connecter"
+
+#: inc/class-core-settings.php:369
+msgid "Dashboard"
+msgstr ""
+
+#: inc/class-steps.php:231
+msgid "Details"
+msgstr "Détails"
+
+#: inc/admin/settings.php:436
+msgid "Display a custom message/content on the Thank You page."
+msgstr ""
+
+#: inc/class-core-settings.php:414
+msgid "Documentation"
+msgstr ""
+
+#: inc/admin/settings.php:153
+msgid "Don't offer to login"
+msgstr ""
+
+#: inc/class-steps.php:655, inc/class-steps.php:668
+msgid "Edit"
+msgstr "Modifier"
+
+#: inc/admin/settings.php:204
+msgid "Emphemeral Units"
+msgstr ""
+
+#: inc/admin/settings.php:429
+msgid ""
+"Enable a map showing the customer's shipping location. <br><br>Requires a "
+"valid <a href=\"#tab-integrations|integrations_integrations_google_api_key\" "
+"class=\"wsf-internal-link\">Google API key</a>. "
+msgstr ""
+
+#: inc/admin/settings.php:190
+msgid ""
+"Enable a persistent order review at checkout. This replaces the cart page."
+msgstr ""
+
+#: inc/admin/settings.php:70
+msgid ""
+"Enable Address Autocomplete to automatically fill out address details. "
+"Requires a valid <a href=\"#tab-"
+"integrations|integrations_integrations_google_api_key\" class=\"wsf-internal-"
+"link\">Google API key</a>."
+msgstr ""
+
+#: inc/admin/settings.php:126
+msgid "Enable country code selector for the phone number field."
+msgstr ""
+
+#: inc/admin/settings.php:421
+msgid "Enable Flux Thank You Page"
+msgstr ""
+
+#: inc/admin/settings.php:125
+msgid "Enable Phone number Country Code Selector"
+msgstr ""
+
+#: inc/admin/settings.php:63
+msgid "Enable the Company field within the Billing Details step."
+msgstr ""
+
+#: inc/admin/settings.php:422
+msgid ""
+"Enable the Flux custom Thank You page. This will override the default "
+"WooCommerce Thank You page."
+msgstr ""
+
+#: inc/admin/settings.php:112
+msgid "Enter a coupon that will be automatically applied at checkout."
+msgstr ""
+
+#: inc/class-steps.php:711, inc/class-steps.php:752
+msgid "Enter Address Manually"
+msgstr "Entrer une adresse manuellement"
+
+#: inc/class-steps.php:770
+msgid "Enter Coupon"
+msgstr "Code Promo"
+
+#: inc/admin/settings.php:149
+msgid "Existing User"
+msgstr ""
+
+#. translators: placeholder is a date.
+#: inc/class-compat-woocommerce-subscriptions.php:103
+msgid "First renewal"
+msgstr "Premier renouvellement"
+
+#: inc/admin/settings.php:143
+msgid ""
+"Flux Checkout will automatically link guest orders to existing customer "
+"accounts if the email address provided in the order matches an existing "
+"account."
+msgstr ""
+
+#: inc/admin/settings.php:56
+msgid "General Settings"
+msgstr "Paramètres généraux"
+
+#: inc/class-core-onboard.php:605
+msgid "Get Help"
+msgstr ""
+
+#: inc/class-core-settings.php:408
+msgid "Get premium support with a valid license."
+msgstr ""
+
+#: inc/class-core-onboard.php:60, inc/class-core-onboard.php:69
+msgid "Get Started"
+msgstr ""
+
+#: inc/class-core-settings.php:325
+msgid "Getting Started"
+msgstr ""
+
+#: inc/admin/settings.php:485
+msgid "Google API Key"
+msgstr ""
+
+#: inc/admin/settings.php:200
+msgid "Google WebFonts"
+msgstr ""
+
+#: inc/admin/settings.php:294
+msgid "Gradient Background"
+msgstr ""
+
+#: inc/admin/settings.php:281
+msgid "Header Background"
+msgstr ""
+
+#: inc/admin/settings.php:262
+msgid "Header Font Colour"
+msgstr ""
+
+#: inc/admin/settings.php:250
+msgid "Header Font Family"
+msgstr ""
+
+#: inc/admin/settings.php:269
+msgid "Header Font Size"
+msgstr ""
+
+#: inc/admin/settings.php:229
+msgid "Header Image"
+msgstr ""
+
+#: inc/admin/settings.php:211
+msgid "Header Styles"
+msgstr ""
+
+#: inc/admin/settings.php:243
+msgid "Header Text"
+msgstr ""
+
+#: inc/admin/settings.php:217
+msgid "Header Type"
+msgstr ""
+
+#: inc/class-core-onboard.php:602
+msgid "Help is at hand if you face any issues."
+msgstr ""
+
+#. translators: The telemetry terms URL.
+#: inc/class-core-telemetry.php:261
+msgid ""
+"Help us improve this plugin by sharing <a href=\"%s\" target=\"_blank\">non-"
+"sensitive</a> data with us."
+msgstr ""
+
+#. translators: The user name and the plugin name.
+#: inc/class-core-telemetry.php:166
+msgid ""
+"Hi, %1$s! We'd love your help to improve %2$s. \n"
+"\t\t\t\tBy opting in, you'll share usage data from %2$s and future Iconic "
+"products with our team, allowing us to refine your experience. \n"
+"\t\t\t\tAs a bonus, we'll send you occasional product updates. \n"
+"\t\t\t\tIf you decide to skip this, no worries – %2$s will continue to work "
+"seamlessly for you."
+msgstr ""
+
+#: inc/admin/settings.php:118
+msgid "Hide Coupon Field"
+msgstr ""
+
+#: templates/template-classic.php:63,
+#: woocommerce/modern/checkout/form-checkout.php:56
+msgid "Hide order summary"
+msgstr "Cacher le résumé de la commande"
+
+#: inc/class-core.php:321
+msgid "House Number/Name"
+msgstr "Nom/numéro de la maison"
+
+#: inc/admin/settings.php:150
+msgid "How to handle the familiar user emails on the checkout page."
+msgstr ""
+
+#: inc/class-core-telemetry.php:206
+msgid "I'm just deactivating temporarily."
+msgstr ""
+
+#: inc/admin/settings.php:222
+msgid "Image"
+msgstr ""
+
+#: inc/admin/settings.php:236
+msgid "Image Width"
+msgstr ""
+
+#: inc/class-steps.php:693, inc/class-steps.php:735
+msgid "Info"
+msgstr ""
+
+#: inc/admin/settings.php:254, inc/admin/settings.php:273
+msgid "inherit"
+msgstr ""
+
+#: inc/admin/settings.php:49, inc/admin/settings.php:479
+msgid "Integrations"
+msgstr ""
+
+#: inc/class-core-settings.php:376
+msgid "License &amp; Account Settings"
+msgstr ""
+
+#: inc/class-core-settings.php:382
+msgid "License Key"
+msgstr ""
+
+#: inc/admin/settings.php:383
+msgid "Link colour"
+msgstr ""
+
+#: inc/class-steps.php:550
+msgid "Log in"
+msgstr "Se connecter"
+
+#: inc/class-assets.php:131
+msgid "Login"
+msgstr ""
+
+#: inc/class-assets.php:135
+msgid "Login successful"
+msgstr ""
+
+#: inc/class-steps.php:337, inc/class-steps.php:382
+msgid "Look up address"
+msgstr "Chercher une adresse"
+
+#: inc/admin/settings.php:104
+msgid "Make Cart Items images clickable"
+msgstr ""
+
+#: inc/class-core-settings.php:390
+msgid "Manage all of your Iconic plugins, supscriptions, renewals, and more."
+msgstr ""
+
+#: inc/class-core-settings.php:823
+msgid "Manage Your Account"
+msgstr ""
+
+#: inc/class-thankyou.php:526
+msgid "Need Help?"
+msgstr ""
+
+#: inc/class-core-telemetry.php:259
+msgid "Opt In"
+msgstr ""
+
+#. translators: The plugin name.
+#: inc/class-core-telemetry.php:160
+msgid "Opt in to help us enhance %s"
+msgstr ""
+
+#: inc/admin/settings.php:97
+msgid "Optimize for Digital Products"
+msgstr ""
+
+#. translators: Order ID.
+#: inc/class-thankyou.php:99
+msgid "Order #%d"
+msgstr "Commande #%d"
+
+#: inc/class-steps.php:429
+msgid "Order notes?"
+msgstr "Notes de livraison"
+
+#: inc/class-assets.php:132
+msgid "Pay"
+msgstr "Payer"
+
+#: woocommerce/common/checkout/form-pay.php:41
+msgid "Pay for Order"
+msgstr ""
+
+#. translators: Amount.
+#: inc/class-helpers.php:534
+msgid "Pay for order"
+msgstr ""
+
+#: inc/class-steps.php:243, inc/class-steps.php:478, inc/class-steps.php:493,
+#: inc/class-thankyou.php:313
+msgid "Payment"
+msgstr "Paiement"
+
+#: inc/admin/settings.php:202
+msgid "Pixels"
+msgstr ""
+
+#: inc/admin/settings.php:376
+msgid "Placeholders"
+msgstr ""
+
+#: inc/class-core.php:617
+msgid "Please enter a valid phone number"
+msgstr "Veuillez saisir un n° de téléphone valide"
+
+#: inc/class-assets.php:138
+msgid "Please enter a valid phone number."
+msgstr ""
+
+#: inc/admin/settings.php:237
+msgid "Please enter the width of your logo in px."
+msgstr ""
+
+#: inc/class-steps.php:707
+msgid "Please enter your address"
+msgstr "Merci d'entrer votre adresse"
+
+#: inc/class-assets.php:129
+msgid "Please fix all errors and try again."
+msgstr ""
+
+#: inc/class-assets.php:130
+msgid "Please search for an address and try again."
+msgstr ""
+
+#: inc/admin/settings.php:390
+msgid "Primary button colour"
+msgstr ""
+
+#: inc/admin/settings.php:340
+msgid "Primary Color"
+msgstr ""
+
+#: inc/class-core-onboard.php:601
+msgid "Priority Support"
+msgstr ""
+
+#: inc/admin/settings.php:405
+msgid "Put your custom CSS rules here."
+msgstr ""
+
+#: inc/class-compat-force-sells.php:56
+msgid "Quantity"
+msgstr ""
+
+#: inc/class-core-settings.php:814
+msgid "Read Documentation"
+msgstr ""
+
+#: inc/class-core-settings.php:415
+msgid "Read the plugin documentation."
+msgstr ""
+
+#: inc/admin/settings.php:98
+msgid "Reduce checkout fields when only digital products are in the cart."
+msgstr ""
+
+#: inc/class-sidebar.php:320, inc/class-sidebar.php:321
+msgid "Remove this item"
+msgstr ""
+
+#: woocommerce/common/checkout/empty-cart.php:19
+msgid "Return to shop"
+msgstr "Revenir à la boutique"
+
+#: inc/class-steps.php:535
+msgid "Returning Customer?"
+msgstr "Vous avez déjà un compte ?"
+
+#: inc/class-compat-germanized.php:50
+msgid "Review Order"
+msgstr ""
+
+#: inc/admin/settings.php:397
+msgid "Secondary button colour"
+msgstr ""
+
+#: inc/admin/settings.php:458
+msgid ""
+"Select a contact page to be linked on the Thank You page. Leave empty to "
+"hide the contact link."
+msgstr ""
+
+#: inc/admin/settings.php:333
+msgid "Select from Design palette"
+msgstr ""
+
+#: inc/admin/settings.php:329
+msgid "Select whether to use a custom colors."
+msgstr ""
+
+#: inc/admin/settings.php:282
+msgid "Select whether to use a gradient for the header banner."
+msgstr ""
+
+#: inc/admin/settings.php:218
+msgid "Select whether to use an image or text for the branding."
+msgstr ""
+
+#: inc/admin/settings.php:230
+msgid "Select your logo (Recommended size: 200 x 40px)."
+msgstr ""
+
+#: inc/admin/settings.php:77
+msgid "Separate House Number/Name field from Street Address field."
+msgstr ""
+
+#: inc/admin/settings.php:76
+msgid "Separate Street Number Field"
+msgstr ""
+
+#: inc/class-core-settings.php:858
+msgid "Settings"
+msgstr ""
+
+#: inc/class-steps.php:372
+msgid "Ship to a different address?"
+msgstr "Envoyer à une adresse différente ?"
+
+#: inc/class-steps.php:854, inc/class-thankyou.php:301
+msgid "Shipping"
+msgstr "Livraison"
+
+#: inc/admin/settings.php:83
+msgid "Show \"Back to Shop\" button."
+msgstr ""
+
+#: inc/admin/settings.php:155
+msgid "Show a popup and an inline message"
+msgstr ""
+
+#: inc/admin/settings.php:154
+msgid "Show an inline message"
+msgstr ""
+
+#: inc/admin/settings.php:62
+msgid "Show Company Field"
+msgstr ""
+
+#: inc/admin/settings.php:428
+msgid "Show Map"
+msgstr ""
+
+#: inc/admin/settings.php:189
+msgid "Show Order Review"
+msgstr ""
+
+#: templates/template-classic.php:62,
+#: woocommerce/modern/checkout/form-checkout.php:55
+msgid "Show order summary"
+msgstr "Montrer le résumé de la commande"
+
+#: inc/admin/settings.php:90
+msgid "Skip Cart Page"
+msgstr ""
+
+#. translators: 1: product name 2: quantity in stock
+#: inc/class-sidebar.php:419
+msgid ""
+"Sorry, we do not have enough \"%1$s\" in stock to fulfill your order (%2$s "
+"available). We apologize for any inconvenience caused."
+msgstr ""
+"« %1$s » n’a plus assez de stock pour satisfaire votre commande (%2$s en "
+"stock). Nous nous excusons pour tout désagrément qui aurait pu être causé."
+
+#: inc/class-core-telemetry.php:293
+msgid "Sorry, you can't do that."
+msgstr ""
+
+#: inc/class-steps.php:690, inc/class-steps.php:732
+msgid "Start typing your address to search."
+msgstr "Tapez votre adresse pour chercher"
+
+#: inc/class-steps.php:696, inc/class-steps.php:738
+msgid "Start with your house/apartment number then your street address."
+msgstr "Commencez par votre numéro de maison/appartement, puis votre rue."
+
+#: inc/class-core-onboard.php:75
+msgid "Steps"
+msgstr ""
+
+#: inc/admin/settings.php:29
+msgid "Styles"
+msgstr ""
+
+#: inc/class-core-settings.php:805
+msgid "Submit Ticket"
+msgstr ""
+
+#: inc/class-core-settings.php:401, inc/class-core-settings.php:407
+msgid "Support"
+msgstr ""
+
+#: inc/admin/settings.php:221
+msgid "Text"
+msgstr ""
+
+#: inc/admin/settings.php:44
+msgid "Thank You Page"
+msgstr ""
+
+#: inc/admin/settings.php:435
+msgid "Thank You Page Content"
+msgstr ""
+
+#: inc/admin/settings.php:415
+msgid "Thank You Page Settings"
+msgstr ""
+
+#. translators: First name.
+#: inc/class-thankyou.php:105
+#, fuzzy
+#| msgid "Thank you %s!"
+msgid "Thank you, %s!"
+msgstr "Merci %s !"
+
+#: inc/admin/settings.php:351, inc/admin/settings.php:369
+msgid "The Accent Color will be used for buttons and links."
+msgstr ""
+
+#: inc/admin/settings.php:295
+msgid ""
+"The background gradient to use. Preview all gradients at <a "
+"target=\"_blank\" href=\"http://uigradients.com/\"> http://uigradients."
+"com/</a>."
+msgstr ""
+
+#: inc/admin/settings.php:341, inc/admin/settings.php:361
+msgid ""
+"The Primary Color will be used for the progress bar, form fields, switches, "
+"checkboxes and radio buttons."
+msgstr ""
+
+#: inc/admin/settings.php:39, inc/admin/settings.php:165
+msgid "Theme"
+msgstr ""
+
+#: inc/class-core.php:616
+msgid "This field is required"
+msgstr "Ce champ est requis"
+
+#: inc/admin/settings.php:69
+msgid "Use Address Autocomplete"
+msgstr ""
+
+#: inc/admin/settings.php:287
+msgid "Use Custom Color"
+msgstr ""
+
+#: inc/admin/settings.php:288
+msgid "Use Gradient"
+msgstr ""
+
+#: inc/admin/settings.php:286
+msgid "Use Primary Color"
+msgstr ""
+
+#: inc/admin/settings.php:384
+msgid "Used for links."
+msgstr ""
+
+#: inc/admin/settings.php:377
+msgid "Used for placeholders and form labels"
+msgstr ""
+
+#: inc/admin/settings.php:391
+msgid "Used for the primary buttons."
+msgstr ""
+
+#: inc/admin/settings.php:398
+msgid "Used for the secondary buttons."
+msgstr ""
+
+#: inc/admin/settings.php:136
+msgid "User Settings"
+msgstr "Paramètres utilisateur"
+
+#: inc/class-core-settings.php:858
+msgid "View settings"
+msgstr ""
+
+#: inc/admin/settings.php:198
+msgid "Web Safe Fonts"
+msgstr ""
+
+#: inc/admin/settings.php:91
+msgid ""
+"When enabled, skips the cart page and directly redirects users to the "
+"checkout page, reducing a step in the purchase process.<br/><br/><b>Note:</b>"
+" Doesn't work for the classic theme if sidebar is disabled."
+msgstr ""
+
+#: inc/admin/settings.php:119
+msgid ""
+"When enabled, the coupon field will not be displayed to users and they will "
+"not be able to enter a coupon code. However, you can automatically apply a "
+"coupon using the \"coupon\" URL parameter. Example: site.com/checkout?"
+"coupon=10PCTOFF"
+msgstr ""
+
+#: inc/admin/settings.php:444
+msgid "Where to display the custom message/content."
+msgstr ""
+
+#: inc/class-core-settings.php:753
+msgid "Works well with..."
+msgstr ""
+
+#: inc/class-core-onboard.php:524
+msgid "Yes"
+msgstr "Oui"
+
+#. translators: %s Product title.
+#: inc/class-sidebar.php:404
+msgid "You can only have 1 %s in your cart."
+msgstr ""
+
+#: woocommerce/classic/checkout/form-checkout.php:40,
+#: woocommerce/modern/checkout/form-checkout.php:43
+msgid "You must be logged in to checkout."
+msgstr "Vous devez être connecté passer commande."
+
+#: inc/class-core-settings.php:389
+msgid "Your Account"
+msgstr "Votre compte"
+
+#: inc/admin/settings.php:486
+msgid ""
+"Your API key to enable Address Autocomplete. <a href=\"https://iconicwp."
+"com/docs/flux-checkout-for-woocommerce/how-to-get-your-google-api-key-for-"
+"address-autocomplete/\" target=\"_blank\">View documentation</a>."
+msgstr ""
+
+#: woocommerce/common/checkout/empty-cart.php:16
+msgid "Your cart is empty, taking you back to the shop..."
+msgstr "Votre panier est vide, retour vers le nuShop…"
+
+#: inc/class-thankyou.php:366
+msgid "Your Order"
+msgstr "Votre commande"

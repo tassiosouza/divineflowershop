@@ -40,6 +40,21 @@ jQuery(
 
                         bundle_price = parseFloat(bundle_price);
 
+                        const isSelect  = bos4w_display_dropdown.is('select');
+                        const planCount = isSelect
+                            ? bos4w_display_dropdown.children('option').length
+                            : (bos4w_display_dropdown.length ? 1 : 0);
+
+                        bos4w_display_dropdown_wrap.show();
+
+                        if ( 1 === planCount ) {
+                            $('#bos4w-dropdown-plan').hide();
+                            $('.bos4w-one-plan-only').show();
+                        } else {
+                            $('#bos4w-dropdown-plan').show();
+                            $('.bos4w-one-plan-only').hide();
+                        }
+
                         bos4w_display_dropdown.find('option').each(function (index, element) {
                             let text = element.text;
                             let current_price = element.dataset.price;
@@ -66,6 +81,7 @@ jQuery(
 
                             text = text.replace(addZeroes(current_price), addZeroes(new_price));
                             $(this).text(text);
+                            $('.bos4w-one-plan-only').text(text);
                         });
 
                         $('#bos4w-selected-price').val($("#bos4w-dropdown-plan option:selected").attr("data-price"));
@@ -88,6 +104,21 @@ jQuery(
                     }
 
                     composite_price = parseFloat(composite_price);
+
+                    const isSelect  = bos4w_display_dropdown.is('select');
+                    const planCount = isSelect
+                        ? bos4w_display_dropdown.children('option').length
+                        : (bos4w_display_dropdown.length ? 1 : 0);
+
+                    bos4w_display_dropdown_wrap.show();
+
+                    if ( 1 === planCount ) {
+                        $('#bos4w-dropdown-plan').hide();
+                        $('.bos4w-one-plan-only').show();
+                    } else {
+                        $('#bos4w-dropdown-plan').show();
+                        $('.bos4w-one-plan-only').hide();
+                    }
 
                     bos4w_display_dropdown.find('option').each(function (index, element) {
                         let text = element.text;
@@ -115,6 +146,7 @@ jQuery(
 
                         text = text.replace(addZeroes(current_price), addZeroes(new_price));
                         $(this).text(text);
+                        $('.bos4w-one-plan-only').text(text);
                     });
 
                     setTimeout(function () {

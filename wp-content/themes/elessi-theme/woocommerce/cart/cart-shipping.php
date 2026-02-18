@@ -76,7 +76,7 @@ $calculator_text = '';
             endif;
             
         elseif (!$is_cart) :
-            echo wp_kses_post(apply_filters('woocommerce_no_shipping_available_html', __('There are no shipping options available. Please ensure that your address has been entered correctly, or contact us if you need any help.', 'elessi-theme')));
+            echo wp_kses_post(apply_filters('woocommerce_no_shipping_available_html', __('Shipping options will be updated after shipping address is entered.', 'elessi-theme')));
         else :
             echo wp_kses_post(
                 /**

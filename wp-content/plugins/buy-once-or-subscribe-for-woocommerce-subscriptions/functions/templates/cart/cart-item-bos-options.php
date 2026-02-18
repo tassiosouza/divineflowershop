@@ -26,7 +26,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			?>
 			<li class="bos4w-select-option">
 				<label>
-					<input type="radio" name="bos4w_cart_item[<?php echo esc_attr( wp_unslash( $cart_item_key ) ); ?>]" data-key="<?php echo esc_attr( wp_unslash( $cart_item_key ) ); ?>" data-id="<?php echo absint( $plan['value']['product_id'] ); ?>"
+					<input type="radio" name="bos4w_cart_item[<?php echo esc_attr( wp_unslash( $cart_item_key ) ); ?>]" data-key="<?php echo esc_attr( wp_unslash( $cart_item_key ) ); ?>" data-id="<?php echo isset( $plan['value']['product_id'] ) ? absint( $plan['value']['product_id'] ) : 0; ?>"
 						   data-discount="<?php echo (float) $plan['value']['discount']; ?>" data-price="<?php echo (float) wc_format_decimal( $plan['value']['price'], wc_get_price_decimals() ); ?>"
 						   data-type="<?php echo esc_attr( $plan['value']['type'] ); ?>" value="<?php echo esc_attr( $value ); ?>" <?php checked( $selected, $value, true ); ?> />
 					<?php echo wp_kses_post( wcs_price_string( BOS4W_Cart_Options::bos4w_display_format_the_frequency( wc_format_decimal( esc_attr( $plan['value']['price'] ), wc_get_price_decimals() ), esc_attr( $plan['value']['period'] ), esc_attr( $plan['value']['interval'] ) ) ) ); ?>
@@ -37,7 +37,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			?>
 			<li class="bos4w-select-option">
 				<label>
-					<input type="radio" name="bos4w_cart_item[<?php echo esc_attr( wp_unslash( $cart_item_key ) ); ?>]" data-key="<?php echo esc_attr( wp_unslash( $cart_item_key ) ); ?>" data-id="<?php echo absint( $plan['value']['product_id'] ); ?>"
+					<input type="radio" name="bos4w_cart_item[<?php echo esc_attr( wp_unslash( $cart_item_key ) ); ?>]" data-key="<?php echo esc_attr( wp_unslash( $cart_item_key ) ); ?>" data-id="<?php echo isset( $plan['value']['product_id'] ) ? absint( $plan['value']['product_id'] ) : 0; ?>"
 						   data-discount="" data-price="" data-type="" value="<?php echo esc_attr( $plan['value']['price'] ); ?>" <?php checked( $selected, false, true ); ?> />
 					<?php echo wp_kses_post( wc_price( wc_format_decimal( esc_attr( $plan['value']['price'] ), wc_get_price_decimals() ) ) ); ?>
 				</label>

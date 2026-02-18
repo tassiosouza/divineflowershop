@@ -1,0 +1,10 @@
+{
+  "version": "1.26.0",
+  "wp": "6.8",
+  "woo": "10.3.5",
+  "wp_requires": "5.0.0",
+  "woo_requires": "3.6.0",
+  "last_updated": "17 Nov 2025",
+  "php_requires": "5.3",
+  "released": "3 June 2019"
+}

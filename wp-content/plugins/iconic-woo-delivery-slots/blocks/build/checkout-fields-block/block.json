@@ -1,0 +1,33 @@
+{
+  "apiVersion": 2,
+  "name": "iconic-wds/iconic-wds",
+  "version": "1.0.0",
+  "title": "Delivery Slots Fields",
+  "category": "woocommerce",
+  "description": "Add a block to display checkout fields.",
+  "supports": {
+    "html": false,
+    "align": false,
+    "multiple": false,
+    "reusable": false
+  },
+  "parent": [
+    "woocommerce/checkout-fields-block",
+    "woocommerce/checkout-totals-block",
+    "woocommerce/checkout-order-summary-block"
+  ],
+  "attributes": {
+    "lock": {
+      "type": "object",
+      "default": {
+        "remove": false,
+        "move": false
+      }
+    },
+    "text": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "textdomain": "jckwds"
+}

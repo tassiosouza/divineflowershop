@@ -15,6 +15,7 @@ use Elementor\Plugin;
 use Elementor\Utils;
 use Elementor\Widget_Base;
 use HFE\WidgetsManager\Base\Widgets_Config;
+use Elementor\Modules\Usage\Module as Usage_Module;
 
 /**
  * Class HFE_Helper.
@@ -55,6 +56,13 @@ class HFE_Helper {
 	 * @var get_bsf_plugins_list
 	 */
 	private static $get_bsf_plugins_list = null;
+
+	/**
+	 * Recommended Plugins List
+	 *
+	 * @var get_recommended_bsf_plugins_list
+	 */
+	private static $get_recommended_bsf_plugins_list = null;
 
 	/**
 	 * Check if UAE Pro is active.
@@ -182,6 +190,21 @@ class HFE_Helper {
 		}
 
 		return apply_filters( 'uael_plugins_list', self::$get_bsf_plugins_list );
+	}
+
+	/**
+	 * Provide recommended plugins list.
+	 *
+	 * @since 2.2.1
+	 * @return array()
+	 */
+	public static function get_recommended_bsf_plugins_list() {
+
+		if ( ! isset( self::$get_recommended_bsf_plugins_list ) ) {
+			self::$get_recommended_bsf_plugins_list = Widgets_Config::get_recommended_bsf_plugins();
+		}
+
+		return apply_filters( 'uael_recommended_plugins_list', self::$get_recommended_bsf_plugins_list );
 	}
 
 	/**
@@ -470,6 +493,97 @@ class HFE_Helper {
 		}
 
 		return $rollback_versions;
+	}
+
+	/**
+	 * Get Unused Widgets.
+	 *
+	 * @since 2.4.2
+	 * @return array
+	 * @access public
+	 */
+	public static function get_used_widget() {
+		/** @var Usage_Module $usage_module */
+		$usage_module = Usage_Module::instance();
+		$usage_module->recalc_usage();
+
+		$widgets_usage = [];
+
+		foreach ( $usage_module->get_formatted_usage( 'raw' ) as $data ) {
+			foreach ( $data['elements'] as $element => $count ) {
+				$widgets_usage[ $element ] = isset( $widgets_usage[ $element ] ) ? $widgets_usage[ $element ] + $count : $count;
+			}
+		}
+
+		$allowed_widgets = [
+			'hfe-breadcrumbs-widget',
+			'hfe-cart',
+			'copyright',
+			'navigation-menu',
+			'page-title',
+			'post-info-widget',
+			'retina',
+			'hfe-search-button',
+			'site-logo',
+			'hfe-site-tagline',
+			'hfe-site-title',
+			'hfe-infocard',
+			'hfe-woo-product-grid',
+			'hfe-basic-posts',
+			'hfe-counter',
+		];
+
+		// Filter widgets usage to include only allowed widgets
+		$filtered_widgets_usage = array_filter(
+			$widgets_usage,
+			function ( $key ) use ( $allowed_widgets ) {
+				return in_array( $key, $allowed_widgets, true );
+			},
+			ARRAY_FILTER_USE_KEY
+		);
+
+		return $filtered_widgets_usage;
+	}
+
+	/**
+	 * Get widget help URL
+	 *
+	 * Retrieve the help URL for a specific widget.
+	 *
+	 * @since 2.4.3
+	 * @access public
+	 *
+	 * @param string $widget_name Widget name.
+	 * @return string Widget help URL.
+	 */
+	public static function get_widget_help_url( $widget_name = '' ) {
+		if ( empty( $widget_name ) ) {
+			return '';
+		}
+
+		if ( ! isset( self::$widget_list ) ) {
+			self::$widget_list = self::get_widget_list();
+		}
+
+		// Convert widget name to config key format
+		$widget_key = '';
+		foreach ( self::$widget_list as $key => $widget_data ) {
+			if ( isset( $widget_data['slug'] ) && $widget_data['slug'] === $widget_name ) {
+				$widget_key = $key;
+				break;
+			}
+		}
+
+		if ( empty( $widget_key ) || ! isset( self::$widget_list[ $widget_key ]['doc_url'] ) ) {
+			return '';
+		}
+
+		$help_url = self::$widget_list[ $widget_key ]['doc_url'];
+
+		// Ensure we have a valid URL
+		$help_url = empty( $help_url ) ? '' : $help_url;
+
+		return apply_filters( 'hfe_widget_help_url', $help_url, $widget_name );
 	}
 
 }

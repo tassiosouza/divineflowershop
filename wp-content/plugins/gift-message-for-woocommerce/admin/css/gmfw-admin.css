@@ -1,0 +1,257 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+/* <fs_premium_only> */
+
+#gmfw_copy_text {
+  position: relative;
+  clear: both;
+  margin-top: 10px;
+}
+
+/* </fs_premium_only> */
+
+/* <fs_premium_only> */
+
+#gmfw_suggestions_btn {
+  text-decoration: none;
+  display: block;
+}
+
+#gmfw_suggestions_btn_icon {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+#gmfw_suggestions_btn.active #gmfw_suggestions_btn_icon:before {
+  transform: rotate(90deg);
+}
+
+#gmfw_suggestions_btn.active #gmfw_suggestions_btn_icon:after {
+  transform: rotate(180deg);
+}
+
+#gmfw_suggestions_btn_icon:before {
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  margin-left: -1px;
+}
+
+#gmfw_suggestions_btn_icon:after {
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  margin-top: -1px;
+}
+
+#gmfw_suggestions_btn_icon:before,
+#gmfw_suggestions_btn_icon:after {
+  content: "";
+  position: absolute;
+  transition: transform 0.25s ease-out;
+}
+
+#gmfw_suggestions_btn {
+  color: #0000ee;
+  margin-bottom: 10px;
+}
+
+#gmfw_suggestions_btn_icon:before,
+#gmfw_suggestions_btn_icon:after {
+  background-color: #0000ee;
+}
+
+.gmfw_suggestion_message
+  input[name="gmfw_giftmessage_radio"]:checked
+  + label:before {
+  background-color: #6d6d6d;
+}
+
+.gmfw_suggestion_message input[name="gmfw_giftmessage_radio"] + label:before {
+  box-shadow: 0 0 0 1px #6d6d6d;
+}
+
+.gmfw_suggestion_message input[name="gmfw_giftmessage_radio"] + label:before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #fff;
+  background: #fff;
+  margin-right: 8px;
+  border-radius: 100%;
+  -webkit-transform: translateY(2px);
+  -ms-transform: translateY(2px);
+  transform: translateY(2px);
+  margin-left: 0px;
+}
+
+.gmfw_suggestion_message label {
+  cursor: pointer;
+  display: block;
+  margin-left: 0px !important;
+  position: relative;
+  padding-left: 0;
+}
+
+#gmfw_occasion {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  width: 100%;
+}
+
+#gmfw_suggestions_section {
+  margin-bottom: 22px;
+  margin-top: 10px;
+}
+
+.gmfw_suggestion_message {
+  margin-bottom: 10px;
+}
+
+/* </fs_premium_only> */
+
+#gmfw_metaboxes .optional {
+  display: none;
+}
+
+#gmfw_message_field {
+  margin-bottom: 0px;
+}
+
+#gmfw_counter_wrap {
+  font-size: 12px !important;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+#gmfw_gift_message_from_field {
+  margin-top: 0px;
+}
+
+#gmfw_gift_message_field {
+  margin-bottom: 0px;
+}
+
+#gmfw_gift_message_from {
+  width: 100%;
+}
+
+#gmfw_gift_message {
+  margin-bottom: 0px !important;
+
+  min-height: 120px !important;
+}
+
+.gmfw_premium_feature {
+  position: relative;
+  display: inline-block;
+}
+
+.gmfw_premium_feature_note h2,
+.gmfw_premium_feature_note p {
+  margin: 0px !important;
+  color: #000 !important;
+}
+
+.gmfw_premium_feature_note h2 {
+  margin-bottom: 4px !important;
+}
+
+.gmfw_premium_feature_note {
+  position: absolute;
+  width: 250px;
+  background-color: #fff;
+  padding: 15px;
+  text-align: center;
+  box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+  top: -172px;
+  left: -167px;
+  z-index: 99999;
+}
+
+.gmfw_star_button:focus {
+  box-shadow: none !important;
+}
+
+.gmfw_star_button {
+  margin-right: 5px;
+}
+
+.gmfw_star_button svg {
+  top: 3px;
+  position: relative;
+}
+
+.gmfw_premium_feature_note:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 186px;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-top-color: #fff;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -9px;
+  margin-bottom: -20px;
+}
+
+.gmfw_premium_close {
+  position: absolute !important;
+  top: 10px;
+  right: 10px;
+  color: #575758 !important;
+  text-decoration: none !important;
+  display: inline-block !important;
+  height: 16px !important;
+}
+
+.gmfw_premium_buynow {
+  display: inline-block !important;
+  font-weight: 400 !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+  vertical-align: middle !important;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent !important;
+  padding: 0.375rem 0.75rem !important;
+  font-size: 1rem !important;
+  line-height: 1.5 !important;
+  border-radius: 0.25rem !important;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  color: #fff !important;
+  background-color: #28a745 !important;
+  border-color: #28a745 !important;
+  text-decoration: none !important;
+  margin-top: 10px !important;
+  margin-bottom: 6px !important;
+}
+
+.gmfw_premium_buynow:hover {
+  background-color: #218838 !important;
+  border-color: #1e7e34 !important;
+  color: #fff !important;
+}
+
+.column-gmfw_gift_message .gmfw_copy_text {
+  position: absolute;
+  margin-top: 2px;
+}
+
+.column-gmfw_gift_message.active .gmfw_copy_text {
+  display: block !important;
+}

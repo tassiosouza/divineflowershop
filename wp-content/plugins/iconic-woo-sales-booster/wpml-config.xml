@@ -1,0 +1,17 @@
+<wpml-config>
+	<custom-fields>
+		<custom-field action="translate">_iconic_wsb_fbt_title</custom-field>
+		<custom-field action="translate">_iconic_wsb_fbt_sales_pitch</custom-field>
+		<custom-field action="copy-once">_iconic_wsb_product_page_order_bump_ids</custom-field>
+		<custom-field action="copy-once">_iconic_wsb_fbt_set_unchecked</custom-field>
+		<custom-field action="copy-once">_iconic_wsb_fbt_discount_value</custom-field>
+		<custom-field action="copy-once">_iconic_wsb_fbt_discount_type</custom-field>
+		<custom-field action="copy-once">_iconic_wsb_product_page_bump_modal_ids</custom-field>
+	</custom-fields>
+	<admin-texts>
+		<key name="iconic-wsb_settings">
+			<key name="order_bump_product_page_order_bump_title" />
+			<key name="order_bump_product_page_modal_title" />
+		</key>
+	</admin-texts>
+</wpml-config>

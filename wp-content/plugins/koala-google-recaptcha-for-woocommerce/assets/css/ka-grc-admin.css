@@ -1,0 +1,85 @@
+.ka-grc-tooltip {
+	position: relative;
+	display: inline-block;
+	cursor: help;
+}
+
+.ka-grc-tooltip::after {
+	content: attr(data-tooltip);
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 6px 12px;
+	background-color: #666;
+	color: #fff;
+	font-size: 13px;
+	line-height: 1.4;
+	border-radius: 3px;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.2s ease, visibility 0.2s ease;
+	white-space: nowrap;
+	z-index: 999;
+}
+
+.ka-grc-tooltip:hover::after {
+	opacity: 1;
+	visibility: visible;
+}
+
+.ka-grc-tooltip::before {
+	position: absolute;
+	top: -5px;
+	left: 50%;
+	transform: translateX(-50%);
+	border-top: 5px solid #23282d;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.ka-grc-tooltip:hover::before {
+	opacity: 1;
+	visibility: visible;
+}
+.ka-grc-tooltip-trigger {
+	display: inline-block;
+    width: 15px;
+    height: 15px;
+    line-height: 16px;
+    text-align: center;
+    font-size: 12px;
+    margin-right: 10px;
+    font-weight: bold;
+    background-color: #666;
+    color: #fff;
+    border-radius: 50%;
+}
+/* Update: version (1.3.0) */
+.ka-grc-shortcode-show {
+	display: none;
+}
+.ka-grc-shortcode-input {
+	width: 17%;
+	text-align: center;
+	border: 0 !important;
+	outline: 0 !important;
+}
+.ka-grc-shortcode-input:focus {
+	outline: none !important;
+}
+.ka-rate-limit-item .ka-attempt-per,
+.ka-rate-limit-item .ka-second-per{
+    padding-left: 0!important;
+}
+
+.ka-admin-textarea{
+	min-width: 315px;
+}
+.ka-attempt-limit span{
+	display: block;
+    margin-bottom: 8px;
+}

@@ -1,0 +1,79 @@
+name: Generate Zip
+
+on:
+  push:
+    branches:
+      - master
+      - main
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+        COMPOSER_AUTH: '{"github-oauth":{"github.com":"${{ secrets.GITHUB_TOKEN }}"}}'
+
+    steps:
+      # Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      # Setup Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18'
+
+      # Assign SSH key for private repos on github.
+      - uses: webfactory/ssh-agent@v0.4.1
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - run: git config --global user.email "iconibot@jckemp.com"
+      - run: git config --global user.name "Iconibot"
+
+      # Install NPM dependencies
+      - name: Install NPM dependencies
+        run: npm install
+      - run: git stash # Stash any files changed by installing NPM (i.e. package-lock.json)
+
+      # Setup PHP
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'
+
+      # Install Composer dependencies without dev
+      - name: Install Composer dependencies
+        run: composer install --no-dev --no-progress --no-interaction --ignore-platform-reqs
+
+      # Install NPM dependencies
+      - name: Gulp deps
+        run: gulp deps
+
+      # Clean the dist directory before building to avoid old zips being included
+      - name: Clean dist directory
+        run: rm -rf dist/*
+
+      # Run Gulp compile
+      - name: Run Gulp compile
+        run: npm run compile
+
+      # Extract the zip file created by Gulp and upload the plugin directory
+      - name: Extract and prepare plugin for upload
+        run: |
+          zip_file=$(find dist -name "*.zip" | head -n 1)
+          if [ -n "$zip_file" ]; then
+            mkdir -p dist/plugin
+            unzip "$zip_file" -d dist/plugin
+            echo "PLUGIN_NAME=$(basename "$zip_file" .zip)" >> $GITHUB_ENV
+          fi
+
+      # Upload the plugin directory as an artifact (GitHub will zip it automatically)
+      - name: Upload Plugin
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.PLUGIN_NAME }}
+          path: dist/plugin/
+          retention-days: 10

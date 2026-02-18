@@ -1,0 +1,964 @@
+# Copyright (C) 2023 flux-checkout
+# This file is distributed under the same license as the flux-checkout package.
+msgid ""
+msgstr ""
+"Project-Id-Version: flux-checkout\n"
+"POT-Creation-Date: 2023-01-25 08:20+0000\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Tore Østlie\n"
+"Language-Team: \n"
+"Language: nb_NO\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;"
+"_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;"
+"esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 3.2.2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: inc/class-assets.php:128
+msgid "Please fix all errors and try again."
+msgstr "Rett opp alle feil og prøv igjen."
+
+#: inc/class-assets.php:129
+msgid "Please search for an address and try again."
+msgstr "Søk etter en adresse og prøv igjen."
+
+#: inc/class-assets.php:130
+msgid "Login"
+msgstr "Logg inn"
+
+#: inc/class-assets.php:131
+msgid "Pay"
+msgstr "Betal"
+
+#: inc/class-assets.php:132
+msgid "Coupon has been removed."
+msgstr "Rabattkoden er fjernet."
+
+#: inc/class-assets.php:133
+msgid ""
+"An account is already registered with this email address. Would you like to "
+"log in?"
+msgstr ""
+"En konto er allerede registrert med denne e-postadressen. Vil du logge på?"
+
+#: inc/class-assets.php:134
+msgid "Login successful"
+msgstr "Vellykket innlogging"
+
+#: inc/class-assets.php:135
+msgid "An error occurred"
+msgstr "En feil oppstod"
+
+#: inc/class-compat-germanized.php:50
+msgid "Review Order"
+msgstr "Gjennomgå bestillingen"
+
+#: inc/class-core-licence.php:280
+msgid "Back to Settings"
+msgstr "Tilbake til Innstillinger"
+
+#: inc/class-core-licence.php:306
+msgid "Changelog"
+msgstr "Endringslogg"
+
+#: inc/class-core-licence.php:317
+msgid "Manage Licence &amp; Billing"
+msgstr "Administrer lisens &amp; Fakturering"
+
+#: inc/class-core-onboard.php:60, inc/class-core-onboard.php:69
+msgid "Get Started"
+msgstr "Kom i gang"
+
+#: inc/class-core-onboard.php:75
+msgid "Steps"
+msgstr "Trinn"
+
+#: inc/class-core-onboard.php:521
+msgid "Are you sure?"
+msgstr "Er du sikker?"
+
+#: inc/class-core-onboard.php:522
+msgid ""
+"Are you sure you want to dismiss the Get Started tab? You won't be able to "
+"access it again."
+msgstr ""
+"Er du sikker på at du vil avvise Kom i gang-fanen? Du vil ikke få tilgang "
+"til den igjen."
+
+#: inc/class-core-onboard.php:524
+msgid "Yes"
+msgstr "Ja"
+
+#: inc/class-core-onboard.php:525
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: inc/class-core-onboard.php:601
+msgid "Priority Support"
+msgstr "Prioritert støtte"
+
+#: inc/class-core-onboard.php:602
+msgid "Help is at hand if you face any issues."
+msgstr "Hjelp er tilgjengelig hvis du møter problemer."
+
+#: inc/class-core-onboard.php:605
+msgid "Get Help"
+msgstr "Få hjelp"
+
+#: inc/class-core-settings.php:325
+msgid "Getting Started"
+msgstr "Starter"
+
+#: inc/class-core-settings.php:369
+msgid "Dashboard"
+msgstr "Dashboard"
+
+#: inc/class-core-settings.php:376
+msgid "License &amp; Account Settings"
+msgstr "Lisens &amp; Kontoinnstillinger"
+
+#: inc/class-core-settings.php:382
+msgid "License &amp; Billing"
+msgstr "Lisens &amp; Fakturering"
+
+#: inc/class-core-settings.php:383
+msgid ""
+"Activate or sync your license, cancel your subscription, print invoices, and "
+"manage your account information."
+msgstr ""
+"Aktiver eller synkroniser lisensen din, kanseller abonnementet ditt, skriv "
+"ut fakturaer og administrer kontoinformasjonen din."
+
+#: inc/class-core-settings.php:389
+msgid "Your Account"
+msgstr "Kontoen din"
+
+#: inc/class-core-settings.php:390
+msgid "Manage all of your Iconic plugins, supscriptions, renewals, and more."
+msgstr "Administrer alle dine Iconic plugins, abonnementer, fornyelser og mer."
+
+#: inc/class-core-settings.php:401, inc/class-core-settings.php:407
+msgid "Support"
+msgstr "Brukerstøtte"
+
+#: inc/class-core-settings.php:408
+msgid "Get premium support with a valid license."
+msgstr "Få førsteklasses støtte med en gyldig lisens."
+
+#: inc/class-core-settings.php:414
+msgid "Documentation"
+msgstr "Dokumentasjon"
+
+#: inc/class-core-settings.php:415
+msgid "Read the plugin documentation."
+msgstr "Les dokumentasjonen for plugin-modulen."
+
+#: inc/class-core-settings.php:662
+msgid "Buy Plugin"
+msgstr "Kjøp plugin"
+
+#: inc/class-core-settings.php:665
+msgid "30 Day Money-Back Guarantee"
+msgstr "30 dagers pengene-tilbake-garanti"
+
+#: inc/class-core-settings.php:690
+msgid "Submit Ticket"
+msgstr "Send inn sak"
+
+#: inc/class-core-settings.php:699
+msgid "Read Documentation"
+msgstr "Les dokumentasjon"
+
+#: inc/class-core-settings.php:708
+msgid "Manage Your Account"
+msgstr "Administrer kontoen din"
+
+#: inc/class-core-settings.php:737
+msgid "View settings"
+msgstr "Vis innstillinger"
+
+#: inc/class-core-settings.php:737
+msgid "Settings"
+msgstr "Innstillinger"
+
+#: inc/class-core.php:297
+msgid "House Number/Name"
+msgstr "Husnummer/navn"
+
+#: inc/class-core.php:319, inc/class-core.php:323, inc/class-core.php:433
+msgid "Apartment, suite, unit etc."
+msgstr "Leilighet, romnummer, enhet etc."
+
+#: inc/class-core.php:514
+msgid "This field is required"
+msgstr "Dette feltet er obligatorisk"
+
+#: inc/class-core.php:515
+msgid "Please enter a valid phone number"
+msgstr "Vennligst oppgi et gyldig telefonnummer"
+
+#. translators: %s: field name
+#: inc/class-core.php:643
+msgid "%s is a required field."
+msgstr "%s er et obligatorisk felt."
+
+#. translators: ISO 3166-1 alpha-2 country code
+#: inc/class-core.php:650
+msgid "'%s' is not a valid country code."
+msgstr "‘%s’ er ikke en gyldig landskode."
+
+#. translators: %1$s: field name, %2$s finder.eircode.ie URL
+#: inc/class-core.php:658
+msgid ""
+"%1$s is not valid. You can look up the correct Eircode <a target=\"_blank\" "
+"href=\"%2$s\">here</a>."
+msgstr ""
+"%1$s er ikke gyldig. Du kan slå opp riktig Eircode <a target=“_blank” "
+"href=“%2$s”>her</a>."
+
+#. translators: %s: field name
+#: inc/class-core.php:663
+msgid "%s is not a valid postcode / ZIP."
+msgstr "%s er ikke et gyldig postnummer."
+
+#. translators: Phone.
+#: inc/class-core.php:671
+msgid "%s is not a valid phone number."
+msgstr "%s er ikke et gyldig telefonnummer."
+
+#. translators: Email.
+#: inc/class-core.php:676
+msgid "%s is not a valid email address."
+msgstr "%s er ikke en gyldig e-postadresse."
+
+#: inc/class-core.php:689
+msgid ""
+"An account is already registered with this email address. <a href=\"#\" data-"
+"login>Would you like to log in</a>?"
+msgstr ""
+"En konto er allerede registrert med denne e-postadressen. <a href=“#” data-"
+"login>Vil du logge på</a>?"
+
+#. translators: Amount.
+#: inc/class-helpers.php:514
+msgid "Pay for order %s"
+msgstr "Betal for ordre %s"
+
+#: inc/class-sidebar.php:269, inc/class-sidebar.php:270
+msgid "Remove this item"
+msgstr "Fjern dette elementet"
+
+#. translators: %s Product title.
+#: inc/class-sidebar.php:357
+msgid "You can only have 1 %s in your cart."
+msgstr "Du kan bare ha 1 %s i handlekurven."
+
+#. translators: 1: product name 2: quantity in stock
+#: inc/class-sidebar.php:372
+msgid ""
+"Sorry, we do not have enough \"%1$s\" in stock to fulfill your order (%2$s "
+"available). We apologize for any inconvenience caused."
+msgstr ""
+"Beklager, vi har ikke nok “%1$s” på lager til å oppfylle bestillingen din "
+"(%2$s tilgjengelig). Vi beklager ulempen."
+
+#: inc/class-steps.php:204
+msgid "Continue to"
+msgstr "Fortsette til"
+
+#: inc/class-steps.php:196
+msgid "Continue"
+msgstr "Fortsett"
+
+#: inc/class-steps.php:231
+msgid "Details"
+msgstr "Detaljer"
+
+#: inc/class-steps.php:237, inc/class-steps.php:630, inc/class-steps.php:670,
+#: inc/class-steps.php:712, inc/class-thankyou.php:238
+msgid "Address"
+msgstr "Adresse"
+
+#: inc/class-steps.php:243, inc/class-steps.php:447, inc/class-steps.php:461,
+#: inc/class-thankyou.php:273
+msgid "Payment"
+msgstr "Betaling"
+
+#: inc/class-steps.php:279
+msgid "Customer Details"
+msgstr "Kundedetaljer"
+
+#: inc/class-steps.php:304
+msgid "Billing Address"
+msgstr "Fakturaadresse"
+
+#: inc/class-steps.php:308
+msgid "Billing &amp; Shipping Address"
+msgstr "Fakturering &amp; Sendingsadresse"
+
+#: inc/class-steps.php:330, inc/class-steps.php:367
+msgid "Look up address"
+msgstr "Slå opp adressen"
+
+#: inc/class-steps.php:357
+msgid "Ship to a different address?"
+msgstr "Sende til en annen adresse?"
+
+#: inc/class-steps.php:406
+msgid "Order notes?"
+msgstr "Ordrenotater?"
+
+#: inc/class-steps.php:503
+msgid "Returning Customer?"
+msgstr "Tilbakevendende kunde?"
+
+#: inc/class-steps.php:517
+msgid "Already have an account?"
+msgstr "Har du allerede en konto?"
+
+#: inc/class-steps.php:518
+msgid "Log in"
+msgstr "Logg Inn"
+
+#: inc/class-steps.php:551
+msgid "Create an account?"
+msgstr "Opprett en konto?"
+
+#: inc/class-steps.php:581
+msgid ""
+"Create an account by entering the information below. If you are a returning "
+"customer please login at the top of the page."
+msgstr ""
+"Opprett en konto ved å skrive inn informasjonen nedenfor. Hvis du er en "
+"returnerende kunde, vennligst logg inn øverst på siden."
+
+#: inc/class-steps.php:578
+msgid ""
+"Create an account by entering the information below. If you are a returning "
+"customer please login."
+msgstr ""
+"Opprett en konto ved å skrive inn informasjonen nedenfor. Hvis du er en "
+"returnerende kunde, vennligst logg inn."
+
+#: inc/class-steps.php:576
+msgid ""
+"Create an account by entering the information below. If you are a returning "
+"customer please %1$slogin on your account page%2$s."
+msgstr ""
+"Opprett en konto ved å skrive inn informasjonen nedenfor. Hvis du er en "
+"returnerende kunde, vennligst %1$slogg inn på kontosiden din%2$s."
+
+#: inc/class-steps.php:617, inc/class-thankyou.php:227
+msgid "Contact"
+msgstr "Kontakt"
+
+#: inc/class-steps.php:623, inc/class-steps.php:636
+msgid "Edit"
+msgstr "Redigere"
+
+#: inc/class-steps.php:658, inc/class-steps.php:700
+msgid "Start typing your address to search."
+msgstr "Begynn å skrive inn adressen din for å søke."
+
+#: inc/class-steps.php:661, inc/class-steps.php:703
+msgid "Info"
+msgstr "Info"
+
+#: inc/class-steps.php:664, inc/class-steps.php:706
+msgid "Start with your house/apartment number then your street address."
+msgstr "Start med hus-/leilighetsnummeret og deretter gateadressen din."
+
+#: inc/class-steps.php:675
+msgid "Please enter your address"
+msgstr "Vennligst skriv inn adressen din"
+
+#: inc/class-steps.php:679, inc/class-steps.php:720
+msgid "Enter Address Manually"
+msgstr "Angi adresse manuelt"
+
+#: inc/class-steps.php:738
+msgid "Enter Coupon"
+msgstr "Skriv inn rabattkode"
+
+#: inc/class-steps.php:787
+msgid "Back"
+msgstr "Tilbake"
+
+#: inc/class-steps.php:777
+msgid "Back to %s"
+msgstr "Tilbake til %s"
+
+#: inc/class-steps.php:822, inc/class-thankyou.php:261
+msgid "Shipping"
+msgstr "Frakt"
+
+#. translators: Order ID.
+#: inc/class-thankyou.php:83
+msgid "Order #%d"
+msgstr "Bestilling #%d"
+
+#. translators: First name.
+#: inc/class-thankyou.php:89
+msgid "Thank you %s!"
+msgstr "Takk %s!"
+
+#: inc/class-thankyou.php:236
+msgid "Billing"
+msgstr "Fakturering"
+
+#: inc/class-thankyou.php:322
+msgid "Your Order"
+msgstr "Din ordre"
+
+#: inc/class-thankyou.php:475
+msgid "Need Help?"
+msgstr "Trenger du hjelp?"
+
+#: inc/class-thankyou.php:475
+msgid "Contact Us"
+msgstr "Kontakt oss"
+
+#: inc/class-thankyou.php:480
+msgid "Continue Shopping"
+msgstr "Fortsett å handle"
+
+#. translators: URL to the preview page.
+#: inc/class-thankyou.php:520
+msgid ""
+"<a href='%s' target='_blank'>Click here</a> to preview the Thank You page."
+msgstr ""
+"<a href=‘%s’ target=‘_blank’>Klikk her</a> for å forhåndsvise takkesiden."
+
+#: templates/template-classic.php:51
+msgid "Back to cart"
+msgstr "Tilbake til handlekurven"
+
+#: templates/template-classic.php:49
+msgid "Back to shop"
+msgstr "Tilbake til butikken"
+
+#: templates/template-classic.php:47
+msgid "Back to account"
+msgstr "Tilbake til konto"
+
+#: templates/template-classic.php:62,
+#: woocommerce/modern/checkout/form-checkout.php:48
+msgid "Show order summary"
+msgstr "Vis ordresammendrag"
+
+#: templates/template-classic.php:63,
+#: woocommerce/modern/checkout/form-checkout.php:49
+msgid "Hide order summary"
+msgstr "Skjul ordresammendrag"
+
+#: inc/admin/settings.php:29
+msgid "Styles"
+msgstr "Stiler"
+
+#: inc/admin/settings.php:34
+msgid "Checkout Page"
+msgstr "Kasseside"
+
+#: inc/admin/settings.php:39, inc/admin/settings.php:158
+msgid "Theme"
+msgstr "Tema"
+
+#: inc/admin/settings.php:44
+msgid "Thank You Page"
+msgstr "Takkeside"
+
+#: inc/admin/settings.php:49, inc/admin/settings.php:472
+msgid "Integrations"
+msgstr "Integrasjoner"
+
+#: inc/admin/settings.php:56
+msgid "General Settings"
+msgstr "Generelle innstillinger"
+
+#: inc/admin/settings.php:62
+msgid "Show Company Field"
+msgstr "Vis firmafelt"
+
+#: inc/admin/settings.php:63
+msgid "Enable the Company field within the Billing Details step."
+msgstr "Aktiver firmafeltet i faktureringsdetaljer."
+
+#: inc/admin/settings.php:69
+msgid "Use Address Autocomplete"
+msgstr "Bruk Autofullfør adresse"
+
+#: inc/admin/settings.php:70
+msgid ""
+"Enable Address Autocomplete to automatically fill out address details. "
+"Requires a valid <a href=\"#tab-integrations|"
+"integrations_integrations_google_api_key\" class=\"wsf-internal-"
+"link\">Google API key</a>."
+msgstr ""
+"Aktiver Autofullfør adresse for å automatisk fylle ut adressedetaljer. "
+"Krever en gyldig <a href=“#tab-integrations|"
+"integrations_integrations_google_api_key” class=“wsf-internal-link”>Google "
+"API-nøkkel</a>."
+
+#: inc/admin/settings.php:76
+msgid "Store Checkout Data in Browser"
+msgstr "Lagre betalingsdata i nettleseren"
+
+#: inc/admin/settings.php:77
+msgid ""
+"Store customer's checkout data locally on their browser, which can then be "
+"used to maintain field data on page reload."
+msgstr ""
+"Lagre kundens betalingsdata lokalt i nettleseren deres, som deretter kan "
+"brukes til å huske feltdata når siden lastes inn på nytt."
+
+#: inc/admin/settings.php:83
+msgid "Separate Street Number Field"
+msgstr "Separat gatenummerfelt"
+
+#: inc/admin/settings.php:84
+msgid "Separate House Number/Name field from Street Address field."
+msgstr "Skill husnummer/navn-feltet fra gateadressefeltet."
+
+#: inc/admin/settings.php:90
+msgid "Show \"Back to Shop\" button."
+msgstr "Vis “Tilbake til butikk”-knappen."
+
+#: inc/admin/settings.php:91
+msgid "Add a button to go back to the cart page."
+msgstr "Legg til en knapp for å gå tilbake til handlekurvsiden."
+
+#: inc/admin/settings.php:97
+msgid "Make Cart Items images clickable"
+msgstr "Gjør produkter-bilder i handlekurven klikkbare"
+
+#: inc/admin/settings.php:98
+msgid ""
+"Allows the images on the Order review cart to be clicked on and linked to "
+"the product page."
+msgstr ""
+"Gjør det mulig å klikke på produktbildene i kassen og koble dem til "
+"produktsiden."
+
+#: inc/admin/settings.php:104
+msgid "Auto Apply Coupon"
+msgstr "Bruk rabattkode automatisk"
+
+#: inc/admin/settings.php:105
+msgid "Enter a coupon that will be automatically applied at checkout."
+msgstr "Skriv inn en rabattkode som automatisk blir brukt i kassen."
+
+#: inc/admin/settings.php:111
+msgid "Hide Coupon Field"
+msgstr "Skjul rabattkodefelt"
+
+#: inc/admin/settings.php:112
+msgid ""
+"When enabled, the coupon field will not be displayed to users and they will "
+"not be able to enter a coupon code. However, you can automatically apply a "
+"coupon using the \"coupon\" URL parameter. Example: site.com/checkout?"
+"coupon=10PCTOFF"
+msgstr ""
+"Når det er aktivert, vil ikke rabattkodefeltet vises for brukere, og de vil "
+"ikke kunne angi en rabattkode. Du kan imidlertid bruke en kupong automatisk "
+"ved å bruke URL-parameteren “kupong”. Eksempel: site.com/checkout?"
+"coupon=10PCTOFF"
+
+#: inc/admin/settings.php:118
+msgid "Enable Phone number Country Code Selector"
+msgstr "Aktiver Landskodevelger for telefonnummer"
+
+#: inc/admin/settings.php:119
+msgid "Enable country code selector for the phone number field."
+msgstr "Aktiver landskodevelgeren for telefonnummerfeltet."
+
+#: inc/admin/settings.php:129
+msgid "User Settings"
+msgstr "Brukerinstillinger"
+
+#: inc/admin/settings.php:135
+msgid "Assign Guest Orders"
+msgstr "Tildel gjestebestillinger"
+
+#: inc/admin/settings.php:136
+msgid ""
+"Flux Checkout will automatically link guest orders to existing customer "
+"accounts if the email address provided in the order matches an existing "
+"account."
+msgstr ""
+"Flux Checkout vil automatisk koble gjestebestillinger til eksisterende "
+"kundekontoer hvis e-postadressen oppgitt i bestillingen samsvarer med en "
+"eksisterende konto."
+
+#: inc/admin/settings.php:142
+msgid "Existing User"
+msgstr "Eksisterende bruker"
+
+#: inc/admin/settings.php:143
+msgid "How to handle the familiar user emails on the checkout page."
+msgstr "Hvordan håndtere de kjente brukere-e-postene på betalingssiden."
+
+#: inc/admin/settings.php:164
+msgid "Choose Theme"
+msgstr "Velg tema"
+
+#: inc/admin/settings.php:165
+msgid "Choose the theme you want Flux to use."
+msgstr "Velg temaet du vil at Flux skal bruke."
+
+#: inc/admin/settings.php:182
+msgid "Show Order Review"
+msgstr "Vis ordresammendrag"
+
+#: inc/admin/settings.php:183
+msgid ""
+"Enable a persistent order review at checkout. This replaces the cart page."
+msgstr ""
+"Aktiver en vedvarende bestillingsgjennomgang ved kassen. Dette erstatter "
+"handlekurvsiden."
+
+#: inc/admin/settings.php:191
+msgid "Web Safe Fonts"
+msgstr "Nettsikre skrifter"
+
+#: inc/admin/settings.php:193
+msgid "Google WebFonts"
+msgstr "Google WebFonts"
+
+#: inc/admin/settings.php:195
+msgid "Pixels"
+msgstr "Piksler"
+
+#: inc/admin/settings.php:197
+msgid "Emphemeral Units"
+msgstr "Emphemeral enheter"
+
+#: inc/admin/settings.php:204
+msgid "Header Styles"
+msgstr "Overskriftstiler"
+
+#: inc/admin/settings.php:210
+msgid "Header Type"
+msgstr "Overskriftstype"
+
+#: inc/admin/settings.php:211
+msgid "Select whether to use an image or text for the branding."
+msgstr "Velg om du vil bruke et bilde eller en tekst i logofeltet."
+
+#: inc/admin/settings.php:214
+msgid "Text"
+msgstr "Tekst"
+
+#: inc/admin/settings.php:215
+msgid "Image"
+msgstr "Bilde"
+
+#: inc/admin/settings.php:222
+msgid "Header Image"
+msgstr "Overskriftsbilde"
+
+#: inc/admin/settings.php:223
+msgid "Select your logo (Recommended size: 200 x 40px)."
+msgstr "Velg logoen din (Anbefalt størrelse: 200 x 40px)."
+
+#: inc/admin/settings.php:229
+msgid "Image Width"
+msgstr "Bildebredde"
+
+#: inc/admin/settings.php:230
+msgid "Please enter the width of your logo in px."
+msgstr "Vennligst skriv inn bredden på logoen din i px."
+
+#: inc/admin/settings.php:236
+msgid "Header Text"
+msgstr "Overskriftstekst"
+
+#: inc/admin/settings.php:238
+msgid "Checkout"
+msgstr "Kasse"
+
+#: inc/admin/settings.php:243
+msgid "Header Font Family"
+msgstr "Overskriftsfont familie"
+
+#: inc/admin/settings.php:247, inc/admin/settings.php:266
+msgid "inherit"
+msgstr "arve"
+
+#: inc/admin/settings.php:255
+msgid "Header Font Colour"
+msgstr "Overskriftsskriftfarge"
+
+#: inc/admin/settings.php:262
+msgid "Header Font Size"
+msgstr "Skriftstørrelse på topptekst"
+
+#: inc/admin/settings.php:274
+msgid "Header Background"
+msgstr "Overskriftsbakgrunn"
+
+#: inc/admin/settings.php:275
+msgid "Select whether to use a gradient for the header banner."
+msgstr "Velg om du vil bruke en gradient for overskriftsbanneret."
+
+#: inc/admin/settings.php:279
+msgid "Use Primary Color"
+msgstr "Bruk primærfarge"
+
+#: inc/admin/settings.php:280
+msgid "Use Custom Color"
+msgstr "Bruk egendefinert farge"
+
+#: inc/admin/settings.php:281
+msgid "Use Gradient"
+msgstr "Bruk Gradient"
+
+#: inc/admin/settings.php:287
+msgid "Gradient Background"
+msgstr "Gradient bakgrunn"
+
+#: inc/admin/settings.php:288
+msgid ""
+"The background gradient to use. Preview all gradients at <a "
+"target=\"_blank\" href=\"http://uigradients.com/\"> http://uigradients.com/</"
+"a>."
+msgstr ""
+"Bakgrunnsgradienten som skal brukes. Forhåndsvis alle gradienter på <a "
+"target=“_blank” href=“http://uigradients.com/“> http://uigradients.com/</a>."
+
+#: inc/admin/settings.php:295
+msgid "Custom Header Color"
+msgstr "Egendefinert topptekstfarge"
+
+#: inc/admin/settings.php:302
+msgid "\"Back to Cart\" Link Color"
+msgstr "“Tilbake til handlekurv” Lenkefarge"
+
+#: inc/admin/settings.php:315
+msgid "Checkout Styles"
+msgstr "Kassestiler"
+
+#: inc/admin/settings.php:321
+msgid "Color Theme"
+msgstr "Fargetema"
+
+#: inc/admin/settings.php:322
+msgid "Select whether to use a custom colors."
+msgstr "Velg om du vil bruke egendefinerte farger."
+
+#: inc/admin/settings.php:326
+msgid "Select from Design palette"
+msgstr "Velg fra designpaletten"
+
+#: inc/admin/settings.php:327
+msgid "Choose custom colors"
+msgstr "Velg egendefinerte farger"
+
+#: inc/admin/settings.php:333
+msgid "Primary Color"
+msgstr "Primærfarge"
+
+#: inc/admin/settings.php:334, inc/admin/settings.php:354
+msgid ""
+"The Primary Color will be used for the progress bar, form fields, switches, "
+"checkboxes and radio buttons."
+msgstr ""
+"Primærfargen vil bli brukt for fremdriftslinjen, skjemafelt, brytere, "
+"avmerkingsbokser og alternativknapper."
+
+#: inc/admin/settings.php:343
+msgid "Accent Color"
+msgstr "Aksentfarge"
+
+#: inc/admin/settings.php:344, inc/admin/settings.php:362
+msgid "The Accent Color will be used for buttons and links."
+msgstr "Aksentfargen vil bli brukt for knapper og lenker."
+
+#: inc/admin/settings.php:353
+msgid "Custom Primary Color"
+msgstr "Egendefinert primærfarge"
+
+#: inc/admin/settings.php:361
+msgid "Custom Accent Color"
+msgstr "Egendefinert aksentfarge"
+
+#: inc/admin/settings.php:369
+msgid "Placeholders"
+msgstr "Plassholdere"
+
+#: inc/admin/settings.php:370
+msgid "Used for placeholders and form labels"
+msgstr "Brukes til plassholdere og skjemaetiketter"
+
+#: inc/admin/settings.php:376
+msgid "Link colour"
+msgstr "Lenkefarge"
+
+#: inc/admin/settings.php:377
+msgid "Used for links."
+msgstr "Brukes til lenker."
+
+#: inc/admin/settings.php:383
+msgid "Primary button colour"
+msgstr "Primær knappfarge"
+
+#: inc/admin/settings.php:384
+msgid "Used for the primary buttons."
+msgstr "Brukes for de primære knappene."
+
+#: inc/admin/settings.php:390
+msgid "Secondary button colour"
+msgstr "Sekundær knappfarge"
+
+#: inc/admin/settings.php:391
+msgid "Used for the secondary buttons."
+msgstr "Brukes for de sekundære knappene."
+
+#: inc/admin/settings.php:397
+msgid "Custom CSS"
+msgstr "Egendefinert CSS"
+
+#: inc/admin/settings.php:398
+msgid "Put your custom CSS rules here."
+msgstr "Sett dine egendefinerte CSS-regler her."
+
+#: inc/admin/settings.php:408
+msgid "Thank You Page Settings"
+msgstr "Takk-sideinnstillinger"
+
+#: inc/admin/settings.php:414
+msgid "Enable Flux Thank You Page"
+msgstr "Aktiver Flux takkeside"
+
+#: inc/admin/settings.php:415
+msgid ""
+"Enable the Flux custom Thank You page. This will override the default "
+"WooCommerce Thank You page."
+msgstr ""
+"Aktiver Flux tilpasset takkeside. Dette vil overstyre standard WooCommerce "
+"takkeside."
+
+#: inc/admin/settings.php:421
+msgid "Show Map"
+msgstr "Vis kart"
+
+#: inc/admin/settings.php:422
+msgid ""
+"Enable a map showing the customer's shipping location. <br><br>Requires a "
+"valid <a href=\"#tab-integrations|integrations_integrations_google_api_key\" "
+"class=\"wsf-internal-link\">Google API key</a>. "
+msgstr ""
+"Aktiver et kart som viser kundens leveringssted. <br><br>Krever en gyldig <a "
+"href=“#tab-integrations|integrations_integrations_google_api_key” class=“wsf-"
+"internal-link”>Google API-nøkkel</a>. "
+
+#: inc/admin/settings.php:428
+msgid "Thank You Page Content"
+msgstr "Takkeside innhold"
+
+#: inc/admin/settings.php:429
+msgid "Display a custom message/content on the Thank You page."
+msgstr "Vis tilpasset melding/innhold på takkesiden."
+
+#: inc/admin/settings.php:436
+msgid "Content placement"
+msgstr "Innholdsplassering"
+
+#: inc/admin/settings.php:437
+msgid "Where to display the custom message/content."
+msgstr "Hvor skal den tilpassede meldingen/innholdet vises."
+
+#: inc/admin/settings.php:441
+msgid "After order status"
+msgstr "Etter ordrestatus"
+
+#: inc/admin/settings.php:442
+msgid "Before Customer details"
+msgstr "Før Kundedetaljer"
+
+#: inc/admin/settings.php:443
+msgid "After Customer details"
+msgstr "Etter kundedetaljer"
+
+#: inc/admin/settings.php:444
+msgid "Before Product details"
+msgstr "Før produktdetaljer"
+
+#: inc/admin/settings.php:445
+msgid "After Product details"
+msgstr "Etter produktdetaljer"
+
+#: inc/admin/settings.php:450
+msgid "Contact Page"
+msgstr "Kontaktside"
+
+#: inc/admin/settings.php:451
+msgid ""
+"Select a contact page to be linked on the Thank You page. Leave empty to "
+"hide the contact link."
+msgstr ""
+"Velg en kontaktside som skal kobles til på takkesiden. La stå tomt for å "
+"skjule kontaktlenken."
+
+#: inc/admin/settings.php:459
+msgid "-Select Page-"
+msgstr "-Velg side-"
+
+#: inc/admin/settings.php:478
+msgid "Google API Key"
+msgstr "Google API-nøkkel"
+
+#: inc/admin/settings.php:479
+msgid ""
+"Your API key to enable Address Autocomplete. <a href=\"https://iconicwp.com/"
+"docs/flux-checkout-for-woocommerce/how-to-get-your-google-api-key-for-"
+"address-autocomplete/\" target=\"_blank\">View documentation</a>."
+msgstr ""
+"Din API-nøkkel for å aktivere Autofullføring av adresse. <a href=“https://"
+"iconicwp.com/docs/flux-checkout-for-woocommerce/how-to-get-your-google-api-"
+"key-for-address-autocomplete/“ target=“_blank”>Se dokumentasjon</a>."
+
+#: woocommerce/classic/checkout/form-checkout.php:40,
+#: woocommerce/modern/checkout/form-checkout.php:36
+msgid "You must be logged in to checkout."
+msgstr "Du må være logget inn for å gå til kassen."
+
+#: woocommerce/classic/checkout/form-login.php:47,
+#: woocommerce/modern/checkout/form-login.php:40
+msgid "Customer Login"
+msgstr "Kundepålogging"
+
+#: woocommerce/classic/checkout/form-login.php:92
+msgid "Cancel Login"
+msgstr "Avbryt pålogging"
+
+#: woocommerce/common/checkout/empty-cart.php:16
+msgid "Your cart is empty, taking you back to the shop..."
+msgstr "Handlevognen din er tom, tar deg tilbake til butikken…"
+
+#: woocommerce/common/checkout/empty-cart.php:19
+msgid "Return to shop"
+msgstr "Gå tilbake til butikken"
+
+#: woocommerce/common/checkout/form-pay.php:41
+msgid "Pay for Order"
+msgstr "Betal for ordre"
+
+#: woocommerce/common/checkout/form-pay.php:75
+msgid "Back to Account"
+msgstr "Tilbake til konto"
+
+#: woocommerce/modern/checkout/form-coupon.php:29
+msgid "Coupon code"
+msgstr "Rabattkode"
+
+#: woocommerce/modern/checkout/form-coupon.php:34
+msgid "Apply"
+msgstr "Bruk"
+

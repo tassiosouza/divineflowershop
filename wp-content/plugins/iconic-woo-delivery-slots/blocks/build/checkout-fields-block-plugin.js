@@ -1,0 +1,1 @@
+(()=>{"use strict";(0,window.wp.plugins.registerPlugin)("iconic-wds-subscriptions",{render:()=>{},scope:"woocommerce-checkout"})})();

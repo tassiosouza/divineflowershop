@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "flux-checkout/cross-sell",
+  "version": "1.0.0",
+  "title": "Flux Checkout Cross-sell Products",
+  "category": "widgets",
+  "icon": "<svg viewBox=\"0 0 448 512\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"m0 88c0-48.6 39.4-88 88-88h304c30.9 0 56 25.1 56 56v288c0 22.3-13.1 41.6-32 50.6v69.4h8c13.3 0 24 10.7 24 24s-10.7 24-24 24h-344c-44.2 0-80-35.8-80-80 0-2.7.1-5.4.4-8h-.4zm80 312c-17.7 0-32 14.3-32 32s14.3 32 32 32h288v-64zm-32-41.3c9.8-4.3 20.6-6.7 32-6.7h312c4.4 0 8-3.6 8-8v-288c0-4.4-3.6-8-8-8h-304c-22.1 0-40 17.9-40 40zm104-246.7h176c13.3 0 24 10.7 24 24s-10.7 24-24 24h-176c-13.3 0-24-10.7-24-24s10.7-24 24-24zm0 80h176c13.3 0 24 10.7 24 24s-10.7 24-24 24h-176c-13.3 0-24-10.7-24-24s10.7-24 24-24z\"/></svg>",
+  "description": "Display cross-sell products.",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "product_ids": {
+      "type": "array"
+    },
+    "manual_selection": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "textdomain": "flux-checkout",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

@@ -215,7 +215,7 @@ trait PluginHelper {
 		$separators = [ wc_get_price_decimal_separator(), wc_get_price_thousand_separator(), $locale['thousands_sep'], $locale['mon_thousands_sep'], $locale['decimal_point'], $locale['mon_decimal_point'], ',' ];
 
 		if ( wc_get_price_decimals() > 0 ) {
-			// Replace all posible separators with dots.
+			// Replace all possible separators with dots.
 			$numeric_string = str_replace( $separators, '.', $numeric_string );
 			// Leave only the last dot that is the decimal separator.
 			return (string) preg_replace( '/\.(?=.*\.)/', '', $numeric_string );
@@ -223,5 +223,31 @@ trait PluginHelper {
 			// If no decimals remove all separators.
 			return str_replace( $separators, '', $numeric_string );
 		}
+	}
+
+	/**
+	 * Returns enabled or disabled based on a boolean value.
+	 *
+	 * Returns "enabled" for truthy
+	 * Returns "disabled" for falsy.
+	 *
+	 * @param bool $value The value to check.
+	 * @return string
+	 */
+	protected function enabled_or_disabled( bool $value ): string {
+		return $value ? 'Enabled' : 'Disabled';
+	}
+
+	/**
+	 * Returns Yes or No based on a boolean value.
+	 *
+	 * Returns "yes" for truthy
+	 * Returns "no" for falsy.
+	 *
+	 * @param bool $value The value to check.
+	 * @return string
+	 */
+	protected function yes_or_no( bool $value ): string {
+		return $value ? 'Yes' : 'No';
 	}
 }

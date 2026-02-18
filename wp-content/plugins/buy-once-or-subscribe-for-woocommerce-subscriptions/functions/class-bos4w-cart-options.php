@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 use Automattic\WooCommerce\Utilities\NumberUtil;
-use BOS4W;
+use function BOS4W\bos_cart_item_is_bos_product;
 
 if ( ! class_exists( 'BOS4W_Cart_Options' ) ) {
 	/**
@@ -66,7 +66,33 @@ if ( ! class_exists( 'BOS4W_Cart_Options' ) ) {
 		 */
 		public function bos4w_add_cart_item_data( $cart_item, $product_id, $variation_id ) {
 			if ( isset( $_REQUEST['bos4w-purchase-type'] ) && '1' === $_REQUEST['bos4w-purchase-type'] ) {
-				$selected_plan = isset( $_REQUEST[ 'convert_to_sub_plan_' . $product_id ] ) ? sanitize_text_field( wp_unslash( $_REQUEST[ 'convert_to_sub_plan_' . $product_id ] ) ) : '';
+				$selected_plan = '';
+				$keys          = array();
+
+				$keys[] = 'convert_to_sub_plan_' . $product_id;
+
+				if ( $variation_id > 0 ) {
+					$keys[]    = 'convert_to_sub_plan_' . $variation_id;
+					$parent_id = (int) wp_get_post_parent_id( $variation_id );
+					if ( $parent_id ) {
+						$keys[] = 'convert_to_sub_plan_' . $parent_id;
+					}
+				}
+
+				$main_obj = BOS4W_Front_End::wpml_get_main_product( $variation_id > 0 ? $variation_id : $product_id, true, $variation_id > 0 );
+				if ( $main_obj instanceof WC_Product ) {
+					$main_base_id = $main_obj->is_type( 'variation' ) ? $main_obj->get_parent_id() : $main_obj->get_id();
+					if ( $main_base_id ) {
+						$keys[] = 'convert_to_sub_plan_' . $main_base_id;
+					}
+				}
+
+				foreach ( $keys as $k ) {
+					if ( isset( $_REQUEST[ $k ] ) && '' !== $_REQUEST[ $k ] ) {
+						$selected_plan = sanitize_text_field( wp_unslash( $_REQUEST[ $k ] ) );
+						break;
+					}
+				}
 
 				if ( empty( $selected_plan ) ) {
 					return $cart_item;
@@ -99,7 +125,45 @@ if ( ! class_exists( 'BOS4W_Cart_Options' ) ) {
 					 */
 					$display_the_price = apply_filters( 'bos_use_regular_price', false );
 
+					$base_product = $variation_id > 0 ? wc_get_product( $variation_id ) : wc_get_product( $product_id );
+
 					$item_price = ! $display_the_price ? $product->get_price() : $product->get_regular_price();
+
+					if ( class_exists( 'AF_C_S_P_Price' ) && $base_product instanceof WC_Product ) {
+						$user = is_user_logged_in() ? wp_get_current_user() : false;
+						$role = ( $user && ! empty( $user->roles ) ) ? reset( $user->roles ) : 'guest';
+
+						try {
+							$af_price   = new \AF_C_S_P_Price();
+							$qty        = isset( $cart_item['quantity'] ) ? max( 1, (int) $cart_item['quantity'] ) : 1;
+							$role_price = $af_price->get_price_of_product( $base_product, $user, $role, $qty );
+
+							if ( false !== $role_price && '' !== $role_price && $role_price >= 0 ) {
+								$item_price = (float) $role_price;
+							}
+						} catch ( \Throwable $e ) {
+							if ( defined( 'WP_DEBUG' ) && WP_DEBUG ) {
+								if ( function_exists( 'wc_get_logger' ) ) {
+									wc_get_logger()->warning(
+										sprintf(
+											'BOS4W role price lookup failed for product %d: %s',
+											$base_product instanceof WC_Product ? $base_product->get_id() : 0,
+											$e->getMessage()
+										),
+										array( 'source' => 'bos4w' )
+									);
+								} else {
+									error_log(
+										sprintf(
+											'[BOS4W] role price lookup failed for product %d: %s',
+											$base_product instanceof WC_Product ? $base_product->get_id() : 0,
+											$e->getMessage()
+										)
+									);
+								}
+							}
+						}
+					}
 				}
 
 				// Determine if a fixed price is set at the variation, product, or global level.
@@ -135,6 +199,7 @@ if ( ! class_exists( 'BOS4W_Cart_Options' ) ) {
 				}
 
 				if ( isset( $_REQUEST['bos4w-selected-price'] ) && ! empty( $_REQUEST['bos4w-selected-price'] ) && $product->is_type( array( 'bundle', 'composite' ) ) ) {
+					$discounted_price = self::parse_price_to_float( sanitize_text_field( wp_unslash( $_REQUEST['bos4w-selected-price'] ) ) );
 					/**
 					 * Filter formatted price.
 					 *
@@ -147,7 +212,7 @@ if ( ! class_exists( 'BOS4W_Cart_Options' ) ) {
 					 *
 					 * @since 5.0.0.
 					 */
-					$discounted_price = apply_filters( 'formatted_woocommerce_price', number_format( sanitize_text_field( wp_unslash( $_REQUEST['bos4w-selected-price'] ) ), wc_get_price_decimals(), wc_get_price_decimal_separator(), wc_get_price_thousand_separator() ), sanitize_text_field( wp_unslash( $_REQUEST['bos4w-selected-price'] ) ), wc_get_price_decimals(), wc_get_price_decimal_separator(), wc_get_price_thousand_separator(), sanitize_text_field( wp_unslash( $_REQUEST['bos4w-selected-price'] ) ) );
+					// $discounted_price = apply_filters( 'formatted_woocommerce_price', number_format( sanitize_text_field( wp_unslash( $_REQUEST['bos4w-selected-price'] ) ), wc_get_price_decimals(), wc_get_price_decimal_separator(), wc_get_price_thousand_separator() ), sanitize_text_field( wp_unslash( $_REQUEST['bos4w-selected-price'] ) ), wc_get_price_decimals(), wc_get_price_decimal_separator(), wc_get_price_thousand_separator(), sanitize_text_field( wp_unslash( $_REQUEST['bos4w-selected-price'] ) ) );
 				}
 
 				$cart_item['bos4w_data'] = array(
@@ -172,6 +237,8 @@ if ( ! class_exists( 'BOS4W_Cart_Options' ) ) {
 		 * @return mixed|string
 		 */
 		public static function bos4w_show_cart_item_subscription_options( $price, $cart_item, $cart_item_key ) {
+			$display_plans = array();
+
 			$product = $cart_item['data'];
 
 			$is_mini_cart = did_action( 'woocommerce_before_mini_cart' ) !== did_action( 'woocommerce_after_mini_cart' );
@@ -189,14 +256,25 @@ if ( ! class_exists( 'BOS4W_Cart_Options' ) ) {
 				}
 			}
 
-			$product_id = $cart_item['product_id'];
+			$product_id   = $cart_item['product_id'];
 			$product_data = wc_get_product( $cart_item['product_id'] );
 			$plan_options = ( new BOS4W_Front_End() )->get_discounted_prices( $product_data );
-			$selected     = \BOS4W\bos_cart_item_is_bos_product( $cart_item ) ? \BOS4W\bos_cart_item_is_bos_product( $cart_item ) : '';
+			$selected     = bos_cart_item_is_bos_product( $cart_item ) ? bos_cart_item_is_bos_product( $cart_item ) : '';
 
 			$plan_type = '';
 			if ( $product_data->is_type( 'variable' ) ) {
 				$plan_type = 'variation';
+			}
+
+			$is_container = $product->is_type( array( 'bundle', 'composite' ) );
+			$is_component =
+				! empty( $cart_item['bundled_by'] ) ||
+				! empty( $cart_item['bundled_item_id'] ) ||
+				! empty( $cart_item['composite_parent'] ) ||
+				! empty( $cart_item['composite_item'] );
+
+			if ( $plan_options && ( $is_container || $is_component ) ) {
+				return $price;
 			}
 
 			if ( $plan_options && $allow_cart_subscription && 'yes' === $allow_cart_subscription ) {
@@ -205,7 +283,7 @@ if ( ! class_exists( 'BOS4W_Cart_Options' ) ) {
 				if ( $cart_item['variation_id'] ) {
 					$product_id = $cart_item['variation_id'];
 
-					$plans        = ( new BOS4W_Front_End() )->product_has_subscription_plans( $product_data );
+					$plans = ( new BOS4W_Front_End() )->product_has_subscription_plans( $product_data );
 
 					if ( isset( $plans['variation'][ $product_id ] ) ) {
 						// Variation-level discounts.
@@ -213,11 +291,11 @@ if ( ! class_exists( 'BOS4W_Cart_Options' ) ) {
 					} elseif ( isset( $plans['product'] ) ) {
 						// Product-level discounts.
 						$plan_options = $plans['product'];
-						$plan_type = '';
+						$plan_type    = '';
 					} elseif ( isset( $plans['global'] ) ) {
 						// Global discounts.
 						$plan_options = $plans['global'];
-						$plan_type = '';
+						$plan_type    = '';
 					}
 				}
 				$product_in = wc_get_product( $product_id );
@@ -227,6 +305,7 @@ if ( ! class_exists( 'BOS4W_Cart_Options' ) ) {
 					'label'    => $label,
 					'value'    => array(
 						'price' => BOS4W_Front_End::bos4w_get_product_price( $product_in ),
+						'product_id' => $cart_item['product_id'],
 					),
 					'selected' => $selected,
 				);
@@ -280,8 +359,8 @@ if ( ! class_exists( 'BOS4W_Cart_Options' ) ) {
 						$use_fixed_price = $product_data->get_meta( '_bos4w_use_fixed_price' );
 
 						if ( $cart_item['variation_id'] ) {
-							$variation = wc_get_product( $cart_item['variation_id'] );
-							$product_price   = BOS4W_Front_End::bos4w_get_product_price( $variation );
+							$variation     = wc_get_product( $cart_item['variation_id'] );
+							$product_price = BOS4W_Front_End::bos4w_get_product_price( $variation );
 						}
 
 						if ( isset( $plan['subscription_price'] ) && ! empty( $plan['subscription_price'] ) ) {
@@ -330,6 +409,9 @@ if ( ! class_exists( 'BOS4W_Cart_Options' ) ) {
 				$price = $convert_to_sub_options;
 			} else {
 				if ( WC()->cart->get_product_price( $cart_item['data'] ) ) {
+					if ( ! self::bos4w_has_plans( $product ) ) {
+						return $price;
+					}
 					// Grab bare price without subscription details.
 					remove_filter( 'woocommerce_cart_product_price', array( 'WC_Subscriptions_Cart', 'cart_product_price' ), 10 );
 					remove_filter( 'woocommerce_cart_item_price', array( __CLASS__, 'bos4w_show_cart_item_subscription_options' ), 1000 );
@@ -543,10 +625,18 @@ if ( ! class_exists( 'BOS4W_Cart_Options' ) ) {
 
 						$cart_item['data']->set_price( NumberUtil::round( $discounter_price, wc_get_price_decimals() ) );
 					} else {
-						$cart_item['data']->set_price( NumberUtil::round( $cart_item['bos4w_data']['discounted_price'], wc_get_price_decimals() ) );
+						$dp = isset( $cart_item['bos4w_data']['discounted_price'] )
+							? self::parse_price_to_float( $cart_item['bos4w_data']['discounted_price'] )
+							: 0.0;
+
+						$cart_item['data']->set_price( NumberUtil::round( $dp, wc_get_price_decimals() ) );
 					}
 				} else {
-					$cart_item['data']->set_price( NumberUtil::round( $cart_item['bos4w_data']['discounted_price'], wc_get_price_decimals() ) );
+					$dp = isset( $cart_item['bos4w_data']['discounted_price'] )
+						? self::parse_price_to_float( $cart_item['bos4w_data']['discounted_price'] )
+						: 0.0;
+
+					$cart_item['data']->set_price( NumberUtil::round( $dp, wc_get_price_decimals() ) );
 				}
 			}
 
@@ -728,18 +818,109 @@ if ( ! class_exists( 'BOS4W_Cart_Options' ) ) {
 		 * @return false|mixed|void
 		 */
 		public function product_has_global_subscription_plans( $product ) {
-			$display_plans = get_option( 'bos4w_global_saved_subs' );
-
-			if ( $display_plans ) {
-				foreach ( $display_plans as $entry => $plan ) {
-					if ( $plan['product_cat'] > 0 && ! has_term( $plan['product_cat'], 'product_cat', $product->get_id() ) ) {
-						unset( $display_plans[ $entry ] );
-					}
-				}
-				$display_plans = array_merge( $display_plans );
+			$plans = get_option( 'bos4w_global_saved_subs' );
+			if ( empty( $plans ) || ! is_array( $plans ) ) {
+				return array();
 			}
 
-			return $display_plans;
+			$product = ( $product instanceof WC_Product ) ? $product : wc_get_product( $product );
+			if ( ! $product ) {
+				return array();
+			}
+			$base_id = $product->is_type( 'variation' ) ? $product->get_parent_id() : $product->get_id();
+
+			// Also check MAIN/original product in case plans were saved against default-language cats.
+			$main_product = BOS4W_Front_End::wpml_get_main_product( $product, true, true );
+			$main_base_id = $main_product ? ( $main_product->is_type( 'variation' ) ? $main_product->get_parent_id() : $main_product->get_id() ) : $base_id;
+
+			$cats_current = wp_get_post_terms( $base_id, 'product_cat', array( 'fields' => 'ids' ) );
+			$cats_main    = ( $main_base_id !== $base_id ) ? wp_get_post_terms( $main_base_id, 'product_cat', array( 'fields' => 'ids' ) ) : array();
+
+			// Map any term ID to a stable "group id" (WPML trid when available).
+			$get_trid = function ( $term_id ) {
+				$term_id = (int) $term_id;
+				if ( $term_id <= 0 ) {
+					return 0;
+				}
+				if ( has_filter( 'wpml_element_trid' ) ) {
+					/**
+					 * Filter the term trid.
+					 *
+					 * @param int $trid The term trid.
+					 * @param int $term_id The term id.
+					 * @param string $taxonomy The taxonomy.
+					 * @return int The term trid.
+					 *
+					 * @since 5.0.2
+					 */
+					$trid = apply_filters( 'wpml_element_trid', null, $term_id, 'tax_product_cat' );
+					if ( $trid ) {
+						return (int) $trid;
+					}
+				}
+
+				return (int) $term_id;
+			};
+
+			$product_trids = array();
+			foreach ( $cats_current as $cid ) {
+				$t = $get_trid( $cid );
+				if ( $t ) {
+					$product_trids[ $t ] = true;
+				}
+			}
+			foreach ( $cats_main as $cid ) {
+				$t = $get_trid( $cid );
+				if ( $t ) {
+					$product_trids[ $t ] = true;
+				}
+			}
+
+			$plan_signature = function ( $p ) {
+				$period   = isset( $p['subscription_period'] ) ? (string) $p['subscription_period'] : '';
+				$interval = isset( $p['subscription_period_interval'] ) ? (int) $p['subscription_period_interval'] : 0;
+				$percent  = isset( $p['subscription_discount'] ) ? (float) $p['subscription_discount'] : 0.0;
+				$fixed    = isset( $p['subscription_price'] ) ? (float) $p['subscription_price'] : 0.0;
+				$id       = ( isset( $p['id'] ) && '' !== $p['id'] ) ? 'id:' . $p['id'] : '';
+
+				return implode( '|', array( $id, 'per:' . $period, 'int:' . $interval, 'pc:' . $percent, 'fx:' . $fixed ) );
+			};
+
+			$out  = array();
+			$seen = array();
+
+			foreach ( $plans as $plan ) {
+				$raw = array();
+				if ( isset( $plan['product_cat'] ) ) {
+					$raw = is_array( $plan['product_cat'] ) ? $plan['product_cat'] : explode( ',', (string) $plan['product_cat'] );
+					$raw = array_filter( array_map( 'intval', array_map( 'trim', $raw ) ) );
+				}
+
+				$matches = false;
+
+				if ( empty( $raw ) ) {
+					$matches = true;
+				} else {
+					foreach ( $raw as $tid ) {
+						$trid = $get_trid( $tid );
+						if ( $trid && isset( $product_trids[ $trid ] ) ) {
+							$matches = true;
+							break;
+						}
+					}
+				}
+
+				if ( $matches ) {
+					$sig = $plan_signature( $plan );
+					if ( isset( $seen[ $sig ] ) ) {
+						continue;
+					}
+					$seen[ $sig ] = true;
+					$out[]        = $plan;
+				}
+			}
+
+			return array_values( $out );
 		}
 
 		/**
@@ -764,10 +945,10 @@ if ( ! class_exists( 'BOS4W_Cart_Options' ) ) {
 			$interval  = $plan_data[0];
 			$discount  = end( $plan_data );
 
-			if ( isset( $plans['variation'] ) && is_array( $plans['variation'] ) ) {
-				$variation = wc_get_product( $variation_id );
-				foreach ( $plans['variation'] as $variation_plans ) {
-					if ( $this->validate_plan_data( $variation_plans, $period, $interval, $discount, $variation, 'variation' ) ) {
+			if ( isset( $plans['variation'] ) && is_array( $plans['variation'] ) && $variation_id ) {
+				if ( isset( $plans['variation'][ $variation_id ] ) && is_array( $plans['variation'][ $variation_id ] ) ) {
+					$variation = wc_get_product( $variation_id );
+					if ( $this->validate_plan_data( $plans['variation'][ $variation_id ], $period, $interval, $discount, $variation, 'variation' ) ) {
 						return true;
 					}
 				}
@@ -827,6 +1008,51 @@ if ( ! class_exists( 'BOS4W_Cart_Options' ) ) {
 			}
 
 			return false;
+		}
+
+		/**
+		 * Parse the price
+		 *
+		 * @param string $value Do format the price.
+		 *
+		 * @return float
+		 */
+		private static function parse_price_to_float( $value ): float {
+			if ( is_numeric( $value ) ) {
+				return (float) $value;
+			}
+
+			$raw = (string) $value;
+
+			// Remove tags and decode entities (e.g. &nbsp;).
+			$raw = html_entity_decode( wp_strip_all_tags( $raw ), ENT_QUOTES, get_bloginfo( 'charset' ) );
+
+			// WooCommerce separators.
+			$thousand = wc_get_price_thousand_separator();
+			$decimal  = wc_get_price_decimal_separator();
+
+			// Normalize weird spaces.
+			$raw = str_replace( array( "\xC2\xA0", "\xE2\x80\xAF" ), ' ', $raw );
+			$raw = trim( preg_replace( '/\s+/u', '', $raw ) );
+
+			// Keep only digits, sign and known separators.
+			$allowed = preg_quote( $thousand, '/' ) . preg_quote( $decimal, '/' );
+			$raw     = preg_replace( '/[^0-9\-\+' . $allowed . ']/u', '', $raw );
+
+			// Strip thousands sep (if defined and different from decimal).
+			if ( $thousand && $thousand !== $decimal ) {
+				$raw = str_replace( $thousand, '', $raw );
+			}
+
+			// Convert decimal sep to dot.
+			if ( $decimal && '.' !== $decimal ) {
+				$raw = str_replace( $decimal, '.', $raw );
+			}
+
+			// Final sanitize to a decimal, then cast.
+			$raw = wc_format_decimal( $raw, wc_get_price_decimals() );
+
+			return (float) $raw;
 		}
 	}
 }

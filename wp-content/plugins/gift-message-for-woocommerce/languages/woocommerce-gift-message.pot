@@ -1,0 +1,818 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: BUG-EMAIL-ADDR <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: yyyy-mm-dd hh:mm+0000\n"
+"PO-Revision-Date: 2023-03-13 22:17+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Eazy Po 1.0.0.0\n"
+
+#: admin/class-gmfw-admin.php:112 admin/class-gmfw-admin.php:201
+#: admin/class-gmfw-admin.php:968 admin/class-gmfw-admin.php:1128
+#: includes/class-gmfw-metaboxes.php:26 public/class-gmfw-public.php:224
+#: public/class-gmfw-public.php:339
+msgid "Gift Message"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:115
+msgid "General settings"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:121 admin/class-gmfw-admin.php:289
+msgid "Occasions"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:124
+msgid "Gift Messages"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:138
+msgid "General Settings"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:190
+msgid "Import occasions and gift messages"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:208
+msgid "Enable gift message on checkout"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:216
+msgid "Gift message field is required"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:224 public/class-gmfw-public.php:497
+msgid "Gift message fee"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:232
+msgid "Maximum length"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:240
+msgid "Checkout section"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:248
+msgid "Enable gift message suggestions on checkout"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:257
+msgid "Gift message orders column"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:264
+msgid "New gift message suggestions"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:272
+msgid "Copy gift message in one click"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:280
+msgid "New occasions"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:296
+msgid "Occasion field is required"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:304
+msgid "Gift Message Cards"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:311
+msgid "Gift message cards"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:319
+msgid "Slide number of items"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:351
+msgid "The maximum length of the gift message"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:399
+msgid "Search for a product&hellip;"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:419
+msgid ""
+"Select gift message cards suggestions for your customers at the checkout."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:456
+msgid "Birthday"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:457
+msgid ""
+"Happy birthday!! I hope your day is filled with lots of love and laughter! "
+"May all of your birthday wishes come true."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:458
+msgid ""
+"Happy birthday!!! I hope this is the beginning of your greatest, most "
+"wonderful year ever!"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:459
+msgid ""
+"May life’s brightest joys illuminate your path, and may each day’s journey "
+"bring you closer to your dreams!"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:461
+msgid "Funeral"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:462
+msgid "Please accept my deepest sympathy for your loss."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:463
+msgid "We are deeply sorry for your loss."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:464
+msgid ""
+"Please know we are thinking of you and your family during this difficult "
+"time."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:466
+msgid "Love And Romance"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:467
+msgid "I just wanted to tell you how gorgeous you are."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:468
+msgid "I love you with all of my heart."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:469
+msgid "Have a beautiful day. I'll have one just thinking of you."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:471
+msgid "Anniversary"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:472
+msgid "Happy Anniversary, to my partner, my best friend."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:473
+msgid "Still in this together. Love that."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:474
+msgid "Happy anniversary to us! You bowled me over then and you still do!"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:476
+msgid "Thank you"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:477
+msgid "You’re the best."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:478
+msgid "I couldn't have done it without you. Thank you."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:479
+msgid "Thanks for everything."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:481
+msgid "Congratulations"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:482
+msgid "Congratulations and BRAVO!"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:483
+msgid "You did it! So proud of you!"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:484
+msgid "Congratulations on your well-deserved success."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:486
+msgid "Graduation"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:487
+msgid "You did it! Congrats!"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:488
+msgid "Happy Graduation Day!"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:489
+msgid "What an impressive achievement!"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:491
+msgid "Get Well"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:492
+msgid "Hope you feel better soon!"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:493
+msgid "Miss seeing you around here. Get well soon!"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:494
+msgid "Have the speediest of recoveries!"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:496
+msgid "I'm Sorry"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:497
+msgid "I just wanted to say that I am sorry for everything"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:498
+msgid "It was all my fault, please accept my apology."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:499
+msgid ""
+"I wish I could turn back the time and make things right… Please forgive me!"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:501
+msgid "Just Because"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:502
+msgid "Hope this brightens your day."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:503
+msgid "Because of you, everything seems possible."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:504
+msgid "You’re in my thoughts today."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:506
+msgid "New Home"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:507
+msgid "Wishing you all the best in turning your new house into a home."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:508
+msgid "Yay – you made it into your new home! Wishing you all the best."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:509
+msgid "Congrats on your new home. Great adulting!"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:511
+msgid "New Baby"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:512
+msgid "So happy for you two! That’s going to be one lucky baby."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:513
+msgid "What a very lucky baby. Congratulations!"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:514
+msgid "Can’t wait to see that sweet little smile."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:516
+msgid "Fathers Day"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:517
+msgid "You’re the best, Dad. I love you!"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:518
+msgid "God gave me such a good gift when he gave me you for a father."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:519
+msgid "Dad, you’re in all my favorite memories."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:521
+msgid "Wedding"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:522
+msgid ""
+"Congratulations on your wedding day and best wishes for a happy life "
+"together!"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:523
+msgid "Wishing you lots of love and happiness."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:524
+msgid "Best wishes on this blessed day."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:526
+msgid "Back to School"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:527
+msgid "Be cool at school. Learn. Laugh. And have fun!"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:528
+msgid "Live. Love. Learn. Have an amazing school year."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:529
+msgid ""
+"Happy Back to School! I hope this new year is full of exciting stories, cool "
+"new facts, and so much fun!"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:531
+msgid "Boss's Day"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:532
+msgid "If someone has to be the boss of me, I’m glad it’s you!"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:533
+msgid "I can’t think of anyone I’d rather have for a boss."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:534
+msgid "Thanks for everything you do for us. Hope you have a great day!"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:536
+msgid "Cheer Someone Up"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:537
+msgid ""
+"In one minute a life can change, we are hoping that your life can change for "
+"the good in one of those minutes."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:538
+msgid ""
+"We feel sunshine, we see sunshine. May you feel and see sunshine again. You "
+"deserve it."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:539
+msgid ""
+"Even during times of trouble, you inspire me. You are truly a soul this "
+"world needs. Hang in there, I'm here for you always."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:541
+msgid "Engagement"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:542
+msgid "May your joining together bring you more joy than you can imagine."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:543
+msgid "All the best with your wedding plans and for the future."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:544
+msgid ""
+"Of all the big life events we’ve celebrated together, this one tops the "
+"list. Congratulations!"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:546
+msgid "For Myself"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:547
+msgid "I love myself."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:548
+msgid "Today, I will celebrate me."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:549
+msgid "I choose to make today amazing."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:551
+msgid "Good Luck"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:552
+msgid "You can totally do this!"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:553
+msgid "Good luck and don’t dare give up."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:554
+msgid "Don’t stress. Do your best. Forget the rest."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:556
+msgid "Halloween"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:557
+msgid "Happy Halloween from your friend."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:558
+msgid "Don't be yourself! It's Halloween!"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:559
+msgid "I am hoping you have a great Halloween. Stay safe."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:561
+msgid "Retirement"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:562
+msgid "Congratulations on your retirement!"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:563
+msgid ""
+"Wishing you the best on your life after this retirement. We’ll miss you."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:564
+msgid "Best wishes and good luck for a fulfilling retirement."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:566
+msgid "Sympathy"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:567
+msgid "Our family is keeping your family in our thoughts and prayers."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:568
+msgid "Holding you close in my thoughts and hoping you are doing OK."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:569
+msgid "Sending healing prayers and comforting hugs."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:571
+msgid "Spring"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:572
+msgid "Sending you warm wishes for a lovely sunny Spring."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:573
+msgid "Wishing you a glorious Spring!"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:574
+msgid ""
+"Spring is the perfect time to think of people like you – a season full of "
+"hope and happiness."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:613
+msgid ""
+"Congratulations, occasions, and gift messages were successfully imported. "
+"Note that in order to import the occasions and the gift messages again you "
+"need to delete them and the option to import will reappear"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:637
+msgid "Before customer details"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:638
+msgid "After customer details"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:640
+msgid "Before checkout billing form"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:641
+msgid "After checkout billing form"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:643
+msgid "Before checkout shipping form"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:644
+msgid "After checkout shipping form"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:646
+msgid "Before order notes"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:647
+msgid "After order notes"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:649
+msgid "Before payment"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:650
+msgid "After payment"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:652
+msgid "Before order review"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:653
+msgid "After order review"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:655
+msgid "Before submit"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:665
+msgid "Select where do you want to show the gift message at checkout."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:759
+msgid ""
+"Set a fee for the gift message. If you want to offer it for free, simply "
+"leave the field blank."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:793
+msgctxt "Post Type General Name"
+msgid "Gift messages"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:794
+msgctxt "Post Type Singular Name"
+msgid "Gift messages"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:795 admin/class-gmfw-admin.php:810
+#: admin/class-gmfw-admin.php:811
+msgid "Gift messages"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:796
+msgid "Parent Rule"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:797
+msgid "All Gift messages"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:798
+msgid "View Gift message"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:799
+msgid "Add New gift message"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:800 admin/class-gmfw-admin.php:838
+msgid "Add New"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:801
+msgid "Edit gift message"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:802
+msgid "Update gift message"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:803
+msgid "Search gift messages"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:804 admin/class-gmfw-admin.php:842
+msgid "Not Found"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:805 admin/class-gmfw-admin.php:843
+msgid "Not found in Trash"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:835
+msgid "All occasions"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:836
+msgid "View occasion"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:837
+msgid "Add New Occasion"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:839
+msgid "Edit occasion"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:840
+msgid "Update occasion"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:841
+msgid "Search occasions"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:901
+msgid "Developed by"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:901
+msgid "Premium"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:901
+msgid "Documents"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:922 admin/class-gmfw-admin.php:939
+#: admin/class-gmfw-admin.php:941 public/class-gmfw-public.php:161
+#: public/class-gmfw-public.php:181 public/class-gmfw-public.php:183
+msgid "Select Occasion"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:927 public/class-gmfw-public.php:166
+msgid "0"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:927 public/class-gmfw-public.php:166
+#: public/class-gmfw-public.php:436
+msgid "Other"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:969 public/class-gmfw-public.php:225
+msgid "Write your gift message here..."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:983 public/class-gmfw-public.php:307
+msgid "Need help writing a message?"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:984 public/class-gmfw-public.php:308
+msgid "View Message Suggestions"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:1058
+#, php-format
+msgid ""
+"Awesome, you've been using %s Plugin for a while. Could you please do us a "
+"BIG favor and give it a 5-star rating on WordPress? Just to help us spread "
+"the word and boost our motivation."
+msgstr ""
+
+#: admin/class-gmfw-admin.php:1062
+msgid "Ok, you deserve it"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:1064
+msgid "I already did"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:1066
+msgid "No, not good enough"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:1148 includes/class-gmfw-metaboxes.php:65
+msgid "Copy gift message"
+msgstr ""
+
+#: admin/class-gmfw-admin.php:1148 includes/class-gmfw-metaboxes.php:65
+msgid "Copied successfully"
+msgstr ""
+
+#: includes/class-gmfw-cart.php:69
+#, php-format
+msgctxt "Item name in quotes"
+msgid "&ldquo;%s&rdquo;"
+msgstr ""
+
+#: includes/class-gmfw-cart.php:69
+msgid "Item"
+msgstr ""
+
+#: includes/class-gmfw-cart.php:72
+#, php-format
+msgid "%s removed."
+msgstr ""
+
+#: includes/class-gmfw-metaboxes.php:60 public/class-gmfw-public.php:351
+msgid "characters left"
+msgstr ""
+
+#: includes/functions.php:12 includes/functions.php:16
+msgid "Premium Feature"
+msgstr ""
+
+#: includes/functions.php:17
+msgid "You Discovered a Premium Feature!"
+msgstr ""
+
+#: includes/functions.php:18
+msgid "Upgrading to Premium will unlock it."
+msgstr ""
+
+#: includes/functions.php:19
+msgid "UNLOCK PREMIUM"
+msgstr ""
+
+#: public/class-gmfw-public.php:135
+msgid "From"
+msgstr ""
+
+#: public/class-gmfw-public.php:215
+#, php-format
+msgid " ( %s fee )"
+msgstr ""
+
+#: public/class-gmfw-public.php:246
+msgid "Add a Gift Message Card (optional)"
+msgstr ""
+
+#: public/class-gmfw-public.php:287
+msgid "Remove from cart"
+msgstr ""
+
+#: public/class-gmfw-public.php:377 public/class-gmfw-public.php:537
+#: public/class-gmfw-public.php:563 public/class-gmfw-public.php:596
+msgid "Occasion"
+msgstr ""
+
+#: public/class-gmfw-public.php:377 public/class-gmfw-public.php:400
+#: public/class-gmfw-public.php:410
+msgid "is a required field."
+msgstr ""
+
+#: public/class-gmfw-public.php:394 public/class-gmfw-public.php:410
+#: public/class-gmfw-public.php:544 public/class-gmfw-public.php:571
+#: public/class-gmfw-public.php:603
+msgid "Gift message"
+msgstr ""
+
+#: public/class-gmfw-public.php:394
+msgid "cannot be more than"
+msgstr ""
+
+#: public/class-gmfw-public.php:394
+msgid "characters"
+msgstr ""
+
+#: public/class-gmfw-public.php:400
+msgid "Gift message from"
+msgstr ""

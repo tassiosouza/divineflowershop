@@ -136,6 +136,9 @@ class ConnectionTest implements ContainerAwareInterface, Service, Registerable {
 			$this->response .= 'Failed to connect to Google.';
 		}
 
+		$notification_service = new NotificationsService( $this->container->get( MerchantCenterService::class ), $this->container->get( AccountService::class ) );
+		$notification_service->set_options_object( $options );
+
 		?>
 		<div class="wrap">
 			<h2>Connection Test</h2>
@@ -572,7 +575,44 @@ class ConnectionTest implements ContainerAwareInterface, Service, Registerable {
 				<hr />
 
 				<h2 class="title">Product Sync</h2>
+				<table class="form-table" role="presentation">
+					<tr>
+						<th><label>Products MC PUSH:</label></th>
+						<td>
+							<p>
 
+								<code><?php echo $this->enabled_or_disabled( $notification_service->is_push_enabled_for_datatype( NotificationsService::DATATYPE_PRODUCT ) ); ?></code>
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<th><label>Coupons MC PUSH:</label></th>
+						<td>
+							<p>
+
+								<code><?php echo $this->enabled_or_disabled( $notification_service->is_push_enabled_for_datatype( NotificationsService::DATATYPE_COUPON ) ); ?></code>
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<th><label>Shipping MC PUSH:</label></th>
+						<td>
+							<p>
+
+								<code><?php echo $this->enabled_or_disabled( $notification_service->is_push_enabled_for_datatype( NotificationsService::DATATYPE_SHIPPING ) ); ?></code>
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<th><label>Settings MC PUSH:</label></th>
+						<td>
+							<p>
+
+								<code><?php echo $this->enabled_or_disabled( $notification_service->is_push_enabled_for_datatype( NotificationsService::DATATYPE_SETTINGS ) ); ?></code>
+							</p>
+						</td>
+					</tr>
+				</table>
 				<form action="<?php echo esc_url( admin_url( 'admin.php' ) ); ?>" method="GET">
 					<table class="form-table" role="presentation">
 						<tr>
@@ -673,8 +713,6 @@ class ConnectionTest implements ContainerAwareInterface, Service, Registerable {
 				<?php
 				  $options = $this->container->get( OptionsInterface::class );
 				  $wp_api_status = $options->get( OptionsInterface::WPCOM_REST_API_STATUS );
-				  $notification_service = new NotificationsService( $this->container->get( MerchantCenterService::class ), $this->container->get( AccountService::class ) );
-				  $notification_service->set_options_object( $options );
 				?>
 				<h2 class="title">Partner API Pull Integration</h2>
 				<form action="<?php echo esc_url( admin_url( 'admin.php' ) ); ?>" method="GET">
@@ -683,7 +721,7 @@ class ConnectionTest implements ContainerAwareInterface, Service, Registerable {
 							<th><label>Notification Service Enabled:</label></th>
 							<td>
 								<p>
-									<code><?php echo $notification_service->is_enabled() ? 'yes' : 'no' ?></code>
+									<code><?php echo $this->yes_or_no( $notification_service->is_enabled() ); ?></code>
 								</p>
 							</td>
 						</tr>
@@ -691,7 +729,43 @@ class ConnectionTest implements ContainerAwareInterface, Service, Registerable {
 							<th><label>Notification Service Ready:</label></th>
 							<td>
 								<p>
-									<code><?php echo $notification_service->is_ready() ? 'yes' : 'no' ?></code>
+									<code><?php echo $this->yes_or_no( $notification_service->is_ready() ); ?></code>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<th><label>Products API PULL Sync:</label></th>
+							<td>
+								<p>
+
+									<code><?php echo $this->enabled_or_disabled( $notification_service->is_pull_enabled_for_datatype( NotificationsService::DATATYPE_PRODUCT ) ); ?></code>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<th><label>Coupons API PULL Sync:</label></th>
+							<td>
+								<p>
+
+									<code><?php echo $this->enabled_or_disabled( $notification_service->is_pull_enabled_for_datatype( NotificationsService::DATATYPE_COUPON ) ); ?></code>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<th><label>Shipping API PULL Sync:</label></th>
+							<td>
+								<p>
+
+									<code><?php echo $this->enabled_or_disabled( $notification_service->is_pull_enabled_for_datatype( NotificationsService::DATATYPE_SHIPPING ) ); ?></code>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<th><label>Settings API PULL Sync:</label></th>
+							<td>
+								<p>
+
+									<code><?php echo $this->enabled_or_disabled( $notification_service->is_pull_enabled_for_datatype( NotificationsService::DATATYPE_SETTINGS ) ); ?></code>
 								</p>
 							</td>
 						</tr>
@@ -1193,7 +1267,7 @@ class ConnectionTest implements ContainerAwareInterface, Service, Registerable {
 
 			$this->response .= sprintf(
 				'Attempting to accept Tos. Successful? %s<br>Response body: %s',
-				$result->accepted() ? 'Yes' : 'No',
+				$this->yes_or_no( $result->accepted() ),
 				$result->message()
 			);
 		}
@@ -1203,7 +1277,7 @@ class ConnectionTest implements ContainerAwareInterface, Service, Registerable {
 
 			$this->response .= sprintf(
 				'Tos Accepted? %s<br>Response body: %s',
-				$accepted->accepted() ? 'Yes' : 'No',
+				$this->yes_or_no( $result->accepted() ),
 				$accepted->message()
 			);
 		}

@@ -1,0 +1,37 @@
+{
+	"name": "ka-chekout-html",
+	"version": "1.0.0",
+	"author": "",
+	"license": "ISC",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"start": "wp-scripts start",
+		"env": "wp-env"
+	},
+	"dependencies": {
+		"@woocommerce/settings": "^1.0.0",
+		"@woocommerce/woocommerce-rest-api": "^1.0.1",
+		"@wordpress/api-fetch": "^6.52.0",
+		"@wordpress/element": "^5.28.0",
+		"@wordpress/icons": "^9.42.0",
+		"eslint": "^8.57.0",
+		"jquery": "^3.7.1",
+		"lodash": "^4.17.21",
+		"react": "^18.2.0"
+	},
+	"devDependencies": {
+		"@woocommerce/dependency-extraction-webpack-plugin": "^2.3.0",
+		"@woocommerce/eslint-plugin": "^2.2.0",
+		"@wordpress/env": "^9.3.0",
+		"@wordpress/prettier-config": "^3.8.0",
+		"@wordpress/scripts": "^27.6.0",
+		"react-app-rewired": "^2.2.1"
+	},
+	"description": ""
+}

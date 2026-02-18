@@ -1,0 +1,55 @@
+name: Run PHPCS on pull requests
+on: pull_request
+jobs:
+  phpcs:
+    runs-on: ubuntu-latest
+    env:
+        COMPOSER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      # Assign SSH key for private repos on github.
+      - name: Assign SSH Key
+        uses: webfactory/ssh-agent@v0.4.1
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      # Checkout git.
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0 # fetch all history.
+
+      - name: Configure Git
+        run: git config --global user.email "iconibot@jckemp.com" && git config --global user.name "Iconibot"
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'
+          coverage: none
+          tools: composer
+
+      - name: Composer Install
+        run: composer install --no-dev --no-progress --no-interaction --ignore-platform-reqs # Install from composer.json, not dev files.
+      
+      - name: PHPCS Code Review
+        uses: rtCamp/action-phpcs-code-review@v2
+        env:
+          GH_BOT_TOKEN: ${{ secrets.GH_BOT_TOKEN }}
+          PHPCS_FILE_PATH: vendor/bin/phpcs
+          SKIP_FOLDERS: ".github,dev-lib,node_modules,/vendor,/vendor-prefixed,/assets/frontend/js,/assets/admin/js,stubs"
+          
+      - name: Project Automation
+        uses: alex-page/github-project-automation-plus@v0.8.1
+        if: ${{ failure() }}
+        with:
+          project: Programme Board
+          column: Sprint
+          repo-token: ${{ secrets.GH_BOT_TOKEN }} 
+
+      # - name: Auto Assign
+      #   uses: kentaro-m/auto-assign-action@v1.2.1
+      #   if: ${{ failure() }}
+      #   with:
+      #     repo-token: ${{ secrets.GH_BOT_TOKEN }}
+      #     configuration-path: '.github/workflows/auto_assign.yml'

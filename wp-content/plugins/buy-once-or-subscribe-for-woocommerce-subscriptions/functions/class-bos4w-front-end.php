@@ -73,10 +73,11 @@ if ( ! class_exists( 'BOS4W_Front_End' ) ) {
 						} else {
 							$req_id  = $variation_id > 0 ? $variation_id : $product_id;
 							$product = wc_get_product( $req_id );
+							$product = self::wpml_get_main_product( $product );
 
 							$product_main = $product;
 							if ( $variation_id > 0 ) {
-								$product_main = wc_get_product( $product_id );
+								$product_main = self::wpml_get_main_product( wc_get_product( $product_id ), true, true );
 							}
 
 							$plan_data = explode( '_', esc_attr( $selected_plan ) );
@@ -95,7 +96,44 @@ if ( ! class_exists( 'BOS4W_Front_End' ) ) {
 									 */
 									$display_the_price = apply_filters( 'bos_use_regular_price', false );
 
+									$base_product = $variation_id > 0 ? wc_get_product( $variation_id ) : wc_get_product( $product_id );
+
 									$item_price = ! $display_the_price ? $product->get_price() : $product->get_regular_price();
+
+									if ( class_exists( 'AF_C_S_P_Price' ) && $base_product instanceof WC_Product ) {
+										$user = is_user_logged_in() ? wp_get_current_user() : false;
+										$role = ( $user && ! empty( $user->roles ) ) ? reset( $user->roles ) : 'guest';
+
+										try {
+											$af_price   = new \AF_C_S_P_Price();
+											$role_price = $af_price->get_price_of_product( $base_product, $user, $role, 1 );
+
+											if ( false !== $role_price && '' !== $role_price && $role_price >= 0 ) {
+												$item_price = (float) $role_price;
+											}
+										} catch ( \Throwable $e ) {
+											if ( defined( 'WP_DEBUG' ) && WP_DEBUG ) {
+												if ( function_exists( 'wc_get_logger' ) ) {
+													wc_get_logger()->warning(
+														sprintf(
+															'BOS4W role price lookup failed for product %d: %s',
+															$base_product instanceof WC_Product ? $base_product->get_id() : 0,
+															$e->getMessage()
+														),
+														array( 'source' => 'bos4w' )
+													);
+												} else {
+													error_log(
+														sprintf(
+															'[BOS4W] role price lookup failed for product %d: %s',
+															$base_product instanceof WC_Product ? $base_product->get_id() : 0,
+															$e->getMessage()
+														)
+													);
+												}
+											}
+										}
+									}
 								}
 
 								// Determine if a fixed price is set at the variation, product, or global level.
@@ -197,6 +235,8 @@ if ( ! class_exists( 'BOS4W_Front_End' ) ) {
 				$product_id = $post->ID;
 				$product = wc_get_product( $product_id );
 
+				$product = self::wpml_get_main_product( $product );
+
 				wp_localize_script(
 					'bos4w-single-product',
 					'wpr_bos4w_js',
@@ -227,6 +267,12 @@ if ( ! class_exists( 'BOS4W_Front_End' ) ) {
 		 */
 		public function bos4w_show_options() {
 			global $product;
+
+			if ( ! $product instanceof WC_Product ) {
+				return;
+			}
+
+			$product = self::wpml_get_main_product( $product, false, false );
 
 			if ( ! $this->bos4w_display_plans( $product ) ) {
 				return;
@@ -336,6 +382,7 @@ if ( ! class_exists( 'BOS4W_Front_End' ) ) {
 		 * @return string
 		 */
 		public function get_display_title_text( $product ) {
+			$product = self::wpml_get_main_product( $product );
 			$display_text = $product->get_meta( '_bos4w_subscription_title', true );
 			if ( ! $product->get_meta( '_bos4w_saved_subs', true ) && $this->product_has_global_subscription_plans( $product ) ) {
 				$subscriptions_title = get_option( 'bos4w_global_subscription_title' );
@@ -354,6 +401,7 @@ if ( ! class_exists( 'BOS4W_Front_End' ) ) {
 		 * @return false|mixed|void
 		 */
 		public function bos4w_single_add_to_cart_text( $button_text, $product ) {
+			$product = self::wpml_get_main_product( $product );
 			if ( $this->get_discounted_prices( $product ) ) {
 				$button_text = get_option( WC_Subscriptions_Admin::$option_prefix . '_add_to_cart_button_text', esc_html__( 'Sign up', 'bos4w' ) );
 			}
@@ -370,6 +418,7 @@ if ( ! class_exists( 'BOS4W_Front_End' ) ) {
 		 * @return mixed|void
 		 */
 		public function bos4w_add_to_cart_text( $button_text, $product ) {
+			$product = self::wpml_get_main_product( $product );
 			if ( $this->get_discounted_prices( $product ) && $product->is_purchasable() && $product->is_in_stock() ) {
 				$button_text = esc_html__( 'Select options', 'bos4w' );
 				/**
@@ -400,6 +449,7 @@ if ( ! class_exists( 'BOS4W_Front_End' ) ) {
 		 * @return mixed
 		 */
 		public function bos4w_add_to_cart_url( $url, $product ) {
+			$product = self::wpml_get_main_product( $product, false, false );
 			if ( $this->get_discounted_prices( $product ) && $product->is_purchasable() && $product->is_in_stock() ) {
 				$url = esc_url( $product->get_permalink() );
 			}
@@ -418,6 +468,7 @@ if ( ! class_exists( 'BOS4W_Front_End' ) ) {
 		 */
 		public function bos4w_supports_ajax_add_to_cart( $supports, $feature, $product ) {
 			if ( 'ajax_add_to_cart' === $feature ) {
+				$product = self::wpml_get_main_product( $product, false, false );
 				if ( $this->get_discounted_prices( $product ) ) {
 					$supports = false;
 				}
@@ -436,6 +487,9 @@ if ( ! class_exists( 'BOS4W_Front_End' ) ) {
 		 * @return mixed
 		 */
 		public function bos4w_options_to_variation_data( $variation_data, $variable_product, $variation_product ) {
+			$variable_product  = self::wpml_get_main_product( $variable_product, false, false );
+			$variation_product = self::wpml_get_main_product( $variation_product, false, false );
+
 			if ( ! $this->bos4w_display_plans( $variable_product ) ) {
 				return $variation_data;
 			}
@@ -563,6 +617,7 @@ if ( ! class_exists( 'BOS4W_Front_End' ) ) {
 		 * @return mixed
 		 */
 		public function bos4w_add_variation_discount_price( $variation_data, $product, $variation ) {
+			$product = self::wpml_get_main_product( $product, false, false );
 			$plans = $this->product_has_subscription_plans( $product );
 			if ( ! $plans ) {
 				return $variation_data;
@@ -594,6 +649,7 @@ if ( ! class_exists( 'BOS4W_Front_End' ) ) {
 			foreach ( $product_plans as $key => $plan ) {
 				$display_discount = '';
 
+				$variation = self::wpml_get_main_product( $variation, false, false );
 				$discounted_price = self::bos4w_get_product_price( $variation );
 
 				$plan['subscription_discount'] = isset( $plan['subscription_discount'] ) && ! empty( trim( $plan['subscription_discount'] ) ) ? $plan['subscription_discount'] : 0;
@@ -684,6 +740,8 @@ if ( ! class_exists( 'BOS4W_Front_End' ) ) {
 			if ( ! $this->bos4w_display_plans( $product ) ) {
 				return $price_html;
 			}
+
+			$product = self::wpml_get_main_product( $product, false, false );
 
 			$use_fixed_price = $product->get_meta( '_bos4w_use_fixed_price' );
 
@@ -811,28 +869,151 @@ if ( ! class_exists( 'BOS4W_Front_End' ) ) {
 		 * @return false|mixed|void
 		 */
 		public function product_has_global_subscription_plans( $product ) {
-			$display_plans = get_option( 'bos4w_global_saved_subs' );
-
-			if ( $display_plans ) {
-				foreach ( $display_plans as $entry => $plan ) {
-					if ( isset( $plan['product_cat'] ) && $plan['product_cat'] > 0 && ! has_term( $plan['product_cat'], 'product_cat', $product->get_id() ) ) {
-						unset( $display_plans[ $entry ] );
-					}
-				}
-				$display_plans = array_merge( $display_plans );
+			$plans = get_option( 'bos4w_global_saved_subs' );
+			if ( empty( $plans ) || ! is_array( $plans ) ) {
+				return array();
 			}
 
-			return $display_plans;
+			$product = ( $product instanceof WC_Product ) ? $product : wc_get_product( $product );
+			if ( ! $product ) {
+				return array();
+			}
+			$base_id = $product->is_type( 'variation' ) ? $product->get_parent_id() : $product->get_id();
+
+			$main_product = method_exists( __CLASS__, 'wpml_get_main_product' ) ? self::wpml_get_main_product( $product, true, true ) : $product;
+			$main_base_id = $main_product ? ( $main_product->is_type( 'variation' ) ? $main_product->get_parent_id() : $main_product->get_id() ) : $base_id;
+
+			$cats_current = wp_get_post_terms( $base_id, 'product_cat', array( 'fields' => 'ids' ) );
+			$cats_main    = ( $main_base_id !== $base_id ) ? wp_get_post_terms( $main_base_id, 'product_cat', array( 'fields' => 'ids' ) ) : array();
+
+			$get_trid = function( $term_id ) {
+				$term_id = (int) $term_id;
+				if ( $term_id <= 0 ) {
+					return 0;
+				}
+				if ( has_filter( 'wpml_element_trid' ) ) {
+					/**
+					 * Filter the term trid.
+					 *
+					 * @param int $trid The term trid.
+					 * @param int $term_id The term id.
+					 * @param string $taxonomy The taxonomy.
+					 * @return int The term trid.
+					 *
+					 * @since 5.0.2
+					 */
+					$trid = apply_filters( 'wpml_element_trid', null, $term_id, 'tax_product_cat' );
+					if ( $trid ) {
+						return (int) $trid;
+					}
+				}
+
+				return (int) $term_id;
+			};
+
+			$product_trids = array();
+			foreach ( $cats_current as $cid ) {
+				$t = $get_trid( $cid );
+				if ( $t ) {
+					$product_trids[ $t ] = true; }
+			}
+			foreach ( $cats_main as $cid ) {
+				$t = $get_trid( $cid );
+				if ( $t ) {
+					$product_trids[ $t ] = true; }
+			}
+
+			$plan_signature = function( $p ) {
+				$period   = isset( $p['subscription_period'] ) ? (string) $p['subscription_period'] : '';
+				$interval = isset( $p['subscription_period_interval'] ) ? (int) $p['subscription_period_interval'] : 0;
+				$percent  = isset( $p['subscription_discount'] ) ? (float) $p['subscription_discount'] : 0.0;
+				$fixed    = isset( $p['subscription_price'] ) ? (float) $p['subscription_price'] : 0.0;
+
+				$id = isset( $p['id'] ) && '' !== $p['id'] ? 'id:' . $p['id'] : '';
+
+				return implode(
+					'|',
+					array(
+						$id,
+						'per:' . $period,
+						'int:' . $interval,
+						'pc:' . $percent,
+						'fx:' . $fixed,
+					)
+				);
+			};
+
+			$out  = array();
+			$seen = array();
+
+			foreach ( $plans as $plan ) {
+				$raw = array();
+				if ( isset( $plan['product_cat'] ) ) {
+					$raw = is_array( $plan['product_cat'] ) ? $plan['product_cat'] : explode( ',', (string) $plan['product_cat'] );
+					$raw = array_map( 'trim', $raw );
+					$raw = array_filter(
+						$raw,
+						static function( $v ) {
+							return '' !== $v;
+						}
+					);
+				}
+
+				$cat_ids = array();
+				foreach ( $raw as $v ) {
+					if ( is_numeric( $v ) ) {
+						$tid = (int) $v;
+						if ( $tid > 0 ) {
+							$cat_ids[] = $tid;
+						}
+					} else {
+						$term = get_term_by( 'slug', $v, 'product_cat' );
+						if ( $term && ! is_wp_error( $term ) ) {
+							$cat_ids[] = (int) $term->term_id;
+						}
+					}
+				}
+				$cat_ids = array_values( array_unique( array_filter( $cat_ids ) ) );
+
+				$matches = false;
+
+				if ( empty( $cat_ids ) ) {
+					$matches = false;
+				} else {
+					foreach ( $cat_ids as $tid ) {
+						$trid = $get_trid( $tid );
+						if ( $trid && isset( $product_trids[ $trid ] ) ) {
+							$matches = true;
+							break;
+						}
+					}
+				}
+
+				if ( $matches ) {
+					$sig = $plan_signature( $plan );
+					if ( isset( $seen[ $sig ] ) ) {
+						continue;
+					}
+					$seen[ $sig ] = true;
+					$out[]        = $plan;
+				}
+			}
+
+			return array_values( $out );
 		}
 
 		/**
-		 * Should the plan be displayed
+		 * Should the plan be displayed.
 		 *
 		 * @param object $product Product object.
 		 *
 		 * @return mixed
 		 */
 		public function bos4w_display_plans( $product ) {
+			if ( ! $product instanceof WC_Product ) {
+				return false;
+			}
+
 			if ( 'simple' === $product->get_type() || 'variable' === $product->get_type() || 'composite' === $product->get_type() || 'bundle' === $product->get_type() ) {
 				return true;
 			}
@@ -858,6 +1039,41 @@ if ( ! class_exists( 'BOS4W_Front_End' ) ) {
 			$display_the_price = apply_filters( 'bos_use_regular_price', false );
 
 			$selected_price = ! $display_the_price ? $product->get_price() : $product->get_regular_price();
+
+			if ( class_exists( 'AF_C_S_P_Price' ) && $product instanceof WC_Product ) {
+				$user = is_user_logged_in() ? wp_get_current_user() : false;
+				$role = ( $user && ! empty( $user->roles ) ) ? reset( $user->roles ) : 'guest';
+
+				try {
+					$af_price   = new \AF_C_S_P_Price();
+					$role_price = $af_price->get_price_of_product( $product, $user, $role, 1 );
+
+					if ( false !== $role_price && '' !== $role_price && $role_price >= 0 ) {
+						$selected_price = (float) $role_price;
+					}
+				} catch ( \Throwable $e ) {
+					if ( defined( 'WP_DEBUG' ) && WP_DEBUG ) {
+						if ( function_exists( 'wc_get_logger' ) ) {
+							wc_get_logger()->warning(
+								sprintf(
+									'BOS4W role price lookup failed for product %d: %s',
+									$product instanceof WC_Product ? $product->get_id() : 0,
+									$e->getMessage()
+								),
+								array( 'source' => 'bos4w' )
+							);
+						} else {
+							error_log(
+								sprintf(
+									'[BOS4W] role price lookup failed for product %d: %s',
+									$product instanceof WC_Product ? $product->get_id() : 0,
+									$e->getMessage()
+								)
+							);
+						}
+					}
+				}
+			}
 
 			if ( wc_tax_enabled() ) {
 				if ( 'incl' === get_option( 'woocommerce_tax_display_shop' ) ) {
@@ -985,16 +1201,8 @@ if ( ! class_exists( 'BOS4W_Front_End' ) ) {
 				$has_bos_subscription = false;
 
 				// Check for product-level subscriptions.
-				if ( ! empty( $product_data->get_meta( '_bos4w_saved_subs' ) ) ) {
+				if ( $this->get_discounted_prices( $product_data ) ) {
 					$has_bos_subscription = true;
-				}
-
-				// Check for variation-level subscriptions (if applicable).
-				if ( $product->is_type( 'variation' ) ) {
-					$variation_id = $product->get_id();
-					if ( ! empty( get_post_meta( $variation_id, '_bos4w_saved_variation_subs', true ) ) ) {
-						$has_bos_subscription = true;
-					}
 				}
 
 				// Check if the product is being purchased as a subscription (using BOS).
@@ -1058,6 +1266,41 @@ if ( ! class_exists( 'BOS4W_Front_End' ) ) {
 
 			$original_price = ! $display_the_price ? $product->get_price() : $product->get_regular_price();
 
+			if ( class_exists( 'AF_C_S_P_Price' ) && $product instanceof WC_Product ) {
+				$user = is_user_logged_in() ? wp_get_current_user() : false;
+				$role = ( $user && ! empty( $user->roles ) ) ? reset( $user->roles ) : 'guest';
+
+				try {
+					$af_price   = new \AF_C_S_P_Price();
+					$role_price = $af_price->get_price_of_product( $product, $user, $role, 1 );
+
+					if ( false !== $role_price && '' !== $role_price && $role_price >= 0 ) {
+						$original_price = (float) $role_price;
+					}
+				} catch ( \Throwable $e ) {
+					if ( defined( 'WP_DEBUG' ) && WP_DEBUG ) {
+						if ( function_exists( 'wc_get_logger' ) ) {
+							wc_get_logger()->warning(
+								sprintf(
+									'BOS4W role price lookup failed for product %d: %s',
+									$product instanceof WC_Product ? $product->get_id() : 0,
+									$e->getMessage()
+								),
+								array( 'source' => 'bos4w' )
+							);
+						} else {
+							error_log(
+								sprintf(
+									'[BOS4W] role price lookup failed for product %d: %s',
+									$product instanceof WC_Product ? $product->get_id() : 0,
+									$e->getMessage()
+								)
+							);
+						}
+					}
+				}
+			}
+
 			$discounted_plans = array();
 
 			// Check if the product is variable.
@@ -1066,21 +1309,21 @@ if ( ! class_exists( 'BOS4W_Front_End' ) ) {
 					// Loop through each variation and calculate discounted prices.
 					foreach ( $plans['variation'] as $variation_id => $variation_plans ) {
 						$variation_product = wc_get_product( $variation_id );
-						$variation_price = ! $display_the_price ? $variation_product->get_price() : $variation_product->get_regular_price();
+						$variation_price = self::bos4w_get_product_price( $variation_product );
 						$discounted_plans[ $variation_id ] = $this->calculate_discounted_price( $variation_plans, $variation_price, $variation_product );
 					}
 				} elseif ( isset( $plans['product'] ) && ! empty( $plans['product'] ) ) {
 					// Apply product-level plans to all variations.
 					foreach ( $product->get_children() as $variation_id ) {
 						$variation_product = wc_get_product( $variation_id );
-						$variation_price = ! $display_the_price ? $variation_product->get_price() : $variation_product->get_regular_price();
+						$variation_price = self::bos4w_get_product_price( $variation_product );
 						$discounted_plans[ $variation_id ] = $this->calculate_discounted_price( $plans['product'], $variation_price, $variation_product );
 					}
 				} elseif ( isset( $plans['global'] ) && ! empty( $plans['global'] ) ) {
 					// Apply global-level plans to all variations.
 					foreach ( $product->get_children() as $variation_id ) {
 						$variation_product = wc_get_product( $variation_id );
-						$variation_price = ! $display_the_price ? $variation_product->get_price() : $variation_product->get_regular_price();
+						$variation_price = self::bos4w_get_product_price( $variation_product );
 						$discounted_plans[ $variation_id ] = $this->calculate_discounted_price( $plans['global'], $variation_price, $variation_product );
 					}
 				}
@@ -1182,6 +1425,144 @@ if ( ! class_exists( 'BOS4W_Front_End' ) ) {
 			}
 
 			return null;
+		}
+
+
+		/**
+		 * Retrieve the main product object, considering WPML translations and variations.
+		 *
+		 * @param WC_Product|int $product The product object or product ID.
+		 * @param bool           $true_original Whether to fetch the original product in the default language or keep it as the current language. Default true.
+		 * @param bool           $return_parent_on_variation Whether to return the parent product if the input is a variation. Default false.
+		 *
+		 * @return WC_Product|null The main product object or null if the product couldn't be resolved.
+		 */
+		public static function wpml_get_main_product( $product, $true_original = true, $return_parent_on_variation = false ) {
+			// Normalize to WC_Product.
+			if ( is_numeric( $product ) ) {
+				$product = wc_get_product( (int) $product );
+			}
+			if ( ! $product instanceof WC_Product ) {
+				return null;
+			}
+
+			// No WPML? Return as-is (or parent if requested).
+			if ( ! has_filter( 'wpml_object_id' ) ) {
+				if ( $return_parent_on_variation && $product->is_type( 'variation' ) ) {
+					$parent = wc_get_product( $product->get_parent_id() );
+					return $parent ? $parent : $product;
+				}
+				return $product;
+			}
+
+			$id           = (int) $product->get_id();
+			$is_variation = $product->is_type( 'variation' );
+
+			// Preserve variation identity unless explicitly requesting parent.
+			if ( $is_variation && ! $return_parent_on_variation ) {
+				// Map variation to current/default language equivalent without switching to parent.
+				$target_lang = $true_original ?
+					/**
+					 * Filter the default language for the current product.
+					 *
+					 * @since 4.0.0
+					 */
+					apply_filters( 'wpml_default_language', null ) : null;
+
+				$mapped_id   = $target_lang
+					?
+					/**
+					 * Undocumented alias of `icl_object_id` introduced in WPML 3.2, used by Yith WooCommerce compare
+					 *
+					 * @since 2.2.4
+					 *
+					 * @param int    $id                         object id
+					 * @param string $type                       optional, post type or taxonomy name of the object, defaults to 'post'
+					 * @param bool   $return_original_if_missing optional, true if Polylang should return the original id if the translation is missing, defaults to false
+					 * @param string $lang                       optional, language code, defaults to current language
+					 *
+					 * @since 1.0.0
+					 */
+					apply_filters( 'wpml_object_id', $id, 'product_variation', true, $target_lang )
+					: $id;
+
+				$mapped = $mapped_id ? wc_get_product( (int) $mapped_id ) : null;
+				return $mapped instanceof WC_Product ? $mapped : $product;
+			}
+
+			// From here, handle non-variation or explicit parent mapping.
+			$element_type  = $is_variation ? 'post_product_variation' : 'post_product';
+			$taxonomy_name = $is_variation ? 'product_variation' : 'product';
+
+			$main_id = 0;
+
+			if ( $true_original ) {
+				/**
+				 * Filter the default language for the current product.
+				 *
+				 * @since 4.0.0
+				 * @param string $lang Language code.
+				 * @param WC_Product $product The product object.
+				 * @return string The default language code.
+				 */
+				$trid         = apply_filters( 'wpml_element_trid', null, $id, $element_type );
+				/**
+				 * Filter the default language for the current product.
+				 *
+				 * @since 4.0.0
+				 * @param int $trid The trid.
+				 * @param WC_Product $product The product object.
+				 * @return int The default language code.
+				 */
+				$translations = apply_filters( 'wpml_get_element_translations', null, $trid, $element_type );
+				if ( is_array( $translations ) ) {
+					foreach ( $translations as $t ) {
+						if ( empty( $t->source_language_code ) ) {
+							$main_id = (int) $t->element_id;
+							break;
+						}
+					}
+				}
+				if ( ! $main_id ) {
+					$main_id = $id;
+				}
+			} else {
+				/**
+				 * Filter the default language for the current product.
+				 *
+				 * @since 4.0.0
+				 */
+				$default_lang = apply_filters( 'wpml_default_language', null );
+				/**
+				 * Undocumented alias of `icl_object_id` introduced in WPML 3.2, used by Yith WooCommerce compare
+				 *
+				 * @since 2.2.4
+				 *
+				 * @param int    $id                         object id
+				 * @param string $type                       optional, post type or taxonomy name of the object, defaults to 'post'
+				 * @param bool   $return_original_if_missing optional, true if Polylang should return the original id if the translation is missing, defaults to false
+				 * @param string $lang                       optional, language code, defaults to current language
+				 *
+				 * @since 1.0.0
+				 */
+				$main_id      = (int) apply_filters( 'wpml_object_id', $id, $taxonomy_name, true, $default_lang );
+				if ( ! $main_id ) {
+					$main_id = $id;
+				}
+			}
+
+			if ( $return_parent_on_variation && $is_variation ) {
+				$parent_id = (int) wp_get_post_parent_id( $main_id );
+				if ( $parent_id ) {
+					$parent_obj = wc_get_product( $parent_id );
+					if ( $parent_obj ) {
+						return $parent_obj;
+					}
+				}
+			}
+
+			$main_obj = wc_get_product( $main_id );
+			return $main_obj ? $main_obj : $product;
 		}
 	}
 }

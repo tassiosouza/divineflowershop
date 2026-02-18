@@ -1,0 +1,29 @@
+name: Create Release PR
+
+on:
+  push:
+    branches:
+      - 'release/*'
+
+jobs:
+  createPullRequest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - run: git config --global user.email "iconicbot@jckemp.com"
+      - run: git config --global user.name "Iconicbot"
+
+      - name: Create release PR
+        uses: devops-infra/action-pull-request@v0.5.5
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          source_branch: ${{ github.head_ref || github.ref_name }}
+          target_branch: dev
+          title: Release - ${{ github.ref_name }}
+          template: .github/templates/release-pr.md
+          assignee: ${{ github.actor }}
+          allow_no_diff: true

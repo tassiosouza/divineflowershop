@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "flux-checkout/elements-placeholder",
+  "version": "0.1.0",
+  "title": "Flux Checkout Elements Placeholder",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "Placeholder for empty Flux Checkout Elements posts",
+  "example": {},
+  "supports": {
+    "html": false,
+    "inserter": false
+  },
+  "textdomain": "flux-checkout",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

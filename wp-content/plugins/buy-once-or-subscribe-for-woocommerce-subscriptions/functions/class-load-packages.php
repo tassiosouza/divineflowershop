@@ -29,9 +29,11 @@ if ( ! class_exists( 'Load_Packages' ) ) {
 		 * @var string[]
 		 */
 		protected static $packages = array(
-			'bos4w-admin'       => 'class-bos4w-admin.php',
-			'bos4w-cart-option' => 'class-bos4w-cart-options.php',
-			'bos4w-front-end'   => 'class-bos4w-front-end.php',
+			'bos4w-admin'               => 'class-bos4w-admin.php',
+			'bos4w-cart-option'         => 'class-bos4w-cart-options.php',
+			'bos4w-front-end'           => 'class-bos4w-front-end.php',
+			'bos4w-subscription-addons' => 'class-bos4w-subscription-addons.php',
+			'bos4w-product-delete-guard' => 'class-bos4w-product-delete-guard.php',
 		);
 
 		/**
@@ -201,19 +203,19 @@ if ( ! class_exists( 'Load_Packages' ) ) {
 				'admin_notices',
 				function () use ( $package ) {
 					?>
-					<div class="notice notice-error">
-						<p>
-							<strong>
-								<?php /* translators: %s: missing package */ ?>
-								<?php echo sprintf( esc_html__( 'Missing the SForce %s package', 'bos4w' ), '' . esc_html( $package ) . '</code>' ); ?>
-							</strong>
-							<br>
-							<?php
-							echo esc_html__( 'Your installation of SForce is incomplete.', 'bos4w' );
-							?>
-						</p>
-					</div>
-					<?php
+						<div class="notice notice-error">
+							<p>
+								<strong>
+									<?php /* translators: %s: missing package */ ?>
+									<?php echo sprintf( esc_html__( 'Missing the SForce %s package', 'bos4w' ), '' . esc_html( $package ) . '</code>' ); ?>
+								</strong>
+								<br>
+								<?php
+								echo esc_html__( 'Your installation of SForce is incomplete.', 'bos4w' );
+								?>
+							</p>
+						</div>
+						<?php
 				}
 			);
 		}
@@ -250,6 +252,7 @@ if ( ! function_exists( 'bos_cart_has_bos_product' ) ) {
 				return true;
 			}
 		}
+
 		return false;
 	}
 }
@@ -266,3 +269,32 @@ if ( ! function_exists( 'bos_cart_item_is_bos_product' ) ) {
 		return isset( $cart_item['bos4w_data'] ) ? $cart_item['bos4w_data'] : array();
 	}
 }
+
+add_action(
+	'wp_footer',
+	function () {
+		if ( ! is_product() ) {
+			return;
+		}
+
+		$default_option = get_option( 'bos4w_default_purchase_option', 'one_time' );
+		?>
+	<script>
+		jQuery(document).ready(function ($) {
+			setTimeout(function () {
+				const $subRadio = $('#bos4w-subscribe-to');
+				const $oneTimeRadio = $('#bos4w-one-time');
+
+				const defaultOption = '<?php echo esc_js( $default_option ); ?>';
+
+				if ('1' === defaultOption && $subRadio.length) {
+					$subRadio.prop('checked', true).trigger('click');
+				} else if ('0' === defaultOption && $oneTimeRadio.length) {
+					$oneTimeRadio.prop('checked', true).trigger('click');
+				}
+			}, 200);
+		});
+	</script>
+		<?php
+	}
+);

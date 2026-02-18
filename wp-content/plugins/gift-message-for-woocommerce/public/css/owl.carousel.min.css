@@ -1,0 +1,218 @@
+/**
+ * gmfw Carousel v2.3.4
+ * Copyright 2013-2018 David Deutsch
+ * Licensed under: SEE LICENSE IN https://github.com/gmfwCarousel2/gmfwCarousel2/blob/master/LICENSE
+ */
+
+.gmfw-carousel,
+.gmfw-carousel .gmfw-item {
+    -webkit-tap-highlight-color: transparent;
+    position: relative
+}
+
+.gmfw-carousel {
+    display: none;
+    width: 100%;
+    z-index: 1
+}
+
+.gmfw-carousel .gmfw-stage {
+    position: relative;
+    -ms-touch-action: pan-Y;
+    touch-action: manipulation;
+    -moz-backface-visibility: hidden
+}
+
+.gmfw-carousel .gmfw-stage:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0
+}
+
+.gmfw-carousel .gmfw-stage-outer {
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: translate3d(0, 0, 0)
+}
+
+.gmfw-carousel .gmfw-item,
+.gmfw-carousel .gmfw-wrapper {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0)
+}
+
+.gmfw-carousel .gmfw-item {
+    min-height: 1px;
+    float: left;
+    -webkit-backface-visibility: hidden;
+    -webkit-touch-callout: none
+}
+
+.gmfw-carousel .gmfw-item img {
+    display: block;
+    width: 100%
+}
+
+.gmfw-carousel .gmfw-dots.disabled,
+.gmfw-carousel .gmfw-nav.disabled {
+    display: none
+}
+
+.no-js .gmfw-carousel,
+.gmfw-carousel.gmfw-loaded {
+    display: block
+}
+
+.gmfw-carousel .gmfw-dot,
+.gmfw-carousel .gmfw-nav .gmfw-next,
+.gmfw-carousel .gmfw-nav .gmfw-prev {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.gmfw-carousel .gmfw-nav button.gmfw-next,
+.gmfw-carousel .gmfw-nav button.gmfw-prev,
+.gmfw-carousel button.gmfw-dot {
+    background: 0 0;
+    color: inherit;
+    border: none;
+    padding: 0!important;
+    font: inherit
+}
+
+.gmfw-carousel.gmfw-loading {
+    opacity: 0;
+    display: block
+}
+
+.gmfw-carousel.gmfw-hidden {
+    opacity: 0
+}
+
+.gmfw-carousel.gmfw-refresh .gmfw-item {
+    visibility: hidden
+}
+
+.gmfw-carousel.gmfw-drag .gmfw-item {
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.gmfw-carousel.gmfw-grab {
+    cursor: move;
+    cursor: grab
+}
+
+.gmfw-carousel.gmfw-rtl {
+    direction: rtl
+}
+
+.gmfw-carousel.gmfw-rtl .gmfw-item {
+    float: right
+}
+
+.gmfw-carousel .animated {
+    animation-duration: 1s;
+    animation-fill-mode: both
+}
+
+.gmfw-carousel .gmfw-animated-in {
+    z-index: 0
+}
+
+.gmfw-carousel .gmfw-animated-out {
+    z-index: 1
+}
+
+.gmfw-carousel .fadeOut {
+    animation-name: fadeOut
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+.gmfw-height {
+    transition: height .5s ease-in-out
+}
+
+.gmfw-carousel .gmfw-item .gmfw-lazy {
+    opacity: 0;
+    transition: opacity .4s ease
+}
+
+.gmfw-carousel .gmfw-item .gmfw-lazy:not([src]),
+.gmfw-carousel .gmfw-item .gmfw-lazy[src^=""] {
+    max-height: 0
+}
+
+.gmfw-carousel .gmfw-item img.gmfw-lazy {
+    transform-style: preserve-3d
+}
+
+.gmfw-carousel .gmfw-video-wrapper {
+    position: relative;
+    height: 100%;
+    background: #000
+}
+
+.gmfw-carousel .gmfw-video-play-icon {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    left: 50%;
+    top: 50%;
+    margin-left: -40px;
+    margin-top: -40px;
+    background: url(gmfw.video.play.png) no-repeat;
+    cursor: pointer;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+    transition: transform .1s ease
+}
+
+.gmfw-carousel .gmfw-video-play-icon:hover {
+    -ms-transform: scale(1.3, 1.3);
+    transform: scale(1.3, 1.3)
+}
+
+.gmfw-carousel .gmfw-video-playing .gmfw-video-play-icon,
+.gmfw-carousel .gmfw-video-playing .gmfw-video-tn {
+    display: none
+}
+
+.gmfw-carousel .gmfw-video-tn {
+    opacity: 0;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: opacity .4s ease
+}
+
+.gmfw-carousel .gmfw-video-frame {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: 100%
+}

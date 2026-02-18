@@ -1,0 +1,1784 @@
+# Copyright (C) 2026 iconic-woo-delivery-slots
+# This file is distributed under the same license as the iconic-woo-delivery-slots package.
+msgid ""
+msgstr ""
+"Project-Id-Version: iconic-woo-delivery-slots\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-01-14 09:09+0000\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. translators: PHP version.
+#: iconic-woo-delivery-slots.php:459
+msgid "You need to be running PHP 5.3+ for Delivery Slots to work. You're on %s."
+msgstr ""
+
+#: iconic-woo-delivery-slots.php:575, inc/Admin.php:373
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: iconic-woo-delivery-slots.php:1527, templates/admin/deliveries-page.php:127, templates/admin/deliveries-page.php:137
+msgid "ASAP"
+msgstr ""
+
+#: iconic-woo-delivery-slots.php:1685
+msgid "Any shipping"
+msgstr ""
+
+#: iconic-woo-delivery-slots.php:1686
+msgid "Virtual Product (No Shipping)"
+msgstr ""
+
+#: iconic-woo-delivery-slots.php:1906
+msgid "Everywhere Else"
+msgstr ""
+
+#: iconic-woo-delivery-slots.php:1940
+msgid "Rule"
+msgstr ""
+
+#: inc/Admin.php:47
+msgid "Edit Delivery Slot"
+msgstr ""
+
+#: inc/Admin.php:47
+msgid "Add Delivery Slot"
+msgstr ""
+
+#: inc/Admin.php:119
+msgid "Are you sure you want to delete the timeslot?"
+msgstr ""
+
+#: inc/Admin.php:120
+msgid "No shipping methods are available for your address"
+msgstr ""
+
+#: inc/Admin.php:121
+msgid "Please select a time slot for this specific date from Time Slot Settings"
+msgstr ""
+
+#: inc/Admin.php:122
+msgid "Allow customers to edit timeslots from the Order Received page to enable reminders."
+msgstr ""
+
+#: inc/Admin.php:124, inc/Helpers.php:321, inc/Helpers.php:852, inc/Settings.php:177, inc/Settings.php:381, inc/admin/settings.php:466
+msgid "Sunday"
+msgstr ""
+
+#: inc/Admin.php:125, inc/Helpers.php:322, inc/Helpers.php:853, inc/Settings.php:178, inc/Settings.php:382, inc/admin/settings.php:467
+msgid "Monday"
+msgstr ""
+
+#: inc/Admin.php:126, inc/Helpers.php:323, inc/Helpers.php:854, inc/Settings.php:179, inc/Settings.php:383, inc/admin/settings.php:468
+msgid "Tuesday"
+msgstr ""
+
+#: inc/Admin.php:127, inc/Helpers.php:324, inc/Helpers.php:855, inc/Settings.php:180, inc/Settings.php:384, inc/admin/settings.php:469
+msgid "Wednesday"
+msgstr ""
+
+#: inc/Admin.php:128, inc/Helpers.php:325, inc/Helpers.php:856, inc/Settings.php:181, inc/Settings.php:385, inc/admin/settings.php:470
+msgid "Thursday"
+msgstr ""
+
+#: inc/Admin.php:129, inc/Helpers.php:326, inc/Helpers.php:857, inc/Settings.php:182, inc/Settings.php:386, inc/admin/settings.php:471
+msgid "Friday"
+msgstr ""
+
+#: inc/Admin.php:130, inc/Helpers.php:327, inc/Helpers.php:858, inc/Settings.php:183, inc/Settings.php:387, inc/admin/settings.php:472
+msgid "Saturday"
+msgstr ""
+
+#: inc/Admin.php:133, inc/Helpers.php:861
+msgid "Su"
+msgstr ""
+
+#: inc/Admin.php:134, inc/Helpers.php:862
+msgid "Mo"
+msgstr ""
+
+#: inc/Admin.php:135, inc/Helpers.php:863
+msgid "Tu"
+msgstr ""
+
+#: inc/Admin.php:136, inc/Helpers.php:864
+msgid "We"
+msgstr ""
+
+#: inc/Admin.php:137, inc/Helpers.php:865
+msgid "Th"
+msgstr ""
+
+#: inc/Admin.php:138, inc/Helpers.php:866
+msgid "Fr"
+msgstr ""
+
+#: inc/Admin.php:139, inc/Helpers.php:867
+msgid "Sa"
+msgstr ""
+
+#: inc/Admin.php:142, inc/Helpers.php:870
+msgid "January"
+msgstr ""
+
+#: inc/Admin.php:143, inc/Helpers.php:871
+msgid "February"
+msgstr ""
+
+#: inc/Admin.php:144, inc/Helpers.php:872
+msgid "March"
+msgstr ""
+
+#: inc/Admin.php:145, inc/Helpers.php:873
+msgid "April"
+msgstr ""
+
+#: inc/Admin.php:146, inc/Admin.php:160, inc/Helpers.php:874, inc/Helpers.php:888
+msgid "May"
+msgstr ""
+
+#: inc/Admin.php:147, inc/Helpers.php:875
+msgid "June"
+msgstr ""
+
+#: inc/Admin.php:148, inc/Helpers.php:876
+msgid "July"
+msgstr ""
+
+#: inc/Admin.php:149, inc/Helpers.php:877
+msgid "August"
+msgstr ""
+
+#: inc/Admin.php:150, inc/Helpers.php:878
+msgid "September"
+msgstr ""
+
+#: inc/Admin.php:151, inc/Helpers.php:879
+msgid "October"
+msgstr ""
+
+#: inc/Admin.php:152, inc/Helpers.php:880
+msgid "November"
+msgstr ""
+
+#: inc/Admin.php:153, inc/Helpers.php:881
+msgid "December"
+msgstr ""
+
+#: inc/Admin.php:156, inc/Helpers.php:884
+msgid "Jan"
+msgstr ""
+
+#: inc/Admin.php:157, inc/Helpers.php:885
+msgid "Feb"
+msgstr ""
+
+#: inc/Admin.php:158, inc/Helpers.php:886
+msgid "Mar"
+msgstr ""
+
+#: inc/Admin.php:159, inc/Helpers.php:887
+msgid "Apr"
+msgstr ""
+
+#: inc/Admin.php:161, inc/Helpers.php:889
+msgid "Jun"
+msgstr ""
+
+#: inc/Admin.php:162, inc/Helpers.php:890
+msgid "Jul"
+msgstr ""
+
+#: inc/Admin.php:163, inc/Helpers.php:891
+msgid "Aug"
+msgstr ""
+
+#: inc/Admin.php:164, inc/Helpers.php:892
+msgid "Sep"
+msgstr ""
+
+#: inc/Admin.php:165, inc/Helpers.php:893
+msgid "Oct"
+msgstr ""
+
+#: inc/Admin.php:166, inc/Helpers.php:894
+msgid "Nov"
+msgstr ""
+
+#: inc/Admin.php:167, inc/Helpers.php:895
+msgid "Dec"
+msgstr ""
+
+#: inc/Admin.php:236
+msgid "Note: Delivery slot was updated. Customer was charged fees for the difference."
+msgstr ""
+
+#: inc/Admin.php:237
+msgid "Note: Delivery slot was changed."
+msgstr ""
+
+#: inc/Admin.php:329, inc/Admin.php:330
+msgid "Deliveries"
+msgstr ""
+
+#: inc/Ajax.php:113
+msgid "Slot not available."
+msgstr ""
+
+#: inc/Ajax.php:349
+msgctxt "Reservation calendar"
+msgid "Delivery"
+msgstr ""
+
+#: inc/Ajax.php:349
+msgctxt "Reservation calendar"
+msgid "Collection"
+msgstr ""
+
+#: inc/Ajax.php:350
+msgid "No bookable dates found."
+msgstr ""
+
+#. translators: Optional string for timeslot.
+#: inc/Ajax.php:373
+msgid "This shipping method does not require a date %s to be selected."
+msgstr ""
+
+#: inc/Ajax.php:374
+msgid "or time slot"
+msgstr ""
+
+#: inc/Ajax.php:416
+msgid "Cannot update the order."
+msgstr ""
+
+#: inc/Ajax.php:427
+msgid "Invalid date."
+msgstr ""
+
+#: inc/Ajax.php:542
+msgid "Your delivery slot has been updated!"
+msgstr ""
+
+#. translators: fee difference to be paid.
+#: inc/Ajax.php:549
+msgid "This slot costs an additional %s"
+msgstr ""
+
+#: inc/Api.php:186
+msgid "Required parameter \"date\" missing"
+msgstr ""
+
+#: inc/Api.php:193
+msgid "Required parameter \"shipping_method\" missing"
+msgstr ""
+
+#: inc/Api.php:200
+msgid "Invalid date format. Date must be in Ymd format."
+msgstr ""
+
+#: inc/Checkout.php:92
+msgid "Please select a shipping method."
+msgstr ""
+
+#: inc/Checkout.php:195
+msgid "Please select a delivery date."
+msgstr ""
+
+#: inc/Checkout.php:202
+msgid "Please select a time slot."
+msgstr ""
+
+#: inc/Checkout.php:231
+msgid "Sorry, we cannot accept a quantity of more than %d for the selected date. Please change the date or reduce the purchase quantity."
+msgstr ""
+
+#: inc/Checkout.php:223, inc/Checkout.php:243, inc/Checkout.php:263
+msgid "Sorry, the selected date is no longer available."
+msgstr ""
+
+#: inc/Checkout.php:327
+msgid "Sorry, we cannot accept a quantity of more than %d for the selected time slot. Please change the date/time slot or reduce the purchase quantity."
+msgstr ""
+
+#: inc/Checkout.php:318, inc/Checkout.php:303
+msgid "Sorry, the selected time slot is no longer available."
+msgstr ""
+
+#: inc/Checkout.php:291
+msgid "Sorry, there are no longer any slots available on the selected date."
+msgstr ""
+
+#: inc/CheckoutBlock.php:156
+msgid "Delivery date"
+msgstr ""
+
+#: inc/CheckoutBlock.php:163, inc/Subscriptions/CheckoutBlock/SubscriptionCheckoutBlock.php:61
+msgid "Delivery date YMD"
+msgstr ""
+
+#: inc/CheckoutBlock.php:170, templates/admin/deliveries-page.php:135, inc/Subscriptions/CheckoutBlock/SubscriptionCheckoutBlock.php:68
+msgid "Timeslot"
+msgstr ""
+
+#: inc/class-core-license-uplink.php:143
+msgid "Changelog"
+msgstr ""
+
+#: inc/class-core-onboard.php:60, inc/class-core-onboard.php:69
+msgid "Get Started"
+msgstr ""
+
+#: inc/class-core-onboard.php:75
+msgid "Steps"
+msgstr ""
+
+#: inc/class-core-onboard.php:539
+msgid "Are you sure?"
+msgstr ""
+
+#: inc/class-core-onboard.php:540
+msgid "Are you sure you want to dismiss the Get Started tab? You won't be able to access it again."
+msgstr ""
+
+#: inc/class-core-onboard.php:542, inc/Subscriptions/Boot.php:384
+msgid "Yes"
+msgstr ""
+
+#: inc/class-core-onboard.php:543, templates/edit-timeslot/timeslot-details.php:63
+msgid "Cancel"
+msgstr ""
+
+#: inc/class-core-onboard.php:628
+msgid "Priority Support"
+msgstr ""
+
+#: inc/class-core-onboard.php:629
+msgid "Help is at hand if you face any issues."
+msgstr ""
+
+#: inc/class-core-onboard.php:633
+msgid "Get Help"
+msgstr ""
+
+#: inc/class-core-order-reminders.php:141, inc/Settings.php:356, inc/admin/settings.php:118
+msgid "Collection"
+msgstr ""
+
+#: inc/class-core-order-reminders.php:141, inc/Order.php:71, inc/Settings.php:355, inc/admin/settings.php:117
+msgid "Delivery"
+msgstr ""
+
+#. translators: Delivery type i.e. 'delivery' or 'collection'.
+#: inc/class-core-order-reminders.php:145
+msgid "Select %s Date"
+msgstr ""
+
+#. translators: Order number.
+#: inc/class-core-order-reminders.php:269
+msgid "Delivery Slot Reminder (Order #%d)"
+msgstr ""
+
+#: inc/class-core-settings.php:349
+msgid "Getting Started"
+msgstr ""
+
+#: inc/class-core-settings.php:397
+msgid "Dashboard"
+msgstr ""
+
+#: inc/class-core-settings.php:404
+msgid "License &amp; Account Settings"
+msgstr ""
+
+#: inc/class-core-settings.php:410
+msgid "License Key"
+msgstr ""
+
+#: inc/class-core-settings.php:411
+msgid "Activate your license to get the latest updates and support."
+msgstr ""
+
+#: inc/class-core-settings.php:417
+msgid "Your Account"
+msgstr ""
+
+#: inc/class-core-settings.php:418
+msgid "Manage all of your Iconic plugins, supscriptions, renewals, and more."
+msgstr ""
+
+#: inc/class-core-settings.php:429, inc/class-core-settings.php:435
+msgid "Support"
+msgstr ""
+
+#: inc/class-core-settings.php:436
+msgid "Get premium support with a valid license."
+msgstr ""
+
+#: inc/class-core-settings.php:442
+msgid "Documentation"
+msgstr ""
+
+#: inc/class-core-settings.php:443
+msgid "Read the plugin documentation."
+msgstr ""
+
+#: inc/class-core-settings.php:780
+msgid "Works well with..."
+msgstr ""
+
+#: inc/class-core-settings.php:809
+msgid "Buy Plugin"
+msgstr ""
+
+#: inc/class-core-settings.php:812
+msgid "30 Day Money-Back Guarantee"
+msgstr ""
+
+#: inc/class-core-settings.php:850
+msgid "Submit Ticket"
+msgstr ""
+
+#: inc/class-core-settings.php:864
+msgid "Read Documentation"
+msgstr ""
+
+#: inc/class-core-settings.php:879
+msgid "Manage Your Account"
+msgstr ""
+
+#: inc/class-core-settings.php:915
+msgid "View settings"
+msgstr ""
+
+#: inc/class-core-settings.php:915
+msgid "Settings"
+msgstr ""
+
+#. translators: The plugin name.
+#: inc/class-core-telemetry.php:162
+msgid "Opt in to help us enhance %s"
+msgstr ""
+
+#. translators: The user name and the plugin name.
+#: inc/class-core-telemetry.php:168
+msgid ""
+"Hi, %1$s! We'd love your help to improve %2$s. \n"
+"				By opting in, you'll share usage data from %2$s and future Iconic products with our team, allowing us to refine your experience. \n"
+"				As a bonus, we'll send you occasional product updates. \n"
+"				If you decide to skip this, no worries – %2$s will continue to work seamlessly for you."
+msgstr ""
+
+#: inc/class-core-telemetry.php:208
+msgid "I'm just deactivating temporarily."
+msgstr ""
+
+#: inc/class-core-telemetry.php:261
+msgid "Opt In"
+msgstr ""
+
+#. translators: The telemetry terms URL.
+#: inc/class-core-telemetry.php:263
+msgid "Help us improve this plugin by sharing <a href=\"%s\" target=\"_blank\">non-sensitive</a> data with us."
+msgstr ""
+
+#: inc/class-core-telemetry.php:295
+msgid "Sorry, you can't do that."
+msgstr ""
+
+#. translators: Order ID.
+#: inc/EditTimeslots.php:61
+msgid "Thank you. New timeslot has been updated for the order %s"
+msgstr ""
+
+#: inc/EditTimeslots.php:336
+msgid "Fees Difference"
+msgstr ""
+
+#: inc/Fee.php:87
+msgid "Delivery Fee"
+msgstr ""
+
+#: inc/Helpers.php:134
+msgid "Delivery Details"
+msgstr ""
+
+#: inc/Helpers.php:135, templates/edit-timeslot/timeslot-details.php:11, templates/edit-timeslot/timeslot-details.php:35
+msgid "Delivery Date"
+msgstr ""
+
+#: inc/Helpers.php:136
+msgid "Select a delivery date"
+msgstr ""
+
+#: inc/Helpers.php:137
+msgid "Please choose a date for your delivery."
+msgstr ""
+
+#: inc/Helpers.php:138, inc/Helpers.php:149
+msgid "Please select a date first..."
+msgstr ""
+
+#: inc/Helpers.php:139, inc/Helpers.php:150, inc/admin/settings.php:648, inc/Subscriptions/Admin.php:83, templates/admin/deliveries-page.php:82
+msgid "Time Slot"
+msgstr ""
+
+#: inc/Helpers.php:140
+msgid "Please choose a time slot for your delivery."
+msgstr ""
+
+#: inc/Helpers.php:141, inc/Helpers.php:152
+msgid "Please select a time slot..."
+msgstr ""
+
+#: inc/Helpers.php:142, inc/Helpers.php:153
+msgid "Sorry, no slots available..."
+msgstr ""
+
+#: inc/Helpers.php:145
+msgid "Collection Details"
+msgstr ""
+
+#: inc/Helpers.php:146
+msgid "Collection Date"
+msgstr ""
+
+#: inc/Helpers.php:147
+msgid "Select a collection date"
+msgstr ""
+
+#: inc/Helpers.php:148
+msgid "Please choose a date for your collection."
+msgstr ""
+
+#: inc/Helpers.php:151
+msgid "Please choose a time slot for your collection."
+msgstr ""
+
+#: inc/Helpers.php:379, inc/ReservationTable.php:134
+msgid "Free"
+msgstr ""
+
+#. translators: Comma seperated product names.
+#: inc/Helpers.php:839
+msgid "These products are not available for delivery/pickup on the same date: %s. Please remove one from the cart and place a separate order."
+msgstr ""
+
+#: inc/Helpers.php:915
+msgid "Loading..."
+msgstr ""
+
+#: inc/Helpers.php:916
+msgid "Available"
+msgstr ""
+
+#: inc/Helpers.php:917
+msgid "Unavailable"
+msgstr ""
+
+#: inc/Helpers.php:918
+msgid "Success! Your time slot has been successfully updated."
+msgstr ""
+
+#: inc/Helpers.php:919
+msgid "Failed to save timeslot information. Please try again later."
+msgstr ""
+
+#: inc/Helpers.php:921
+msgctxt "Reservation table"
+msgid "None selected"
+msgstr ""
+
+#: inc/Helpers.php:922
+msgctxt "Reservation table"
+msgid "Cancel"
+msgstr ""
+
+#: inc/Helpers.php:923
+msgctxt "Reservation table"
+msgid "Add"
+msgstr ""
+
+#: inc/Helpers.php:924
+msgctxt "Reservation table"
+msgid "Edit"
+msgstr ""
+
+#: inc/Helpers.php:925
+msgctxt "Reservation table"
+msgid "Continue"
+msgstr ""
+
+#: inc/Helpers.php:926
+msgctxt "Reservation table"
+msgid "Select State"
+msgstr ""
+
+#: inc/Helpers.php:927
+msgctxt "Reservation table"
+msgid "Select Country"
+msgstr ""
+
+#: inc/Helpers.php:929
+msgctxt "Reservation table"
+msgid "Could not book the slot. Please try again."
+msgstr ""
+
+#: inc/Helpers.php:930
+msgctxt "Reservation table"
+msgid "Reserve"
+msgstr ""
+
+#: inc/Helpers.php:931
+msgctxt "Reservation table"
+msgid "Free"
+msgstr ""
+
+#: inc/Helpers.php:932
+msgctxt "Reservation table"
+msgid "No shipping methods are available for your address"
+msgstr ""
+
+#: inc/Helpers.php:933
+msgctxt "Reservation table"
+msgid "Delivery"
+msgstr ""
+
+#: inc/Order.php:71
+msgid "One Time Delivery"
+msgstr ""
+
+#: inc/Order.php:470, templates/admin/deliveries-page.php:69
+msgid "Today"
+msgstr ""
+
+#: inc/Order.php:471, templates/admin/deliveries-page.php:72
+msgid "Tomorrow"
+msgstr ""
+
+#: inc/Order.php:477
+msgid "All delivery dates"
+msgstr ""
+
+#: inc/Order.php:665
+msgid "Delivery date updated."
+msgstr ""
+
+#: inc/OverrideSettings.php:48, inc/OverrideSettings.php:86, inc/OverrideSettings.php:149, inc/admin/settings.php:330
+msgid "Delivery Days"
+msgstr ""
+
+#: inc/OverrideSettings.php:51, inc/OverrideSettings.php:91, inc/OverrideSettings.php:153
+msgid "Override"
+msgstr ""
+
+#: inc/OverrideSettings.php:60, inc/OverrideSettings.php:103
+msgid "Delivery Slots: Only allow delivery/pickup on these days if products in this category are in the cart."
+msgstr ""
+
+#: inc/OverrideSettings.php:63, inc/OverrideSettings.php:109, inc/admin/settings.php:416
+msgid "Lead Time"
+msgstr ""
+
+#: inc/OverrideSettings.php:65
+msgid "Delivery slots: Set minimum selectable date for this category."
+msgstr ""
+
+#: inc/OverrideSettings.php:115
+msgid "Delivery Slots: Modify the global lead time setting when products in this category are in the cart."
+msgstr ""
+
+#: inc/OverrideSettings.php:147
+msgid "Delivery Slots settings"
+msgstr ""
+
+#: inc/OverrideSettings.php:170
+msgid "Lead time"
+msgstr ""
+
+#: inc/OverrideSettings.php:171
+msgid "Modify the global lead time setting when this product is in the cart."
+msgstr ""
+
+#: inc/Settings.php:286, inc/admin/settings.php:372, inc/admin/settings.php:592
+msgid "Maximum Orders"
+msgstr ""
+
+#: inc/Settings.php:334
+msgid "Labels"
+msgstr ""
+
+#: inc/Settings.php:354
+msgid "Default"
+msgstr ""
+
+#: inc/Settings.php:513
+msgid "You need to select at least one shipping method in General Settings. \"Any Method\" has been selected for you."
+msgstr ""
+
+#: inc/Settings.php:522
+msgid "\"Allow Bookings Up To (x) Minutes Before Slot\" should be a positive integer. It has defaulted to 0."
+msgstr ""
+
+#: inc/Settings.php:533
+msgid "Lead Time should be a positive integer. It has defaulted to 0."
+msgstr ""
+
+#: inc/Settings.php:544
+msgid "Maximum selectable date should be a positive integer. It has defaulted to 14."
+msgstr ""
+
+#: inc/Settings.php:555
+msgid "Minimum selectable date should be less than or equal to the maximum selectable date."
+msgstr ""
+
+#: inc/Settings.php:566
+msgid "The Same Day cutoff should be a valid time format (00:00), try using the time picker instead."
+msgstr ""
+
+#: inc/Settings.php:577
+msgid "The Next Day cutoff should be a valid time format (00:00), try using the time picker instead."
+msgstr ""
+
+#: inc/Settings.php:587
+msgid "Maximum number of reminders setting is a required field."
+msgstr ""
+
+#: inc/Settings.php:593
+msgid "Maximum number of reminders must be a positive number."
+msgstr ""
+
+#: inc/Settings.php:602
+msgid "Reminder duration setting is a required field."
+msgstr ""
+
+#: inc/Settings.php:608
+msgid "Reminder duration must be a positive number."
+msgstr ""
+
+#: inc/Settings.php:677
+msgid "Some of your time slots were not enabled for any shipping methods. \"Any Method\" has been selected for them."
+msgstr ""
+
+#: inc/Settings.php:683
+msgid "The \"Allow Bookings Up To (x) Minutes Before Slot\" time slot setting should be a positive integer. It has been removed."
+msgstr ""
+
+#: inc/Settings.php:689
+msgid "You should select at least one active day for your time slot. All days have now been selected."
+msgstr ""
+
+#: inc/Settings.php:695
+msgid "One of the time slots you entered had an invalid format. Try using the time picker instead. A default has been added in its place."
+msgstr ""
+
+#: inc/Settings.php:744
+msgid "Some of your holidays had no shipping methods assigned. \"Any Method\" has been selected for them."
+msgstr ""
+
+#: inc/Settings.php:787
+msgid "Before Customer Details"
+msgstr ""
+
+#: inc/Settings.php:788
+msgid "Within Billing Fields"
+msgstr ""
+
+#: inc/Settings.php:789
+msgid "Within Shipping Fields"
+msgstr ""
+
+#: inc/Settings.php:790
+msgid "After Customer Details"
+msgstr ""
+
+#: inc/Settings.php:791
+msgid "Before Order Review"
+msgstr ""
+
+#: inc/Settings.php:792
+msgid "Within Order Review"
+msgstr ""
+
+#: inc/Settings.php:793
+msgid "After Order Review"
+msgstr ""
+
+#: inc/Settings.php:794
+msgid "Add Manually"
+msgstr ""
+
+#: inc/Settings.php:886
+msgid "Orders"
+msgstr ""
+
+#: inc/Settings.php:891
+msgid "Products"
+msgstr ""
+
+#: inc/Settings.php:930, inc/Settings.php:956
+msgid "Minute(s)"
+msgstr ""
+
+#: inc/Settings.php:931, inc/Settings.php:957
+msgid "Hour(s)"
+msgstr ""
+
+#: inc/Settings.php:932, inc/Settings.php:958
+msgid "Day(s)"
+msgstr ""
+
+#: inc/Shortcodes.php:168
+msgid "at"
+msgstr ""
+
+#: inc/WooCommerceLocalPickup.php:58
+msgid "Local Pickup"
+msgstr ""
+
+#: templates/checkout-fields-modern.php:54, templates/checkout-fields.php:42
+msgid "Sorry, there are no dates available for that shipping method. Please select another method or try again later."
+msgstr ""
+
+#: templates/checkout-fields-modern.php:52, templates/checkout-fields.php:40
+msgid "Enter your address to view available time slots."
+msgstr ""
+
+#: templates/checkout-fields-modern.php:50
+msgid "No delivery slots available for virtual products."
+msgstr ""
+
+#: templates/checkout-fields-modern.php:112, templates/checkout-fields.php:96
+msgid "Change Delivery Slot"
+msgstr ""
+
+#: templates/checkout-fields-modern.php:113, templates/checkout-fields.php:97
+msgid "Continue to Payment"
+msgstr ""
+
+#: templates/reservation-table.php:21
+msgid "Your Address"
+msgstr ""
+
+#: templates/reservation-table.php:42
+msgid "Shipping Method"
+msgstr ""
+
+#: templates/reservation-table.php:73
+msgid "Continue"
+msgstr ""
+
+#: templates/reservation-table.php:81
+msgid "Date & Time"
+msgstr ""
+
+#: templates/reservation-table.php:118
+msgid "Earliest Available Slot"
+msgstr ""
+
+#: templates/reservation-table.php:121
+msgid "remaining"
+msgstr ""
+
+#: templates/reservation-table.php:123
+msgid "Slot Unavailable"
+msgstr ""
+
+#: templates/reservation-table.php:136
+msgid "No timeslots available for this date"
+msgstr ""
+
+#: inc/admin/deliveries.php:18
+msgid "Upcoming Orders"
+msgstr ""
+
+#: inc/admin/deliveries.php:19
+msgid "Currently Reserved"
+msgstr ""
+
+#: inc/admin/settings.php:33
+msgid "General Settings"
+msgstr ""
+
+#: inc/admin/settings.php:38, inc/admin/settings.php:324
+msgid "Date Settings"
+msgstr ""
+
+#: inc/admin/settings.php:43
+msgid "Time Settings"
+msgstr ""
+
+#: inc/admin/settings.php:48, inc/admin/settings.php:770, inc/admin/settings.php:776
+msgid "Holidays"
+msgstr ""
+
+#: inc/admin/settings.php:53
+msgid "Reservation Table"
+msgstr ""
+
+#: inc/admin/settings.php:58
+msgid "Advanced"
+msgstr ""
+
+#: inc/admin/settings.php:66
+msgid "General Setup"
+msgstr ""
+
+#: inc/admin/settings.php:72
+msgid "Checkout Fields Position"
+msgstr ""
+
+#: inc/admin/settings.php:73
+msgid "Where should the date and time fields show on the checkout page?"
+msgstr ""
+
+#: inc/admin/settings.php:80
+msgid "Checkout Fields Position Priority"
+msgstr ""
+
+#: inc/admin/settings.php:81
+msgid "Enter a number of priority, e.g. 10 is early/before, 50 is late/after"
+msgstr ""
+
+#: inc/admin/settings.php:88
+msgid "Display Fields Even When Shipping Is Not Required?"
+msgstr ""
+
+#: inc/admin/settings.php:89
+msgid "Should we display the date and time fields even if shipping is not required at checkout?"
+msgstr ""
+
+#: inc/admin/settings.php:96
+msgid "Max Orders Calculation Method"
+msgstr ""
+
+#: inc/admin/settings.php:97
+msgid "Determine maximum orders limit by the number of orders placed or number of products purchased."
+msgstr ""
+
+#: inc/admin/settings.php:104
+msgid "Exclude Products from Max Order Limit"
+msgstr ""
+
+#: inc/admin/settings.php:105
+msgid "Add product(s) the Max Orders Calculation will not be applied to."
+msgstr ""
+
+#: inc/admin/settings.php:112
+msgid "Default Labels"
+msgstr ""
+
+#: inc/admin/settings.php:113
+msgid "Select which labels to use for the delivery slots checkout fields. You can override these based on the select shipping method below."
+msgstr ""
+
+#: inc/admin/settings.php:123, inc/admin/settings.php:814, inc/admin/settings.php:935
+msgid "Shipping Methods"
+msgstr ""
+
+#: inc/admin/settings.php:124
+msgid "Enable delivery slots for the following shipping methods."
+msgstr ""
+
+#: inc/admin/settings.php:131
+msgid "Exclude Products"
+msgstr ""
+
+#: inc/admin/settings.php:132
+msgid "If these products are in the cart, delivery date selection will be disabled."
+msgstr ""
+
+#: inc/admin/settings.php:139
+msgid "Exclude Product Condition"
+msgstr ""
+
+#: inc/admin/settings.php:140
+msgid "Disable delivery date selection when any/all of the excluded products are in the cart."
+msgstr ""
+
+#: inc/admin/settings.php:150
+msgid "Exclude Categories"
+msgstr ""
+
+#: inc/admin/settings.php:151
+msgid "If a product from these categories is in the cart, delivery date selection will be disabled."
+msgstr ""
+
+#: inc/admin/settings.php:159
+msgid "Exclude Category Condition"
+msgstr ""
+
+#: inc/admin/settings.php:160
+msgid "Disable delivery date selection when any/all products in the cart have at least 1 excluded category."
+msgstr ""
+
+#: inc/admin/settings.php:174
+msgid "Customer Time Slot Management"
+msgstr ""
+
+#: inc/admin/settings.php:180
+msgid "Allow customers to update time slots from the Order Received page"
+msgstr ""
+
+#: inc/admin/settings.php:181
+msgid "Adds updatable time slot fields to the Order Received/Thank You page after customers have placed an order.<br><br>Or only adds updatable time slot fields if the customer receives a reminder email. See Reminder Email settings below."
+msgstr ""
+
+#: inc/admin/settings.php:184
+msgid "Allow always"
+msgstr ""
+
+#: inc/admin/settings.php:185
+msgid "Allow for reminder emails only"
+msgstr ""
+
+#: inc/admin/settings.php:192
+msgid "Allow customers to update time slots from the My Account Order page."
+msgstr ""
+
+#: inc/admin/settings.php:193
+msgid "Adds updatable time slot fields to the customer’s 'My Account > Orders > View Order' page."
+msgstr ""
+
+#: inc/admin/settings.php:196
+msgid "Allow"
+msgstr ""
+
+#: inc/admin/settings.php:197
+msgid "Don't Allow"
+msgstr ""
+
+#: inc/admin/settings.php:204
+msgid "Time Slot Editing Window"
+msgstr ""
+
+#: inc/admin/settings.php:205
+msgid "Let customers edit their time slot selection up until X minutes/hours/days before their currently selected timeslot.<br><br>Leave the field empty to allow customers to update their timeslots anytime until the delivery time."
+msgstr ""
+
+#: inc/admin/settings.php:215
+msgid "Charge Fee Difference"
+msgstr ""
+
+#: inc/admin/settings.php:216
+msgid "Require customers to pay a fee for the difference when the new timeslot's fee is more than the previously selected timeslot."
+msgstr ""
+
+#: inc/admin/settings.php:222
+msgid "Fee Difference Threshold"
+msgstr ""
+
+#. translators: The currency.
+#: inc/admin/settings.php:224
+msgid "Only prompt the customer to pay for the fee difference if the fee difference exceeds this amount (%s)."
+msgstr ""
+
+#: inc/admin/settings.php:240
+msgid "Reminder Email"
+msgstr ""
+
+#: inc/admin/settings.php:246
+msgid "Enable Reminders"
+msgstr ""
+
+#: inc/admin/settings.php:247
+msgid "Turn on email reminders for customers who have not selected a delivery date/time during checkout.<br><br>Especially helpful for orders placed with express checkout payment methods like Google Pay, Apple Pay, and PayPal Express checkout."
+msgstr ""
+
+#: inc/admin/settings.php:252
+msgid "Reminder Frequency Duration"
+msgstr ""
+
+#: inc/admin/settings.php:253
+msgid "Set the frequency for sending automated email reminders to customers."
+msgstr ""
+
+#: inc/admin/settings.php:260
+msgid "Maximum Number of Reminders"
+msgstr ""
+
+#: inc/admin/settings.php:261
+msgid "Set the maximum number of email reminders sent to each customer."
+msgstr ""
+
+#: inc/admin/settings.php:267
+msgid "Email Text"
+msgstr ""
+
+#: inc/admin/settings.php:268
+msgid "Customize the content of the email reminder.<br><br>Available placeholders: {SITE_NAME}, {ORDER_ID}, {ORDER_NUMBER}, {ORDER_DATE_TIME}, {CUSTOMER_NAME}, {CUSTOMER_EMAIL}, {CUSTOMER_ADDRESS}, {CUSTOMER_PHONE}, {NOTE}, {CART_ITEMS}, {THANKYOU_URL} "
+msgstr ""
+
+#: inc/admin/settings.php:278
+msgid "Date Setup"
+msgstr ""
+
+#: inc/admin/settings.php:284, inc/admin/settings.php:538
+msgid "Required"
+msgstr ""
+
+#: inc/admin/settings.php:285
+msgid "Is the delivery date a required field at checkout?"
+msgstr ""
+
+#: inc/admin/settings.php:292, inc/admin/settings.php:546
+msgid "Show Description?"
+msgstr ""
+
+#: inc/admin/settings.php:299
+msgid "Auto-select first available date?"
+msgstr ""
+
+#: inc/admin/settings.php:300
+msgid "The first available date will be automatically selected."
+msgstr ""
+
+#: inc/admin/settings.php:307
+msgid "Theme"
+msgstr ""
+
+#: inc/admin/settings.php:308
+msgid "Select a theme for the front-end calendar at checkout."
+msgstr ""
+
+#: inc/admin/settings.php:313
+msgid "Dark"
+msgstr ""
+
+#: inc/admin/settings.php:314
+msgid "Light"
+msgstr ""
+
+#: inc/admin/settings.php:315
+msgid "None"
+msgstr ""
+
+#: inc/admin/settings.php:331
+msgid "Which days do you deliver, and how many orders can you accept on any given day? Leave maximum orders blank for \"unlimited\"."
+msgstr ""
+
+#: inc/admin/settings.php:338
+msgid "Specific Delivery Days"
+msgstr ""
+
+#: inc/admin/settings.php:339
+msgid "Enter any specific days you would like to enable for delivery or collection."
+msgstr ""
+
+#: inc/admin/settings.php:349, templates/admin/deliveries-page.php:80
+msgid "Date"
+msgstr ""
+
+#: inc/admin/settings.php:359, inc/admin/settings.php:693, inc/admin/settings.php:784, inc/admin/settings.php:794
+msgid "From"
+msgstr ""
+
+#. translators: currency symbol.
+#: inc/admin/settings.php:365, inc/admin/settings.php:748
+msgid "Fee (%s)"
+msgstr ""
+
+#: inc/admin/settings.php:373
+msgid "Enter the maximum number of orders allowed for this date."
+msgstr ""
+
+#: inc/admin/settings.php:380, inc/admin/settings.php:831
+msgid "Repeat every year?"
+msgstr ""
+
+#: inc/admin/settings.php:387
+msgid "Bypass max selectable date setting?"
+msgstr ""
+
+#: inc/admin/settings.php:395
+msgid "Delivery Days Calculation Method"
+msgstr ""
+
+#: inc/admin/settings.php:396
+msgid "Calculate minimum, maximum, same day, and next day delivery dates based on all days of the week, selected days only, or weekdays only."
+msgstr ""
+
+#: inc/admin/settings.php:408
+msgid "Skip Current Day if Not a Selected Delivery Day?"
+msgstr ""
+
+#: inc/admin/settings.php:409
+msgid "When checked, same day delivery will be classed as the next available delivery day."
+msgstr ""
+
+#: inc/admin/settings.php:417
+msgid "Days from now. Enter \"0\" for same day."
+msgstr ""
+
+#: inc/admin/settings.php:424
+msgid "Maximum Selectable Date"
+msgstr ""
+
+#: inc/admin/settings.php:425
+msgid "Days from now."
+msgstr ""
+
+#: inc/admin/settings.php:432
+msgid "Disable Same Day Delivery if Current Time is After (x)"
+msgstr ""
+
+#: inc/admin/settings.php:436, inc/admin/settings.php:447, inc/admin/settings.php:612, inc/admin/settings.php:697, inc/admin/settings.php:709
+msgid "AM"
+msgstr ""
+
+#: inc/admin/settings.php:437, inc/admin/settings.php:448, inc/admin/settings.php:613, inc/admin/settings.php:698, inc/admin/settings.php:710
+msgid "PM"
+msgstr ""
+
+#: inc/admin/settings.php:443
+msgid "Disable Next Day Delivery if Current Time is After (x)"
+msgstr ""
+
+#: inc/admin/settings.php:454
+msgid "Only Allow Deliveries Within the Current Week?"
+msgstr ""
+
+#: inc/admin/settings.php:461
+msgid "Last Day of the Week"
+msgstr ""
+
+#: inc/admin/settings.php:478
+msgid "Date Format"
+msgstr ""
+
+#: inc/admin/settings.php:479
+msgid "Available formats can be found <a href=\"http://api.jqueryui.com/datepicker/#utility-formatDate\" target=\"_blank\">here</a>."
+msgstr ""
+
+#: inc/admin/settings.php:490
+msgid "Fees"
+msgstr ""
+
+#: inc/admin/settings.php:496, inc/admin/settings.php:755
+msgid "Days"
+msgstr ""
+
+#: inc/admin/settings.php:497
+msgid "Fees applied to specific days of the week."
+msgstr ""
+
+#: inc/admin/settings.php:504
+msgid "Same Day"
+msgstr ""
+
+#: inc/admin/settings.php:505
+msgid "Fee applied when a same day delivery is selected."
+msgstr ""
+
+#: inc/admin/settings.php:508, inc/admin/settings.php:516, inc/admin/settings.php:603
+msgid "E.g. 3.00"
+msgstr ""
+
+#: inc/admin/settings.php:512
+msgid "Next Day"
+msgstr ""
+
+#: inc/admin/settings.php:513
+msgid "Fee applied when a next day delivery is selected."
+msgstr ""
+
+#: inc/admin/settings.php:524
+msgid "Time Setup"
+msgstr ""
+
+#: inc/admin/settings.php:530
+msgid "Enable Time Slots"
+msgstr ""
+
+#: inc/admin/settings.php:531
+msgid "Check this box to enable time slots at checkout."
+msgstr ""
+
+#: inc/admin/settings.php:539
+msgid "Is the time slot a required field at checkout?"
+msgstr ""
+
+#: inc/admin/settings.php:553
+msgid "Auto-select first available time slot?"
+msgstr ""
+
+#: inc/admin/settings.php:554
+msgid "The first available time slot will be automatically selected."
+msgstr ""
+
+#: inc/admin/settings.php:561
+msgid "Time Format"
+msgstr ""
+
+#: inc/admin/settings.php:562
+msgid "Select a time format for the frontend."
+msgstr ""
+
+#: inc/admin/settings.php:578
+msgid "ASAP Delivery"
+msgstr ""
+
+#: inc/admin/settings.php:584
+msgid "Enable ASAP Delivery"
+msgstr ""
+
+#: inc/admin/settings.php:585
+msgid "Allow your customers to choose ASAP for their selected delivery date, or a time slot."
+msgstr ""
+
+#: inc/admin/settings.php:593
+msgid "Enter the maximum number of orders allowed for the ASAP time slot."
+msgstr ""
+
+#: inc/admin/settings.php:599
+msgid "ASAP Fee"
+msgstr ""
+
+#: inc/admin/settings.php:600
+msgid "Fee applied when an ASAP delivery time is selected."
+msgstr ""
+
+#: inc/admin/settings.php:607
+msgid "Same Day Cut Off"
+msgstr ""
+
+#: inc/admin/settings.php:608
+msgid "Disable same day ASAP delivery slot if current time is after (x)."
+msgstr ""
+
+#: inc/admin/settings.php:623
+msgid "Time Slot Configuration"
+msgstr ""
+
+#: inc/admin/settings.php:629
+msgid "Calculate Tax?"
+msgstr ""
+
+#: inc/admin/settings.php:630
+msgid "Check this box to calculate tax on time slot fees. If enabled, fees should be entered exclusive of tax."
+msgstr ""
+
+#: inc/admin/settings.php:637, inc/admin/settings.php:716
+msgid "Allow Bookings Up To (x) Minutes Before Slot"
+msgstr ""
+
+#: inc/admin/settings.php:638
+msgid "This option will prevent bookings being made too close to the delivery time. Can be overridden on an individual time slot basis. (Check your timezone in WordPress Settings)."
+msgstr ""
+
+#: inc/admin/settings.php:645
+msgid "Time Slots"
+msgstr ""
+
+#: inc/admin/settings.php:646
+msgid "Fill the Slot Duration and Slot Frequency fields to dynamically generate slots. Leave them empty to create a single time slot.<br><br>Use \"24:00\" to represent the end of the day."
+msgstr ""
+
+#: inc/admin/settings.php:679
+msgid "Slot Duration - (x) Minutes per Slot"
+msgstr ""
+
+#: inc/admin/settings.php:686
+msgid "Slot Frequency - Every (x) Minutes"
+msgstr ""
+
+#: inc/admin/settings.php:704, inc/admin/settings.php:799
+msgid "To"
+msgstr ""
+
+#: inc/admin/settings.php:723
+msgid "Cutoff time based on"
+msgstr ""
+
+#: inc/admin/settings.php:727
+msgid "From time"
+msgstr ""
+
+#: inc/admin/settings.php:728
+msgid "To time"
+msgstr ""
+
+#: inc/admin/settings.php:734
+msgid "Maximum Orders per Time Slot"
+msgstr ""
+
+#: inc/admin/settings.php:741
+msgid "Postcodes"
+msgstr ""
+
+#: inc/admin/settings.php:771
+msgid "Please add any holidays where deliveries should not be made."
+msgstr ""
+
+#: inc/admin/settings.php:777
+msgid "For single days, just enter a date in the \"From\" field. For ranges, enter a \"From\" and \"To\" date. Ranges are up to and including the dates you enter."
+msgstr ""
+
+#: inc/admin/settings.php:779
+msgid "Holiday"
+msgstr ""
+
+#: inc/admin/settings.php:809
+msgid "to"
+msgstr ""
+
+#: inc/admin/settings.php:822
+msgid "Name"
+msgstr ""
+
+#: inc/admin/settings.php:826
+msgid "e.g. Christmas"
+msgstr ""
+
+#: inc/admin/settings.php:843
+msgid "Reservations"
+msgstr ""
+
+#: inc/admin/settings.php:844
+msgid "You can insert a reservation table using the shortcode <strong>[jckwds]</strong>. This allows your customers to reserve a delivery time and date while they shop. <strong>Note:</strong> Time Slots should be enabled if you want to use the reservation table."
+msgstr ""
+
+#: inc/admin/settings.php:849
+msgid "Expiration"
+msgstr ""
+
+#: inc/admin/settings.php:850
+msgid "Reservations expire after (x) Minutes."
+msgstr ""
+
+#: inc/admin/settings.php:857
+msgid "Remaining Label Threshold"
+msgstr ""
+
+#: inc/admin/settings.php:858
+msgid "Show \"x Remaining\" label when available timeslots become less than this threshold. Set -1 to disable."
+msgstr ""
+
+#: inc/admin/settings.php:865
+msgid "Hide Unavailable Dates?"
+msgstr ""
+
+#: inc/admin/settings.php:866
+msgid "Check this box to hide any dates if there are no available time slots."
+msgstr ""
+
+#: inc/admin/settings.php:873
+msgid "Redirect URL"
+msgstr ""
+
+#: inc/admin/settings.php:874
+msgid "Redirect to this URL after booking a slot."
+msgstr ""
+
+#: inc/admin/settings.php:881
+msgid "Highlight Color"
+msgstr ""
+
+#: inc/admin/settings.php:888
+msgid "Color for \"Earliest Available Slot\" label"
+msgstr ""
+
+#: inc/admin/settings.php:895
+msgid "Color for \"X Slots remaining\" label"
+msgstr ""
+
+#: inc/admin/settings.php:902
+msgid "Color for \"Slot Unavailable\" label"
+msgstr ""
+
+#: inc/admin/settings.php:913
+msgid "Import/Export"
+msgstr ""
+
+#: inc/admin/settings.php:919
+msgid "Import"
+msgstr ""
+
+#: inc/admin/settings.php:920
+msgid "Import settings"
+msgstr ""
+
+#: inc/admin/settings.php:925
+msgid "Export"
+msgstr ""
+
+#: inc/admin/settings.php:926
+msgid "Export settings"
+msgstr ""
+
+#: inc/Compatibility/PdfInvoicesPackingSlips.php:45, inc/Compatibility/PdfInvoicesPackingSlips.php:95
+msgid "PDF Actions"
+msgstr ""
+
+#: inc/Subscriptions/Boot.php:359
+msgid "Subscription Settings"
+msgstr ""
+
+#: inc/Subscriptions/Boot.php:365
+msgid "Unavailable Delivery Date Handling"
+msgstr ""
+
+#: inc/Subscriptions/Boot.php:366
+msgid "Choose how to handle recurring subscription delivery dates that fall on unavailable* days.<br><br>*Not a bookable day or available time slots have been filled."
+msgstr ""
+
+#: inc/Subscriptions/Boot.php:371
+msgid "Allow delivery on any unavailable day, including holidays"
+msgstr ""
+
+#: inc/Subscriptions/Boot.php:372
+msgid "Allow delivery on unavailable days, except holidays"
+msgstr ""
+
+#: inc/Subscriptions/Boot.php:373
+msgid "Reschedule to the next available delivery date"
+msgstr ""
+
+#: inc/Subscriptions/Boot.php:378
+msgid "Limit delivery dates by subscription length"
+msgstr ""
+
+#: inc/Subscriptions/Boot.php:379
+msgid "Enable this setting to only let customers choose delivery dates that match how often their subscription renews (e.g. within 7 days for weekly, 30 days for monthly).<br><br>If disabled, customers can select any available future date up to the global Maximum Selectable Date."
+msgstr ""
+
+#: inc/Subscriptions/Boot.php:383
+msgid "No"
+msgstr ""
+
+#: inc/Subscriptions/CheckoutHandler.php:182
+msgid "Please select a delivery date for your subscription."
+msgstr ""
+
+#: inc/Subscriptions/CheckoutHandler.php:189
+msgid "Please select delivery time for your subscription."
+msgstr ""
+
+#: inc/Subscriptions/CheckoutHandler.php:216
+msgid "Please select a delivery date for your one-time purchase."
+msgstr ""
+
+#: inc/Subscriptions/CheckoutHandler.php:224
+msgid "Please select a time slot for your one-time purchase."
+msgstr ""
+
+#. translators: The subscription period (week, month, year, day).
+#: inc/Subscriptions/SubscriptionField.php:254
+msgctxt "subscription"
+msgid "Your subscription can be collected <strong>every %s</strong>"
+msgstr ""
+
+#. translators: 1. is the interval, 2. is the period (week, month, year, day).
+#: inc/Subscriptions/SubscriptionField.php:258
+msgctxt "subscription"
+msgid "Your subscription can be collected <strong>every %1$d %2$s</strong>"
+msgstr ""
+
+#: inc/Subscriptions/SubscriptionField.php:214
+msgctxt "subscription"
+msgid "Will be delivered on or around the selected day <strong>every %1$s</strong>"
+msgstr ""
+
+#: inc/Subscriptions/SubscriptionField.php:218
+msgctxt "subscription"
+msgid "Will be delivered on or around the selected day <strong>every %1$d %2$s</strong>"
+msgstr ""
+
+#: inc/Subscriptions/SubscriptionField.php:233
+msgctxt "subscription"
+msgid "Your subscription will be delivered <strong>every %1$s %2$s</strong>"
+msgstr ""
+
+#: inc/Subscriptions/SubscriptionField.php:227
+msgctxt "subscription"
+msgid "Your subscription will be delivered <strong>every %1$s</strong>"
+msgstr ""
+
+#: inc/Subscriptions/SubscriptionField.php:242
+msgctxt "subscription"
+msgid "Will be delivered on or around the selected date <strong>every %1$s</strong>"
+msgstr ""
+
+#: inc/Subscriptions/SubscriptionField.php:246
+msgctxt "subscription"
+msgid "Will be delivered on or around the selected date <strong>every %1$d %2$s</strong>"
+msgstr ""
+
+#: inc/Subscriptions/SubscriptionField.php:297
+msgctxt "subscription"
+msgid "day"
+msgid_plural "days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/Subscriptions/SubscriptionField.php:301
+msgctxt "subscription"
+msgid "week"
+msgid_plural "weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/Subscriptions/SubscriptionField.php:305
+msgctxt "subscription"
+msgid "month"
+msgid_plural "months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/Subscriptions/SubscriptionField.php:309
+msgctxt "subscription"
+msgid "year"
+msgid_plural "years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/admin/deliveries-page.php:14
+msgid "There are currently no active reservations."
+msgstr ""
+
+#: templates/admin/deliveries-page.php:12
+msgid "There are currently no upcoming deliveries."
+msgstr ""
+
+#: templates/admin/deliveries-page.php:67
+msgid "Key:"
+msgstr ""
+
+#: templates/admin/deliveries-page.php:74
+msgid "Upcoming"
+msgstr ""
+
+#: templates/admin/deliveries-page.php:85, templates/admin/deliveries-page.php:144
+msgid "Order"
+msgstr ""
+
+#: templates/admin/deliveries-page.php:86, templates/admin/deliveries-page.php:148
+msgid "Ship to"
+msgstr ""
+
+#: templates/admin/deliveries-page.php:88, templates/admin/deliveries-page.php:156
+msgid "Customer Name"
+msgstr ""
+
+#: templates/admin/deliveries-page.php:89, templates/admin/deliveries-page.php:157
+msgid "Customer Email"
+msgstr ""
+
+#: templates/admin/deliveries-page.php:92, templates/admin/deliveries-page.php:159
+msgid "Status"
+msgstr ""
+
+#: templates/admin/deliveries-page.php:123
+msgid "Show more details"
+msgstr ""
+
+#: templates/admin/deliveries-page.php:152
+msgid "via"
+msgstr ""
+
+#: templates/admin/popup.php:15
+msgctxt "admin"
+msgid "Add delivery slot"
+msgstr ""
+
+#: templates/admin/popup.php:19
+msgctxt "admin"
+msgid "Override Rules"
+msgstr ""
+
+#: templates/admin/popup.php:36
+msgctxt "admin"
+msgid "Please add a shipping address to the order, or toggle “override rules” to continue."
+msgstr ""
+
+#: templates/admin/popup.php:39
+msgctxt "admin"
+msgid "Close"
+msgstr ""
+
+#: templates/admin/popup.php:61
+msgctxt "admin"
+msgid "Shipping Method"
+msgstr ""
+
+#: templates/admin/popup.php:63
+msgctxt "admin"
+msgid "Select a shipping method"
+msgstr ""
+
+#: templates/admin/popup.php:80
+msgctxt "admin"
+msgid "Delivery Slots"
+msgstr ""
+
+#: templates/admin/popup.php:90
+msgctxt "admin"
+msgid "Delivery Date"
+msgstr ""
+
+#: templates/admin/popup.php:120
+msgctxt "admin"
+msgid "Time Slot"
+msgstr ""
+
+#: templates/admin/popup.php:142
+msgctxt "admin"
+msgid "This shipping method does not require a date/time to be selected."
+msgstr ""
+
+#: templates/admin/popup.php:153
+msgctxt "admin"
+msgid "Save Delivery Slot"
+msgstr ""
+
+#. translators: order list.
+#: templates/admin/timeslot-changed-notice.php:28
+msgid "View Child Order %s"
+msgstr ""
+
+#: templates/admin/timeslot-changed-notice.php:25
+msgid "View Parent Order %s"
+msgstr ""
+
+#: templates/admin/timeslot-line-item.php:10
+msgid "One Time Delivery Slot"
+msgstr ""
+
+#: templates/admin/timeslot-line-item.php:10
+msgid "Delivery Slot"
+msgstr ""
+
+#: templates/edit-timeslot/timeslot-details.php:10
+msgid "Change"
+msgstr ""
+
+#: templates/edit-timeslot/timeslot-details.php:10
+msgid "+ Add Time Slot"
+msgstr ""
+
+#: templates/edit-timeslot/timeslot-details.php:11, templates/edit-timeslot/timeslot-details.php:35
+msgid "Delivery Date & Time"
+msgstr ""
+
+#: templates/edit-timeslot/timeslot-details.php:12
+msgid "Not Selected"
+msgstr ""
+
+#: templates/edit-timeslot/timeslot-details.php:29
+msgid "Delivery details"
+msgstr ""
+
+#: templates/edit-timeslot/timeslot-details.php:56
+msgid "Change your delivery slot"
+msgstr ""
+
+#: templates/admin/subscription/timeslot-line-item.php:16
+msgctxt "admin"
+msgid "Subscription Delivery Slot"
+msgstr ""

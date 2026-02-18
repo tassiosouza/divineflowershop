@@ -1,0 +1,172 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+
+/* <fs_premium_only> */
+
+#gmfw_suggestions_btn {
+    text-decoration: none;
+    display: block;
+}
+
+#gmfw_suggestions_btn_icon {
+    position: relative;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+#gmfw_suggestions_btn.active #gmfw_suggestions_btn_icon:before {
+    transform: rotate(90deg);
+}
+
+#gmfw_suggestions_btn.active #gmfw_suggestions_btn_icon:after {
+    transform: rotate(180deg);
+}
+
+#gmfw_suggestions_btn_icon:before {
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    margin-left: -1px;
+}
+
+#gmfw_suggestions_btn_icon:after {
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    margin-top: -1px;
+}
+
+#gmfw_suggestions_btn_icon:before,
+#gmfw_suggestions_btn_icon:after {
+    content: "";
+    position: absolute;
+    transition: transform 0.25s ease-out;
+}
+
+#gmfw_suggestions_btn {
+    color: #0000EE;
+    margin-bottom: 10px;
+}
+
+#gmfw_suggestions_btn_icon:before,
+#gmfw_suggestions_btn_icon:after {
+    background-color: #0000EE;
+}
+
+.gmfw_suggestion_message input[name=gmfw_giftmessage_radio]:checked+label:before {
+    background-color: #6d6d6d;
+}
+
+.gmfw_suggestion_message input[name=gmfw_giftmessage_radio]+label:before {
+    box-shadow: 0 0 0 1px #6d6d6d;
+}
+
+.gmfw_suggestion_message input[name=gmfw_giftmessage_radio]+label:before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #fff;
+    background: #fff;
+    margin-right: 8px;
+    border-radius: 100%;
+    -webkit-transform: translateY(2px);
+    -ms-transform: translateY(2px);
+    transform: translateY(2px);
+    margin-left: 0px;
+}
+
+.gmfw_suggestion_message label {
+    cursor: pointer;
+    display: block;
+    margin-left: 0px !important;
+    position: relative;
+    padding-left: 0;
+}
+
+#gmfw_occasion {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: 100%;
+}
+
+#gmfw_suggestions_section {
+    margin-bottom: 22px;
+}
+
+.gmfw_suggestion_message {
+    margin-bottom: 10px;
+}
+
+
+/* </fs_premium_only> */
+
+#gmfw_message_field {
+    margin-bottom: 0px;
+}
+
+#gmfw_counter_wrap {
+    font-size: 12px !important;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+#gmfw_gift_message_from_field {
+    margin-top: 0px;
+}
+
+#gmfw_gift_message_field {
+    margin-bottom: 0px;
+}
+
+#gmfw_gift_message_from {
+    width: 100%;
+}
+
+#gmfw_gift_message {
+    margin-bottom: 0px !important;
+    width: 100% !important;
+    min-height: 120px !important;
+}
+
+.gmfw_gift_image,
+.gmfw_gift_name,
+.gmfw_gift_price {
+    margin-bottom: 2px !important;
+}
+
+.gmfw_hide,
+.gmfw_hide.single_add_to_cart_button.button {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+h3.gmfw_gift_name {
+    font-size: 18px !important;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+}
+
+.gmfw_gift_item {
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 10px;
+}
+
+.gmfw-add-to-cart {
+    margin: 0 auto !important;
+}
+
+.gmfw-carousel {
+    margin-bottom: 15px;
+}

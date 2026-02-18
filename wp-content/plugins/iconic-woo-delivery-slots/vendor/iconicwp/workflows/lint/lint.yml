@@ -1,0 +1,45 @@
+name: Code Quality For Script and Style
+
+on:
+    pull_request:
+
+jobs:
+    lint:
+        runs-on: ubuntu-latest
+        env:
+          COMPOSER_AUTH: '{"github-oauth":{"github.com":"${{ secrets.GITHUB_TOKEN }}"}}'
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+
+              # Assign SSH key for private repos on github.
+            - uses: webfactory/ssh-agent@v0.4.1
+              with:
+                ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+            - run: git config --global user.email "iconibot@jckemp.com"
+            - run: git config --global user.name "Iconibot"
+
+            - id: changed-files
+              uses: tj-actions/changed-files@v42
+              with:
+                  files: |
+                      **/*.{js,jsx,ts,tsx,scss,json}
+
+            - name: Setup bun
+              uses: oven-sh/setup-bun@v1
+              with:
+                  bun-version: latest
+
+            - name: Install dependencies
+              run: bun install --legacy-peer-deps
+
+            - name: Filter files
+              run: |
+                  ALL_FILES="$(echo '${{ steps.changed-files.outputs.all_changed_files }} ${{ steps.changed-files.outputs.added_files }}' | tr ' ' '\n' | sort -u | tr '\n' ' ')"
+                  echo "JS_FILES=$(echo "$ALL_FILES" | tr ' ' '\n' | grep -E '\.(js|jsx|ts|tsx)$' | tr '\n' ' ')" >> $GITHUB_ENV
+                  echo "SCSS_FILES=$(echo "$ALL_FILES" | tr ' ' '\n' | grep '\.scss$' | tr '\n' ' ')" >> $GITHUB_ENV
+
+            - name: Lint script files
+              if: env.JS_FILES != ''
+              run: bun run lint:js -- ${{ env.JS_FILES }}

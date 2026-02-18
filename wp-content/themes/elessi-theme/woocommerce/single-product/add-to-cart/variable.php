@@ -63,6 +63,8 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 		<?php do_action( 'woocommerce_after_variations_table' ); ?>
 
         <!-- Quantity selector moved here -->
+        <!-- Removed duplicate quantity selector - now positioned with buttons -->
+        <!--
         <div class="variation-quantity-wrap" style="margin-bottom: 1.5em;">
         <?php
         if (!isset($nasa_opt['disable-cart']) || !$nasa_opt['disable-cart']) {
@@ -74,6 +76,7 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
         }
         ?>
         </div>
+        -->
 
 		<div class="single_variation_wrap">
 			<?php

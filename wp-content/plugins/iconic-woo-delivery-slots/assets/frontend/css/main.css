@@ -1,0 +1,1819 @@
+@font-face {
+  font-family: iconic;
+  src: url(../fonts/iconic.eot?wowej0);
+  src: url(../fonts/iconic.eot?wowej0#iefix) format("embedded-opentype"), url(../fonts/iconic.ttf?wowej0) format("truetype"), url(../fonts/iconic.woff?wowej0) format("woff"), url(../fonts/iconic.svg?wowej0#iconic) format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+.iconic-right-arrow::before {
+  content: "\e902";
+  color: #c4c4c4;
+}
+
+.iconic-left-arrow::before {
+  content: "\e900";
+  color: #c4c4c4;
+}
+
+.iconic-logo-iconic::before {
+  content: "\e901";
+  color: #fff;
+}
+
+.animate-spin {
+  -webkit-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+  display: inline-block;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@font-face {
+  font-family: woo-delivery-slots;
+  src: url(../font/woo-delivery-slots.eot);
+  src: url(../font/woo-delivery-slots.eot?#iefix) format("embedded-opentype"), url(../font/woo-delivery-slots.woff) format("woff"), url(../font/woo-delivery-slots.ttf) format("truetype"), url(../font/woo-delivery-slots.svg#woo-delivery-slots) format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+[class^=jckwds-icn-],
+[class*=" jckwds-icn-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: woo-delivery-slots !important;
+  speak: never;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.jckwds-icn-right-arrow::before {
+  content: "\e902";
+  color: #c4c4c4;
+}
+
+.jckwds-icn-left-arrow::before {
+  content: "\e900";
+  color: #c4c4c4;
+}
+
+.jckwds-icn-logo-iconic::before {
+  content: "\e901";
+  color: #fff;
+}
+
+#ui-datepicker-div {
+  display: none;
+}
+
+.iconic-wds-datepicker--dark,
+.iconic-wds-datepicker--light {
+  width: 290px !important;
+  padding: 5px !important;
+  background: #2b323b !important;
+  border-radius: 4px !important;
+  z-index: 1000 !important;
+  font-family: "Source Sans Pro", HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+  border: none !important;
+  -webkit-box-shadow: 0 3.3px 5.3px rgba(0, 0, 0, 0.028), 0 11.2px 17.9px rgba(0, 0, 0, 0.042), 0 50px 80px rgba(0, 0, 0, 0.07) !important;
+          box-shadow: 0 3.3px 5.3px rgba(0, 0, 0, 0.028), 0 11.2px 17.9px rgba(0, 0, 0, 0.042), 0 50px 80px rgba(0, 0, 0, 0.07) !important;
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+}
+
+.iconic-wds-datepicker--dark::before, .iconic-wds-datepicker--dark::after,
+.iconic-wds-datepicker--light::before,
+.iconic-wds-datepicker--light::after {
+  display: none;
+}
+
+.iconic-wds-datepicker--dark table,
+.iconic-wds-datepicker--dark thead,
+.iconic-wds-datepicker--dark tbody,
+.iconic-wds-datepicker--dark tfoot,
+.iconic-wds-datepicker--dark tr,
+.iconic-wds-datepicker--dark th,
+.iconic-wds-datepicker--dark td,
+.iconic-wds-datepicker--light table,
+.iconic-wds-datepicker--light thead,
+.iconic-wds-datepicker--light tbody,
+.iconic-wds-datepicker--light tfoot,
+.iconic-wds-datepicker--light tr,
+.iconic-wds-datepicker--light th,
+.iconic-wds-datepicker--light td {
+  background: none !important;
+  padding: 0;
+  margin: 0 !important;
+  border: none !important;
+  text-align: center;
+  opacity: 1 !important;
+}
+
+.iconic-wds-datepicker--dark .ui-datepicker-header,
+.iconic-wds-datepicker--light .ui-datepicker-header {
+  height: 40px;
+  padding: 3px;
+  margin-bottom: 10px;
+  border-radius: 0;
+  background: none;
+  border: none;
+}
+
+.iconic-wds-datepicker--dark .ui-datepicker-header::before, .iconic-wds-datepicker--dark .ui-datepicker-header::after,
+.iconic-wds-datepicker--light .ui-datepicker-header::before,
+.iconic-wds-datepicker--light .ui-datepicker-header::after {
+  display: none;
+}
+
+.iconic-wds-datepicker--dark .ui-datepicker-header .ui-datepicker-title,
+.iconic-wds-datepicker--light .ui-datepicker-header .ui-datepicker-title {
+  text-align: center;
+  line-height: 34px;
+  margin: 0;
+}
+
+.iconic-wds-datepicker--dark .ui-widget-header,
+.iconic-wds-datepicker--light .ui-widget-header {
+  font-weight: 400;
+}
+
+.iconic-wds-datepicker--dark .ui-datepicker-month,
+.iconic-wds-datepicker--dark .ui-datepicker-year,
+.iconic-wds-datepicker--light .ui-datepicker-month,
+.iconic-wds-datepicker--light .ui-datepicker-year {
+  -webkit-appearance: none;
+  border: 0;
+  background: none;
+  outline: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 1px;
+}
+
+.iconic-wds-datepicker--dark .ui-datepicker-prev,
+.iconic-wds-datepicker--dark .ui-datepicker-next,
+.iconic-wds-datepicker--dark .ui-datepicker-prev.ui-state-hover,
+.iconic-wds-datepicker--dark .ui-datepicker-next.ui-state-hover,
+.iconic-wds-datepicker--light .ui-datepicker-prev,
+.iconic-wds-datepicker--light .ui-datepicker-next,
+.iconic-wds-datepicker--light .ui-datepicker-prev.ui-state-hover,
+.iconic-wds-datepicker--light .ui-datepicker-next.ui-state-hover {
+  position: relative !important;
+  display: inline-block;
+  width: 34px !important;
+  height: 34px !important;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 3px;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+  color: inherit;
+  border: none;
+  font-weight: inherit;
+}
+
+.iconic-wds-datepicker--dark .ui-datepicker-prev .ui-icon,
+.iconic-wds-datepicker--dark .ui-datepicker-next .ui-icon,
+.iconic-wds-datepicker--dark .ui-datepicker-prev.ui-state-hover .ui-icon,
+.iconic-wds-datepicker--dark .ui-datepicker-next.ui-state-hover .ui-icon,
+.iconic-wds-datepicker--light .ui-datepicker-prev .ui-icon,
+.iconic-wds-datepicker--light .ui-datepicker-next .ui-icon,
+.iconic-wds-datepicker--light .ui-datepicker-prev.ui-state-hover .ui-icon,
+.iconic-wds-datepicker--light .ui-datepicker-next.ui-state-hover .ui-icon {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+  background-image: none !important;
+}
+
+.iconic-wds-datepicker--dark .ui-datepicker-prev:hover,
+.iconic-wds-datepicker--dark .ui-datepicker-next:hover,
+.iconic-wds-datepicker--light .ui-datepicker-prev:hover,
+.iconic-wds-datepicker--light .ui-datepicker-next:hover {
+  background: #444b56;
+}
+
+.iconic-wds-datepicker--dark .ui-datepicker-prev,
+.iconic-wds-datepicker--light .ui-datepicker-prev {
+  float: left;
+}
+
+.iconic-wds-datepicker--dark .ui-datepicker-prev::after,
+.iconic-wds-datepicker--light .ui-datepicker-prev::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin-left: -3px;
+}
+
+.iconic-wds-datepicker--dark .ui-datepicker-next,
+.iconic-wds-datepicker--light .ui-datepicker-next {
+  float: right;
+}
+
+.iconic-wds-datepicker--dark .ui-datepicker-next::after,
+.iconic-wds-datepicker--light .ui-datepicker-next::after {
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  margin-left: -5px;
+}
+
+.iconic-wds-datepicker--dark .ui-datepicker-prev::after,
+.iconic-wds-datepicker--dark .ui-datepicker-next::after,
+.iconic-wds-datepicker--light .ui-datepicker-prev::after,
+.iconic-wds-datepicker--light .ui-datepicker-next::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-left: 2px solid #c2c7d1;
+  border-bottom: 2px solid #c2c7d1;
+  pointer-events: none;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  margin-top: -3px;
+}
+
+.iconic-wds-datepicker--dark .ui-state-disabled.ui-datepicker-prev::after,
+.iconic-wds-datepicker--dark .ui-state-disabled.ui-datepicker-next::after,
+.iconic-wds-datepicker--light .ui-state-disabled.ui-datepicker-prev::after,
+.iconic-wds-datepicker--light .ui-state-disabled.ui-datepicker-next::after {
+  opacity: 0.4;
+}
+
+.iconic-wds-datepicker--dark .ui-datepicker-calendar,
+.iconic-wds-datepicker--light .ui-datepicker-calendar {
+  width: 100%;
+  text-align: center;
+  table-layout: fixed;
+}
+
+.iconic-wds-datepicker--dark .ui-datepicker-calendar thead tr th,
+.iconic-wds-datepicker--light .ui-datepicker-calendar thead tr th {
+  width: 40px;
+  padding-bottom: 6px;
+  font-weight: 400;
+}
+
+.iconic-wds-datepicker--dark .ui-datepicker-calendar thead tr th span,
+.iconic-wds-datepicker--light .ui-datepicker-calendar thead tr th span {
+  display: block;
+  width: 100%;
+  padding: 0;
+  color: #8d9298;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.iconic-wds-datepicker--dark .ui-datepicker-calendar tbody tr td,
+.iconic-wds-datepicker--light .ui-datepicker-calendar tbody tr td {
+  padding-right: 3px;
+  padding-bottom: 3px;
+}
+
+.iconic-wds-datepicker--dark .ui-datepicker-calendar tbody tr td:first-child,
+.iconic-wds-datepicker--light .ui-datepicker-calendar tbody tr td:first-child {
+  padding-left: 3px;
+}
+
+.iconic-wds-datepicker--dark .ui-datepicker-today .ui-state-default,
+.iconic-wds-datepicker--light .ui-datepicker-today .ui-state-default {
+  position: relative;
+  background: #363c45 !important;
+  overflow: hidden;
+}
+
+.iconic-wds-datepicker--dark .ui-datepicker-today .ui-state-default::after,
+.iconic-wds-datepicker--light .ui-datepicker-today .ui-state-default::after {
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  background: #fe5275;
+  position: absolute;
+  left: 6px;
+  top: 6px;
+}
+
+.iconic-wds-datepicker--dark .ui-state-default,
+.iconic-wds-datepicker--light .ui-state-default {
+  display: block;
+  text-decoration: none;
+  color: #fff !important;
+  height: 34px;
+  line-height: 34px;
+  border-radius: 3px;
+  font-size: 12px;
+  border: none !important;
+  background: none !important;
+  font-weight: 400 !important;
+  padding: 0;
+  text-align: center;
+}
+
+.iconic-wds-datepicker--dark .ui-state-default:focus,
+.iconic-wds-datepicker--light .ui-state-default:focus {
+  outline: none;
+}
+
+.iconic-wds-datepicker--dark .ui-state-default:hover,
+.iconic-wds-datepicker--light .ui-state-default:hover {
+  background: #444b54 !important;
+  text-decoration: none;
+  color: #fff !important;
+}
+
+.iconic-wds-datepicker--dark .ui-datepicker-today .ui-state-active,
+.iconic-wds-datepicker--dark .ui-state-active,
+.iconic-wds-datepicker--dark .ui-state-active:hover,
+.iconic-wds-datepicker--light .ui-datepicker-today .ui-state-active,
+.iconic-wds-datepicker--light .ui-state-active,
+.iconic-wds-datepicker--light .ui-state-active:hover {
+  color: #fff !important;
+  background: #5d9cf5 !important;
+}
+
+.iconic-wds-datepicker--dark .ui-datepicker-today .ui-state-active::after,
+.iconic-wds-datepicker--dark .ui-state-active::after,
+.iconic-wds-datepicker--dark .ui-state-active:hover::after,
+.iconic-wds-datepicker--light .ui-datepicker-today .ui-state-active::after,
+.iconic-wds-datepicker--light .ui-state-active::after,
+.iconic-wds-datepicker--light .ui-state-active:hover::after {
+  background-color: #fff;
+  opacity: 0.75;
+}
+
+.iconic-wds-datepicker--dark .ui-datepicker-unselectable .ui-state-default,
+.iconic-wds-datepicker--light .ui-datepicker-unselectable .ui-state-default {
+  color: rgba(255, 255, 255, 0.2) !important;
+  pointer-events: none;
+}
+
+.iconic-wds-datepicker--dark .ui-datepicker-today.ui-datepicker-unselectable .ui-state-default,
+.iconic-wds-datepicker--light .ui-datepicker-today.ui-datepicker-unselectable .ui-state-default {
+  background-color: #30363f !important;
+}
+
+.iconic-wds-datepicker--dark .ui-datepicker-today.ui-datepicker-unselectable .ui-state-default::after,
+.iconic-wds-datepicker--light .ui-datepicker-today.ui-datepicker-unselectable .ui-state-default::after {
+  opacity: 0.2;
+}
+
+.iconic-wds-datepicker--light {
+  background: #fff !important;
+}
+
+.iconic-wds-datepicker--light .ui-datepicker-month,
+.iconic-wds-datepicker--light .ui-datepicker-year {
+  color: #2b323d !important;
+}
+
+.iconic-wds-datepicker--light .ui-datepicker-prev:hover,
+.iconic-wds-datepicker--light .ui-datepicker-next:hover {
+  background: rgba(68, 75, 84, 0.1) !important;
+}
+
+.iconic-wds-datepicker--light .ui-datepicker-prev::after,
+.iconic-wds-datepicker--light .ui-datepicker-next::after {
+  border-color: #8d9298 !important;
+}
+
+.iconic-wds-datepicker--light .ui-datepicker-calendar thead tr th span {
+  color: #8d9298 !important;
+}
+
+.iconic-wds-datepicker--light .ui-datepicker-today .ui-state-default {
+  background-color: #f6f6f7 !important;
+}
+
+.iconic-wds-datepicker--light .ui-state-default {
+  color: #444b54 !important;
+}
+
+.iconic-wds-datepicker--light .ui-state-default:hover {
+  background: rgba(68, 75, 84, 0.1) !important;
+  color: #444b54 !important;
+}
+
+.iconic-wds-datepicker--light .ui-datepicker-today .ui-state-active,
+.iconic-wds-datepicker--light .ui-state-active,
+.iconic-wds-datepicker--light .ui-state-active:hover {
+  color: #fff !important;
+  background: #5d9cf5 !important;
+}
+
+.iconic-wds-datepicker--light .ui-datepicker-unselectable .ui-state-default {
+  color: rgba(68, 75, 84, 0.2) !important;
+}
+
+.iconic-wds-datepicker--light .ui-datepicker-today.ui-datepicker-unselectable .ui-state-default {
+  background-color: #fbfbfc !important;
+}
+
+.iconic-wds-fields {
+  margin: 0 0 45px;
+}
+
+.iconic-wds-fields .iconic-wds-fields__error {
+  display: none;
+}
+
+.iconic-wds-fields--has-error {
+  border: none !important;
+}
+
+.iconic-wds-fields--has-error .wds-fieldbox-header {
+  display: none !important;
+}
+
+.iconic-wds-fields--has-error .iconic-wds-fields__fields {
+  display: none !important;
+}
+
+.iconic-wds-fields--has-error .iconic-wds-fields__error {
+  display: block !important;
+}
+
+#jckwds_timeslot_field {
+  display: none;
+}
+
+.jckwds-fields-inactive {
+  display: none;
+}
+
+#jckwds-delivery-date-description,
+#jckwds-delivery-time-description {
+  display: block !important;
+  height: auto !important;
+}
+
+.iconic-wds-tooltip {
+  position: fixed;
+  background: #444b54;
+  margin: auto 10px 16px;
+  border-radius: 4px;
+  line-height: 30px;
+  color: #fff;
+  padding: 0 10px;
+  opacity: 0;
+  visibility: hidden;
+  height: auto;
+  overflow: visible;
+  width: auto;
+  display: block;
+  white-space: nowrap;
+  text-align: center;
+  z-index: 9999999;
+}
+
+.iconic-wds-tooltip.iconic-wds-tooltip--active {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: opacity 0.3s cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: opacity 0.3s cubic-bezier(0.23, 1, 0.32, 1), transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: opacity 0.3s cubic-bezier(0.23, 1, 0.32, 1), transform 0.3s cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.iconic-wds-tooltip.iconic-wds-tooltip--animate-top {
+  -webkit-transform: translate(0, 8px);
+          transform: translate(0, 8px);
+}
+
+.iconic-wds-tooltip.iconic-wds-tooltip--animate-opacity {
+  opacity: 1;
+  visibility: visible;
+}
+
+.iconic-wds-tooltip.iconic-wds-tooltip--theme-light {
+  background: #ecedee;
+  color: #444b54;
+}
+
+.iconic-wds-tooltip__inner_wrap {
+  position: relative;
+}
+
+.iconic-wds-tooltip__inner_wrap img {
+  display: block;
+  margin: 10px auto 0 auto;
+  border: none;
+  border-radius: 3px;
+  padding: 0;
+}
+
+.iconic-wds-tooltip__arrow {
+  top: 100%;
+  left: 50%;
+  border: solid rgba(0, 0, 0, 0);
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(0, 0, 0, 0);
+  border-top-color: #444b54;
+  border-width: 5px;
+  margin-left: -5px;
+}
+
+.iconic-wds-tooltip--theme-light .iconic-wds-tooltip__arrow {
+  border-top-color: #ecedee;
+}
+
+.wds-edit-slot {
+  margin: 40px 0;
+}
+
+.wds-edit-slot__wrap {
+  background-color: #f8f8f8;
+  padding: 16px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wds-edit-slot__details-heading {
+  display: block;
+  font-size: 16px;
+}
+
+.wds-edit-slot__details-timeslot {
+  font-size: 14px;
+}
+
+.wds-edit-slot-popup {
+  position: fixed;
+  width: 100%;
+  background: #000;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1000;
+}
+
+.wds-edit-slot-popup--hidden {
+  display: none;
+}
+
+.wds-edit-slot-popup__inner {
+  background: #fff;
+  width: 470px;
+  border-radius: 8px;
+  padding: 36px;
+}
+
+.wds-edit-slot-popup__header {
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.wds-edit-slot-popup__header img {
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+.wds-edit-slot-popup__details-heading {
+  font-size: 18px;
+}
+
+.wds-edit-slot-popup__footer {
+  text-align: center;
+}
+
+.wds-edit-slot-popup .iconic-wds-fields {
+  margin-bottom: 0;
+}
+
+.wds-edit-slot-popup .iconic-wds-fields__title {
+  display: none;
+}
+
+.wds-edit-slot-popup .iconic-wds-fields__fields {
+  margin: 36px 0 12px 0;
+}
+
+.wds-edit-slot-popup #jckwds-check-button {
+  display: block;
+  width: 100%;
+}
+
+.wds-edit-slot-popup__msg {
+  color: var(--wds-primary);
+  background: var(--wds-primary-lighter);
+  text-align: center;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 12px 0;
+  padding: 12px 20px;
+}
+
+.wds-edit-slot-popup__msg::before {
+  content: "";
+  height: 20px;
+  width: 16px;
+  background-color: var(--wds-primary);
+  -webkit-mask-image: url(../../../assets/img/exclaimation.svg);
+          mask-image: url(../../../assets/img/exclaimation.svg);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-size: 100%;
+          mask-size: 100%;
+}
+
+.wds-edit-slot-popup__msg--success {
+  background: rgba(52, 168, 85, 0.05);
+  color: #34a855;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.wds-edit-slot-popup__msg--success::before {
+  background-color: #34a855;
+  -webkit-mask-image: url(../../../assets/img/check.svg);
+          mask-image: url(../../../assets/img/check.svg);
+}
+
+.wds-edit-slot-popup__msg--error {
+  background: rgba(201, 55, 55, 0.168627451);
+  color: #c02929;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.wds-edit-slot-popup__msg--error::before {
+  background-color: #c02929;
+  -webkit-mask-image: url(../../../assets/img/exclaimation.svg);
+          mask-image: url(../../../assets/img/exclaimation.svg);
+}
+
+.wds-edit-slot-popup #jckwds-submit-button-wrapper {
+  margin-top: 36px;
+}
+
+.wds-edit-slot-popup #jckwds-save-button,
+.wds-edit-slot-popup #jckwds-check-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 6px;
+  background: var(--wds-primary);
+  color: #fff;
+  width: 100%;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.wds-edit-slot-popup .woocommerce-input-wrapper {
+  display: block;
+  width: 100%;
+}
+
+.wds-edit-slot-popup .woocommerce-input-wrapper input,
+.wds-edit-slot-popup .woocommerce-input-wrapper select {
+  display: block;
+  width: 100%;
+}
+
+.wds-edit-slot-popup button#jckwds-check-button:is(:disabled) {
+  opacity: 0.7;
+}
+
+.wds-edit-slot-popup .jckwds-delivery-date {
+  margin-bottom: 20px !important;
+}
+
+.iconic-wds-datepicker {
+  z-index: 10000 !important;
+}
+
+[v-cloak] {
+  display: none;
+}
+
+.wds-reservation-table {
+  max-width: 600px;
+}
+
+.wds-reservation-table span.amount {
+  color: unset;
+  font-weight: unset;
+}
+
+.wds-reservation-table__select-time-fee,
+.wds-reservation-table__total-fee {
+  padding: 4px 8px;
+  background: var(--wds-primary-lighter);
+  color: var(--wds-primary);
+  border-radius: 5px;
+  margin-left: 10px;
+  white-space: nowrap;
+}
+
+.wds-reservation-table .blockUI.blockOverlay {
+  border-radius: 6px;
+}
+
+.wds-reservation-table__step {
+  padding: 28px 30px;
+  background: #fff;
+  border-top: 1px solid var(--wds-border);
+  border-left: 1px solid var(--wds-border);
+  border-right: 1px solid var(--wds-border);
+}
+
+.wds-reservation-table__step:first-child {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.wds-reservation-table__step:last-child {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom: 1px solid var(--wds-border);
+}
+
+.wds-reservation-table__step--grey {
+  background: #f7f7f7;
+}
+
+.wds-reservation-table__step--datetime {
+  padding: 0;
+}
+
+.wds-reservation-table__step--datetime .wds-reservation-table__head {
+  padding: 28px 30px;
+}
+
+.wds-reservation-table__step--datetime.wds-reservation-table__step--open .wds-reservation-table__head {
+  padding-bottom: 0;
+}
+
+.wds-reservation-table__step--datetime .wds-reservation-table__select-date {
+  padding: 0 60px;
+}
+
+.wds-reservation-table__head-title-heading {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #606060;
+  cursor: pointer;
+  margin: 0;
+}
+
+.wds-reservation-table__head-caption {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #606060;
+  margin-top: 10px;
+}
+
+.wds-reservation-table__head-title {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.wds-reservation-table__head-title-button {
+  text-align: right;
+  outline: none;
+}
+
+.wds-reservation-table__head-title-button:active {
+  outline: none;
+}
+
+.wds-reservation-table__head-title-button:focus {
+  outline: none;
+}
+
+.wds-reservation-table__address-form-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.wds-reservation-table__address-form-inner p {
+  margin-bottom: 0;
+}
+
+.wds-reservation-table__address-form-inner .form-row-last,
+.wds-reservation-table__address-form-inner .form-row-first {
+  width: 100% !important;
+}
+
+.wds-reservation-table-button {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--wds-primary);
+  border-radius: 6px;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin-top: 30px;
+}
+
+.wds-reservation-table-button:hover, .wds-reservation-table-button:active, .wds-reservation-table-button:focus {
+  color: #fff;
+  background: var(--wds-primary-hover);
+  outline: none;
+}
+
+.wds-reservation-step-address__inner {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  grid-column-gap: 4%;
+}
+
+.wds-reservation-step-address__field {
+  margin-bottom: 30px;
+}
+
+.wds-reservation-step-address__field input,
+.wds-reservation-step-address__field select {
+  padding: 13px 18px;
+  background-color: #fff;
+  border: 1px solid var(--wds-border);
+  border-radius: 6px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  width: 100%;
+  height: auto;
+}
+
+.wds-reservation-step-address__field input:focus {
+  background: #fff;
+  outline-color: var(--wds-primary);
+}
+
+.wds-reservation-step-address__field select:focus {
+  outline-color: var(--wds-primary);
+}
+
+.wds-reservation-step-address__field label {
+  margin-bottom: 10px;
+  display: block;
+  font-size: 16px;
+}
+
+.wds-reservation-step-address__field--error input, .wds-reservation-step-address__field--error select {
+  border: 1px solid red;
+}
+
+.wds-reservation-table__form {
+  margin-top: 30px;
+}
+
+.wds-reservation-table__shipping-methods {
+  margin: 0;
+  list-style: none;
+}
+
+.wds-reservation-table__shipping-methods li {
+  padding: 20px 30px;
+  border: 1px solid var(--wds-border);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.wds-reservation-table__shipping-methods li:last-child {
+  margin-bottom: 0;
+}
+
+.wds-reservation-table__shipping-methods .wds-reservation-table__shipping-method--selected {
+  border-color: var(--wds-primary);
+  color: var(--wds-primary);
+  outline: var(--wds-primary) solid 1px;
+}
+
+.wds-reservation-table__shipping-methods-row {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.wds-reservation-table__shipping-methods-row__right {
+  text-align: right;
+}
+
+.wds-reservation-table__select-date-date {
+  padding: 10px 15px;
+  background: #fff;
+  border: 1px solid var(--wds-border);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
+  width: 72px;
+}
+
+.wds-reservation-table__select-date-date-day {
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.3;
+  font-size: 16px;
+}
+
+.wds-reservation-table__select-date-date-formatted {
+  line-height: 1.3;
+  font-size: 16px;
+}
+
+.wds-reservation-table__select-date-date-fee {
+  border-top: 1px solid rgba(22, 17, 14, 0.2);
+  margin-top: 10px;
+  padding-top: 10px;
+  line-height: 1;
+  font-size: 14px;
+}
+
+.wds-reservation-table-date-slider .wds-reservation-table__select-date-date.wds-reservation-table__select-date-date--selected {
+  background: var(--wds-primary);
+  color: #fff;
+  border-color: var(--wds-primary);
+}
+
+.wds-reservation-table-date-slider .wds-reservation-table__select-date-date.wds-reservation-table__select-date-date--selected .wds-reservation-table__select-date-date-fee {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.wds-reservation-table__select-time-ul {
+  list-style: none;
+  margin: 30px 0 0 0;
+}
+
+.wds-reservation-table__select-time-ul li {
+  padding: 30px 30px 30px 65px;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  border-bottom: 1px solid var(--wds-border);
+  cursor: pointer;
+  margin: 0 0 0 0;
+}
+
+.wds-reservation-table__select-time-ul li input[type=radio] {
+  margin-right: 20px;
+}
+
+.wds-reservation-table__select-time-ul li .wds-reservation-table__select-time-ul-li-right {
+  text-align: right;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.wds-reservation-table__select-time-ul li .wds-reservation-table__select-time-ul-li-left--has-earliest .wds-reservation-table__select-time-ul-li-remaining {
+  margin-right: 15px;
+}
+
+.wds-reservation-table__select-time-ul li:first-child {
+  border-top: 1px solid var(--wds-border);
+}
+
+.wds-reservation-table__select-time-ul .wds-reservation-table__select-time-ul-li--selected {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: var(--wds-primary);
+  position: relative;
+}
+
+.wds-reservation-table__select-time-ul .wds-reservation-table__select-time-ul-li--selected::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  border: 2px solid var(--wds-primary);
+}
+
+.wds-reservation-table__select-time-ul .wds-reservation-table__select-time-ul-li--disabled {
+  background: #f8f8f8;
+  cursor: no-drop;
+}
+
+.wds-reservation-table__select-time-ul .wds-reservation-table__select-time-ul-li--disabled .wds-reservation-table__select-time-ul-li-label {
+  text-decoration: line-through;
+}
+
+.wds-reservation-table__select-time-ul .wds-reservation-table__select-time-ul-li--disabled .wds-reservation-table__select-time-ul-li-remaining {
+  color: var(--wds-unavailable-slot-color);
+}
+
+.wds-reservation-table__select-time-ul-li-earliest-slot {
+  color: var(--wds-earliest-slot-color);
+  font-size: 14px;
+  margin-right: 15px;
+}
+
+.wds-reservation-table__select-time-ul-li-remaining {
+  color: var(--wds-remaining-label-color);
+  font-size: 14px;
+  margin-right: 15px;
+  display: inline-block;
+}
+
+.wds-reservation-table__select-time-ul .iconic-wds-radio + label {
+  margin-right: 15px;
+  padding-left: 0 !important;
+}
+
+.wds-reservation-table__select-time-noslots {
+  padding: 0 30px;
+}
+
+.wds-reservation-table-button_wrap {
+  padding: 0 30px 30px 30px;
+}
+
+a.wds-reservation-table__head-title-button {
+  color: var(--wds-primary);
+  line-height: 20px;
+}
+
+a.wds-reservation-table__head-title-button:hover {
+  color: var(--wds-primary-hover);
+}
+
+.wds-reservation-table__select-time-ul-li-left {
+  position: relative;
+}
+
+.wds-reservation-table__select-time-ul-li-left .iconic-wds-radio:not(:checked) + label,
+.wds-reservation-table__select-time-ul-li-left .iconic-wds-radio:checked + label {
+  position: static;
+}
+
+.wds-reservation-table__select-time-ul-li-left .iconic-wds-radio:not(:checked) + label::before,
+.wds-reservation-table__select-time-ul-li-left .iconic-wds-radio:checked + label::before {
+  top: calc(50% - 9px);
+  left: -38px;
+}
+
+.wds-reservation-table__select-time-ul-li-left .iconic-wds-radio:not(:checked) + label::after,
+.wds-reservation-table__select-time-ul-li-left .iconic-wds-radio:checked + label::after {
+  top: calc(50% - 5px);
+  left: -34px !important;
+}
+
+@media screen and (max-width: 500px) {
+  .wds-reservation-step-address__inner {
+    grid-template-columns: 100%;
+    grid-column-gap: 0;
+  }
+  .wds-reservation-table__step--datetime .wds-reservation-table__select-date {
+    padding: 0 30px;
+  }
+}
+.theme-flatsome .wds-reservation-table__select-time-ul-li {
+  margin-left: 0 !important;
+}
+
+.theme-flatsome .wds-reservation-table__select-time-ul-li-left .iconic-wds-radio:checked + label::after {
+  top: calc(50% - 6px);
+  left: -35px !important;
+}
+
+.iconic-wds-radio:checked,
+.iconic-wds-radio:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+.iconic-wds-radio:checked + label,
+.iconic-wds-radio:not(:checked) + label {
+  position: relative;
+  padding-left: 38px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: #666;
+  margin-left: 0;
+}
+
+.iconic-wds-radio:checked + label::before,
+.iconic-wds-radio:not(:checked) + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ddd;
+  border-radius: 100%;
+  background: #fff;
+}
+
+.iconic-wds-radio:checked + label::after,
+.iconic-wds-radio:not(:checked) + label::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: var(--wds-primary);
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.iconic-wds-radio:not(:checked) + label::after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+.iconic-wds-radio:checked + label::after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.iconic-wds-dropdown {
+  -webkit-appearance: none;
+  -moz-appearance: window;
+  background-image: url(../../../assets/img/down-arrow.png);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 18px) center;
+  background-size: 11px;
+}
+
+.wds-reservation-table-date-slider {
+  position: relative;
+}
+
+.wds-reservation-table-date-slider__nav-next {
+  font-family: woo-delivery-slots !important;
+  color: var(--wds-primary) !important;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: -23px;
+  -webkit-transform: translateY(-16px);
+          transform: translateY(-16px);
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.wds-reservation-table-date-slider__nav-prev {
+  font-family: woo-delivery-slots !important;
+  color: var(--wds-primary) !important;
+  font-size: 20px;
+  position: absolute;
+  right: -23px;
+  -webkit-transform: translateY(-16px);
+          transform: translateY(-16px);
+  top: 50%;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.wds-reservation-table-date-slider__nav--disabled {
+  opacity: 0.5;
+  cursor: no-drop;
+}
+
+.wds-reservation-table-date-slider .slider-pagination.slider-pagination-bullets {
+  display: none;
+}
+
+.wds-reservation-table-date-slider .wds-reservation-table__select-date-date {
+  color: #606060;
+}
+
+.wp-block-iconic-wds {
+  border-radius: 5px;
+  margin-bottom: 48px !important;
+}
+
+.wp-block-iconic-wds .wds-fieldbox-header {
+  border-radius: 5px 5px 0 0;
+}
+
+.wp-block-iconic-wds .react-datepicker-wrapper {
+  display: block;
+}
+
+.wp-block-iconic-wds .iconic-wds-block__row {
+  margin-bottom: 10px;
+}
+
+.wp-block-iconic-wds .iconic-wds-block__row label {
+  display: block;
+  margin-bottom: 0;
+}
+
+.wp-block-iconic-wds .iconic-wds-block__time {
+  padding-top: 0;
+}
+
+.wp-block-iconic-wds input,
+.wp-block-iconic-wds select {
+  width: 100%;
+}
+
+.wp-block-woocommerce-checkout-order-summary-block .wp-block-iconic-wds {
+  padding: 16px 16px 0 16px;
+  margin-bottom: 16px !important;
+}
+
+/* When placed before or within the order review block, remove the border */
+.wc-block-components-checkout-order-summary__content .wp-block-iconic-wds {
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  border-radius: 0;
+}
+
+.wc-block-components-checkout-order-summary__content .wp-block-iconic-wds .wds-fieldbox-header {
+  border-radius: 0;
+}
+
+/* When block is placed after the order review block, add a margin top */
+.wp-block-woocommerce-checkout-order-summary-block + .wp-block-iconic-wds {
+  margin-top: 16px;
+}
+
+.wp-block-iconic-wds--theme-light {
+  --wds-datepicker-background: #fff;
+  /* day */
+  --wds-datepicker-day-color: #444b54;
+  --wds-datepicker-day-font-weight: 400;
+  --wds-datepicker-day-color-hover-bg: rgba(68, 75, 84, 0.1);
+  --wds-datepicker-day-color-hover-text: rgba(68, 75, 84, 0.1);
+  --wds-datepicker-day-disabled-text: rgba(68, 75, 84, 0.2);
+  --wds-datepicker-day-today-bg: #fbfbfc;
+  --wds-datepicker-day-today-color: rgba(68, 75, 84, 0.2);
+  --wds-datepicker-nav-hover-bg: rgba(68, 75, 84, 0.1);
+}
+
+.wp-block-iconic-wds--theme-dark {
+  --wds-datepicker-background: #2b323b;
+  /* day */
+  --wds-datepicker-day-font-weight: 400;
+  --wds-datepicker-day-color: #fff;
+  --wds-datepicker-day-color-hover-bg: #444b54;
+  --wds-datepicker-day-color-hover-text: #fff;
+  --wds-datepicker-day-disabled-text: rgba(255, 255, 255, 0.2);
+  --wds-datepicker-day-today-bg: #30363f;
+  --wds-datepicker-day-today-color: rgba(255, 255, 255, 0.2);
+  --wds-datepicker-nav-hover-bg: #444b54;
+}
+
+.wp-block-iconic-wds .react-datepicker__triangle {
+  display: none;
+}
+
+.wp-block-iconic-wds .react-datepicker-popper {
+  width: 290px !important;
+  background: var(--wds-datepicker-background);
+  border-radius: 4px !important;
+  z-index: 1000 !important;
+  font-family: "Source Sans Pro", HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+  border: none !important;
+  -webkit-box-shadow: 0 3.3px 5.3px rgba(0, 0, 0, 0.028), 0 11.2px 17.9px rgba(0, 0, 0, 0.042), 0 50px 80px rgba(0, 0, 0, 0.07) !important;
+          box-shadow: 0 3.3px 5.3px rgba(0, 0, 0, 0.028), 0 11.2px 17.9px rgba(0, 0, 0, 0.042), 0 50px 80px rgba(0, 0, 0, 0.07) !important;
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+}
+
+.wp-block-iconic-wds .react-datepicker-popper .react-datepicker {
+  background: var(--wds-datepicker-background);
+  border: none;
+}
+
+.wp-block-iconic-wds .react-datepicker-popper table,
+.wp-block-iconic-wds .react-datepicker-popper thead,
+.wp-block-iconic-wds .react-datepicker-popper tbody,
+.wp-block-iconic-wds .react-datepicker-popper tfoot,
+.wp-block-iconic-wds .react-datepicker-popper tr,
+.wp-block-iconic-wds .react-datepicker-popper th,
+.wp-block-iconic-wds .react-datepicker-popper td {
+  background: none !important;
+  padding: 0;
+  margin: 0 !important;
+  border: none !important;
+  text-align: center;
+  opacity: 1 !important;
+}
+
+.wp-block-iconic-wds .react-datepicker-popper .react-datepicker__header {
+  padding: 3px;
+  margin-bottom: 10px;
+  border-radius: 0;
+  background: none;
+  border: none;
+  text-align: center;
+  line-height: 34px;
+  margin: 0;
+  font-weight: 400;
+}
+
+.wp-block-iconic-wds .react-datepicker-popper .react-datepicker__header::before, .wp-block-iconic-wds .react-datepicker-popper .react-datepicker__header::after {
+  display: none;
+}
+
+.wp-block-iconic-wds .react-datepicker-popper .react-datepicker__header .react-datepicker__day-name {
+  padding: 0;
+  color: #8d9298;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.wp-block-iconic-wds .react-datepicker-popper .react-datepicker__current-month {
+  -webkit-appearance: none;
+  border: 0;
+  background: none;
+  outline: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--wds-datepicker-day-color);
+  margin: 0 1px;
+}
+
+.wp-block-iconic-wds .react-datepicker-popper .react-datepicker__navigation--previous,
+.wp-block-iconic-wds .react-datepicker-popper .react-datepicker__navigation--previous:hover,
+.wp-block-iconic-wds .react-datepicker-popper .react-datepicker__navigation--next,
+.wp-block-iconic-wds .react-datepicker-popper .react-datepicker__navigation--next:hover {
+  display: inline-block;
+  width: 34px !important;
+  height: 34px !important;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 3px;
+  color: inherit;
+  border: none;
+  font-weight: inherit;
+}
+
+.wp-block-iconic-wds .react-datepicker-popper .react-datepicker__navigation-icon {
+  border: 0;
+  height: 1px;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+  background-image: none !important;
+  top: 7px;
+  left: 50%;
+  margin-left: -4px;
+}
+
+.wp-block-iconic-wds .react-datepicker-popper .react-datepicker__navigation-icon::before {
+  left: auto;
+  right: auto;
+  height: 4px;
+  width: 4px;
+  border-left: 0;
+  border-bottom: 0;
+  border-right: 2px solid #c2c7d1;
+  border-top: 2px solid #c2c7d1;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.wp-block-iconic-wds .react-datepicker-popper .react-datepicker__navigation--previous:hover,
+.wp-block-iconic-wds .react-datepicker-popper .react-datepicker__navigation--next:hover {
+  background: var(--wds-datepicker-nav-hover-bg);
+}
+
+.wp-block-iconic-wds .react-datepicker-popper .react-datepicker__day {
+  color: var(--wds-datepicker-day-color) !important;
+  position: relative;
+  width: 2.1rem;
+  line-height: 2rem;
+  font-weight: var(--wds-datepicker-day-font-weight);
+}
+
+.wp-block-iconic-wds .react-datepicker-popper .react-datepicker__day:not(.react-datepicker__day--selected, .react-datepicker__day--disabled):hover {
+  background: var(--wds-datepicker-day-color-hover-bg) !important;
+  text-decoration: none;
+  color: var(--wds-datepicker-day-color-hover-text) !important;
+}
+
+.wp-block-iconic-wds .react-datepicker-popper .react-datepicker__day--disabled span {
+  color: var(--wds-datepicker-day-disabled-text) !important;
+}
+
+.wp-block-iconic-wds .react-datepicker-popper .react-datepicker__day--today {
+  background-color: var(--wds-datepicker-day-today-bg) !important;
+  color: var(--wds-datepicker-day-today-color);
+}
+
+.wp-block-iconic-wds .react-datepicker-popper .react-datepicker__day--today::after {
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  background: #fe5275;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  opacity: 0.5;
+}
+
+.wp-block-iconic-wds .react-datepicker-popper .react-datepicker__day--selected {
+  color: #fff !important;
+  background: #5d9cf5 !important;
+}
+
+.wp-block-iconic-wds .react-datepicker-popper .react-datepicker__day--keyboard-selected {
+  background: none;
+}
+
+.wp-block-iconic-wds .react-datepicker-popper .react-datepicker__day-name {
+  width: 2.1rem;
+}
+
+.wp-block-iconic-wds span.iconic-wds-date--tooltip {
+  display: block;
+}
+
+.react-datepicker__day--disabled span,
+.react-datepicker__month-text--disabled span,
+.react-datepicker__quarter-text--disabled span,
+.react-datepicker__year-text--disabled span {
+  color: rgb(204, 204, 204);
+}
+
+.wds-subscription-selectbox .react-datepicker__navigation-icon {
+  top: 8px !important;
+}
+
+.wds-subscription-selectbox button.react-datepicker__navigation.react-datepicker__navigation--next,
+.wds-subscription-selectbox button.react-datepicker__navigation.react-datepicker__navigation--previous {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wds-subscription-selectbox button.react-datepicker__navigation.react-datepicker__navigation--next .react-datepicker__navigation-icon,
+.wds-subscription-selectbox button.react-datepicker__navigation.react-datepicker__navigation--previous .react-datepicker__navigation-icon {
+  position: static;
+  display: block;
+  width: 100%;
+}
+
+.wds-subscription-selectbox button.react-datepicker__navigation.react-datepicker__navigation--next .react-datepicker__navigation-icon::before,
+.wds-subscription-selectbox button.react-datepicker__navigation.react-datepicker__navigation--previous .react-datepicker__navigation-icon::before {
+  border: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  -webkit-transform: none;
+          transform: none;
+  background-position: center;
+  top: 0;
+  background-size: 6px;
+}
+
+.wds-subscription-selectbox button.react-datepicker__navigation.react-datepicker__navigation--next .react-datepicker__navigation-icon::before {
+  background-image: url(../../img/right-arrow.svg);
+}
+
+.wds-subscription-selectbox button.react-datepicker__navigation.react-datepicker__navigation--previous .react-datepicker__navigation-icon::before {
+  background-image: url(../../img/left-arrow.svg);
+}
+
+.wds-fieldbox {
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  margin-bottom: 24px;
+  width: 100%;
+  padding: 0 0 0 0 !important;
+}
+
+.wds-fieldbox-header {
+  padding: 16px 20px;
+  background-color: #f8f8f8;
+  font-weight: 700;
+}
+
+.wds-fieldbox-sub-field {
+  padding: 24px 20px 12px 20px;
+}
+
+.wds-fieldbox-sub-field__title {
+  font-weight: 700;
+}
+
+.wds-fieldbox-sub-field p {
+  margin-bottom: 0;
+}
+
+.wds-fieldbox-sub-field label {
+  font-weight: 700;
+  margin-bottom: 8px !important;
+  margin-top: 0 !important;
+}
+
+.wds-fieldbox-sub-field .woocommerce-input-wrapper {
+  display: block;
+  position: relative;
+}
+
+.wds-fieldbox-sub-field .woocommerce-input-wrapper span.description {
+  /* todo handle this better */
+  display: none !important;
+}
+
+.wds-fieldbox-sub-field .woocommerce-input-wrapper::before {
+  content: "";
+  background-image: url(../../img/calendar-icon.svg);
+  width: 14px;
+  height: 14px;
+  background-size: 13px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: 10px;
+  top: 17px;
+}
+
+.wds-fieldbox-sub-field .jckwds-delivery-time .woocommerce-input-wrapper::before {
+  background-image: url(../../img/admin-popup-clock.svg);
+}
+
+.wds-fieldbox-sub-field .wds-block-field-wrapper--date {
+  position: relative;
+  z-index: 11;
+}
+
+.wds-fieldbox-sub-field .wds-block-field-wrapper--date::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 17px;
+  width: 14px;
+  height: 14px;
+  background-size: 13px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../../img/calendar-icon.svg);
+  z-index: 10;
+}
+
+.wds-fieldbox-sub-field .wds-block-field-wrapper--time {
+  position: relative;
+}
+
+.wds-fieldbox-sub-field .wds-block-field-wrapper--time::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 17px;
+  width: 14px;
+  height: 14px;
+  background-size: 13px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../../img/admin-popup-clock.svg);
+  z-index: 10;
+}
+
+.wds-fieldbox-sub-field .wds-block-field-wrapper--time select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline-width: 0;
+  background-image: url(../../img/down-arrow-2.svg);
+  background-repeat: no-repeat;
+  background-position: right 13px center;
+  background-size: 10px;
+  padding-right: 30px;
+}
+
+.wds-fieldbox-sub-field select,
+.wds-fieldbox-sub-field input[type=text] {
+  background: #fff;
+  border: 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px 10px 10px 30px !important;
+  display: block;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  height: 48px !important;
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+  line-height: 1;
+  width: 100% !important;
+}
+
+.wds-fieldbox-selector {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid #ddd;
+  padding: 8px;
+  border-radius: 4px;
+  margin-top: 16px;
+}
+
+.wds-fieldbox-selector__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+
+.wds-fieldbox-selector__item-title {
+  font-weight: 600;
+  font-size: 14px;
+  color: #606060;
+  font-style: italic;
+}
+
+.wds-fieldbox-selector__action-title {
+  color: var(--wds-primary);
+  cursor: pointer;
+}
+
+.wds-fieldbox-selector__save-btn {
+  margin-top: 12px;
+}
+
+.wds-fieldbox-selector__action {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wds-fieldbox-selectbox {
+  border-radius: 8px;
+  border: 1px solid #c3d4e0;
+  margin: 36px 0;
+}
+
+.wds-fieldbox-selectbox__header {
+  background-color: #e9f1f7;
+  padding: 12px;
+  text-align: center;
+  font-weight: 500;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.wds-fieldbox-selectbox__header-title {
+  font-size: 14px;
+  color: #363636;
+}
+
+.wds-fieldbox-selectbox__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 18px 16px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wds-fieldbox-selectbox__body-title {
+  font-weight: 500;
+  font-size: 14px;
+  color: #363636;
+}
+
+.wds-fieldbox-selectbox__body-subtitle {
+  font-size: 12px;
+  color: #777;
+}
+
+div#jckwds-delivery-time-wrapper .wds-fieldbox-sub-field {
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+.wds-fieldbox-sub-field__title-products {
+  font-weight: 400;
+  margin-left: 2px;
+  font-size: 14px;
+}
+
+.wds-subscription-popup-subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  display: block;
+}
+
+.wds-fieldbox-popup-subtitle {
+  font-size: 14px;
+  display: block;
+  font-weight: 400;
+  line-height: 1.5;
+}

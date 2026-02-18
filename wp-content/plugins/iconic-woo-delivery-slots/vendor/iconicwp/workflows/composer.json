@@ -1,0 +1,12 @@
+{
+  "name": "iconicwp/workflows",
+  "authors": [
+    {
+      "name": "James Kemp",
+      "email": "info@iconicwp.com"
+    }
+  ],
+  "repositories": [],
+  "require": { },
+  "require-dev": { }
+}

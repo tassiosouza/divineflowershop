@@ -1,0 +1,110 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/elements-placeholder/editor.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************/
+.flux-crosssell__product {
+  margin-bottom: 20px;
+  border: 1px solid #e5e5e5;
+  padding: 10px;
+  border-radius: 4px;
+}
+.flux-crosssell__product-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.flux-crosssell__product-price {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.flux-crosssell__product-price span {
+  font-weight: 400;
+  font-size: 14px;
+}
+.flux-crosssell__row {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+.flux-crosssell__row .flux-crosssell__col--thumbnail {
+  width: 80px;
+  display: flex;
+  align-self: center;
+  flex-shrink: 0;
+}
+.flux-crosssell__row .flux-crosssell__col--thumbnail img {
+  width: 100%;
+  height: auto;
+}
+.flux-crosssell__row .flux-crosssell__col--title {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.flux-crosssell__row .flux-crosssell__col--actions {
+  width: 100px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: right;
+}
+.flux-crosssell__add-to-cart-btn {
+  background: #fff;
+  color: #16110E;
+  border: 1px solid #16110E;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 11px 16px;
+}
+.flux-crosssell__add-to-cart-btn:hover:not(:disabled) {
+  background: #16110E;
+  color: #fff;
+  border-color: #16110E;
+}
+.flux-crosssell__add-to-cart-btn:disabled {
+  background: #AAAAAA;
+  border: 1px solid #AAA;
+  cursor: no-drop;
+}
+.flux-crosssell__description {
+  margin-top: 12px;
+  color: #5F6061;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.flux-crosssell__description:empty {
+  display: none;
+}
+.flux-crosssell__variation-table {
+  width: 100%;
+  margin-top: 15px;
+}
+.flux-crosssell__variation-table tbody {
+  width: 100%;
+}
+.flux-crosssell__variation-table tr td {
+  padding: 10px 6px;
+  border-bottom: 0 !important;
+}
+.flux-crosssell__variation-table tr td:first-child {
+  width: 120px;
+}
+.flux-crosssell__variation-table select {
+  width: 250px;
+}
+.flux-crosssell__variation-table .select2-selection__arrow {
+  height: 42px !important;
+}
+.flux-crosssell__unavailable-msg {
+  color: #fff !important;
+}
+
+.woocommerce-checkout .flux-crosssell__product .select2-selection {
+  height: 42px !important;
+  padding: 7px 54px 9px 14px !important;
+}
+
+/*# sourceMappingURL=index.css.map*/

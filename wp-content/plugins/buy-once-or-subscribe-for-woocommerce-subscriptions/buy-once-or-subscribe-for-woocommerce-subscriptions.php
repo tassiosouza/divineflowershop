@@ -3,7 +3,7 @@
  * Plugin Name: Buy Once or Subscribe for WooCommerce Subscriptions
  * Plugin URI:  https://woocommerce.com/products/buy-once-or-subscribe-for-woocommerce-subscriptions/
  * Description: This plugin allows shop owners to easily add subscriptions to existing WooCommerce Simple Products.
- * Version:     5.1.1
+ * Version:     5.2.1
  * Author:      eCommerce Tools
  * Author URI:  https://ecommercetools.io
  *
@@ -13,11 +13,11 @@
  * Requires PHP: 7.2
  *
  * Requires at least: 5.7.0
- * Tested up to: 6.7.2
+ * Tested up to: 6.8.3
  *
  * Woo: 18734000055043:c1a7780fb14b3ad8f3d13241e25f4dac
  * WC requires at least: 7.0.0
- * WC tested up to: 9.8.1
+ * WC tested up to: 10.3.4
  *
  * Copyright: © 2021 eCommerce Tools
  * License: GNU General Public License v3.0

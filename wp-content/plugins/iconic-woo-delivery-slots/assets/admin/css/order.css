@@ -1,0 +1,30 @@
+[v-cloak] {
+  display: none;
+}
+
+.wds-admin-popup-wrap {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  padding: 0 8px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #0b0b0bdb;
+  z-index: 10500;
+}
+
+.wds-admin-popup {
+  width: 400px;
+  margin: 0 auto;
+  padding: 50px;
+  background: #fff;
+  position: fixed;
+  top: 50%;
+  display: block;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}

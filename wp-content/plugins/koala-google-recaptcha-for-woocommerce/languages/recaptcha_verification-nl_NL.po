@@ -1,0 +1,567 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Google reCaptcha for WooCommerce\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-10-11 10:34+0000\n"
+"PO-Revision-Date: 2023-10-30 05:51+0000\n"
+"Last-Translator: \n"
+"Language-Team: Dutch\n"
+"Language: nl_NL\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.6; wp-6.3.1\n"
+"X-Domain: recaptcha_verification"
+
+#: includes/admin/class-admin-ka-add-recaptcha.php:200
+#: includes/admin/class-admin-ka-add-recaptcha.php:242
+msgid " | "
+msgstr ""
+
+#: includes/settings/woo-checkout-page.php:147
+msgid "Above order button"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Add reCaptcha to your WooCommerce and WordPress login, registration, reset "
+"password and other pages."
+msgstr ""
+
+#: includes/settings/general-settings-bckend.php:278
+msgid "Add secret key for Recaptcha API"
+msgstr ""
+
+#: includes/settings/general-settings-bckend.php:261
+msgid "Add site key for Recaptcha API"
+msgstr ""
+
+#: includes/settings/woo-checkout-page.php:185
+#: includes/settings/woo-product-review-settings.php:132
+msgid "Adds Field Title to Recaptcha."
+msgstr ""
+
+#: includes/settings/woo-checkout-page.php:145
+msgid "After order notes"
+msgstr ""
+
+#: includes/settings/woo-checkout-page.php:143
+msgid "Before checkout form"
+msgstr ""
+
+#: includes/settings/woo-checkout-page.php:142
+msgid "Before customer details"
+msgstr ""
+
+#: includes/settings/woo-checkout-page.php:144
+msgid "Before order notes"
+msgstr ""
+
+#: includes/settings/woo-checkout-page.php:146
+msgid "Before payment"
+msgstr ""
+
+#: includes/settings/woo-checkout-page.php:148
+msgid "Below order button"
+msgstr ""
+
+#. ID used to identify the field throughout the theme.
+#: includes/settings/woo-checkout-page.php:58
+msgid "Captcha Position"
+msgstr ""
+
+#: includes/settings/woo-login-page-settings.php:114
+#: includes/settings/woo-checkout-page.php:215
+#: includes/settings/wp-registration-captcha-setting.php:111
+#: includes/settings/woo-payment-method-captcha-settings.php:162
+#: includes/settings/woo-lost-password-setting-captcha.php:115
+#: includes/settings/woo-product-review-settings.php:162
+#: includes/settings/woo-pay-for-order-captcha.php:161
+#: includes/settings/woo-registration-page-settings.php:113
+#: includes/settings/wp-lost-password-page-captcha-settings.php:115
+#: includes/settings/ka-grc-shortcode-captcha.php:167
+#: includes/settings/wp-login-captcha-setting.php:114
+#: includes/settings/wp-comment-captcha-setting.php:161
+msgid "Compact"
+msgstr ""
+
+#: includes/settings/general-settings-bckend.php:203
+msgid "Customize ReCaptcha Score.score range is 0.1 to 0.9"
+msgstr ""
+
+#: includes/settings/woo-login-page-settings.php:99
+#: includes/settings/woo-checkout-page.php:200
+#: includes/settings/wp-registration-captcha-setting.php:96
+#: includes/settings/woo-payment-method-captcha-settings.php:147
+#: includes/settings/woo-product-review-settings.php:147
+#: includes/settings/woo-pay-for-order-captcha.php:146
+#: includes/settings/woo-registration-page-settings.php:98
+#: includes/settings/wp-lost-password-page-captcha-settings.php:100
+#: includes/settings/ka-grc-shortcode-captcha.php:153
+#: includes/settings/wp-login-captcha-setting.php:99
+#: includes/settings/wp-comment-captcha-setting.php:146
+msgid "Dark"
+msgstr ""
+
+#: includes/settings/woo-lost-password-setting-captcha.php:100
+msgid "dark"
+msgstr ""
+
+#: includes/settings/general-settings-bckend.php:189
+msgid "Disable reCaptcha for IP/Range"
+msgstr ""
+
+#: includes/settings/general-settings-bckend.php:144
+msgid "Disable reCAPTCHA for specific countries."
+msgstr ""
+
+#: includes/settings/woo-checkout-page.php:175
+msgid "Enable Captcha for checkout page. "
+msgstr ""
+
+#: includes/settings/woo-product-review-settings.php:122
+msgid "Enable Captcha for product review page."
+msgstr ""
+
+#: includes/settings/woo-pay-for-order-captcha.php:121
+msgid "Enables captcha for pay for order"
+msgstr ""
+
+#: includes/settings/woo-payment-method-captcha-settings.php:85
+msgid "Enables captcha for payment method"
+msgstr ""
+
+#: includes/settings/woo-login-page-settings.php:73
+msgid "Enables Captcha for Woo Commerce login page"
+msgstr ""
+
+#: includes/settings/woo-lost-password-setting-captcha.php:73
+msgid "Enables captcha for Woo Commerce lost password page"
+msgstr ""
+
+#: includes/settings/woo-registration-page-settings.php:73
+msgid "Enables captcha for Woo Commerce registration page"
+msgstr ""
+
+#: includes/settings/wp-comment-captcha-setting.php:119
+msgid "Enables captcha for WordPress Comment page"
+msgstr ""
+
+#: includes/settings/wp-login-captcha-setting.php:74
+msgid "Enables captcha for WordPress login page."
+msgstr ""
+
+#: includes/settings/wp-lost-password-page-captcha-settings.php:74
+msgid "Enables captcha for WordPress lost password."
+msgstr ""
+
+#: includes/settings/wp-registration-captcha-setting.php:71
+msgid "Enables captcha for WordPress registration page"
+msgstr ""
+
+#: includes/settings/ka-grc-shortcode-captcha.php:122
+msgid "Enables shortcode for captcha."
+msgstr ""
+
+#. ID used to identify the field throughout the theme.
+#: includes/settings/general-settings-bckend.php:98
+msgid "Exclude Countries"
+msgstr ""
+
+#: includes/settings/ka-grc-shortcode-captcha.php:138
+msgid "Field text for captcha in Shortcode."
+msgstr ""
+
+#: includes/settings/wp-login-captcha-setting.php:84
+msgid "Field text for captcha in WordPress login page."
+msgstr ""
+
+#: includes/settings/woo-pay-for-order-captcha.php:131
+msgid "Field text for pay for order captcha. "
+msgstr ""
+
+#: includes/settings/woo-payment-method-captcha-settings.php:132
+msgid "Field text for payment method captcha."
+msgstr ""
+
+#: includes/settings/general-settings-bckend.php:176
+msgid "Field text for Recaptcha."
+msgstr ""
+
+#: includes/settings/woo-login-page-settings.php:83
+msgid "Field Text for Woo Commerce login page captcha."
+msgstr ""
+
+#: includes/settings/woo-lost-password-setting-captcha.php:84
+msgid "Field Text for Woo Commerce lost password page."
+msgstr ""
+
+#: includes/settings/woo-registration-page-settings.php:83
+msgid "Field text for Woo Commerce registration captcha."
+msgstr ""
+
+#: includes/settings/wp-lost-password-page-captcha-settings.php:85
+msgid "Field text for WordPress lost password captcha"
+msgstr ""
+
+#: includes/settings/wp-registration-captcha-setting.php:81
+msgid "Field text for WordPress registration captcha"
+msgstr ""
+
+#: includes/settings/wp-comment-captcha-setting.php:129
+msgid "Field text for WordPress registration captcha."
+msgstr ""
+
+#: includes/admin/class-admin-ka-add-recaptcha.php:88
+msgid "General Setting"
+msgstr ""
+
+#: includes/settings/general-settings-bckend.php:282
+msgid "Get secret key for reCaptcha from "
+msgstr ""
+
+#: includes/settings/general-settings-bckend.php:265
+msgid "Get site key for reCaptcha from "
+msgstr ""
+
+#. Name of the plugin
+msgid "Google reCaptcha for WooCommerce"
+msgstr ""
+
+#: includes/settings/general-settings-bckend.php:234
+msgid "Google.com"
+msgstr ""
+
+#: includes/settings/woo-checkout-page.php:122
+#: includes/settings/woo-payment-method-captcha-settings.php:119
+#: includes/settings/woo-product-review-settings.php:109
+#: includes/settings/woo-pay-for-order-captcha.php:107
+#: includes/settings/ka-grc-shortcode-captcha.php:109
+#: includes/settings/wp-comment-captcha-setting.php:106
+msgid "Guest"
+msgstr ""
+
+#: includes/settings/general-settings-bckend.php:266
+#: includes/settings/general-settings-bckend.php:283
+msgid "here"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://woocommerce.com/products/koala-google-recaptcha-for-woocommerce"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://woocommerce.com/vendor/koalaapps/"
+msgstr ""
+
+#: includes/settings/woo-checkout-page.php:124
+#: includes/settings/woo-payment-method-captcha-settings.php:121
+#: includes/settings/woo-product-review-settings.php:112
+#: includes/settings/woo-pay-for-order-captcha.php:110
+#: includes/settings/ka-grc-shortcode-captcha.php:111
+msgid "If empty, captcha will work for all user roles."
+msgstr ""
+
+#. ID used to identify the field throughout the theme.
+#: includes/settings/general-settings-bckend.php:111
+msgid "IP Range"
+msgstr ""
+
+#. Author of the plugin
+msgid "KoalaApps"
+msgstr ""
+
+#: includes/settings/woo-login-page-settings.php:95
+#: includes/settings/woo-checkout-page.php:197
+#: includes/settings/wp-registration-captcha-setting.php:93
+#: includes/settings/woo-payment-method-captcha-settings.php:144
+#: includes/settings/woo-product-review-settings.php:144
+#: includes/settings/woo-pay-for-order-captcha.php:143
+#: includes/settings/woo-registration-page-settings.php:95
+#: includes/settings/wp-lost-password-page-captcha-settings.php:97
+#: includes/settings/ka-grc-shortcode-captcha.php:150
+#: includes/settings/wp-login-captcha-setting.php:96
+#: includes/settings/wp-comment-captcha-setting.php:143
+msgid "Light"
+msgstr ""
+
+#: includes/settings/woo-lost-password-setting-captcha.php:97
+msgid "light"
+msgstr ""
+
+#. ID used to identify the field throughout the theme.
+#: includes/settings/general-settings-bckend.php:45
+msgid "No-Conflict Mode"
+msgstr ""
+
+#: includes/settings/woo-login-page-settings.php:111
+#: includes/settings/woo-checkout-page.php:212
+#: includes/settings/wp-registration-captcha-setting.php:108
+#: includes/settings/woo-payment-method-captcha-settings.php:159
+#: includes/settings/woo-lost-password-setting-captcha.php:112
+#: includes/settings/woo-product-review-settings.php:159
+#: includes/settings/woo-pay-for-order-captcha.php:158
+#: includes/settings/woo-registration-page-settings.php:110
+#: includes/settings/wp-lost-password-page-captcha-settings.php:112
+#: includes/settings/ka-grc-shortcode-captcha.php:164
+#: includes/settings/wp-login-captcha-setting.php:111
+#: includes/settings/wp-comment-captcha-setting.php:158
+msgid "Normal"
+msgstr ""
+
+#. Page title.
+#: includes/admin/class-admin-ka-add-recaptcha.php:50
+msgid "reCaptcha"
+msgstr ""
+
+#. ID used to identify the field throughout the theme.
+#: includes/settings/woo-login-page-settings.php:33
+#: includes/settings/woo-checkout-page.php:44
+#: includes/settings/wp-registration-captcha-setting.php:31
+#: includes/settings/woo-payment-method-captcha-settings.php:45
+#: includes/settings/woo-lost-password-setting-captcha.php:33
+#: includes/settings/woo-product-review-settings.php:45
+#: includes/settings/woo-pay-for-order-captcha.php:45
+#: includes/settings/woo-registration-page-settings.php:33
+#: includes/settings/general-settings-bckend.php:57
+#: includes/settings/wp-lost-password-page-captcha-settings.php:33
+#: includes/settings/ka-grc-shortcode-captcha.php:46
+#: includes/settings/wp-login-captcha-setting.php:33
+#: includes/settings/wp-comment-captcha-setting.php:44
+msgid "Recaptcha Field Title"
+msgstr ""
+
+#. ID used to identify the field throughout the theme.
+#: includes/settings/woo-checkout-page.php:20
+msgid "reCaptcha on Checkout"
+msgstr ""
+
+#. ID used to identify the field throughout the theme.
+#: includes/settings/woo-product-review-settings.php:20
+msgid "reCaptcha on Product Review"
+msgstr ""
+
+#. ID used to identify the field throughout the theme.
+#: includes/settings/woo-registration-page-settings.php:21
+msgid "reCaptcha on Registration"
+msgstr ""
+
+#. ID used to identify the field throughout the theme.
+#: includes/settings/woo-login-page-settings.php:21
+msgid "reCaptcha on Woo Login page"
+msgstr ""
+
+#. ID used to identify the field throughout the theme.
+#: includes/settings/woo-payment-method-captcha-settings.php:21
+msgid "reCaptcha on Woo payment method"
+msgstr ""
+
+#. ID used to identify the field throughout the theme.
+#: includes/settings/woo-lost-password-setting-captcha.php:21
+msgid "reCaptcha on Woo-commerce Lost Password"
+msgstr ""
+
+#. ID used to identify the field throughout the theme.
+#: includes/settings/wp-comment-captcha-setting.php:20
+msgid "reCaptcha on WP Comment"
+msgstr ""
+
+#. ID used to identify the field throughout the theme.
+#: includes/settings/wp-login-captcha-setting.php:21
+msgid "reCaptcha on WP login"
+msgstr ""
+
+#. ID used to identify the field throughout the theme.
+#: includes/settings/wp-lost-password-page-captcha-settings.php:21
+msgid "reCaptcha on WP Lost Password"
+msgstr ""
+
+#. ID used to identify the field throughout the theme.
+#: includes/settings/wp-registration-captcha-setting.php:19
+msgid "reCaptcha on WP Register"
+msgstr ""
+
+#. ID used to identify the field throughout the theme.
+#: includes/settings/general-settings-bckend.php:123
+msgid "ReCaptcha Score"
+msgstr ""
+
+#: includes/admin/class-admin-ka-add-recaptcha.php:169
+msgid "Recaptcha Setting"
+msgstr ""
+
+#. ID used to identify the field throughout the theme.
+#: includes/settings/woo-login-page-settings.php:57
+#: includes/settings/woo-checkout-page.php:82
+#: includes/settings/wp-registration-captcha-setting.php:55
+#: includes/settings/woo-payment-method-captcha-settings.php:69
+#: includes/settings/woo-lost-password-setting-captcha.php:57
+#: includes/settings/woo-product-review-settings.php:69
+#: includes/settings/woo-pay-for-order-captcha.php:69
+#: includes/settings/woo-registration-page-settings.php:57
+#: includes/settings/wp-lost-password-page-captcha-settings.php:57
+#: includes/settings/ka-grc-shortcode-captcha.php:70
+#: includes/settings/wp-login-captcha-setting.php:57
+#: includes/settings/wp-comment-captcha-setting.php:68
+msgid "Recaptcha Size"
+msgstr ""
+
+#. ID used to identify the field throughout the theme.
+#: includes/settings/woo-login-page-settings.php:45
+#: includes/settings/woo-checkout-page.php:70
+#: includes/settings/wp-registration-captcha-setting.php:43
+#: includes/settings/woo-payment-method-captcha-settings.php:57
+#: includes/settings/woo-product-review-settings.php:57
+#: includes/settings/woo-pay-for-order-captcha.php:57
+#: includes/settings/woo-registration-page-settings.php:45
+#: includes/settings/wp-lost-password-page-captcha-settings.php:45
+#: includes/settings/ka-grc-shortcode-captcha.php:58
+#: includes/settings/wp-login-captcha-setting.php:45
+#: includes/settings/wp-comment-captcha-setting.php:56
+msgid "Recaptcha Themes"
+msgstr ""
+
+#. ID used to identify the field throughout the theme.
+#: includes/settings/woo-lost-password-setting-captcha.php:45
+msgid "Recaptcha Themes "
+msgstr ""
+
+#. ID used to identify the field throughout the theme.
+#: includes/settings/general-settings-bckend.php:32
+msgid "Recaptcha Type"
+msgstr ""
+
+#. ID used to identify the field throughout the theme.
+#: includes/settings/general-settings-bckend.php:20
+msgid "Recaptcha Version"
+msgstr ""
+
+#: includes/settings/general-settings-bckend.php:237
+msgid "reCaptcha.net"
+msgstr ""
+
+#: includes/settings/general-settings-bckend.php:251
+msgid "Remove other CAPTCHA occurrences in order to prevent conflicts."
+msgstr ""
+
+#. ID used to identify the field throughout the theme.
+#: includes/settings/general-settings-bckend.php:80
+msgid "Secret Key"
+msgstr ""
+
+#: includes/admin/class-admin-ka-add-recaptcha.php:115
+#: includes/admin/class-admin-ka-add-recaptcha.php:146
+msgid "Security Violated."
+msgstr ""
+
+#: includes/settings/woo-checkout-page.php:151
+msgid "Select position of captcha on checkout page"
+msgstr ""
+
+#. ID used to identify the field throughout the theme.
+#: includes/settings/woo-checkout-page.php:32
+#: includes/settings/woo-payment-method-captcha-settings.php:33
+#: includes/settings/woo-product-review-settings.php:32
+#: includes/settings/woo-pay-for-order-captcha.php:33
+#: includes/settings/ka-grc-shortcode-captcha.php:34
+#: includes/settings/wp-comment-captcha-setting.php:32
+msgid "Select User role"
+msgstr ""
+
+#: includes/settings/woo-checkout-page.php:102
+#: includes/settings/woo-payment-method-captcha-settings.php:100
+#: includes/settings/woo-product-review-settings.php:89
+#: includes/settings/woo-pay-for-order-captcha.php:89
+#: includes/settings/ka-grc-shortcode-captcha.php:89
+#: includes/settings/wp-comment-captcha-setting.php:87
+msgid "Select user role which you want to show recaptcha."
+msgstr ""
+
+#: class-main-ka-add-recaptcha.php:97
+msgid "Settings"
+msgstr ""
+
+#: includes/admin/class-admin-ka-add-recaptcha.php:101
+msgid "Shortcode"
+msgstr ""
+
+#. ID used to identify the field throughout the theme.
+#: includes/settings/ka-grc-shortcode-captcha.php:22
+msgid "Shortcode reCaptcha"
+msgstr ""
+
+#. ID used to identify the field throughout the theme.
+#: includes/settings/general-settings-bckend.php:69
+msgid "Site Key"
+msgstr ""
+
+#: includes/settings/ka-grc-shortcode-captcha.php:127
+msgid "Use shortcode to display captcha on any page."
+msgstr ""
+
+#: includes/settings/general-settings-bckend.php:218
+msgid "V2"
+msgstr ""
+
+#: includes/settings/general-settings-bckend.php:221
+msgid "V3"
+msgstr ""
+
+#: includes/admin/class-admin-ka-add-recaptcha.php:187
+msgid "WC Checkout"
+msgstr ""
+
+#: includes/admin/class-admin-ka-add-recaptcha.php:185
+msgid "WC Login"
+msgstr ""
+
+#: includes/admin/class-admin-ka-add-recaptcha.php:186
+msgid "WC Lost Password"
+msgstr ""
+
+#: includes/admin/class-admin-ka-add-recaptcha.php:189
+msgid "WC Pay for order"
+msgstr ""
+
+#: includes/admin/class-admin-ka-add-recaptcha.php:188
+msgid "WC Payment Method"
+msgstr ""
+
+#: includes/admin/class-admin-ka-add-recaptcha.php:190
+msgid "WC Product Review"
+msgstr ""
+
+#: includes/admin/class-admin-ka-add-recaptcha.php:184
+msgid "WC Registration"
+msgstr ""
+
+#: includes/admin/class-admin-ka-add-recaptcha.php:92
+msgid "WC Setting"
+msgstr ""
+
+#. ID used to identify the field throughout the theme.
+#: includes/settings/woo-pay-for-order-captcha.php:21
+msgid "Woo pay_order"
+msgstr ""
+
+#: includes/admin/class-admin-ka-add-recaptcha.php:232
+msgid "WP Comment"
+msgstr ""
+
+#: includes/admin/class-admin-ka-add-recaptcha.php:230
+msgid "WP Login"
+msgstr ""
+
+#: includes/admin/class-admin-ka-add-recaptcha.php:231
+msgid "WP Lost Password"
+msgstr ""
+
+#: includes/admin/class-admin-ka-add-recaptcha.php:229
+msgid "WP Registration"
+msgstr ""
+
+#: includes/admin/class-admin-ka-add-recaptcha.php:96
+msgid "WP Setting"
+msgstr ""
