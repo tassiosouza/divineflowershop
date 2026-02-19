@@ -12,6 +12,9 @@ wp-config.local.php
 # WordPress uploads and plugin caches (generated on each env; don’t deploy)
 wp-content/uploads/
 
+# UpdraftPlus backups (large; keep only on server/local)
+wp-content/updraft/
+
 # WordPress debug log (local only)
 wp-content/debug.log
 *.log

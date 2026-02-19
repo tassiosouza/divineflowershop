@@ -1,5 +1,5 @@
 # Deploy to Kinsta server on push to master
-# Add these repository secrets: SSH_HOST, SSH_PORT, SSH_USER, SSH_PASSWORD, DEPLOY_PATH
+# Uses the "Master" environment; add SSH_HOST, SSH_PORT, SSH_USER, SSH_PASSWORD, DEPLOY_PATH as environment secrets for that environment.
 
 name: Deploy to Kinsta
 
@@ -10,9 +10,23 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment: Master
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Check required secrets
+        run: |
+          missing=""
+          [ -z "${{ secrets.SSH_HOST }}" ] && missing="SSH_HOST $missing"
+          [ -z "${{ secrets.SSH_PORT }}" ] && missing="SSH_PORT $missing"
+          [ -z "${{ secrets.SSH_USER }}" ] && missing="SSH_USER $missing"
+          [ -z "${{ secrets.SSH_PASSWORD }}" ] && missing="SSH_PASSWORD $missing"
+          [ -z "${{ secrets.DEPLOY_PATH }}" ] && missing="DEPLOY_PATH $missing"
+          if [ -n "$missing" ]; then
+            echo "::error::Missing repository secrets. Add these in Settings → Secrets and variables → Actions: $missing"
+            exit 1
+          fi
 
       - name: Install sshpass
         run: sudo apt-get update && sudo apt-get install -y sshpass
